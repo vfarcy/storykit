@@ -1,0 +1,1 @@
+class ClaudeAdapter: pass

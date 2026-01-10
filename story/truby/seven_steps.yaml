@@ -1,0 +1,13 @@
+
+seven_steps:
+  weakness_need:
+    internal: "Naïveté morale : confond loyauté personnelle et quête de vérité."
+    moral_problem: "Prête à taire des infos pour protéger des proches/sources."
+  desire: "Découvrir ce qui est arrivé au juge et empêcher le sacrifice d’un bouc émissaire."
+  opponent:
+    name: "Coalition d’élites locales (magnat de l’immobilier, chef de cabinet, flic ambitieux)."
+    strategy: "Fabriquer un coupable, manipuler la presse, menacer les témoins, enterrer les preuves."
+  plan: "Suivre l’argent, cartographier appels/dossiers, recouper sources sous couverture, publier des tests."
+  battle: "Conférence de presse + divulgation de preuves; confrontation directe avec le magnat."
+  self_revelation: "La vérité a un coût; la loyauté n’excuse pas le mensonge."
+  new_equilibrium: "Elle publie l’enquête complète, perd une relation clé, mais déclenche des poursuites."

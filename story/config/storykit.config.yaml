@@ -1,0 +1,13 @@
+
+ai:
+  provider: dry-run
+  model: ""
+  max_tokens: 1800
+project:
+  root: ./story
+language: fr
+format:
+  line_width: 100
+style:
+  autofix: true            # insérer automatiquement le squelette Ton/Voix/Rythme si manquant
+  optional_autofix: none   # none | forbidden | examples | both (sections optionnelles)

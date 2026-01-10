@@ -1,0 +1,42 @@
+
+required_beats:
+  - id: g01
+    name: "Crime/Anomalie révélée + Misdirection initiale"
+    description: "Un narratif officiel s’impose, mais un détail cloche."
+    status: locked
+  - id: g02
+    name: "Matrice d’enquête (indices, suspects, versions)"
+    description: "Tableau vivant des pistes; chaque indice raconte une version."
+    status: locked
+  - id: g03
+    name: "Fausse piste (red herring) significative"
+    description: "Piste cohérente mais trompeuse, révélatrice des méthodes de l’opposant."
+    status: locked
+  - id: g04
+    name: "Renversement milieu (midpoint reversal)"
+    description: "Découverte qui inverse la hiérarchie des suspects."
+    status: locked
+  - id: g05
+    name: "Révélation méthodologique"
+    description: "Comprendre **comment** l’opposant fabrique des versions (procédé)."
+    status: locked
+  - id: g06
+    name: "Pression temporelle (clock)"
+    description: "Le faux coupable sera inculpé très bientôt."
+    status: locked
+  - id: g07
+    name: "Visit to Death / Menace physique"
+    description: "Intrusion, filature, agression : mise en danger concrète."
+    status: locked
+  - id: g08
+    name: "Piège & Confrontation"
+    description: "Mettre l’opposant face aux preuves dans un cadre public."
+    status: locked
+  - id: g09
+    name: "Preuve & Explication"
+    description: "Exposer le mécanisme, reconstituer la chaîne causale devant témoins."
+    status: locked
+  - id: g10
+    name: "Restauration de l’ordre, à coût moral"
+    description: "Justice amorcée, mais perte personnelle durable."
+    status: locked

@@ -1,0 +1,25 @@
+
+characters:
+  - id: hero
+    name: "Nora Vidal"
+    function: "protagoniste (journaliste d’investigation)"
+    weakness: "Naïveté morale; confiance excessive"
+    need: "Mettre la vérité au-dessus de la loyauté personnelle"
+    desire: "Comprendre la disparition du juge"
+    moral_values: ["vérité","justice","responsabilité"]
+    contrast_with: ["opponent","ally_false","ally_true"]
+  - id: opponent
+    name: "Victor Lenoir"
+    function: "opposant principal (magnat immobilier)"
+    desire: "Protéger ses chantiers et réseaux"
+    moral_argument_inverse: "Le pouvoir achète la version du réel"
+  - id: ally_false
+    name: "Lieutenant Darzac"
+    function: "faux allié (police)"
+    desire: "Promotions rapides"
+    moral_argument_inverse: "La fin justifie les moyens"
+  - id: ally_true
+    name: "Sofia"
+    function: "alliée data (analyste télécoms)"
+    desire: "Sortir un scoop propre"
+    moral_argument_inverse: "Les faits avant tout, sans drama"
