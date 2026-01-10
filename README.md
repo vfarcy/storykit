@@ -111,7 +111,7 @@ style:
 ```
 
 - **dry-run** écrit simplement le **prompt** dans `out/prompts/` (aucun appel réseau).
-- Plus tard, tu pourras implémenter un adaptateur réel (stubs fournis dans `cli/adapters/`).
+- Plus tard, on pourra implémenter un adaptateur réel (stubs fournis dans `cli/adapters/`).
 
 ### Style & Voix
 - Emplacement: `story/config/style.md`. Ce fichier définit le ton, la voix et le rythme attendus.
