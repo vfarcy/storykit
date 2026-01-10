@@ -45,7 +45,10 @@ structurants) et **porte une philosophie** (une “manière d’agir dans le mon
 crucial pour respecter la **promesse au lectorat** tout en innovant (mélanges de genres inclus).
 
 ---
+> **Pour approfondir la méthode Truby :** voir [TRUBY_GUIDE.md](TRUBY_GUIDE.md) — guide complet avec exemples, 
+> exercices pratiques et intégration avec StoryKit.
 
+---
 ## 2) Ce que fait StoryKit
 
 StoryKit fournit :
