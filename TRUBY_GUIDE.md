@@ -431,6 +431,192 @@ Ces beats ne sont **pas facultatifs** ; respecter la promesse de genre c'est **l
 
 ---
 
+## Non-fiction & Truby
+
+### Adapter la méthode à la non-fiction
+
+La méthode Truby s'applique aussi à la **non-fiction narrative** (biographies, enquêtes, mémoires, essais narratifs).
+La différence clé : au lieu d'un **héros fictif qui change**, c'est le **lecteur qui se transforme** à travers la compréhension.
+
+### Les 7 étapes en non-fiction
+
+**1. Faiblesse & Besoin**
+- Quelle est la **fausse croyance** que le lecteur partage avant de lire ?
+- Qu'est-ce que le lecteur **ne comprend pas** sur le sujet ?
+
+**Exemple :** "On croit que cet événement historique était un accident; en réalité, c'était systématique."
+
+**2. Désir**
+- Que **veut** le lecteur/l'auteur au départ ?
+- Quelle est la **quête superficielle** ?
+
+**Exemple :** "Trouver ce qui est arrivé au juge disparu" (apparemment)
+
+**3. Opposant**
+- Qu'est-ce qui s'oppose à la **découverte de la vérité** ?
+- Souvent : le système, le mensonge, les obstacles pratiques, les témoins réticents
+
+**Exemple :** "Les autorités qui cachent les preuves, les témoins terrifiés, les archives détruites"
+
+**4. Plan**
+- Comment le narrateur **va-t-il** chercher la vérité ?
+- Quelle est sa **méthodologie** ?
+
+**Exemple :** "Interviews, archives, reconstitution chronologique, comparaison des témoignages"
+
+**5. Bataille**
+- Le moment où la **vérité se heurte au mensonge établi**
+- Confrontation avec la **complexité** ou la **contradiction**
+
+**Exemple :** "Découvrir que l'histoire officielle contredit les faits; affronter les implications"
+
+**6. Auto-révélation**
+- Ce que le **narrateur/lecteur apprend** sur lui-même ou le sujet
+- Souvent une **compréhension nuancée** plutôt qu'une réponse définitive
+
+**Exemple :** "Ma recherche m'a montré que je n'étais pas objectif; mes préjugés influençaient mes questions"
+ou "La vérité est plus complexe et plus morale que je ne l'imaginais"
+
+**7. Nouvel équilibre**
+- Quelle est la **nouvelle compréhension** du sujet ?
+- Comment cela **change-t-il notre vision** du monde ?
+
+**Exemple :** "L'histoire doit être réécrite avec cette nouvelle perspective"
+
+### Beats spécifiques de la non-fiction narrative
+
+1. **Sujet établi & contexte** : Présenter qui/quoi/pourquoi c'est important
+2. **Question ou énigme** : Formuler le mystère ou la question centrale
+3. **Recherche & voyage** : Le processus de découverte (entretiens, archives, observations)
+4. **Complications** : Les découvertes qui contredisent les idées préconçues
+5. **Tournant majeur** : L'insight qui recontextualise tout
+6. **Implications** : Explorer comment cela change notre compréhension
+7. **Affrontement/Acceptation de la complexité** : Accepter que la vérité est nuancée
+8. **Nouvelle compréhension** : La synthèse finale (ce que nous savons maintenant)
+
+### Argument moral en non-fiction
+
+L'argument moral reste clé, mais il s'articule différemment :
+
+**Exemple : Biographie d'une figure politique controversée**
+```
+Thèse (croyance initiale du lecteur) : 
+"C'était un simple tyran, sans redondance morale"
+
+Antithèse (découverte troublante) :
+"Il avait aussi une humanité, des doutes, des raisons compréhensibles"
+
+Synthèse (nouvelle compréhension) :
+"La compréhension ne justifie pas les crimes, mais elle rend la situation plus morale, 
+plus humaine, plus complexe"
+```
+
+### Types de non-fiction & leurs structures
+
+#### Enquête investigative (Reportage)
+```
+Crime/Anomalie révélée 
+→ Investigation 
+→ Fausses pistes 
+→ Tournant (preuve clé)
+→ Affrontement avec les faits
+→ Révélation complète 
+→ Implications systémiques
+```
+
+#### Biographie/Mémoires
+```
+Sujet présenté
+→ Contexte de sa vie
+→ Crises & transformations clés
+→ Découvertes sur sa vraie nature
+→ Comment il a changé le monde
+→ Héritage & nouvelle évaluation
+```
+
+#### Essai thématique/historique
+```
+Problème ou question posée
+→ Idées courantes sur le sujet
+→ Contradiction des idées courantes
+→ Nouvelle théorie/framework
+→ Applications & exemples
+→ Implications pour aujourd'hui
+```
+
+### Comment structurer en StoryKit (non-fiction)
+
+**Prémisse :**
+```
+Quand [auteur/journaliste] enquête sur [sujet/énigme] dans [contexte],
+il/elle doit [surmonter obstacles] avant [deadline],
+ce qui révèle que [nouvelle compréhension/argument moral].
+```
+
+**Exemple :**
+```
+Quand une historienne enquête sur les fonds publics détournés 
+après la catastrophe de 2005,
+elle doit reconstituer la chaîne de responsabilité avant que les archives ne soient détruites,
+ce qui révèle que l'indifférence institutionnelle était aussi grave que la malveillance.
+```
+
+**Argument moral :**
+```
+Thèse : "Les autorités ont géré la crise au mieux de leurs capacités"
+Antithèse : "C'était une incompétence/corruption délibérée"
+Synthèse : "C'était systémique — la structure elle-même était défaillante, 
+           pas seulement les individus"
+```
+
+**Beats de genre :**
+```yaml
+required_beats:
+  - id: nf01
+    name: "Sujet établi & contexte"
+    description: "Qui, quoi, où, quand, pourquoi ça importe"
+    status: locked
+  - id: nf02
+    name: "Énigme ou question centrale"
+    description: "Qu'est-ce qu'on ne sait pas? Qu'est-ce qui est caché?"
+    status: locked
+  - id: nf03
+    name: "Recherche & obstacles"
+    description: "Processus de découverte, défis pratiques, résistances"
+    status: locked
+  - id: nf04
+    name: "Révélations mineures & complications"
+    description: "Chaque découverte complique la compréhension"
+    status: locked
+  - id: nf05
+    name: "Tournant majeur (Insight)"
+    description: "Le moment où la compréhension bascule"
+    status: locked
+  - id: nf06
+    name: "Implications explorées"
+    description: "Comment cela change notre vision du sujet/du monde?"
+    status: locked
+  - id: nf07
+    name: "Affrontement/Acceptation de la complexité"
+    description: "Accepter que la vérité est nuancée, pas simple"
+    status: locked
+  - id: nf08
+    name: "Synthèse & nouvelle compréhension"
+    description: "Ce que nous savons maintenant; leçons extraites"
+    status: locked
+```
+
+### Conseils pour écrire une non-fiction avec Truby
+
+- **Faites un plan temporel clair** : le processus de découverte se fait dans le temps
+- **Montrez les fausses pistes** : le lecteur doit vivre votre confusion avant votre clarté
+- **Créez de la tension** : "Vais-je trouver la réponse avant que..."
+- **Restez honnête sur vos limitations** : "Voici ce que je ne peux pas savoir"
+- **Humanisez les sujets** : même les antagonistes ont des motivations
+- **Terminez avec une synthèse morale** : pas juste "voilà les faits", mais "voilà ce que ça signifie"
+
+---
+
 ## Prémisse
 
 ### Définition
