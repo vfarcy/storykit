@@ -72,7 +72,7 @@ story/
 ├─ drafting/         # Brouillons de chapitres
 ├─ tasks/            # Tâches éditoriales
 config/              # storykit.config.yaml (IA, langue)
-cli/                 # storykit.py (assemble prompts) + adapters (stubs)
+cli/                 # storykit.py (assemble prompts) + adapters (Claude/OpenAI/Gemini)
 .github/ISSUE_TEMPLATE # Issues modèles (slash‑commands)
 out/prompts/         # Prompts générés (dry‑run)
 ```
@@ -86,7 +86,41 @@ python -m venv .venv
 # Sous Windows PowerShell :
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install pyyaml rich
+pip install -r requirements.txt
+```
+
+> Les packages LLM sont **optionnels**. Tu peux utiliser `assemble` et `validate` sans aucun provider.
+> Pour activer un adaptateur et envoyer les prompts à une API, installe le module du provider
+> (voir section « Adaptateurs IA réels »).
+
+### Windows PowerShell — aide‑mémoire
+
+```powershell
+# Activer l'environnement virtuel
+.venv\Scripts\Activate.ps1
+
+# Vérifier l'interpréteur Python utilisé (chemin dans .venv)
+python -c "import sys; print(sys.executable)"
+
+# Mettre à jour pip et installer les dépendances de base
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+# Créer le fichier .env à partir du template et l'ouvrir
+Copy-Item .env.example .env
+notepad .env
+
+# (Optionnel) Définir les clés API pour la session courante
+# Utiliser selon le provider choisi
+$env:ANTHROPIC_API_KEY = "sk-ant-..."    # Claude
+$env:OPENAI_API_KEY    = "sk-proj-..."   # OpenAI / Copilot
+$env:GOOGLE_API_KEY    = "AIza..."       # Gemini
+
+# Premier check de cohérence du projet
+python -m cli.storykit validate
+
+# (Optionnel) Sans auto-fix de style.md
+python -m cli.storykit validate --no-autofix-style
 ```
 
 ---
@@ -334,3 +368,54 @@ ai:
 ---
 
 **Licence** : MIT
+
+---
+
+## 8) Premiers pas
+
+Trois commandes pour tester le flux minimal :
+
+```powershell
+# 1) Vérifier la cohérence des artefacts
+python -m cli.storykit validate
+
+# 2) Générer le prompt de la prémisse
+python -m cli.storykit assemble --target premise
+
+# 3) Ouvrir le prompt généré
+# → out/prompts/YYYYMMDD_HHMMSS_premise.md
+```
+
+Ensuite, colle le prompt dans ton assistant IA et intègre la réponse dans les fichiers du dossier `story/`.
+
+### Ouvrir le dernier prompt généré (one‑liner PowerShell)
+
+```powershell
+# Ouvrir le plus récent dans Notepad
+Get-ChildItem .\out\prompts -Filter *.md | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | ForEach-Object { notepad $_.FullName }
+
+# (Alternative) Ouvrir dans VS Code si disponible
+Get-ChildItem .\out\prompts -Filter *.md | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | ForEach-Object { code $_.FullName }
+```
+
+Ou via le script utilitaire :
+
+```powershell
+# Notepad par défaut
+./tools/open-latest.ps1
+
+# Ouvrir avec VS Code
+./tools/open-latest.ps1 -Editor code
+```
+
+### Ouvrir la dernière réponse IA (script PowerShell)
+
+```powershell
+# Notepad par défaut
+./tools/open-latest-response.ps1
+
+# Ouvrir avec VS Code
+./tools/open-latest-response.ps1 -Editor code
+```
+
+Pour plus de détails et options, voir [tools/README.md](tools/README.md).
