@@ -123,6 +123,20 @@ python -m cli.storykit validate
 python -m cli.storykit validate --no-autofix-style
 ```
 
+Astuce PowerShell (chemins avec espaces) :
+
+```powershell
+# Utiliser l'opérateur d'appel & avec un chemin entre guillemets
+& "C:\Users\vfarc\OneDrive - Groupe ESIEA\Dev\story-repo-polar\.venv\Scripts\python.exe" -m cli.storykit validate
+
+# Variante relative depuis le repo
+& .\.venv\Scripts\python.exe -m cli.storykit validate
+
+# Alias pratique pour la session courante
+Set-Alias vpy "$PWD\.venv\Scripts\python.exe"
+vpy -m cli.storykit validate
+```
+
 ---
 
 ## 5) Configuration

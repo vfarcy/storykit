@@ -39,6 +39,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 ./tools/open-latest-response.ps1 -Editor code
 ```
 
+Notes:
+- En mode **dry-run**, il n'y a pas de `out/responses`. Le script **bascule automatiquement** vers le dernier prompt (`out/prompts`) si `FallbackToPrompt` est activé (par défaut).
+- Pour forcer l'erreur si aucune réponse n'est disponible, désactivez le fallback: `./tools/open-latest-response.ps1 -FallbackToPrompt:$false`.
+
 ## Options communes
 - `-Editor`: `notepad` (défaut) ou `code` (VS Code)
 
