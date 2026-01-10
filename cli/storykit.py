@@ -217,10 +217,27 @@ class DryRunAdapter:
 
 ADAPTERS = {
     "dry-run": DryRunAdapter,
-    # "claude": ClaudeAdapter,  # à implémenter si besoin
-    # "copilot": CopilotAdapter,  # à implémenter si besoin
-    # "gemini": GeminiAdapter,  # à implémenter si besoin
 }
+
+# Charger les adaptateurs réels si disponibles
+try:
+    from cli.adapters.claude import ClaudeAdapter
+    ADAPTERS["claude"] = ClaudeAdapter
+except (ImportError, ValueError):
+    pass  # Module anthropic ou clé API manquante
+
+try:
+    from cli.adapters.copilot import CopilotAdapter
+    ADAPTERS["copilot"] = CopilotAdapter
+    ADAPTERS["openai"] = CopilotAdapter  # alias
+except (ImportError, ValueError):
+    pass  # Module openai ou clé API manquante
+
+try:
+    from cli.adapters.gemini import GeminiAdapter
+    ADAPTERS["gemini"] = GeminiAdapter
+except (ImportError, ValueError):
+    pass  # Module google.generativeai ou clé API manquante
 
 
 # ---------------------------

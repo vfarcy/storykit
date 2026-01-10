@@ -111,7 +111,55 @@ style:
 ```
 
 - **dry-run** écrit simplement le **prompt** dans `out/prompts/` (aucun appel réseau).
-- Plus tard, on pourra implémenter un adaptateur réel (stubs fournis dans `cli/adapters/`).
+
+### Adaptateurs IA réels
+
+StoryKit supporte trois adaptateurs pour envoyer vos prompts directement aux APIs :
+
+| Provider | Module requis | Clé API | Modèle par défaut |
+|----------|--------------|---------|-------------------|
+| **claude** | `anthropic` | `ANTHROPIC_API_KEY` | `claude-3-5-sonnet-20241022` |
+| **openai/copilot** | `openai` | `OPENAI_API_KEY` | `gpt-4o` |
+| **gemini** | `google-generativeai` | `GOOGLE_API_KEY` | `gemini-1.5-pro` |
+
+**Installation :**
+```bash
+# Choisir selon votre provider
+pip install anthropic              # Claude
+pip install openai                 # OpenAI/Copilot
+pip install google-generativeai    # Gemini
+```
+
+**Configuration des clés API :**
+```bash
+# Copier le template
+copy .env.example .env
+
+# Éditer .env et renseigner vos clés
+# ANTHROPIC_API_KEY=sk-ant-...
+# OPENAI_API_KEY=sk-proj-...
+# GOOGLE_API_KEY=AIza...
+```
+
+**Activer dans storykit.config.yaml :**
+```yaml
+ai:
+  provider: claude         # claude | openai | copilot | gemini
+  model: claude-3-5-sonnet-20241022  # ou: gpt-4o, gemini-1.5-pro
+  max_tokens: 4096
+```
+
+**Utilisation :**
+```bash
+# Assemblage avec appel API direct
+python -m cli.storykit assemble --target truby7
+
+# Les fichiers générés :
+# - out/prompts/YYYYMMDD_HHMMSS_truby7.md (prompt envoyé)
+# - out/responses/YYYYMMDD_HHMMSS_truby7_response.md (réponse IA)
+```
+
+Les adaptateurs se chargent dynamiquement selon les modules installés et les clés disponibles.
 
 ### Style & Voix
 - Emplacement: `story/config/style.md`. Ce fichier définit le ton, la voix et le rythme attendus.
@@ -171,7 +219,9 @@ Templates utiles:
 
 ---
 
-## 6) Démarrage rapide (5 commandes)
+## 6) Commandes disponibles
+
+### Assemble : générer des prompts
 
 1) **Affiner la prémisse** (1 phrase + principe organisateur)  
 ```bash
@@ -200,6 +250,64 @@ python -m cli.storykit assemble --target draft --chapter 1
 
 > Chaque commande génère `out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
 > **Colle** ce prompt dans ton assistant IA, **intègre** la réponse dans les fichiers du dossier `story/`, puis **commit**.
+
+### Validate : vérifier la cohérence
+
+```bash
+# Valider tout le projet
+python -m cli.storykit validate
+
+# Désactiver l'auto-fix de style.md
+python -m cli.storykit validate --no-autofix-style
+```
+
+**Contrôles effectués :**
+- `genre_choice.yaml` : genre valide, structure correcte
+- `genre_beats.yaml` : ids uniques (gNN), statuts valides, noms présents
+- `seven_steps.yaml` : champs requis (weakness_need.internal, desire, opponent.name)
+- `scene_weave.md` : présence de pivots (First Revelation/Midpoint/Battle), références aux beats valides
+- `style.md` : rubriques Ton/Voix/Rythme présentes (auto-fix selon config)
+
+Si des problèmes sont détectés, un tableau récapitulatif s'affiche avec le numéro et le message d'erreur.
+
+### Choix des modèles LLM
+
+Modifier `story/config/storykit.config.yaml` selon le provider :
+
+**Claude (Anthropic) :**
+```yaml
+ai:
+  provider: claude
+  model: claude-3-5-sonnet-20241022    # Recommandé pour écriture
+  # model: claude-3-5-haiku-20241022   # Plus rapide, moins cher
+  # model: claude-3-opus-20240229      # Le plus puissant, plus cher
+  max_tokens: 4096
+```
+
+**OpenAI / Copilot :**
+```yaml
+ai:
+  provider: openai
+  model: gpt-4o                         # Recommandé multimodal
+  # model: gpt-4-turbo                  # Turbo (moins cher)
+  # model: gpt-3.5-turbo                # Budget (rapide, moins précis)
+  max_tokens: 4096
+```
+
+**Gemini (Google) :**
+```yaml
+ai:
+  provider: gemini
+  model: gemini-1.5-pro                 # Recommandé
+  # model: gemini-1.5-flash             # Plus rapide
+  # model: gemini-2.0-flash-exp         # Expérimental (si accès)
+  max_tokens: 4096
+```
+
+**Conseils d'usage :**
+- **Premise/Genre** : modèles légers suffisent (Haiku, GPT-3.5, Flash)
+- **Truby7/22, Weave** : modèles équilibrés (Sonnet, GPT-4o, Pro)
+- **Draft** : modèles puissants (Opus, GPT-4o, Pro) + `max_tokens: 8192` pour chapitres longs
 
 ---
 

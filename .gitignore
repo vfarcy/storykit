@@ -60,3 +60,6 @@ htmlcov/
 
 # Config local overrides (optional)
 # story/config/storykit.local.yaml
+
+# Variables d'environnement sensibles
+.env
