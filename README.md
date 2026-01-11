@@ -384,7 +384,7 @@ ai:
 
 ---
 
-**Licence** : MIT
+**Licence** : Apache License 2.0
 
 ---
 
