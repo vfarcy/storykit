@@ -80,6 +80,121 @@ cli/                 # storykit.py (assemble prompts) + adapters (Claude/OpenAI/
 out/prompts/         # Prompts générés (dry‑run)
 ```
 
+### 3.1) Fichiers obligatoires et optionnels
+
+#### Fichiers obligatoires (requis pour `validate`)
+
+La commande `python -m cli.storykit validate` vérifie la présence et la cohérence de **5 fichiers minimum** :
+
+1. **`story/config/style.md`**  
+   - Rubriques requises : `Ton`, `Voix`, `Rythme`
+   - Auto-fix : si `style.autofix: true`, les rubriques manquantes sont ajoutées automatiquement
+   - Sections optionnelles : contrôlées par `style.optional_autofix` (`forbidden`, `examples`, `both`, ou `none`)
+
+2. **`story/genre/genre_choice.yaml`**  
+   - Genre valide et structure correcte
+   - Définit la promesse au lectorat
+
+3. **`story/genre/genre_beats.yaml`**  
+   - IDs uniques (format `gNN`)
+   - Statuts valides pour chaque beat
+   - Noms présents pour tous les beats
+
+4. **`story/truby/seven_steps.yaml`**  
+   - Champs requis minimum :
+     - `weakness_need.internal` : faiblesse psychologique du protagoniste
+     - `desire` : objectif conscient poursuivi
+     - `opponent.name` : identité de l'opposant principal
+
+5. **`story/outline/scene_weave.md`**  
+   - Présence des pivots obligatoires : First Revelation, Midpoint, Battle
+   - Références aux beats valides (depuis `genre_beats.yaml`)
+   - Tissage de scènes cohérent avec la structure
+
+Ces 5 fichiers forment le **squelette minimal** pour qu'un projet passe la validation et garantit la cohérence de base entre genre, structure et scènes.
+
+#### Fichiers optionnels (utilisés par `assemble` mais non vérifiés par `validate`)
+
+Ces fichiers enrichissent le contexte et la profondeur du récit selon la complexité du projet :
+
+**Structure avancée (Truby) :**
+
+- **`story/truby/twenty_two_steps.yaml`**  
+  *Utilité* : Détailler la structure pour récits complexes  
+  - Complète les 7 étapes avec 22 pivots précis (révélations, gauntlet, visite à la mort, etc.)
+  - Prévient les "trous" de causalité  
+  - Utilisé par `assemble --target truby22`  
+  *Quand l'utiliser* : romans longs, intrigues multiples, arcs narratifs denses
+
+- **`story/truby/character_web.yaml`**  
+  *Utilité* : Définir les personnages par contraste  
+  - Fonctions dramatiques (allié, rival, mentor, faux allié...)
+  - Valeurs en tension vs protagoniste
+  - Trajectoires relationnelles  
+  *Quand l'utiliser* : cast étendu, dynamiques de groupe complexes
+
+- **`story/truby/moral_argument.md`**  
+  *Utilité* : Articuler le thème sans "message plaqué"  
+  - Thèse ↔ antithèse ↔ synthèse
+  - Incarner le débat moral par des actes (pas des discours)
+  - Guider les choix moraux du protagoniste  
+  *Quand l'utiliser* : fiction thématique, récit à portée philosophique
+
+- **`story/truby/story_world.md`**  
+  *Utilité* : Monde narratif reflétant l'intériorité du héros  
+  *Quand l'utiliser* : univers élaborés, SF/fantasy, thrillers géographiques
+
+- **`story/truby/symbol_web.yaml`**  
+  *Utilité* : Symboles récurrents compressant du sens  
+  *Quand l'utiliser* : récits à forte dimension poétique ou métaphorique
+
+**Documentation et planification :**
+
+- **`story/premise/premise.md`**  
+  *Utilité* : Cristalliser l'intention initiale  
+  - 1 phrase = germe de l'histoire
+  - Principe organisateur (ce qui rend le récit unique)
+  - Promesse de genre  
+  *Quand l'utiliser* : phase exploratoire, pitcher le projet
+
+- **`story/research/*`**  
+  *Utilité* : Sources et documentation  
+  - Contexte historique/géographique
+  - Jargon professionnel (polar, médical, juridique...)
+  - Références culturelles  
+  *Quand l'utiliser* : non-fiction narrative, romans documentés, thriller technique
+
+- **`story/tasks/*`**  
+  *Utilité* : Tâches éditoriales et checklists  
+  - Suivi des révisions
+  - Points à approfondir
+  - Notes de relecture  
+  *Quand l'utiliser* : gestion de projet, collaboration
+
+**Rédaction :**
+
+- **`story/drafting/*`**  
+  *Utilité* : Brouillons de chapitres  
+  - Versioning des rédactions successives
+  - Comparaison avant/après révisions  
+  *Quand l'utiliser* : phase de rédaction (`assemble --target draft`)
+
+#### Stratégie d'utilisation progressive
+
+**Minimal viable** (5 fichiers obligatoires) :  
+→ Genre, beats, 7 étapes, weave, style  
+→ **Suffit pour** : nouvelles, projets courts, structure simple
+
+**Complexité moyenne** (+ 3-4 optionnels) :  
+→ Ajouter : 22 étapes, character web, moral argument  
+→ **Pour** : romans standards, arcs travaillés, personnages multiples
+
+**Projet ambitieux** (tous fichiers) :  
+→ Inclure : research, story world, symbol web, tasks  
+→ **Pour** : saga, thriller documenté, fiction littéraire, univers complexes
+
+**Principe** : commencer minimal, enrichir progressivement si le prompt manque de contraintes ou de contexte. Les fichiers optionnels sont des outils à mobiliser selon le besoin, pas des obligations.
+
 ---
 
 ## 4) Installation
