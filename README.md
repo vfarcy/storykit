@@ -195,6 +195,45 @@ Ces fichiers enrichissent le contexte et la profondeur du récit selon la comple
 
 **Principe** : commencer minimal, enrichir progressivement si le prompt manque de contraintes ou de contexte. Les fichiers optionnels sont des outils à mobiliser selon le besoin, pas des obligations.
 
+#### Pourquoi les 22 étapes ne sont-elles pas validées ?
+
+La commande `validate` se concentre sur les **5 fichiers obligatoires** et ne vérifie pas les 22 étapes pour plusieurs raisons de design :
+
+1. **Redondance structurelle**  
+   Les 22 étapes sont une **expansion détaillée** des 7 étapes. Si `seven_steps.yaml` est valide, le squelette narratif fondamental est garanti. Les 22 étapes ajoutent de la granularité mais ne changent pas la logique de base (faiblesse → désir → opposant → bataille → transformation).
+
+2. **Principe de minimalité**  
+   StoryKit suit une philosophie **"minimal viable"** :
+   - Les **7 étapes** = socle universel (toute histoire en a besoin)
+   - Les **22 étapes** = raffinement optionnel (seulement si la complexité le justifie)
+   
+   Obliger la validation des 22 étapes forcerait tous les projets à les remplir, même les nouvelles ou récits courts qui n'en ont pas besoin.
+
+3. **Complexité de validation**  
+   Valider 22 pivots avec leurs **interdépendances causales** serait beaucoup plus lourd :
+   - Vérifier que "Apparent Defeat" suit logiquement "Gauntlet"
+   - S'assurer que "Visit to Death" précède "Battle"
+   - Contrôler la cohérence des révélations successives
+   
+   Cette validation nécessiterait des règles métier complexes qui alourdiraient le CLI sans bénéfice proportionnel.
+
+4. **Distinction cohérence vs exhaustivité**  
+   `validate` vérifie la **cohérence minimale** (les fichiers essentiels existent et sont structurés correctement), pas l'**exhaustivité narrative**. Les 5 fichiers obligatoires garantissent :
+   - Genre défini (promesse au lecteur)
+   - Structure de base (7 étapes)
+   - Beats de genre présents
+   - Scènes tissées avec pivots clés
+   - Style défini
+   
+   C'est suffisant pour démarrer `assemble` et produire des prompts cohérents.
+
+5. **Responsabilité créative**  
+   Les **22 étapes** relèvent du **travail créatif avancé**. Les valider automatiquement impliquerait d'imposer des contraintes rigides sur des choix narratifs subtils. StoryKit préfère :
+   - **Valider** les fondations (7 étapes, beats, weave)
+   - **Faire confiance** à l'auteur pour les raffinements (22 étapes, character web, moral argument)
+
+Cette approche permet à StoryKit de rester **flexible** tout en garantissant une base solide. Les fichiers optionnels enrichissent le contexte pour `assemble` sans alourdir le processus de validation.
+
 ---
 
 ## 4) Installation
