@@ -20,11 +20,22 @@ Ce CLI propose deux commandes :
 Dépendances : pyyaml (yaml), rich (facultatif pour l’affichage)
 """
 
+
 import argparse
 import sys
 import re
 from pathlib import Path
 from datetime import datetime
+
+# Charger les variables d'environnement depuis .env à la racine du projet
+try:
+    import os
+    from pathlib import Path
+    from dotenv import load_dotenv
+    # Force le chargement du .env à la racine du projet, même si le cwd est différent
+    load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / ".env", override=True)
+except ImportError:
+    pass  # python-dotenv non installé, ignorer
 
 import yaml  # pip install pyyaml
 
@@ -491,6 +502,8 @@ def main(argv=None):
     cfg = load_config()
     provider = cfg.get("ai", {}).get("provider", "dry-run")
     AdapterCls = ADAPTERS.get(provider, DryRunAdapter)
+    import os
+    print('GOOGLE_API_KEY:', os.getenv('GOOGLE_API_KEY'))
     adapter = AdapterCls()
 
     payload = assemble_payload(args.target, chapter=args.chapter)

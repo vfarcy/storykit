@@ -1,7 +1,7 @@
 
 ai:
-  provider: dry-run
-  model: ""
+  provider: gemini
+  model: "gemini-2.5-flash"
   max_tokens: 1800
 project:
   root: ./story

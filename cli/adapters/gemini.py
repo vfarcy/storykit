@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 try:
-    import google.generativeai as genai
+    import google.genai as genai
 except ImportError:
     genai = None
 
@@ -26,36 +26,48 @@ class GeminiAdapter:
                 "GOOGLE_API_KEY manquante. "
                 "Définissez-la dans .env ou comme variable d'environnement."
             )
-        genai.configure(api_key=api_key)
+        # Plus besoin de genai.configure avec google-genai >= 1.0
+        self.api_key = api_key
+        # Initialisation du client Gemini
+        self.client = genai.Client(api_key=api_key)
         
     def send(self, payload: str, meta: dict) -> str:
         """
         Envoie le prompt à Gemini et retourne la réponse.
-        Sauvegarde aussi la réponse dans out/responses/.
+        Sélectionne automatiquement le modèle optimal selon la tâche, sauf override explicite.
         """
-        model_name = meta.get("model") or "gemini-1.5-pro"
+        # Sélection automatique selon la tâche (target)
+        target = meta.get("target", "")
+        user_model = meta.get("model")
+        # Table de correspondance tâche → modèle
+        task_model_map = {
+            "premise": "gemini-2.5-flash",
+            "genre": "gemini-2.5-flash",
+            "truby7": "gemini-2.5-flash",
+            "truby22": "gemini-2.5-pro",
+            "weave": "gemini-2.5-pro",
+            "draft": "gemini-2.5-pro",
+        }
+        # Si override explicite, priorité à l'utilisateur
+        if user_model:
+            model_name = user_model
+        else:
+            model_name = task_model_map.get(target, "gemini-2.5-flash")
         max_tokens = meta.get("max_tokens", 4096)
-        
         try:
-            model = genai.GenerativeModel(model_name)
-            
-            # Configuration de génération
-            generation_config = genai.types.GenerationConfig(
-                max_output_tokens=max_tokens,
+            from google.genai import types
+            config = types.GenerateContentConfig(
                 temperature=0.7,
+                max_output_tokens=max_tokens
             )
-            
-            response = model.generate_content(
-                payload,
-                generation_config=generation_config
+            response = self.client.models.generate_content(
+                model=model_name,
+                contents=payload,
+                config=config
             )
-            
-            content = response.text if hasattr(response, 'text') else str(response)
-            
+            content = getattr(response, 'text', None) or str(response)
             self._save_response(content, meta)
-            
-            return f"[gemini] Réponse reçue ({len(content)} caractères) — sauvegardée dans out/responses/"
-            
+            return f"[gemini] Modèle utilisé : {model_name} — Réponse reçue ({len(content)} caractères) — sauvegardée dans out/responses/"
         except Exception as e:
             return f"[gemini] Erreur: {e}"
 

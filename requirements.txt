@@ -1,8 +1,10 @@
+
 # Core dependencies
 pyyaml
 rich
+python-dotenv
 
 # Optional LLM providers (install only those you use)
 # anthropic
 # openai
-# google-generativeai
+# google-genai

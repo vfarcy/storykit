@@ -325,14 +325,14 @@ StoryKit supporte trois adaptateurs pour envoyer vos prompts directement aux API
 |----------|--------------|---------|-------------------|
 | **claude** | `anthropic` | `ANTHROPIC_API_KEY` | `claude-3-5-sonnet-20241022` |
 | **openai/copilot** | `openai` | `OPENAI_API_KEY` | `gpt-4o` |
-| **gemini** | `google-generativeai` | `GOOGLE_API_KEY` | `gemini-1.5-pro` |
+| **gemini** | `google-genai` | `GOOGLE_API_KEY` | `gemini-2.5-flash` |
 
 **Installation :**
 ```bash
 # Choisir selon votre provider
 pip install anthropic              # Claude
 pip install openai                 # OpenAI/Copilot
-pip install google-generativeai    # Gemini
+pip install google-genai           # Gemini (nouveau)
 ```
 
 **Configuration des clés API :**
@@ -350,7 +350,7 @@ copy .env.example .env
 ```yaml
 ai:
   provider: claude         # claude | openai | copilot | gemini
-  model: claude-3-5-sonnet-20241022  # ou: gpt-4o, gemini-1.5-pro
+  model: claude-3-5-sonnet-20241022  # ou: gpt-4o, gemini-2.5-flash
   max_tokens: 4096
 ```
 
@@ -503,11 +503,28 @@ ai:
 ```yaml
 ai:
   provider: gemini
-  model: gemini-1.5-pro                 # Recommandé
-  # model: gemini-1.5-flash             # Plus rapide
-  # model: gemini-2.0-flash-exp         # Expérimental (si accès)
+  model: gemini-2.5-flash               # Recommandé (2026)
+  # model: gemini-2.0-flash             # Version précédente
+  # model: gemini-1.5-flash             # Ancienne version (si encore disponible)
   max_tokens: 4096
 ```
+
+**Sélection automatique du modèle Gemini :**
+
+Par défaut, StoryKit choisit automatiquement le modèle Gemini le plus adapté selon la tâche :
+
+- `premise`, `genre`, `truby7` : modèle rapide/économique (`gemini-2.5-flash`)
+- `draft`, `truby22`, `weave` : modèle qualitatif/long (`gemini-2.5-pro`)
+
+Si tu renseignes explicitement `model:` dans la config ou via l’option CLI/meta, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s’applique.
+
+Ce mécanisme garantit :
+- Robustesse (jamais d’erreur 404 si un modèle disparaît)
+- Performance optimale selon la tâche
+- Liberté utilisateur pour forcer un modèle précis si besoin
+
+> Astuce : tu peux toujours surcharger ponctuellement le modèle via la config YAML ou en passant `model` dans les options avancées Python.
+> ⚠️ Les modèles Gemini évoluent régulièrement. Si une erreur "404 NOT_FOUND" apparaît, essayez la version la plus récente (ex : gemini-2.5-flash). Utilisez la commande ListModels de l'API Google pour voir les modèles disponibles avec votre clé.
 
 **Conseils d'usage :**
 - **Premise/Genre** : modèles légers suffisent (Haiku, GPT-3.5, Flash)
