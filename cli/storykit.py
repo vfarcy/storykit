@@ -81,6 +81,14 @@ def load_config() -> dict:
     return read_yaml(CONFIG)
 
 
+def demote_headers(text: str, levels: int = 1) -> str:
+    """Ajoute des '#' aux titres markdown existants pour les décaler."""
+    if not text:
+        return ""
+    prefix = "#" * levels
+    return re.sub(r"^(#+)", lambda m: prefix + m.group(1), text, flags=re.MULTILINE)
+
+
 # ---------------------------
 # Assemble: construction de prompt
 # ---------------------------
@@ -105,49 +113,60 @@ def assemble_payload(target: str, chapter: int | None = None) -> str:
 
     # Construire le header de manière sûre (évite l’erreur d’“unterminated f-string”)
     header_lines = []
-    header_lines.append("## CONTEXTE GÉNÉRAL\n")
-    header_lines.append("### Prémisse\n")
-    header_lines.append(p["premise"] + "\n")
+    header_lines.append("# CONTEXTE GÉNÉRAL\n")
+
+    header_lines.append("## Prémisse\n")
+    header_lines.append(demote_headers(p["premise"], 2) + "\n")
 
     # Inclure systématiquement le style/voix si présent
     if p["style"].strip():
-        header_lines.append("### Style & Voix\n")
-        header_lines.append(p["style"] + "\n\n")
+        header_lines.append("## Style & Voix\n")
+        header_lines.append(demote_headers(p["style"], 2) + "\n\n")
 
     if target in ("truby7", "truby22", "web", "genre", "weave", "draft"):
-        header_lines.append("### 7 étapes\n```yaml\n")
+        header_lines.append("## 7 étapes\n```yaml\n")
         header_lines.append(p["seven"])
         header_lines.append("\n```\n\n")
 
-        header_lines.append("### 22 étapes\n```yaml\n")
+        header_lines.append("## 22 étapes\n```yaml\n")
         header_lines.append(p["twentytwo"])
         header_lines.append("\n```\n\n")
 
-        header_lines.append("### Argument moral\n")
-        header_lines.append(p["moral"] + "\n\n")
+        header_lines.append("## Argument moral\n")
+        header_lines.append(demote_headers(p["moral"], 2) + "\n\n")
 
-        header_lines.append("### Web de personnages\n```yaml\n")
+        header_lines.append("## Web de personnages\n```yaml\n")
         header_lines.append(p["web"])
         header_lines.append("\n```\n\n")
 
-        header_lines.append("### Monde de l’histoire\n")
-        header_lines.append(p["world"] + "\n\n")
+        header_lines.append("## Monde de l’histoire\n")
+        header_lines.append(demote_headers(p["world"], 2) + "\n\n")
 
-        header_lines.append("### Symboles\n```yaml\n")
+        header_lines.append("## Symboles\n```yaml\n")
         header_lines.append(p["symbols"])
         header_lines.append("\n```\n\n")
 
-        header_lines.append("### Genre\n```yaml\n")
+        header_lines.append("## Genre\n```yaml\n")
         header_lines.append(p["genre"])
         header_lines.append("\n```\n\n")
 
-        header_lines.append("### Beats de genre\n```yaml\n")
+        header_lines.append("## Beats de genre\n```yaml\n")
         header_lines.append(p["beats"])
         header_lines.append("\n```\n\n")
 
+        if p["weave"].strip():
+            header_lines.append("## Scene Weave\n")
+            header_lines.append(demote_headers(p["weave"], 2) + "\n\n")
+
     # Instructions selon la target
     instructions_lines = []
-    instructions_lines.append("## INSTRUCTIONS\n")
+    instructions_lines.append("# INSTRUCTIONS\n")
+
+    
+
+        
+
+    
     if target == "premise":
         instructions_lines += [
             "- Affiner la prémisse en 1 phrase claire et porteuse d’un enjeu.\n",
