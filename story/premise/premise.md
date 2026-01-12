@@ -1,12 +1,9 @@
 
 # Prémisse (une phrase)
-Quand une journaliste indépendante enquête sur la disparition d’un juge anticorruption dans une ville
-minée par les intérêts privés, la personne doit démêler un réseau de mensonges avant qu’un faux coupable
-ne soit sacrifié, ce qui révèle que la vérité exige un prix personnel.
+Pour innocenter un condamné d'avance, une journaliste doit démanteler la conspiration derrière la disparition d'un juge intègre, au risque de sacrifier sa propre sécurité et ses certitudes morales.
 
 ## Principe organisateur (Designing principle)
-- "Chaque indice est une histoire concurrente" : l’enquête confronte et compare des versions du réel
-  jusqu’à faire émerger la plus cohérente.
+- Chaque preuve trouvée ne révèle pas la vérité, mais une strate de tromperie plus ancienne.
 
 ## Promesse au lectorat
-- Polar d’enquête contemporain, tension morale, résolution logique sans deus ex machina.
+- Le lectorat découvrira une immersion sans concession dans les rouages d'une cité corrompue, où la résolution ne dépend ni de la chance ni de la force, mais de la capacité de la protagoniste à décrypter les silences et les contradictions d'une ville qui a tout intérêt à se taire. Le dénouement offrira une satisfaction intellectuelle totale, ancrée dans une réalité sociale tangible et une tension psychologique constante.
