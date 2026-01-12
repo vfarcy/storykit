@@ -58,8 +58,8 @@ StoryKit fournit :
 de ces fichiers ;
 - des **templates d’issues** (slash‑commands) pour guider la collaboration et garder la **traçabilité**.
 
-> Le kit **n’impose pas** de modèle IA : tu restes libre d’utiliser Copilot, Claude, Gemini, etc.  
-> L’assemblage produit un **prompt reproductible** que tu colles tel quel dans l’assistant IA.
+> Le kit **n’impose pas** de modèle IA : vous restez libre d’utiliser Copilot, Claude, Gemini, etc.  
+> L’assemblage produit un **prompt reproductible** que vous collez tel quel dans l’assistant IA.
 
 ---
 
@@ -246,7 +246,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-> Les packages LLM sont **optionnels**. Tu peux utiliser `assemble` et `validate` sans aucun provider.
+> Les packages LLM sont **optionnels**. Vous pouvez utiliser `assemble` et `validate` sans aucun provider.
 > Pour activer un adaptateur et envoyer les prompts à une API, installe le module du provider
 > (voir section « Adaptateurs IA réels »).
 
@@ -454,7 +454,7 @@ python -m cli.storykit assemble --target draft --chapter 1
 ```
 
 > Chaque commande génère `out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
-> **Colle** ce prompt dans ton assistant IA, **intègre** la réponse dans les fichiers du dossier `story/`, puis **commit**.
+> **Collez** ce prompt dans votre assistant IA, **intégrez** la réponse dans les fichiers du dossier `story/`, puis **commit**.
 
 ### Validate : vérifier la cohérence
 
@@ -516,14 +516,14 @@ Par défaut, StoryKit choisit automatiquement le modèle Gemini le plus adapté 
 - `premise`, `genre`, `truby7` : modèle rapide/économique (`gemini-2.5-flash`)
 - `draft`, `truby22`, `weave` : modèle qualitatif/long (`gemini-2.5-pro`)
 
-Si tu renseignes explicitement `model:` dans la config ou via l’option CLI/meta, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s’applique.
+ Si vous renseignez explicitement `model:` dans la config ou via l’option CLI/meta, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s’applique.
 
 Ce mécanisme garantit :
 - Robustesse (jamais d’erreur 404 si un modèle disparaît)
 - Performance optimale selon la tâche
 - Liberté utilisateur pour forcer un modèle précis si besoin
 
-> Astuce : tu peux toujours surcharger ponctuellement le modèle via la config YAML ou en passant `model` dans les options avancées Python.
+> Astuce : vous pouvez toujours surcharger ponctuellement le modèle via la config YAML ou en passant `model` dans les options avancées Python.
 > ⚠️ Les modèles Gemini évoluent régulièrement. Si une erreur "404 NOT_FOUND" apparaît, essayez la version la plus récente (ex : gemini-2.5-flash). Utilisez la commande ListModels de l'API Google pour voir les modèles disponibles avec votre clé.
 
 **Conseils d'usage :**
@@ -574,7 +574,7 @@ python -m cli.storykit assemble --target premise
 # → out/prompts/YYYYMMDD_HHMMSS_premise.md
 ```
 
-Ensuite, colle le prompt dans ton assistant IA et intègre la réponse dans les fichiers du dossier `story/`.
+Ensuite, collez le prompt dans votre assistant IA et intégrez la réponse dans les fichiers du dossier `story/`.
 
 ### Ouvrir le dernier prompt généré (one‑liner PowerShell)
 
