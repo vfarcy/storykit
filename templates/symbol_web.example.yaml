@@ -1,0 +1,18 @@
+# TEMPLATE: symbol_web.yaml
+# Utilité : Sert à cartographier les symboles, couleurs, objets et motifs récurrents, ainsi que leur association aux personnages ou à l’univers.
+# Comment configurer :
+# - Ajoutez des palettes de couleurs, objets, motifs selon vos besoins.
+# - Utilisez 'mapping' pour lier des symboles à des personnages ou lieux.
+#
+# IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
+
+# ---
+symbols:
+  palettes:
+    color: []
+    objects: []
+    motifs: []
+  mapping:
+    hero: []
+    opponent: []
+    story_world: []

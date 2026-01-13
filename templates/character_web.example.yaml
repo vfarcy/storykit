@@ -1,0 +1,34 @@
+# TEMPLATE: character_web.yaml
+# Utilité : Décrit les personnages principaux, leurs fonctions, désirs, faiblesses et relations.
+# Comment configurer :
+# - Ajoutez, retirez ou modifiez les personnages selon votre histoire.
+# - Chaque personnage doit avoir un id, un nom, une fonction, des désirs, etc.
+# - Utilisez 'contrast_with' pour indiquer les oppositions ou alliances clés.
+#
+# IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
+
+# ---
+characters:
+  - id: hero
+    name: "Nora Vidal"
+    function: "protagoniste (journaliste d’investigation)"
+    weakness: "Naïveté morale; confiance excessive"
+    need: "Mettre la vérité au-dessus de la loyauté personnelle"
+    desire: "Comprendre la disparition du juge"
+    moral_values: ["vérité","justice","responsabilité"]
+    contrast_with: ["opponent","ally_false","ally_true"]
+  - id: opponent
+    name: "Victor Lenoir"
+    function: "opposant principal (magnat immobilier)"
+    desire: "Protéger ses chantiers et réseaux"
+    moral_argument_inverse: "Le pouvoir achète la version du réel"
+  - id: ally_false
+    name: "Lieutenant Darzac"
+    function: "faux allié (police)"
+    desire: "Promotions rapides"
+    moral_argument_inverse: "La fin justifie les moyens"
+  - id: ally_true
+    name: "Sofia"
+    function: "alliée data (analyste télécoms)"
+    desire: "Sortir un scoop propre"
+    moral_argument_inverse: "Les faits avant tout, sans drama"
