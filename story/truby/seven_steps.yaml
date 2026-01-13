@@ -1,27 +1,29 @@
 seven_steps:
   weakness_need:
-    internal: "Dépendance extrême à la technologie : Martin panique à l’idée de rater un mail, ne sait pas cuisiner sans micro-ondes, et croit que la simplicité est à portée de main… tant qu’il a Google."
-    moral_problem: "Il veut prouver qu’il peut vivre sans technologie, mais il triche, râle, et fait tout pour que ses proches ne voient pas ses échecs."
-  desire: "Survivre une semaine sans aucun appareil moderne, et en tirer un livre drôle."
+    internal: "Dependance extreme a la technologie : Martin panique a l'idee de rater un mail, ne sait pas cuisiner sans micro-ondes, et croit que la simplicite est a portee de main tant qu'il a Google."
+    moral_problem: "Il veut prouver qu'il peut vivre sans technologie, mais il triche, rale, et fait tout pour que ses proches ne voient pas ses echecs."
+  desire: "Survivre une semaine sans aucun appareil moderne, et en tirer un livre drole."
+  opponent:
+    name: "Monsieur Bernard, la tentation technologique, et la famille en manque d'ecrans"
   steps:
-    - id: s01
-      name: Faiblesse et besoin
-      description: Martin est incapable de se débrouiller sans gadgets, mais rêve d’authenticité et d’admiration familiale.
-    - id: s02
-      name: Désir
-      description: Il veut prouver à sa famille (et à lui-même) qu’il peut survivre une semaine sans technologie, et en faire un récit comique.
-    - id: s03
-      name: Opposants
-      description: Sa propre maladresse, la tentation constante (Wi-Fi, micro-ondes), ses enfants en manque d’écrans, et Monsieur Bernard qui le met au défi.
-    - id: s04
-      name: Plan
-      description: Remplacer chaque outil moderne par une solution « à l’ancienne » : feu de bois, courrier papier, jeux de société, recettes de grand-mère…
-    - id: s05
-      name: Bataille
-      description: Les catastrophes s’enchaînent : pain brûlé, disputes familiales, courrier perdu, mutinerie des enfants, conseils douteux du voisin.
-    - id: s06
-      name: Révélation
-      description: Martin réalise que le vrai défi n’est pas la technologie, mais d’accepter ses propres limites, d’en rire et de partager ses échecs.
-    - id: s07
-      name: Nouvelle synthèse
-      description: Il retrouve un équilibre : un peu de progrès, beaucoup d’humour, et une famille (presque) réconciliée autour d’un grille-pain… parfois débranché.
+    - id: g01
+      name: "Faiblesse et besoin"
+      description: "Martin est incapable de se debrouiller sans gadgets, mais reve d'authenticite et d'admiration familiale."
+    - id: g02
+      name: "Desir"
+      description: "Il veut prouver a sa famille (et a lui-meme) qu'il peut survivre une semaine sans technologie, et en faire un recit comique."
+    - id: g03
+      name: "Opposants"
+      description: "Sa propre maladresse, la tentation constante (Wi-Fi, micro-ondes), ses enfants en manque d'ecrans, et Monsieur Bernard qui le met au defi."
+    - id: g04
+      name: "Plan"
+      description: "Remplacer chaque outil moderne par une solution a l'ancienne : feu de bois, courrier papier, jeux de societe, recettes de grand-mere."
+    - id: g05
+      name: "Bataille"
+      description: "Les catastrophes s'enchainent : pain brule, disputes familiales, courrier perdu, mutinerie des enfants, conseils douteux du voisin."
+    - id: g06
+      name: "Revelation"
+      description: "Martin realise que le vrai defi n'est pas la technologie, mais d'accepter ses propres limites, d'en rire et de partager ses echecs."
+    - id: g07
+      name: "Nouvelle synthese"
+      description: "Il retrouve un equilibre : un peu de progres, beaucoup d'humour, et une famille (presque) reconciliee autour d'un grille-pain parfois debranche."
