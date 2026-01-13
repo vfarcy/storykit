@@ -1,3 +1,8 @@
+# Guide de remplissage
+# - Rôle : détailler la progression avec les 22 étapes de Truby pour éviter les trous de causalité et enrichir le scene weave.
+# - Champs : id (01–22), name (intitulé d’étape), status (seed|draft|locked|done), notes (détail actionnable : conflit, décision, valeur en jeu).
+# - Bonnes pratiques : garder les ids stables, préciser les révélations et décisions, relier chaque étape aux beats/valeurs du genre ; passer en locked quand la chaîne causale tient.
+# - Usage : sert aux prompts truby22/weave/draft ; ajuste après tout changement majeur d’opposant ou de plan.
 
 twenty_two_steps:
   - id: 01

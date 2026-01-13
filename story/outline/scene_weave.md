@@ -1,3 +1,4 @@
+> Guide de remplissage : chaque ligne = une scène. Indiquer la fonction (Truby/22 steps), lieu, conflit, décision, valeur en jeu, et le beat de genre (id gNN). Doit contenir au moins un pivot (First Revelation, Midpoint, Battle, Self-Revelation).
 
 # Scene Weave (tissage de scènes) — Polar d’enquête
 

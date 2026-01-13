@@ -1,3 +1,9 @@
+# Guide de remplissage
+# - Rôle : lister les beats de genre obligatoires (promesses au lectorat) pour le scene weave.
+# - Champs : id (gNN unique), name (intitulé court), description (intention/contrainte), status (planned|locked|done).
+# - Statuts : planned = brouillon, locked = validé et figé, done = livré par une scène écrite.
+# - Adaptation : ajoute/supprime des beats, renumérote proprement g01, g02… ; reporte chaque id dans la colonne Beat du scene_weave.md.
+# - Garde 6–10 beats max pour rester maniable ; la description doit permettre de tester si le beat est rempli.
 
 required_beats:
   - id: g01

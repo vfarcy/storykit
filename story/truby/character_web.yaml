@@ -1,3 +1,8 @@
+# Guide de remplissage
+# - Rôle : définir un web de personnages contrasté (fonctions, valeurs, désirs) pour nourrir l’intrigue et le thème.
+# - Champs minimum utiles : id (slug court), name, function (rôle dramatique), desire (objectif), weakness/need pour le héros, moral_values ou moral_argument_inverse pour situer l’axe moral.
+# - Bonnes pratiques : viser 4–8 personnages clés ; assurer des contrastes clairs (valeurs opposées au héros, faux alliés, rival) ; relier chaque personnage à au moins une tension morale.
+# - Usage : sert aux prompts truby7/truby22/web/draft ; garde les ids stables si tu réutilises dans le scene weave ou les beats.
 
 characters:
   - id: hero

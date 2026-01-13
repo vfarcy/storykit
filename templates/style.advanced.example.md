@@ -1,3 +1,5 @@
+> Guide de remplissage : illustrer Ton, Voix, Rythme avec exemples conformes/non conformes. Formuler des exemples actionnables, courts, utilisables comme rappel de style.
+
 # Exemples avancés — conforme / non conforme
 
 ## Ton

@@ -1,3 +1,11 @@
+# Guide de remplissage
+# - Rôle : définir une grammaire symbolique cohérente (couleurs, objets, motifs) pour renforcer thème et arcs.
+# - Champs :
+#   - palettes.color/objects/motifs : listes courtes (3–7) de symboles récurrents.
+#   - mapping : associe les symboles aux pôles dramatiques (hero, opponent, story_world). Tu peux ajouter d’autres clés (allies, love_interest...).
+# - Bonnes pratiques : privilégier des symboles actionnables en scène (objet manipulé, motif visuel/sonore), éviter la surcharge, garder la cohérence tonale du genre.
+# - Usage : réutilise ces symboles dans le scene weave et la rédaction pour signaler les valeurs en jeu ou les renversements.
+
 symbols:
   palettes:
     color: []

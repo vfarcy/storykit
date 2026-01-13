@@ -1,3 +1,4 @@
+> Guide de remplissage : formuler Thèse (croyance de départ), Antithèse (tentation/vision opposée), Synthèse (révélation finale incarnée). Utiliser des énoncés actionnables qui pourront se prouver par des actes/scènes.
 
 # Argument moral
 

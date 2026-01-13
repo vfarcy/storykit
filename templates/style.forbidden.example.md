@@ -1,3 +1,5 @@
+> Guide de remplissage : lister ce qui est interdit ou déconseillé (mots/tournures, structures, mise en forme, registre). Reste bref et actionnable pour que l’auteur ou l’IA sache quoi ne pas produire.
+
 # Interdits stylistiques (à éviter)
 
 ## Mots et tournures

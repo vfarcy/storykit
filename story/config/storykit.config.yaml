@@ -1,13 +1,18 @@
+key: "CHANGEMOI"           # Facultatif : peut être lu par certains adaptateurs ; sinon supprimer.
 
 ai:
-  provider: gemini
-  model: "gemini-2.5-flash"
-  max_tokens: 1800
+  provider: gemini         # Ex: gemini, copilot, claude, dry-run
+  model: "gemini-2.5-flash" # Nom du modèle pour l’adaptateur choisi
+  max_tokens: 1800         # Budget de sortie
+
 project:
-  root: ./story
-language: fr
+  root: ./story            # Répertoire racine des artefacts
+
+language: fr               # Langue cible
+
 format:
-  line_width: 100
+  line_width: 100          # Largeur de ligne indicative
+
 style:
-  autofix: true            # insérer automatiquement le squelette Ton/Voix/Rythme si manquant
+  autofix: true            # Ajoute Ton/Voix/Rythme si absent dans style.md
   optional_autofix: none   # none | forbidden | examples | both (sections optionnelles)
