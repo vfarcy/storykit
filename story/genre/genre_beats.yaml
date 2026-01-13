@@ -1,41 +1,41 @@
 required_beats:
   - id: g01
-    name: "Crime/Anomalie révélée + Misdirection initiale"
-    description: "Un narratif officiel s’impose, mais un détail cloche."
+    name: "Défi absurde accepté"
+    description: "Martin annonce à sa famille et à ses amis qu’il va vivre sans technologie pendant une semaine. Tout le monde se moque gentiment, mais le défi est lancé."
     status: locked
   - id: g02
-    name: "Matrice d’enquête (indices, suspects, versions)"
-    description: "Tableau vivant des pistes; chaque indice raconte une version."
+    name: "Premiers ratés domestiques"
+    description: "Dès le premier matin, Martin échoue à faire du café sans machine et brûle les tartines. La famille commence à douter de sa survie."
     status: locked
   - id: g03
-    name: "Fausse piste (red herring) significative"
-    description: "Piste cohérente mais trompeuse, révélatrice des méthodes de l’opposant."
+    name: "Enfants en révolte"
+    description: "Privés d’écrans, les enfants organisent une mutinerie pour récupérer la tablette cachée."
     status: locked
   - id: g04
-    name: "Renversement milieu (midpoint reversal)"
-    description: "Découverte qui inverse la hiérarchie des suspects."
+    name: "Le voisin donne des conseils"
+    description: "Monsieur Bernard, expert autoproclamé de la vie sans gadgets, propose des solutions… qui empirent tout."
     status: locked
   - id: g05
-    name: "Révélation méthodologique"
-    description: "Comprendre **comment** l’opposant fabrique des versions (procédé)."
+    name: "Catastrophe culinaire"
+    description: "Tentative de cuisiner sans recette en ligne : pain carbonisé, cuisine enfumée, famille affamée."
     status: locked
   - id: g06
-    name: "Pression temporelle (clock)"
-    description: "Le faux coupable sera inculpé très bientôt."
+    name: "La tentation du Wi-Fi"
+    description: "Martin hésite à tricher en consultant discrètement son téléphone. Il lutte contre l’appel du Wi-Fi."
     status: locked
   - id: g07
-    name: "Visit to Death / Menace physique"
-    description: "Intrusion, filature, agression : mise en danger concrète."
+    name: "Révélation comique"
+    description: "Martin découvre que Monsieur Bernard triche lui aussi (radio cachée dans le cabanon)."
     status: locked
   - id: g08
-    name: "Piège & Confrontation"
-    description: "Mettre l’opposant face aux preuves dans un cadre public."
+    name: "Le chaos atteint son apogée"
+    description: "Enfants en grève, Sophie menace de rétablir l’électricité, Martin au bord de l’abandon."
     status: locked
   - id: g09
-    name: "Preuve & Explication"
-    description: "Exposer le mécanisme, reconstituer la chaîne causale devant témoins."
+    name: "Reconnaissance de l’échec"
+    description: "Martin assume ses gaffes, en rit avec sa famille, et décide d’en faire le cœur de son livre."
     status: locked
   - id: g10
-    name: "Restauration de l’ordre, à coût moral"
-    description: "Justice amorcée, mais perte personnelle durable."
+    name: "Retour à l’équilibre (presque)"
+    description: "La semaine se termine : Martin retrouve la technologie, mais garde le grille-pain débranché… par précaution."
     status: locked

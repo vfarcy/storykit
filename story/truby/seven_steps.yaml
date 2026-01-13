@@ -1,27 +1,27 @@
 seven_steps:
   weakness_need:
-    internal: "Naïveté morale : Nora croit que la vérité est un bouclier qui protège naturellement ceux qui la servent. Elle confond sa loyauté envers ses proches avec l'éthique journalistique, créant des zones d'ombre pour ne pas blesser son entourage."
-    moral_problem: "Elle est prête à taire des preuves ou à retarder des révélations pour préserver ses relations personnelles, agissant ainsi comme les corrupteurs qu'elle combat : en manipulant la réalité pour un 'bien supérieur'."
-  desire: "Identifier les responsables de la disparition du juge et innocenter le bouc émissaire désigné par la version officielle avant son inculpation définitive."
+    internal: "Dépendance extrême à la technologie : Martin panique à l’idée de rater un mail, ne sait pas cuisiner sans micro-ondes, et croit que la simplicité est à portée de main… tant qu’il a Google."
+    moral_problem: "Il veut prouver qu’il peut vivre sans technologie, mais il triche, râle, et fait tout pour que ses proches ne voient pas ses échecs."
+  desire: "Survivre une semaine sans aucun appareil moderne, et en tirer un livre drôle."
   steps:
     - id: s01
       name: Faiblesse et besoin
-      description: Martin ne sait rien faire sans Google, panique à l’idée de rater un mail, mais rêve de simplicité.
+      description: Martin est incapable de se débrouiller sans gadgets, mais rêve d’authenticité et d’admiration familiale.
     - id: s02
       name: Désir
-      description: Il veut prouver qu’il peut survivre une semaine sans technologie et en tirer un livre drôle.
+      description: Il veut prouver à sa famille (et à lui-même) qu’il peut survivre une semaine sans technologie, et en faire un récit comique.
     - id: s03
       name: Opposants
-      description: Sa propre maladresse, la tentation constante, sa famille sceptique, et Monsieur Bernard qui le met au défi.
+      description: Sa propre maladresse, la tentation constante (Wi-Fi, micro-ondes), ses enfants en manque d’écrans, et Monsieur Bernard qui le met au défi.
     - id: s04
       name: Plan
-      description: Remplacer chaque outil moderne par une solution « à l’ancienne » (avec plus ou moins de succès).
+      description: Remplacer chaque outil moderne par une solution « à l’ancienne » : feu de bois, courrier papier, jeux de société, recettes de grand-mère…
     - id: s05
       name: Bataille
-      description: Les catastrophes s’enchaînent : incendie de casserole, courrier perdu, enfants en révolte.
+      description: Les catastrophes s’enchaînent : pain brûlé, disputes familiales, courrier perdu, mutinerie des enfants, conseils douteux du voisin.
     - id: s06
       name: Révélation
-      description: Martin réalise que le vrai défi n’est pas la technologie, mais d’accepter ses propres limites et d’en rire.
+      description: Martin réalise que le vrai défi n’est pas la technologie, mais d’accepter ses propres limites, d’en rire et de partager ses échecs.
     - id: s07
       name: Nouvelle synthèse
-      description: Il retrouve un équilibre : un peu de progrès, beaucoup d’humour, et une famille (presque) réconciliée.
+      description: Il retrouve un équilibre : un peu de progrès, beaucoup d’humour, et une famille (presque) réconciliée autour d’un grille-pain… parfois débranché.

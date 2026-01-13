@@ -1,11 +1,16 @@
 # Prémisse
 
-Un informaticien introverti décide de relever le défi absurde de vivre une semaine entière sans technologie moderne, dans l’espoir d’écrire un livre sur l’expérience. Entre tentatives ratées de faire du feu, quiproquos avec ses voisins et révélations sur sa dépendance au micro-ondes, il découvre que la vraie aventure, c’est d’essayer de survivre à soi-même… et à sa famille.
+Un informaticien introverti tente de survivre une semaine sans technologie moderne, mais découvre que l’ennemi le plus redoutable n’est pas le feu de camp ou le micro-ondes éteint — c’est lui-même, et sa famille.
+
 
 ## Principe organisateur
 
-Chaque chapitre confronte le narrateur à une facette inattendue de la vie « déconnectée », révélant avec humour l’absurdité de nos automatismes modernes.
+1. Chaque jour, une nouvelle technologie disparaît — et avec elle, une illusion de maîtrise sur sa vie.
+2. Les objets quotidiens deviennent des antagonistes : le réveil, la cafetière, le téléphone fixe… chacun révèle une faille humaine.
+3. La déconnexion déclenche une série de quiproquos sociaux et familiaux, où chaque échec technique devient une crise existentielle.
 
 ## Promesse au lectorat
 
-Un récit drôle, auto-dérisoire et instructif sur la difficulté de décrocher, où chaque échec devient une occasion de rire (et d’apprendre) sur notre époque ultra-connectée.
+Un récit tendu, drôle et cru, où l’humain se confronte à ses propres automatismes — et où survivre sans smartphone est le moindre des défis.
+
+

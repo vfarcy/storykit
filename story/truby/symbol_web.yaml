@@ -1,15 +1,10 @@
 symbols:
   palettes:
-    color: []
-    objects: []
-    motifs: []
+    couleurs: [orange fluo, vert pelouse, bleu layette]
+    objets: [grille-pain, carnet de survie, bottes en caoutchouc]
+    motifs: [prise débranchée, pain carbonisé, notice illisible]
   mapping:
-    hero: []
-      martin: []
-      sophie: []
-      bernard: []
-      enfants: []
-    palettes:
-      color: [orange fluo, vert pelouse, bleu layette]
-      objects: [grille-pain, carnet de survie, bottes en caoutchouc]
-      motifs: [prise débranchée, pain carbonisé, notice illisible]
+    martin: [grille-pain, orange fluo]
+    sophie: [notice illisible, bleu layette]
+    bernard: [bottes en caoutchouc, vert pelouse]
+    enfants: [prise débranchée, pain carbonisé]

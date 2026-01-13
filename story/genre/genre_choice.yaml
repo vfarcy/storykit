@@ -1,5 +1,5 @@
 genre:
-  primary: "detective"
-  blends: ["thriller"]
-  philosophy: "La vérité se découvre par l’enquête et la comparaison d’histoires concurrentes."
-  promise: "Mystère résolu honnêtement, renversements logiques, fermeture des fausses pistes."
+  primary: "comédie de mœurs"
+  blends: ["chronique familiale", "satire sociale"]
+  philosophy: "On croit pouvoir contrôler sa vie en maîtrisant la technologie, mais c’est l’humour et l’acceptation de l’imprévu qui sauvent vraiment."
+  promise: "Des situations absurdes, des quiproquos familiaux, et une réflexion drôle sur notre dépendance aux objets connectés."

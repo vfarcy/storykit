@@ -1,102 +1,67 @@
-twenty_two_steps:
-  - id: 01
-    name: "Self-revelation, Need, Desire"
-    value: "Vérité vs Réputation"
-    notes: "Nora observe le vide laissé par le juge. Elle dissimule une source proche pour la protéger, révélant sa faille initiale : la loyauté avant les faits."
-  - id: 02
-    name: "Ghost & Story World"
-    value: "Ordre vs Corruption"
-    notes: "La ville portuaire s'active. Les projets immobiliers de Lenoir masquent l'absence du juge. On sent l'inertie d'un système qui veut oublier."
-  - id: 03
-    name: "Weakness & Need"
-    value: "Intégrité vs Attachement"
-    notes: "Nora refuse de publier un détail qui compromettrait Darzac. Elle pense pouvoir naviguer entre sa quête et ses amitiés."
-  - id: 04
-    name: "Inciting Event"
-    value: "Curiosité vs Conformité"
-    notes: "Au tribunal, l'annonce d'un coupable 'idéal' (le SDF) cloche. Un horodatage sur un document officiel semble avoir été retouché."
-  - id: 05
-    name: "Desire"
-    value: "Justice vs Silence"
-    notes: "Nora décide d'innocenter le condamné d'avance. Son but est clair : trouver le décalage entre le récit officiel et les faits."
-  - id: 06
-    name: "Action"
-    value: "Audace vs Sécurité"
-    notes: "Première filature des flux financiers. Elle s'approche du siège de Lenoir. Elle commence à 'cartographier les silences'."
-  - id: 07
-    name: "Opponent & Mystery"
-    value: "Transparence vs Opacité"
-    notes: "Rencontre avec Victor Lenoir. Il ne menace pas, il séduit et propose une 'autre vérité'. Nora sent la force de la Coalition."
-  - id: 08
-    name: "Fake-Ally Opponent"
-    value: "Confiance vs Trahison"
-    notes: "Darzac lui fournit des indices qui semblent valider la piste du SDF. Il l'aiguille doucement vers une impasse."
-  - id: 09
-    name: "First Revelation & Decision"
-    steps:
-      - id: t01
-        name: Self-revelation, need, and desire
-        notes: Martin réalise qu’il ne sait même pas faire du café sans machine.
-      - id: t02
-        name: Ghost and story world
-        notes: Flashback sur son enfance sans Internet (et pourquoi il n’en garde aucun bon souvenir).
-      - id: t03
-        name: Weakness and need
-        notes: Il panique à l’idée de rater un mail important, mais rêve de simplicité.
-      - id: t04
-        name: Inciting event
-        notes: Il annonce à sa famille (et sur les réseaux) son défi « semaine sans techno ».
-      - id: t05
-        name: Desire
-        notes: Prouver qu’il peut survivre et écrire un livre drôle.
-      - id: t06
-        name: Ally or allies
-        notes: Sophie, sa compagne, accepte de ne pas saboter l’expérience (mais prend des notes pour plus tard).
-      - id: t07
-        name: Opponent and/or mystery
-        notes: Les enfants, privés d’écrans, deviennent incontrôlables.
-      - id: t08
-        name: Fake-ally opponent
-        notes: Monsieur Bernard, le voisin, donne des conseils… qui empirent tout.
-      - id: t09
-        name: First revelation and decision
-        notes: Martin tente d’allumer un feu de bois et finit par enfumer la maison.
-      - id: t10
-        name: Plan
-        notes: Il dresse une liste de « solutions de secours » (aucune ne marche vraiment).
-      - id: t11
-        name: Opponent’s plan and main counterattack
-        notes: Les enfants organisent une mutinerie pour récupérer la tablette.
-      - id: t12
-        name: Drive
-        notes: Martin s’obstine, accumule les gaffes, mais refuse d’abandonner.
-      - id: t13
-        name: Attack by ally
-        notes: Sophie lui rappelle que le livre ne vaudra rien si la maison brûle.
-      - id: t14
-        name: Apparent defeat
-        notes: Il craque, rêve de micro-ondes et de Wi-Fi, mais tient bon (presque).
-      - id: t15
-        name: Second revelation and decision
-        notes: Il découvre que Monsieur Bernard triche (il a une radio cachée).
-      - id: t16
-        name: Audience revelation
-        notes: Le lecteur comprend que la vraie difficulté, c’est la mauvaise foi de tout le monde.
-      - id: t17
-        name: Third revelation and decision
-        notes: Martin décide d’assumer ses échecs et d’en rire.
-      - id: t18
-        name: Gate, gauntlet, visit to death
-        notes: Tentative de cuisiner sans recette en ligne : désastre total.
-      - id: t19
-        name: Battle
-        notes: Dernier jour : panne d’eau chaude, enfants en grève, Martin au bord de l’abandon.
-      - id: t20
-        name: Self-revelation
-        notes: Il comprend que la perfection n’existe pas, mais que l’humour sauve tout.
-      - id: t21
-        name: Moral decision
-        notes: Il choisit de publier son livre, échecs inclus.
-      - id: t22
-        name: New equilibrium
-        notes: Martin retrouve la technologie… mais garde le grille-pain débranché (par précaution).
+steps:
+  - id: t01
+    name: Self-revelation, need, and desire
+    notes: Martin réalise qu’il ne sait même pas faire du café sans machine.
+  - id: t02
+    name: Ghost and story world
+    notes: Flashback sur son enfance sans Internet (et pourquoi il n’en garde aucun bon souvenir).
+  - id: t03
+    name: Weakness and need
+    notes: Il panique à l’idée de rater un mail important, mais rêve de simplicité.
+  - id: t04
+    name: Inciting event
+    notes: Il annonce à sa famille (et sur les réseaux) son défi « semaine sans techno ».
+  - id: t05
+    name: Desire
+    notes: Prouver qu’il peut survivre et écrire un livre drôle.
+  - id: t06
+    name: Ally or allies
+    notes: Sophie, sa compagne, accepte de ne pas saboter l’expérience (mais prend des notes pour plus tard).
+  - id: t07
+    name: Opponent and/or mystery
+    notes: Les enfants, privés d’écrans, deviennent incontrôlables.
+  - id: t08
+    name: Fake-ally opponent
+    notes: Monsieur Bernard, le voisin, donne des conseils… qui empirent tout.
+  - id: t09
+    name: First revelation and decision
+    notes: Martin tente d’allumer un feu de bois et finit par enfumer la maison.
+  - id: t10
+    name: Plan
+    notes: Il dresse une liste de « solutions de secours » (aucune ne marche vraiment).
+  - id: t11
+    name: Opponent’s plan and main counterattack
+    notes: Les enfants organisent une mutinerie pour récupérer la tablette.
+  - id: t12
+    name: Drive
+    notes: Martin s’obstine, accumule les gaffes, mais refuse d’abandonner.
+  - id: t13
+    name: Attack by ally
+    notes: Sophie lui rappelle que le livre ne vaudra rien si la maison brûle.
+  - id: t14
+    name: Apparent defeat
+    notes: Il craque, rêve de micro-ondes et de Wi-Fi, mais tient bon (presque).
+  - id: t15
+    name: Second revelation and decision
+    notes: Il découvre que Monsieur Bernard triche (il a une radio cachée).
+  - id: t16
+    name: Audience revelation
+    notes: Le lecteur comprend que la vraie difficulté, c’est la mauvaise foi de tout le monde.
+  - id: t17
+    name: Third revelation and decision
+    notes: Martin décide d’assumer ses échecs et d’en rire.
+  - id: t18
+    name: Gate, gauntlet, visit to death
+    notes: Tentative de cuisiner sans recette en ligne : désastre total.
+  - id: t19
+    name: Battle
+    notes: Dernier jour : panne d’eau chaude, enfants en grève, Martin au bord de l’abandon.
+  - id: t20
+    name: Self-revelation
+    notes: Il comprend que la perfection n’existe pas, mais que l’humour sauve tout.
+  - id: t21
+    name: Moral decision
+    notes: Il choisit de publier son livre, échecs inclus.
+  - id: t22
+    name: New equilibrium
+    notes: Martin retrouve la technologie… mais garde le grille-pain débranché (par précaution).
