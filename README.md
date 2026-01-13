@@ -623,4 +623,23 @@ Ou via le script utilitaire :
 ./tools/open-latest-response.ps1 -Editor code
 ```
 
-Pour plus de détails et options, voir [tools/README.md](tools/README.md).
+Pour plus de détails et options, voir [tools/README.md](tools/README.md)
+
+## 3.2) Dossier templates/
+
+Le dossier `templates/` contient des exemples de fichiers modèles (Markdown ou YAML) pour chaque artefact narratif attendu par StoryKit :
+
+- `premise.example.md` : Exemple de prémisse structurée (phrase, principe organisateur, promesse).
+- `seven_steps.example.yaml` : Exemple des 7 étapes Truby, pour structurer l’arc du protagoniste.
+- `twenty_two_steps.example.yaml` : Exemple détaillé des 22 étapes Truby (pour récits complexes).
+- `character_web.example.yaml` : Modèle pour cartographier les personnages et leurs fonctions.
+- `moral_argument.example.md` : Exemple d’argument moral (thèse, antithèse, synthèse).
+- `story_world.example.md` : Exemple de description du monde narratif.
+- `symbol_web.example.yaml` : Modèle pour structurer les symboles récurrents du récit.
+- `genre_choice.example.yaml` : Exemple de choix de genre, philosophie et promesse au lecteur.
+- `genre_beats.example.yaml` : Modèle de beats de genre (moments-clés à respecter).
+- `scene_weave.example.md` : Exemple de tissage de scènes (scene weave).
+- `act_map.example.yaml` : Exemple de carte des actes/chapitres.
+- `style.example.md`, `style.forbidden.example.md`, `style.advanced.example.md` : Exemples de styles d’écriture, d’interdits stylistiques et de variantes avancées.
+
+Ces fichiers servent de référence pour créer tes propres artefacts dans le dossier story/. Ils garantissent la bonne structure, la cohérence des rubriques et facilitent la prise en main de StoryKit.
