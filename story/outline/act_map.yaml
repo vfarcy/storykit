@@ -1,11 +1,3 @@
-# Guide de remplissage
-# - Rôle : cartographier les actes et les chapitres pour relier structure (Truby/22 steps) et scene weave.
-# - Champs :
-#   - id : identifiant d’acte (I, II, III ou A, B, C).
-#   - chapters : liste ordonnée des numéros de chapitres inclus dans l’acte.
-# - Bonnes pratiques : garder des plages contiguës (ex: acte II = 4-10), adapter le nombre d’actes à ton format (3 actes classique ou 4 actes TV).
-# - Usage : sert aux prompts de rédaction pour rappeler l’arc par bloc ; ajuste après toute modification majeure du scene weave.
-
 acts:
   - id: I
     chapters: [1,2,3]

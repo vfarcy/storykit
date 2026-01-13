@@ -1,9 +1,3 @@
-# Guide de remplissage
-# - Rôle : fixer le squelette narratif Truby (7 étapes) qui sera réutilisé par les 22 steps, le scene weave et les prompts de rédaction.
-# - Champs requis pour la validation : weakness_need.internal, desire, opponent.name. Complète aussi moral_problem, strategy, plan, battle, self_revelation, new_equilibrium.
-# - Bonnes pratiques : formuler en phrases actionnables (ce que le perso fait/veut), garder le conflit moral explicite, aligner avec le genre/promise.
-# - Usage : mets à jour dès qu’un pivot change ; si tu précises les valeurs en jeu, ça guidera mieux les scènes.
-
 seven_steps:
   weakness_need:
     internal: "Naïveté morale : confond loyauté personnelle et quête de vérité."

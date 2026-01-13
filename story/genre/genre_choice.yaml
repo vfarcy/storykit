@@ -1,12 +1,3 @@
-# Guide de remplissage
-# - Rôle : déclarer le genre principal et les mélanges pour cadrer la promesse au lecteur.
-# - Champs requis :
-#   - primary : un des genres autorisés (detective, romance, horror, action, thriller, mystery, fantasy, sci-fi, crime).
-#   - blends : liste optionnelle de sous-genres/accents (ex: thriller, noir, procedural).
-#   - philosophy : ce que le genre affirme sur le monde (2 phrases max, actionnable pour écrire).
-#   - promise : ce que le lecteur attend (tonalité, type de résolution, type de surprises).
-# - Usage : aligne les beats (genre_beats.yaml) et le scene weave sur ce choix ; ajuste primary/blends avant de renommer ou ajouter des beats.
-
 genre:
   primary: "detective"
   blends: ["thriller"]

@@ -1,6 +1,3 @@
-
-> Guide de remplissage : préciser Ton, Voix, Rythme (requis par validate). Ajouter Atmosphère/Interdits/Exemples si utile. Formuler en consignes actionnables (ce qu’on fait ou évite en scène).
-
 # Style d’écriture
 - Ton : réaliste, sombre, tension morale.
 - Voix : focalisation interne limitée (3e personne).
