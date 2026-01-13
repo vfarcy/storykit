@@ -1,12 +1,12 @@
 seven_steps:
   weakness_need:
-    internal: "Naïveté morale : confond loyauté personnelle et quête de vérité."
-    moral_problem: "Prête à taire des infos pour protéger des proches/sources."
-  desire: "Découvrir ce qui est arrivé au juge et empêcher le sacrifice d’un bouc émissaire."
+    internal: "Naïveté morale : Nora croit que la vérité est un bouclier qui protège naturellement ceux qui la servent. Elle confond sa loyauté envers ses proches avec l'éthique journalistique, créant des zones d'ombre pour ne pas blesser son entourage."
+    moral_problem: "Elle est prête à taire des preuves ou à retarder des révélations pour préserver ses relations personnelles, agissant ainsi comme les corrupteurs qu'elle combat : en manipulant la réalité pour un 'bien supérieur'."
+  desire: "Identifier les responsables de la disparition du juge et innocenter le bouc émissaire désigné par la version officielle avant son inculpation définitive."
   opponent:
-    name: "Coalition d’élites locales (magnat de l’immobilier, chef de cabinet, flic ambitieux)."
-    strategy: "Fabriquer un coupable, manipuler la presse, menacer les témoins, enterrer les preuves."
-  plan: "Suivre l’argent, cartographier appels/dossiers, recouper sources sous couverture, publier des tests."
-  battle: "Conférence de presse + divulgation de preuves; confrontation directe avec le magnat."
-  self_revelation: "La vérité a un coût; la loyauté n’excuse pas le mensonge."
-  new_equilibrium: "Elle publie l’enquête complète, perd une relation clé, mais déclenche des poursuites."
+    name: "Victor Lenoir & la Coalition (Le 'Système')"
+    strategy: "L'adversaire n'utilise pas seulement la force, mais la saturation d'informations contradictoires. Lenoir fabrique des vérités alternatives crédibles, corrompt les alliés de Nora (Darzac) et utilise la pression sociale pour isoler la journaliste."
+  plan: "Adopter une approche technique et chirurgicale (données télécoms/flux financiers) plutôt qu'émotionnelle. Nora décide de cartographier chaque 'vérité' produite par la ville pour en trouver les sutures logiques et infiltrer les lieux de pouvoir."
+  battle: "La confrontation finale à l'Hôtel de Ville. Ce n'est pas un duel physique, mais une joute de preuves. Nora doit exposer la mécanique de falsification en direct, sous le feu des attaques personnelles de Lenoir qui menace ses proches."
+  self_revelation: "Nora réalise que la vérité n'est pas un bouclier mais un scalpel. Pour être intègre, elle doit accepter de détruire ses propres piliers de soutien (notamment son lien avec Darzac). Elle comprend que la loyauté ne peut jamais justifier le silence."
+  new_equilibrium: "L'enquête est publiée et les poursuites lancées. Nora est désormais une paria respectée mais isolée ; elle a sauvé un innocent, mais a perdu son confort moral et ses attaches. Elle accepte ce vide comme le prix de sa fonction."

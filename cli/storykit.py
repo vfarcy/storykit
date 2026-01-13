@@ -107,7 +107,7 @@ def demote_headers(text: str, levels: int = 1) -> str:
 def assemble_payload(target: str, chapter: int | None = None) -> str:
     # Charger le contenu nécessaire
     p = {
-        "premise": read_text(STORY / "premise" / "premise.md"),
+        "premise": read_text(STORY / "truby" / "premise.md"),
         "seven": read_text(STORY / "truby" / "seven_steps.yaml"),
         "twentytwo": read_text(STORY / "truby" / "twenty_two_steps.yaml"),
         "moral": read_text(STORY / "truby" / "moral_argument.md"),

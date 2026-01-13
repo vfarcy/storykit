@@ -1,5 +1,89 @@
 twenty_two_steps:
   - id: 01
-    name: Self-revelation, Need, Desire
-    status: seed
-    notes: "L’arc visé est défini par la prémisse; détails à affiner."
+    name: "Self-revelation, Need, Desire"
+    value: "Vérité vs Réputation"
+    notes: "Nora observe le vide laissé par le juge. Elle dissimule une source proche pour la protéger, révélant sa faille initiale : la loyauté avant les faits."
+  - id: 02
+    name: "Ghost & Story World"
+    value: "Ordre vs Corruption"
+    notes: "La ville portuaire s'active. Les projets immobiliers de Lenoir masquent l'absence du juge. On sent l'inertie d'un système qui veut oublier."
+  - id: 03
+    name: "Weakness & Need"
+    value: "Intégrité vs Attachement"
+    notes: "Nora refuse de publier un détail qui compromettrait Darzac. Elle pense pouvoir naviguer entre sa quête et ses amitiés."
+  - id: 04
+    name: "Inciting Event"
+    value: "Curiosité vs Conformité"
+    notes: "Au tribunal, l'annonce d'un coupable 'idéal' (le SDF) cloche. Un horodatage sur un document officiel semble avoir été retouché."
+  - id: 05
+    name: "Desire"
+    value: "Justice vs Silence"
+    notes: "Nora décide d'innocenter le condamné d'avance. Son but est clair : trouver le décalage entre le récit officiel et les faits."
+  - id: 06
+    name: "Action"
+    value: "Audace vs Sécurité"
+    notes: "Première filature des flux financiers. Elle s'approche du siège de Lenoir. Elle commence à 'cartographier les silences'."
+  - id: 07
+    name: "Opponent & Mystery"
+    value: "Transparence vs Opacité"
+    notes: "Rencontre avec Victor Lenoir. Il ne menace pas, il séduit et propose une 'autre vérité'. Nora sent la force de la Coalition."
+  - id: 08
+    name: "Fake-Ally Opponent"
+    value: "Confiance vs Trahison"
+    notes: "Darzac lui fournit des indices qui semblent valider la piste du SDF. Il l'aiguille doucement vers une impasse."
+  - id: 09
+    name: "First Revelation & Decision"
+    value: "Méthode vs Chaos"
+    notes: "Le badge retrouvé dans le parking. Nora réalise que le juge n'est jamais sorti par la porte principale. Elle décide de refaire toute la chronologie."
+  - id: 10
+    name: "Plan"
+    value: "Logique vs Intuition"
+    notes: "Nora s'allie avec Sofia (data). Le plan : ne plus écouter les gens, mais faire parler les serveurs et les antennes relais."
+  - id: 11
+    name: "Drive"
+    value: "Obsession vs Prudence"
+    notes: "Nora s'immerge dans les data. Elle néglige ses obligations sociales et commence à suspecter tout son entourage."
+  - id: 12
+    name: "Attack by Opponent"
+    value: "Survie vs Menace"
+    notes: "Le journal reçoit des pressions. Le rédacteur en chef menace Nora de mise à pied. Son espace de travail est 'visité'."
+  - id: 13
+    name: "Apparent Defeat"
+    value: "Désespoir vs Résilience"
+    notes: "Sofia perd son accès aux serveurs. L'unique témoin de Nora se rétracte. Elle se sent broyée par la machine Lenoir."
+  - id: 14
+    name: "Midpoint Reversal"
+    value: "Vérité vs Illusions"
+    notes: "Beat g04. Nora découvre que les logs d'appels ont été clonés. Le suspect n°1 n'est pas le SDF, mais le chef de cabinet de la mairie."
+  - id: 15
+    name: "Second Revelation"
+    value: "Clarté vs Manipulation"
+    notes: "Elle comprend le procédé (g05) : comment la Coalition fabrique des preuves numériques. Elle réalise que Darzac savait."
+  - id: 16
+    name: "Third Revelation"
+    value: "Sacrifice vs Confort"
+    notes: "La preuve ultime implique directement une décision passée de Nora. Pour gagner, elle devra s'auto-dénoncer sur son éthique."
+  - id: 17
+    name: "Gate, Gauntlet, Visit to Death"
+    value: "Vie vs Devoir"
+    notes: "Beat g07. Agression dans le parking. On lui vole son sac, mais pas ses sauvegardes cloud. Elle frôle la fin."
+  - id: 18
+    name: "Battle"
+    value: "Vérité vs Pouvoir"
+    notes: "Hôtel de Ville. Nora interrompt une cérémonie. Elle expose la matrice de mensonges. Duel verbal tendu avec Lenoir."
+  - id: 19
+    name: "Self-Revelation"
+    value: "Intégrité vs Loyauté"
+    notes: "Nora choisit de livrer les preuves incluant la complicité de Darzac. Elle accepte que sa loyauté était sa plus grande faiblesse."
+  - id: 20
+    name: "Moral Decision"
+    value: "Justice vs Amitié"
+    notes: "Elle envoie le 'Print'. Elle sacrifie sa relation la plus longue pour la survie de la vérité factuelle."
+  - id: 21
+    name: "Exposition (Preuve)"
+    value: "Logique vs Rhétorique"
+    notes: "Publication de l'article fleuve. La chaîne causale est démontrée. Le système ne peut plus ignorer les faits."
+  - id: 22
+    name: "New Equilibrium"
+    value: "Paix vs Solitude"
+    notes: "Le juge est retrouvé (ou son corps). L'innocent est libre. Nora est seule à sa table de café, l'esprit clair, le carnet vide."
