@@ -7,4 +7,4 @@ python-dotenv
 # Optional LLM providers (install only those you use)
 # anthropic
 # openai
-# google-genai
+google-genai
