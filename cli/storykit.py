@@ -500,14 +500,22 @@ def main(argv=None):
 
     # assemble
     cfg = load_config()
-    provider = cfg.get("ai", {}).get("provider", "dry-run")
+    ai_cfg = cfg.get("ai", {})
+    provider = ai_cfg.get("provider", "dry-run")
+    model = ai_cfg.get("model")
+    max_tokens = ai_cfg.get("max_tokens")
     AdapterCls = ADAPTERS.get(provider, DryRunAdapter)
     # import os
     # Suppression de l'affichage de la GOOGLE_API_KEY pour plus de sécurité
     adapter = AdapterCls()
 
     payload = assemble_payload(args.target, chapter=args.chapter)
-    meta = {"target": args.target, "provider": provider}
+    meta = {
+        "target": args.target,
+        "provider": provider,
+        "model": model,
+        "max_tokens": max_tokens,
+    }
     result = adapter.send(payload, meta)
     console.print(Panel(f"{result}", title="Assemble"))
 
