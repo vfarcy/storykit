@@ -502,8 +502,8 @@ def main(argv=None):
     cfg = load_config()
     provider = cfg.get("ai", {}).get("provider", "dry-run")
     AdapterCls = ADAPTERS.get(provider, DryRunAdapter)
-    import os
-    print('GOOGLE_API_KEY:', os.getenv('GOOGLE_API_KEY'))
+    # import os
+    # Suppression de l'affichage de la GOOGLE_API_KEY pour plus de sécurité
     adapter = AdapterCls()
 
     payload = assemble_payload(args.target, chapter=args.chapter)
