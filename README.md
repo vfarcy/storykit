@@ -67,8 +67,7 @@ de ces fichiers ;
 
 ```
 story/
-├─ premise/          # Prémisse & principe organisateur
-├─ truby/            # 7 étapes, 22 étapes, web de personnages, argument moral, monde, symboles
+├─ truby/            # Prémisse, 7 étapes, 22 étapes, web de personnages, argument moral, monde, symboles
 ├─ genre/            # Choix de genre & beats requis
 ├─ outline/          # Scene‑weave & carte des actes/chapitres
 ├─ research/         # Sources, notes (utile en non‑fiction)
@@ -150,7 +149,8 @@ Ces fichiers enrichissent le contexte et la profondeur du récit selon la comple
 
 **Documentation et planification :**
 
-- **`story/premise/premise.md`**  
+
+**`story/truby/premise.md`**  
   *Utilité* : Cristalliser l'intention initiale  
   - 1 phrase = germe de l'histoire
   - Principe organisateur (ce qui rend le récit unique)
@@ -553,7 +553,7 @@ Ce mécanisme garantit :
 ## 7) Workflow recommandé (Truby → texte)
 
 **Phase 1 — Intention**
-- `premise/premise.md` : 1 phrase + principe organisateur + promesse de genre.  
+- `truby/premise.md` : 1 phrase + principe organisateur + promesse de genre.  
 - `genre/` : genre principal, beats obligatoires, philosophie du genre.
 
 **Phase 2 — Structure**
