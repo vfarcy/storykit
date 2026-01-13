@@ -1,10 +1,10 @@
 # Argument moral
 
 ## Thèse (départ)
-La loyauté envers les proches justifie des zones d’ombre.
+Se déconnecter, c’est retrouver l’essentiel et la vraie liberté.
 
 ## Antithèse (tentation / vision opposée)
-La transparence absolue détruit les liens et met tout le monde en danger.
+Sans technologie, tout devient absurde, compliqué… et franchement risqué pour la santé mentale.
 
 ## Synthèse (révélation finale)
-Dire la vérité avec méthode et preuves est le seul chemin juste — même si le prix personnel est réel.
+L’essentiel n’est pas de réussir à décrocher, mais d’apprendre à rire de ses propres contradictions et de trouver un équilibre joyeux entre progrès et simplicité.

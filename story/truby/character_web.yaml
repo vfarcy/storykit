@@ -1,24 +1,30 @@
 characters:
-  - id: hero
-    name: "Nora Vidal"
-    function: "protagoniste (journaliste d’investigation)"
-    weakness: "Naïveté morale; confiance excessive"
-    need: "Mettre la vérité au-dessus de la loyauté personnelle"
-    desire: "Comprendre la disparition du juge"
-    moral_values: ["vérité","justice","responsabilité"]
-    contrast_with: ["opponent","ally_false","ally_true"]
-  - id: opponent
-    name: "Victor Lenoir"
-    function: "opposant principal (magnat immobilier)"
-    desire: "Protéger ses chantiers et réseaux"
-    moral_argument_inverse: "Le pouvoir achète la version du réel"
-  - id: ally_false
-    name: "Lieutenant Darzac"
-    function: "faux allié (police)"
-    desire: "Promotions rapides"
-    moral_argument_inverse: "La fin justifie les moyens"
-  - id: ally_true
-    name: "Sofia"
-    function: "alliée data (analyste télécoms)"
-    desire: "Sortir un scoop propre"
-    moral_argument_inverse: "Les faits avant tout, sans drama"
+  characters:
+    - id: narrateur
+      name: Martin Dubois
+      function: Protagoniste, informaticien en quête de déconnexion
+      desire: Survivre une semaine sans technologie et en tirer un livre drôle
+      weakness: Dépendance extrême aux gadgets, maladresse sociale
+      need: Accepter l’imprévu, rire de ses propres échecs
+      moral_values: Auto-dérision, curiosité, honnêteté
+
+    - id: conjointe
+      name: Sophie
+      function: Compagne pragmatique, témoin ironique
+      desire: Que Martin ne mette pas le feu à la cuisine
+      weakness: Impatience face aux lubies de Martin
+      need: Reconnaître la sincérité de la démarche
+
+    - id: voisin
+      name: Monsieur Bernard
+      function: Voisin septuagénaire, expert en vie « à l’ancienne »
+      desire: Prouver que « c’était mieux avant »
+      weakness: Nostalgie excessive, mauvaise foi comique
+      need: Accepter que le progrès a du bon
+
+    - id: enfants
+      name: Les enfants
+      function: Agents du chaos, testeurs involontaires
+      desire: Récupérer la tablette confisquée
+      weakness: Impatience, créativité débordante
+      need: Découvrir d’autres formes de jeu

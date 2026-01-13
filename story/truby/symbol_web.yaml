@@ -5,5 +5,11 @@ symbols:
     motifs: []
   mapping:
     hero: []
-    opponent: []
-    story_world: []
+      martin: []
+      sophie: []
+      bernard: []
+      enfants: []
+    palettes:
+      color: [orange fluo, vert pelouse, bleu layette]
+      objects: [grille-pain, carnet de survie, bottes en caoutchouc]
+      motifs: [prise débranchée, pain carbonisé, notice illisible]
