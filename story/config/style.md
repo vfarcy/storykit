@@ -1,16 +1,14 @@
 # Style d’écriture
-- Ton : réaliste, sombre, tension morale.
-- Voix : focalisation interne limitée (3e personne).
-- Rythme : phrases courtes, alternance narration/dialogue.
-- Atmosphère : polar urbain, détails sensoriels.
-
-
+- Ton : léger, ironique, bienveillant, avec une pointe d’autodérision.
+- Voix : narration à la première personne ou focalisation interne sur Martin.
+- Rythme : phrases courtes à moyennes, alternance de narration rapide et de scènes dialoguées.
+- Atmosphère : comédie sociale humoristique, humour naissant des situations absurdes et des décalages entre intentions et résultats.
 
 # Rythme
-Ex.: Phrases 12–18 mots ; alternance court/long ; paragraphes 3–5 phrases.
+Phrases courtes à moyennes ; alternance de narration rapide et de scènes dialoguées ; paragraphes aérés, ruptures de ton pour souligner les chutes comiques.
 
 # Ton
-Ex.: Intime, sobre, ironie mesurée ; éviter le pathos, jargon.
+Léger, ironique, bienveillant, avec une pointe d’autodérision. Éviter le sarcasme blessant, privilégier la tendresse pour les faiblesses humaines.
 
 # Voix
-Ex.: Focalisation interne limitée ; vocabulaire concret ; métaphores discrètes.
+Narration à la première personne ou focalisation interne sur Martin ; langage courant, images concrètes, dialogues vifs ; utiliser les parenthèses et les apartés pour renforcer la complicité avec le lecteur.
