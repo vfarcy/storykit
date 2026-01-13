@@ -509,14 +509,21 @@ ai:
   max_tokens: 4096
 ```
 
-**Sélection automatique du modèle Gemini :**
+**Transmission de la config au CLI :**
 
-Par défaut, StoryKit choisit automatiquement le modèle Gemini le plus adapté selon la tâche :
+La commande `python -m cli.storykit assemble` lit automatiquement `ai.model` et `ai.max_tokens` depuis `story/config/storykit.config.yaml` et les transmet aux adaptateurs via `meta`. Cela signifie :
 
-- `premise`, `genre`, `truby7` : modèle rapide/économique (`gemini-2.5-flash`)
-- `draft`, `truby22`, `weave` : modèle qualitatif/long (`gemini-2.5-pro`)
+- Si vous définissez `model: gemini-2.5-pro`, ce modèle sera utilisé pour **tous les appels**.
+- Si vous laissez `model: ""` (vide), l'adaptateur applique sa logique par défaut (ex. Gemini choisit flash ou pro selon la tâche).
 
- Si vous renseignez explicitement `model:` dans la config ou via l’option CLI/meta, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s’applique.
+**Sélection automatique du modèle Gemini :**
+
+Par défaut, si `model:` est vide, StoryKit choisit automatiquement le modèle Gemini le plus adapté selon la tâche :
+
+- `premise`, `genre`, `truby7` : modèle rapide/économique (`gemini-2.5-flash`)
+- `draft`, `truby22`, `weave` : modèle qualitatif/long (`gemini-2.5-pro`)
+
+Si vous renseignez explicitement `model:` dans la config, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s'applique.
 
 Ce mécanisme garantit :
 - Robustesse (jamais d’erreur 404 si un modèle disparaît)
