@@ -1,19 +1,20 @@
-# Scene Weave (tissage de scènes) — Polar d’enquête
 
-| # | Fonction Truby                     | Lieu                  | Conflit                              | Décision                                 | Valeur en jeu              | Beat |
-|---|------------------------------------|-----------------------|--------------------------------------|------------------------------------------|----------------------------|------|
-| 1 | Ghost & Story World                | Rédaction locale      | Silence autour du juge disparu       | Ouvrir un carnet d’enquête privé         | Vérité vs. réputation      | g01 |
-| 2 | Inciting Event                     | Tribunal              | Version officielle trop propre       | Suivre l’argent plutôt que les rumeurs   | Curiosité vs. conformité   | g01 |
-| 3 | Desire                             | Appartement témoin    | Source hésite à parler               | Promettre anonymat strict                 | Loyauté vs. transparence   | g02 |
-| 4 | Opponent/Mystery                   | Siège promoteur       | Vigile bloque l’accès                | S’infiltrer lors d’une soirée caritative | Courage vs. prudence       | g02 |
-| 5 | First Revelation & Decision        | Parking souterrain    | Badge retrouvé ≠ trajet officiel     | Refaire la timeline complète              | Ordre vs. chaos            | g02 |
-| 6 | Fake-Ally Opponent                 | Commissariat          | Flic “allié” oriente vers SDF        | Tester la piste “SDF coupable”           | Efficacité vs. rigueur      | g03 |
-| 7 | Apparent Defeat                    | Plan d’eau périphérie | Indice détruit, source grillée       | Couper contact avec l’allié suspect       | Sécurité vs. vérité        | g03 |
-| 8 | Midpoint Reversal                  | Data center mairie    | Logs téléphoniques contredisent tout | Reclasser suspects (chef de cabinet 1er) | Justice vs. corruption     | g04 |
-| 9 | Method Revelation                  | Cafétéria             | Comment sont truqués les appels ?    | Croiser factures/antennes/opérateurs     | Méthode vs. manipulation   | g05 |
-|10 | Drive                              | Rues de nuit          | Filature dangereuse                  | Continuer seul·e malgré menace            | Courage vs. peur           | g06 |
-|11 | Visit to Death                     | Parking désert        | Agression et vol du sac              | Mémoriser les preuves, plan B sauvegarde  | Vie vs. devoir             | g07 |
-|12 | Third Revelation & Decision        | Studio TV local       | Plateau contrôlé par le magnat       | Forcer une conf’ de presse alternative    | Liberté vs. contrôle       | g08 |
-|13 | Battle                             | Hôtel de ville        | Opposant nie, attaque personnelle    | Dérouler la chaîne probante publique      | Vérité vs. mensonge        | g09 |
-|14 | Self-Revelation / Moral Decision   | Toit du journal       | Publier et perdre un proche          | Publier tout de même                      | Intégrité vs. loyauté      | g10 |
-|15 | New Equilibrium                    | Esplanade             | Ville sous enquête                    | Accepter le coût et continuer d’écrire    | Justice durable            |    |
+# Scene Weave (tissage de scènes) — Comédie sociale « Déconnexion »
+
+| #  | Fonction Truby                  | Lieu                  | Conflit comique                              | Décision/Action                              | Valeur en jeu                  | Beat |
+|----|---------------------------------|-----------------------|----------------------------------------------|----------------------------------------------|-------------------------------|------|
+| 1  | Ghost & Story World             | Salon familial        | Martin panique sans Wi-Fi, enfants râlent    | Jurer solennellement de débrancher tout      | Confort vs. authenticité        | s01  |
+| 2  | Inciting Event                  | Cuisine               | Micro-ondes en panne, café froid             | Allumer un feu de bois (et l’alarme)         | Modernité vs. tradition         | s01  |
+| 3  | Desire                         | Table du petit-déj    | Sophie doute, enfants réclament écrans       | Martin promet un jeu de société hilarant     | Promesse vs. scepticisme        | s02  |
+| 4  | Opposants                      | Supermarché           | Tentation des promos high-tech, Bernard nargue| Fuir le rayon électroménager                 | Volonté vs. tentation           | s03  |
+| 5  | First Revelation & Decision     | Courrier/boîte aux lettres | Lettre perdue, Martin tente la poste à pied | Demander conseil à Bernard                   | Patience vs. impatience         | s04  |
+| 6  | Fake-Ally Opponent              | Jardin                | Bernard propose une astuce « infaillible »   | Essayer la méthode du voisin (échec cuisant) | Ingéniosité vs. naïveté         | s04  |
+| 7  | Apparent Defeat                 | Salon familial        | Les enfants font grève, Sophie menace de craquer | Martin tente de négocier avec des cookies  | Autorité vs. chaos               | s05  |
+| 8  | Midpoint Reversal               | Cuisine               | Recette de pain grillé tourne au désastre    | Commander… une pizza (mais sans téléphone)   | Débrouillardise vs. dépendance   | s05  |
+| 9  | Method Revelation               | Bibliothèque          | Martin découvre les joies du courrier papier | Envoyer une carte postale à ses parents      | Communication vs. rapidité       | s06  |
+|10  | Drive                           | Parc                  | Course d’orientation sans GPS, dispute familiale | Se perdre, puis rire ensemble              | Humour vs. frustration           | s06  |
+|11  | Visit to Death                  | Cave                  | Panne d’électricité, nuit à la bougie        | Raconter des histoires effrayantes           | Peur vs. solidarité              | s06  |
+|12  | Third Revelation & Decision      | Salon familial        | Martin avoue avoir triché (radio cachée)     | Confession publique, éclat de rire général   | Honnêteté vs. orgueil            | s07  |
+|13  | Battle                          | Cuisine               | Dernier défi : brunch sans grille-pain       | Accepter l’aide de Bernard                   | Humilité vs. fierté              | s07  |
+|14  | Self-Revelation / Moral Decision | Table familiale       | Martin réalise que l’essentiel est ailleurs  | Proposer une journée « débranchée » mensuelle| Partage vs. isolement             | s07  |
+|15  | New Equilibrium                  | Jardin                | Famille réunie autour d’un pique-nique       | Rire des galères, savourer l’instant         | Joie simple et collective         |     |
