@@ -448,7 +448,17 @@ python -m cli.storykit assemble --target truby22
 python -m cli.storykit assemble --target weave
 ```
 
-5) **Brouillon de chapitre** (à partir du scene‑weave)  
+5) **Genre (beats + choix)**  
+```bash
+python -m cli.storykit assemble --target genre
+```
+
+6) **Web de personnages**  
+```bash
+python -m cli.storykit assemble --target web
+```
+
+7) **Brouillon de chapitre** (à partir du scene‑weave)  
 ```bash
 python -m cli.storykit assemble --target draft --chapter 1
 ```
