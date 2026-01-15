@@ -5,9 +5,8 @@ Un informaticien introverti tente de survivre une semaine sans technologie moder
 
 # Principe organisateur
 
-1. Chaque jour, une nouvelle technologie disparaît — et avec elle, une illusion de maîtrise sur sa vie.
-2. Les objets quotidiens deviennent des antagonistes : le réveil, la cafetière, le téléphone fixe… chacun révèle une faille humaine.
-3. La déconnexion déclenche une série de quiproquos sociaux et familiaux, où chaque échec technique devient une crise existentielle.
+Chaque jour, une nouvelle technologie disparaît — et avec elle, une illusion de maîtrise sur sa vie.
+
 
 # Promesse au lectorat
 
