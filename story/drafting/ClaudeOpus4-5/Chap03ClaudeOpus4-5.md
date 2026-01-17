@@ -26,7 +26,7 @@ C'était parfait.
 Il le prit. Puis, pris d'un élan de vertu, il ajouta au chariot : bougies (lot de vingt), boîte d'allumettes (sécurisée, cette fois), sardines à l'huile d'olive (six boîtes), pain de campagne (pré-cuit, parce qu'il fallait rester réaliste), et un carnet de rechange pour le Grand Œuvre.
 À la caisse, il résista à l'appel des piles rechargeables et des câbles USB en promotion.
 « Bien joué », approuva Bernard.
-Martin s'auto-félicita. Peut-être un peu trop. Mais à ce stade, il prenait les victoires où il les trouvait.
+Martin s'auto-félicita. Peut-être un peu trop. Mais à ce stade, il prenait les victoires où il les trouvait
 -------------------------
 
 Scène 13 — L'ultimatum
@@ -102,7 +102,7 @@ Il songea à son téléphone. Quelque part dans un tiroir, éteint, silencieux. 
 Juste pour la cuisson, pensa-t-il. Juste un petit timer. Sophie ne verrait pas.
 Il croisa le regard de Sophie. Elle ne dit rien. Mais son expression était claire : « Je sais ce que tu penses. N'y songe même pas. »
 Il mordit dans sa tartine carbonisée.
-Le goût du charbon, finalement, c'était le goût de l'obstination.
+Le goût du charbon, finalement, c'était le goût de l'obstination
 -------------------------
 
 Scène 15 — Le cabanon des secrets
@@ -142,7 +142,7 @@ Martin ne savait pas que Madame Bernard était décédée. Ou peut-être le sava
 Et c'était vrai. La technologie, finalement, ce n'était pas que des gadgets et des écrans. C'était aussi des souvenirs. Des habitudes. Des fils invisibles qui nous reliaient aux gens qu'on aimait.
 « Le râteau est derrière la tondeuse », indiqua Bernard en se levant. « Je vais vous laisser. »
 Il sortit du cabanon, ses bottes vertes disparaissant dans les hautes herbes.
-Martin resta un moment assis dans la pénombre, à réfléchir. Puis il attrapa le râteau et retourna affronter son jardin.
+Martin resta un moment assis dans la pénombre, à réfléchir. Puis il attrapa le râteau et retourna affronter son jardin
 -------------------------
 
 Scène 16 — La grande mascarade
@@ -188,7 +188,7 @@ Martin hocha la tête. La justice enfantine avait ses propres règles, mais elle
 Sophie sourit. « Ça pourrait marcher. Les gens aiment les échecs des autres. Ça les rassure. »
 C'était vrai. Et peut-être que c'était ça, finalement, le vrai projet : non pas réussir, mais échouer avec grâce. Ou au moins avec humour.
 Martin s'assit sur le canapé, entre ses enfants. Pour la première fois depuis le début du défi, il se sentait léger. Pas victorieux — loin de là. Mais honnête.
-Et l'honnêteté, découvrait-il, avait un goût bien meilleur que les tartines carbonisées.
+Et l'honnêteté, découvrait-il, avait un goût bien meilleur que les tartines carbonisées
 -------------------------
 
 Fin du Chapitre 3

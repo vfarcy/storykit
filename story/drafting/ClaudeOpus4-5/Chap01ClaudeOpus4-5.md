@@ -27,13 +27,14 @@ Ce n'était pas le café, réalisa-t-il. C'était tout le reste. L'imprévu. L'a
 Léo leva enfin les yeux. Emma arrêta d'écrire. Sophie inclina la tête.
 « Débrancher quoi, exactement ? »
 « Tout. »
-Le mot flotta dans la cuisine, énorme, absurde, magnifique.
+Le mot flotta dans la cuisine, énorme, absurde, magnifique
 -------------------------
 
 Scène 2 — 56k et autres traumatismes fondateurs
 
 Martin s'effondra dans le canapé du salon, sa tasse de pseudo-café à la main. Sur la table basse, une pile de câbles qu'il avait commencé à rassembler la veille — HDMI, USB, chargeurs divers — formait un nœud gordien technologique.
 Il ferma les yeux.
+
 - La maison de ses parents. Le bip strident du modem qui tentait de se connecter. Biiip. Crrrch. Biiip. Et cette attente, interminable, avant que la page d'accueil de Caramail n'apparaisse, pixel par pixel, comme une aurore boréale en très basse définition.
 C'était pire avant, se répéta-t-il. Tellement pire.
 Les LAN parties dans le garage de Thomas, où six adolescents transpiraient devant des écrans cathodiques de trente kilos. Les câbles qui traversaient la maison comme des serpents. La fois où il avait débranché le téléphone fixe pendant trois heures sans le savoir, et sa mère avait cru que la ligne était morte.
@@ -49,6 +50,7 @@ Elle s'assit à côté de lui. Leurs épaules se touchèrent.
 Sophie ne dit rien. Ce qui, dans son vocabulaire conjugal, signifiait quelque chose comme « nous verrons bien » mâtiné de « j'ai des doutes sérieux mais je t'aime quand même ».
 Martin rouvrit les yeux. Le tas de câbles le regardait, moqueur.
 Il allait leur montrer.
+
 -------------------------
 
 Scène 3 — Le routeur et ses douze vérifications
@@ -67,7 +69,7 @@ Martin referma la porte du placard où vivait le routeur. La referma vraiment. A
 Le problème, comprit-il en fixant ses propres mains, ce n'était pas la technologie. C'était le besoin de savoir. De contrôler. De vérifier.
 Sans écran, comment savoir si tout allait bien ?
 (Réponse évidente : en regardant autour de soi. Mais l'évidence, parfois, demande un effort surhumain.)
-Il rangea les câbles dans une boîte. Une boîte transparente, parce qu'il n'en avait pas d'opaque, et qu'au fond — soyons honnêtes — il voulait pouvoir les voir. Juste au cas où.
+Il rangea les câbles dans une boîte. Une boîte transparente, parce qu'il n'en avait pas d'opaque, et qu'au fond — soyons honnêtes — il voulait pouvoir les voir. Juste au cas où
 -------------------------
 
 Scène 4 — L'Annonce
@@ -95,7 +97,7 @@ Le visage de Léo traversa les cinq étapes du deuil en moins de trois secondes.
 Martin sortit son téléphone. Le posa sur la table. Sous les regards de sa famille, il appuya longuement sur le bouton d'extinction. L'écran s'éteignit avec ce petit son satisfaisant qui, d'habitude, annonçait un redémarrage.
 Cette fois, c'était un au revoir.
 « Une semaine », répéta-t-il. « Sept jours. On peut le faire. »
-Personne ne semblait convaincu. À commencer par lui-même.
+Personne ne semblait convaincu. À commencer par lui-même
 -------------------------
 
 Scène 5 — Le Grand Œuvre
@@ -144,7 +146,7 @@ Elle hocha la tête, satisfaite. S'approcha. Déposa un baiser sur son front.
 « Bonne nuit, aventurier. »
 Elle quitta la pièce. Martin resta là, stylo en main, conscient qu'il venait de céder une partie significative de son autonomie. Mais aussi, obscurément, soulagé. Parce que lâcher le contrôle — même un peu — c'était peut-être exactement ce dont il avait besoin.
 Il n'était pas encore prêt à l'admettre.
-Mais c'était un début.
+Mais c'était un début
 -------------------------
 
 Fin du Chapitre 1

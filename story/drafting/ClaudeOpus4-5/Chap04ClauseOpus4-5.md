@@ -45,7 +45,7 @@ Les enfants — Ceux qui transforment chaque règle en défi et chaque défi en 
 Bernard — Celui qui prétend savoir et qui cherche surtout à ne pas être seul.
 Et moi — Celui qui croyait que le problème venait des machines.
 Il releva la tête. Par la fenêtre, le jardin était plongé dans l'obscurité. Pas de lampadaire intelligent, pas de détecteur de mouvement, pas de caméra de surveillance. Juste la nuit, immense et silencieuse.
-Pour la première fois, ça ne lui faisait pas peur.
+Pour la première fois, ça ne lui faisait pas peur
 -------------------------
 
 Scène 18 — Le brunch de l'instinct
@@ -87,7 +87,7 @@ Sophie s'approcha de Martin, lui prit la spatule des mains, et la posa dans l'é
 « Et j'ai échoué. »
 « Brillamment. » Elle sourit. « C'est tout ce qu'on peut demander. »
 Martin s'assit à la table, prit une tartine de confiture, et mordit dedans. Le goût du pain frais et de la fraise lui sembla meilleur que n'importe quel plat élaboré.
-Dans son carnet, ce soir-là, il écrirait : Le brunch de l'instinct. Bilan : zéro réussite culinaire, un fou rire collectif, et la découverte que l'échec partagé vaut mieux que la réussite solitaire.
+Dans son carnet, ce soir-là, il écrirait : Le brunch de l'instinct. Bilan : zéro réussite culinaire, un fou rire collectif, et la découverte que l'échec partagé vaut mieux que la réussite solitaire
 -------------------------
 
 Scène 19 — La grande panne
@@ -155,7 +155,7 @@ Le soir, tout le monde était propre — plus ou moins — et épuisé. Monsieur
 « C'était horrible », résuma Léo.
 « C'était mémorable », corrigea Martin.
 « C'est la même chose », dit Emma.
-Dans son carnet, Martin nota : La solidarité naît de la pénurie. Quand l'eau chaude disparaît, la famille se retrouve autour d'une bouilloire. Ce n'est pas confortable. Mais c'est ensemble.
+Dans son carnet, Martin nota : La solidarité naît de la pénurie. Quand l'eau chaude disparaît, la famille se retrouve autour d'une bouilloire. Ce n'est pas confortable. Mais c'est ensemble
 -------------------------
 
 Scène 20 — L'aveu
@@ -195,7 +195,7 @@ Elle se pencha, posa sa tête sur son épaule.
 « Jamais. »
 Ils restèrent ainsi un moment, dans le silence. Pas le silence vide des écrans éteints, mais le silence plein de deux personnes qui n'ont pas besoin de parler pour se comprendre.
 Dans son carnet, plus tard, Martin écrirait :
-La révélation finale n'est jamais spectaculaire. Elle arrive doucement, dans un salon mal éclairé, quand on est trop fatigué pour faire semblant. Ce n'était pas la technologie, le problème. C'était moi. Et la solution n'est pas de tout débrancher — c'est d'apprendre à être là, vraiment là, même quand c'est inconfortable.
+La révélation finale n'est jamais spectaculaire. Elle arrive doucement, dans un salon mal éclairé, quand on est trop fatigué pour faire semblant. Ce n'était pas la technologie, le problème. C'était moi. Et la solution n'est pas de tout débrancher — c'est d'apprendre à être là, vraiment là, même quand c'est inconfortable
 -------------------------
 
 Fin du Chapitre 4

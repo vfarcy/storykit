@@ -72,7 +72,7 @@ Emma réfléchit. « On peut quand même utiliser la Game Boy ? »
 « C'est ma règle. »
 Sophie leva sa tasse de cidre (versé dans une tasse, faute de verres appropriés).
 « Je propose un toast. À la semaine la plus chaotique de notre vie. Et à toutes celles qui suivront. »
-Les tasses s'entrechoquèrent. Le cidre était tiède et trop sucré, mais personne ne se plaignit.
+Les tasses s'entrechoquèrent. Le cidre était tiède et trop sucré, mais personne ne se plaignit
 -------------------------
 
 Martin regardait sa famille manger, discuter, se disputer gentiment pour les dernières fraises. Le soleil filtrait à travers les feuilles du tilleul, projetant des ombres mouvantes sur la couverture.
@@ -97,7 +97,7 @@ Léo intervint : « Moi aussi. Je veux un droit de veto sur les passages où j'a
 « D'accord. Tu as un droit de veto. »
 Sophie secoua la tête, amusée. « Et moi ? »
 « Toi, tu as le droit de tout censurer. Comme d'habitude. »
-Elle rit. Ce rire qui valait tous les succès, toutes les réussites, tous les livres du monde.
+Elle rit. Ce rire qui valait tous les succès, toutes les réussites, tous les livres du monde
 -------------------------
 
 Le soir tombait sur le jardin. Les assiettes étaient vides, le cidre terminé, les enfants partis jouer à cache-cache dans les buissons (sans écran, par choix cette fois — ou peut-être par épuisement des batteries de la Game Boy).
@@ -121,7 +121,7 @@ Les enfants revinrent en courant, essoufflés, réclamant des gâteaux.
 « Demain, alors ? »
 « Demain. »
 Ils s'effondrèrent sur la couverture, formant un tas de bras et de jambes. Martin se retrouva enseveli sous Léo, tandis qu'Emma s'installait contre Sophie.
-C'était inconfortable. C'était chaotique. C'était parfait.
+C'était inconfortable. C'était chaotique. C'était parfait
 -------------------------
 
 À minuit, officiellement, la semaine sans technologie prit fin.
@@ -130,7 +130,7 @@ Il regarda l'écran un long moment.
 Puis il l'éteignit à nouveau.
 « Demain », dit-il à voix haute, dans le silence de la maison endormie.
 Il posa le téléphone sur la table de nuit, à côté du carnet — son carnet, celui qui contenait l'histoire vraie de sa semaine ratée.
-Et il s'endormit, pour la première fois depuis longtemps, sans penser à ce qu'il avait oublié de vérifier.
+Et il s'endormit, pour la première fois depuis longtemps, sans penser à ce qu'il avait oublié de vérifier
 -------------------------
 
 Épilogue
@@ -140,7 +140,7 @@ La dédicace : À Sophie, Léo et Emma, qui ont supporté le chaos. Et à Monsie
 Dans la cuisine des Dubois, sur le plan de travail, le grille-pain chromé attendait. Débranché. Par précaution.
 Et une fois par mois, le premier dimanche, la famille se rassemblait pour une journée sans écran. Pas toujours réussie. Pas toujours sereine. Mais toujours ensemble.
 C'était suffisant.
-C'était, peut-être, l'essentiel.
+C'était, peut-être, l'essentiel
 -------------------------
 
 Fin
