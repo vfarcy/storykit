@@ -1,63 +1,73 @@
+
 Chapitre 1 — Le Grand Saut
+
 
 Scène 1 — La machine à café ne répond plus
 
-Martin Dubois fixait la cafetière comme on regarde un ami qui vient de vous trahir.
-Sept heures douze du matin. Le soleil de juin entrait par la fenêtre de la cuisine, illuminant cruellement l'appareil muet. Débranché. Par ses propres soins. La veille au soir, dans un élan de bravoure qu'il regrettait déjà.
-« Tu peux toujours faire bouillir de l'eau », suggéra Sophie depuis le seuil, une tasse vide à la main. Elle portait son pyjama rayé et ce demi-sourire qu'il connaissait trop bien — celui qui précédait généralement les phrases du type « je t'avais prévenu ».
-Martin ouvrit un placard. Referma. En ouvrit un autre.
-« Le café moulu, c'est… »
-« Dans le pot marqué "café". Sur l'étagère marquée "café". »
-Il trouva le pot. Victoire modeste. Restait le problème de la transformation : comment passer de la poudre brune à un liquide buvable sans l'intervention d'une machine à douze programmes et écran tactile ?
-Les enfants débarquèrent à cet instant précis, attirés par l'odeur du drame domestique. Léo, onze ans, s'installa sur un tabouret avec la mine du spectateur qui s'apprête à regarder un match. Emma, huit ans, sortit une feuille de papier et un crayon.
-« Tu notes quoi ? » demanda Martin.
-« Les points. Maman dit que tu vas perdre. »
-« Je n'ai jamais dit ça », corrigea Sophie. « J'ai dit que ce serait intéressant. »
-Martin versa le café dans un filtre papier, qu'il posa sur une tasse. Il fit bouillir de l'eau — ça, au moins, la bouilloire savait faire — et versa le tout avec la précision d'un chirurgien opérant sa première appendicite.
-L'eau traversa. Le café… resta coincé.
-« Moins deux points », annonça Emma.
-« Il faut mouiller le filtre avant », dit Léo sans lever les yeux de la table.
-Martin recommença. Cette fois, un liquide brunâtre — généreux qualificatif — s'écoula dans la tasse. Il goûta. Fit une grimace qu'il tenta de transformer en expression satisfaite.
-« Alors ? » demanda Sophie.
-« Authentique. »
-« Traduire : imbuvable. »
-Il reposa la tasse. Quelque chose montait en lui, quelque chose qui ressemblait à de la panique mais qu'il préférait appeler « prise de conscience ». Un café. Un simple café. Et il était là, à quarante-deux ans, informaticien depuis vingt ans, incapable de reproduire un geste que l'humanité maîtrisait depuis des siècles.
-Ce n'était pas le café, réalisa-t-il. C'était tout le reste. L'imprévu. L'absence de mode d'emploi. La terrifiante possibilité que quelque chose ne fonctionne pas selon le plan prévu.
-« Cette semaine », déclara-t-il avec une solennité nouvelle, « je vais débrancher. Pour de vrai. »
-Léo leva enfin les yeux. Emma arrêta d'écrire. Sophie inclina la tête.
-« Débrancher quoi, exactement ? »
-« Tout. »
-Le mot flotta dans la cuisine, énorme, absurde, magnifique
+
+Martin Dubois fixait la cafetière comme on regarde un ami qui vient de vous trahir.  
+Sept heures douze du matin. Le soleil de juin entrait par la fenêtre de la cuisine, illuminant cruellement l'appareil muet. Débranché. Par ses propres soins. La veille au soir, dans un élan de bravoure qu'il regrettait déjà.  
+« Tu peux toujours faire bouillir de l'eau », suggéra Sophie depuis le seuil, une tasse vide à la main. Elle portait son pyjama rayé et ce demi-sourire qu'il connaissait trop bien — celui qui précédait généralement les phrases du type « je t'avais prévenu ».  
+Martin ouvrit un placard. Referma. En ouvrit un autre.  
+« Le café moulu, c'est… »  
+« Dans le pot marqué "café". Sur l'étagère marquée "café". »  
+Il trouva le pot. Victoire modeste. Restait le problème de la transformation : comment passer de la poudre brune à un liquide buvable sans l'intervention d'une machine à douze programmes et écran tactile ?  
+Les enfants débarquèrent à cet instant précis, attirés par l'odeur du drame domestique. Léo, onze ans, s'installa sur un tabouret avec la mine du spectateur qui s'apprête à regarder un match. Emma, huit ans, sortit une feuille de papier et un crayon.  
+« Tu notes quoi ? » demanda Martin.  
+« Les points. Maman dit que tu vas perdre. »  
+« Je n'ai jamais dit ça », corrigea Sophie. « J'ai dit que ce serait intéressant. »  
+Martin versa le café dans un filtre papier, qu'il posa sur une tasse. Il fit bouillir de l'eau — ça, au moins, la bouilloire savait faire — et versa le tout avec la précision d'un chirurgien opérant sa première appendicite.  
+L'eau traversa. Le café… resta coincé.  
+« Moins deux points », annonça Emma.  
+« Il faut mouiller le filtre avant », dit Léo sans lever les yeux de la table.  
+Martin recommença. Cette fois, un liquide brunâtre — généreux qualificatif — s'écoula dans la tasse. Il goûta. Fit une grimace qu'il tenta de transformer en expression satisfaite.  
+« Alors ? » demanda Sophie.  
+« Authentique. »  
+« Traduire : imbuvable. »  
+Il reposa la tasse. Quelque chose montait en lui, quelque chose qui ressemblait à de la panique mais qu'il préférait appeler « prise de conscience ». Un café. Un simple café. Et il était là, à quarante-deux ans, informaticien depuis vingt ans, incapable de reproduire un geste que l'humanité maîtrisait depuis des siècles.  
+Ce n'était pas le café, réalisa-t-il. C'était tout le reste. L'imprévu. L'absence de mode d'emploi. La terrifiante possibilité que quelque chose ne fonctionne pas selon le plan prévu.  
+« Cette semaine », déclara-t-il avec une solennité nouvelle, « je vais débrancher. Pour de vrai. »  
+Léo leva enfin les yeux. Emma arrêta d'écrire. Sophie inclina la tête.  
+« Débrancher quoi, exactement ? »  
+« Tout. »  
+Le mot flotta dans la cuisine, énorme, absurde, magnifique  
+
 
 ---
+
 
 Scène 2 — 56k et autres traumatismes fondateurs
 
-Martin s'effondra dans le canapé du salon, sa tasse de pseudo-café à la main. Sur la table basse, une pile de câbles qu'il avait commencé à rassembler la veille — HDMI, USB, chargeurs divers — formait un nœud gordien technologique.
-Il ferma les yeux.
 
-- La maison de ses parents. Le bip strident du modem qui tentait de se connecter. Biiip. Crrrch. Biiip. Et cette attente, interminable, avant que la page d'accueil de Caramail n'apparaisse, pixel par pixel, comme une aurore boréale en très basse définition.
-C'était pire avant, se répéta-t-il. Tellement pire.
-Les LAN parties dans le garage de Thomas, où six adolescents transpiraient devant des écrans cathodiques de trente kilos. Les câbles qui traversaient la maison comme des serpents. La fois où il avait débranché le téléphone fixe pendant trois heures sans le savoir, et sa mère avait cru que la ligne était morte.
-(Sa mère avait appelé France Télécom. France Télécom avait envoyé un technicien. Le technicien avait rebranché la prise. Tout le quartier était au courant le lendemain.)
-« Tu fais quoi ? »
-Sophie était apparue, les bras croisés.
-« Je me souviens. »
-« De quoi ? »
-« De l'époque où c'était compliqué. »
-Elle s'assit à côté de lui. Leurs épaules se touchèrent.
-« Et donc ? »
-« Donc je peux y arriver. Si j'ai survécu au 56k, je peux survivre à une semaine sans Wi-Fi. »
-Sophie ne dit rien. Ce qui, dans son vocabulaire conjugal, signifiait quelque chose comme « nous verrons bien » mâtiné de « j'ai des doutes sérieux mais je t'aime quand même ».
-Martin rouvrit les yeux. Le tas de câbles le regardait, moqueur.
-Il allait leur montrer.
+Martin s'effondra dans le canapé du salon, sa tasse de pseudo-café à la main. Sur la table basse, une pile de câbles qu'il avait commencé à rassembler la veille — HDMI, USB, chargeurs divers — formait un nœud gordien technologique.  
+Il ferma les yeux.  
+
+
+- La maison de ses parents. Le bip strident du modem qui tentait de se connecter. Biiip. Crrrch. Biiip. Et cette attente, interminable, avant que la page d'accueil de Caramail n'apparaisse, pixel par pixel, comme une aurore boréale en très basse définition.  
+C'était pire avant, se répéta-t-il. Tellement pire.  
+Les LAN parties dans le garage de Thomas, où six adolescents transpiraient devant des écrans cathodiques de trente kilos. Les câbles qui traversaient la maison comme des serpents. La fois où il avait débranché le téléphone fixe pendant trois heures sans le savoir, et sa mère avait cru que la ligne était morte.  
+(Sa mère avait appelé France Télécom. France Télécom avait envoyé un technicien. Le technicien avait rebranché la prise. Tout le quartier était au courant le lendemain.)  
+« Tu fais quoi ? »  
+Sophie était apparue, les bras croisés.  
+« Je me souviens. »  
+« De quoi ? »  
+« De l'époque où c'était compliqué. »  
+Elle s'assit à côté de lui. Leurs épaules se touchèrent.  
+« Et donc ? »  
+« Donc je peux y arriver. Si j'ai survécu au 56k, je peux survivre à une semaine sans Wi-Fi. »  
+Sophie ne dit rien. Ce qui, dans son vocabulaire conjugal, signifiait quelque chose comme « nous verrons bien » mâtiné de « j'ai des doutes sérieux mais je t'aime quand même ».  
+Martin rouvrit les yeux. Le tas de câbles le regardait, moqueur.  
+Il allait leur montrer.  
+
 
 ---
 
+
 Scène 3 — Le routeur et ses douze vérifications
 
-Quatorze heures. Martin se tenait dans l'entrée, devant le boîtier blanc qui gérait la connexion de la maison. Le routeur. Cerveau silencieux de leur existence numérique. Pourvoyeur de Netflix, gardien des mots de passe, oracle des horaires de bus.
-Il l'avait débranché ce matin.
+
+Quatorze heures. Martin se tenait dans l'entrée, devant le boîtier blanc qui gérait la connexion de la maison. Le routeur. Cerveau silencieux de leur existence numérique. Pourvoyeur de Netflix, gardien des mots de passe, oracle des horaires de bus.  
+Il l'avait débranché ce matin.  
 Pourtant, ses mains revenaient vers lui. Comme un tic. Une démangeaison.
 Peut-être qu'il s'est rebranché tout seul.
 Peut-être que le courant est revenu.
