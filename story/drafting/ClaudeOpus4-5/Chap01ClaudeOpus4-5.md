@@ -40,10 +40,11 @@ Scène 2 — 56k et autres traumatismes fondateurs
 
 
 Martin s'effondra dans le canapé du salon, sa tasse de pseudo-café à la main. Sur la table basse, une pile de câbles qu'il avait commencé à rassembler la veille — HDMI, USB, chargeurs divers — formait un nœud gordien technologique.  
+
 Il ferma les yeux.  
 
 
-- La maison de ses parents. Le bip strident du modem qui tentait de se connecter. Biiip. Crrrch. Biiip. Et cette attente, interminable, avant que la page d'accueil de Caramail n'apparaisse, pixel par pixel, comme une aurore boréale en très basse définition.  
+La maison de ses parents. Le bip strident du modem qui tentait de se connecter. Biiip. Crrrch. Biiip. Et cette attente, interminable, avant que la page d'accueil de Caramail n'apparaisse, pixel par pixel, comme une aurore boréale en très basse définition.  
 C'était pire avant, se répéta-t-il. Tellement pire.  
 Les LAN parties dans le garage de Thomas, où six adolescents transpiraient devant des écrans cathodiques de trente kilos. Les câbles qui traversaient la maison comme des serpents. La fois où il avait débranché le téléphone fixe pendant trois heures sans le savoir, et sa mère avait cru que la ligne était morte.  
 (Sa mère avait appelé France Télécom. France Télécom avait envoyé un technicien. Le technicien avait rebranché la prise. Tout le quartier était au courant le lendemain.)  
