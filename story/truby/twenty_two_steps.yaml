@@ -1,67 +1,122 @@
-steps:
+
+twenty_two_steps:
   - id: t01
     name: Self-revelation, need, and desire
-    notes: Martin réalise qu’il ne sait même pas faire du café sans machine.
+    beat: g01 — Défi absurde accepté
+    value: Confort vs authenticité
+    notes: >
+      Au petit matin, Martin découvre qu’il ne sait pas préparer un café sans machine.
+      Il ressent une panique disproportionnée pour un geste simple. Éclair de lucidité :
+      ce n’est pas qu’il manque d’équipement, c’est qu’il a peur de l’imprévu. Désir naissant :
+      prouver qu’il peut vivre simple… et en faire un récit drôle.
+
   - id: t02
     name: Ghost and story world
-    notes: Flashback sur son enfance sans Internet (et pourquoi il n’en garde aucun bon souvenir).
+    beat: g01 — Défi absurde accepté
+    value: Mémoire vs mythe
+    notes: >
+      Flashback : enfance sans Internet, lignes 56k, bricolages ratés. Il se raconte
+      que “c’était pire avant”, mythe réconfortant qui l’encourage… à se surestimer.
+
   - id: t03
     name: Weakness and need
-    notes: Il panique à l’idée de rater un mail important, mais rêve de simplicité.
+    beat: g02 — Premiers ratés domestiques
+    value: Maîtrise vs dépendance
+    notes: >
+      Le Wi-Fi est coupé, mais Martin vérifie le routeur encore et encore, par réflexe.
+      Faiblesse : besoin de contrôle par l’écran. Besoin profond : accepter d’improviser.
+
   - id: t04
     name: Inciting event
-    notes: Il annonce à sa famille (et sur les réseaux) son défi « semaine sans techno ».
+    beat: g01 — Défi absurde accepté
+    value: Promesse vs scepticisme
+    notes: >
+      Annonce officielle : “Semaine sans techno !” La famille rit, Sophie hausse un sourcil.
+      Il poste sa résolution et éteint son téléphone sous les regards incrédules.
+
   - id: t05
     name: Desire
-    notes: Prouver qu’il peut survivre et écrire un livre drôle.
+    beat: g02 — Premiers ratés domestiques
+    value: Ambition vs lucidité
+    notes: >
+      Martin se voit déjà auteur d’un livre hilarant. Il ouvre un carnet papier, titre pompeux,
+      promesse à soi-même : tenir bon coûte que coûte.
+
   - id: t06
     name: Ally or allies
-    notes: Sophie, sa compagne, accepte de ne pas saboter l’expérience (mais prend des notes pour plus tard).
+    beat: g02 — Premiers ratés domestiques
+    value: Confiance vs contrôle
+    notes: >
+      Sophie promet de “ne pas saboter”, mais réclame des règles de sécurité (adieu expériences hasardeuses).
+      Martin lui confie les interrupteurs. Il déteste lâcher prise, mais s’y oblige.
+
   - id: t07
     name: Opponent and/or mystery
-    notes: Les enfants, privés d’écrans, deviennent incontrôlables.
+    beat: g03 — Enfants en révolte
+    value: Autorité vs chaos
+    notes: >
+      Les enfants, privés d’écrans, s’érigent en syndicat. Négociations musclées pour la tablette.
+      Martin propose des alternatives “rigolotes” qui ne font rire que lui.
+
   - id: t08
     name: Fake-ally opponent
-    notes: Monsieur Bernard, le voisin, donne des conseils… qui empirent tout.
+    beat: g04 — Le voisin donne des conseils
+    value: Ingéniosité vs naïveté
+    notes: >
+      Monsieur Bernard, voisin “à l’ancienne”, débarque avec des solutions qui sentent la naphtaline.
+      Martin mord à l’hameçon, flatté d’avoir un mentor. Mauvaise pioche.
+
   - id: t09
     name: First revelation and decision
-    notes: Martin tente d’allumer un feu de bois et finit par enfumer la maison.
+    beat: g05 — Catastrophe culinaire
+    value: Prudence vs orgueil
+    notes: >
+      Tentative de feu de bois : alarme stridente, cuisine enfumée. Révélation modeste :
+      “Je ne sais pas faire.” Décision : continuer, mais aérer souvent (et sauver la face).
+
   - id: t10
     name: Plan
-    notes: Il dresse une liste de « solutions de secours » (aucune ne marche vraiment).
+    beat: g02 — Premiers ratés domestiques
+    value: Plan vs réalité
+    notes: >
+      Grande liste sur le frigo : bougies, courrier papier, cartes, jeux de société, recettes de grand-parent.
+      Le plan est net, le monde ne le sera pas.
+
   - id: t11
     name: Opponent’s plan and main counterattack
-    notes: Les enfants organisent une mutinerie pour récupérer la tablette.
+    beat: g03 — Enfants en révolte
+    value: Règle vs contournement
+    notes: >
+      Les enfants organisent la mutinerie : caches pour câbles, barrage dans le couloir,
+      négociation “contre bons points”. Martin découvre une vieille console qui marche encore…
+
   - id: t12
     name: Drive
-    notes: Martin s’obstine, accumule les gaffes, mais refuse d’abandonner.
+    beat: g04 — Le voisin donne des conseils
+    value: Volonté vs tentation
+    notes: >
+      Sortie au supermarché : promos high-tech clignotantes, conseils rétro de Bernard.
+      Martin choisit les sardines et les bougies, s’auto-félicite (un peu trop).
+
   - id: t13
     name: Attack by ally
-    notes: Sophie lui rappelle que le livre ne vaudra rien si la maison brûle.
+    beat: g05 — Catastrophe culinaire
+    value: Honnêteté vs déni
+    notes: >
+      Sophie recadre : “Un livre, oui. Une maison carbonisée, non.”
+      Martin accepte de cesser les expériences dangereuses. Première fissure dans son orgueil.
+
   - id: t14
     name: Apparent defeat
-    notes: Il craque, rêve de micro-ondes et de Wi-Fi, mais tient bon (presque).
+    beat: g06 — La tentation du Wi-Fi
+    value: Endurance vs capitulation
+    notes: >
+      Tartines noires, thé tiède, moral à plat. Il envisage d’utiliser le minuteur du téléphone
+      “juste pour la cuisson”. Le regard de Sophie suffit à l’arrêter (pour l’instant).
+
   - id: t15
     name: Second revelation and decision
-    notes: Il découvre que Monsieur Bernard triche (il a une radio cachée).
-  - id: t16
-    name: Audience revelation
-    notes: Le lecteur comprend que la vraie difficulté, c’est la mauvaise foi de tout le monde.
-  - id: t17
-    name: Third revelation and decision
-    notes: Martin décide d’assumer ses échecs et d’en rire.
-  - id: t18
-    name: Gate, gauntlet, visit to death
-    notes: Tentative de cuisiner sans recette en ligne : désastre total.
-  - id: t19
-    name: Battle
-    notes: Dernier jour : panne d’eau chaude, enfants en grève, Martin au bord de l’abandon.
-  - id: t20
-    name: Self-revelation
-    notes: Il comprend que la perfection n’existe pas, mais que l’humour sauve tout.
-  - id: t21
-    name: Moral decision
-    notes: Il choisit de publier son livre, échecs inclus.
-  - id: t22
-    name: New equilibrium
-    notes: Martin retrouve la technologie… mais garde le grille-pain débranché (par précaution).
+    beat: g07 — Révélation comique
+    value: Image vs vérité
+    notes: >
+      Dans le cabanon, Martin surprend Bernard avec une radio planquée.

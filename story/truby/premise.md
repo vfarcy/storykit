@@ -1,15 +1,14 @@
 # Prémisse
 
-Un informaticien introverti tente de survivre une semaine sans technologie moderne, mais découvre que l’ennemi le plus redoutable n’est pas le feu de camp ou le micro-ondes éteint — c’est lui-même, et sa famille.
+Un informaticien introverti tente de survivre à une semaine où chaque jour retire une technologie essentielle, jusqu’à devoir affronter ce qu’il fuit le plus : sa famille… et lui-même.
 
 
 # Principe organisateur
 
-Chaque jour, une nouvelle technologie disparaît — et avec elle, une illusion de maîtrise sur sa vie.
-
+L’environnement redéfinit les règles : à mesure que la technologie disparaît, les dynamiques familiales se réorganisent, forçant Martin à sortir de sa zone de confort.
 
 # Promesse au lectorat
 
-Un récit tendu, drôle et cru, où l’humain se confronte à ses propres automatismes — et où survivre sans smartphone est le moindre des défis.
+Un récit drôle, nerveux et tendre, où l’on observe un homme perdre ses automatismes un à un, pour découvrir que la véritable panne ne vient pas du Wi‑Fi, mais de ce qu’il croyait maîtriser dans sa vie.
 
 
