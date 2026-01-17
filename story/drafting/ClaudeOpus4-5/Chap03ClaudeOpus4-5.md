@@ -27,7 +27,8 @@ Il le prit. Puis, pris d'un élan de vertu, il ajouta au chariot : bougies (lot 
 À la caisse, il résista à l'appel des piles rechargeables et des câbles USB en promotion.
 « Bien joué », approuva Bernard.
 Martin s'auto-félicita. Peut-être un peu trop. Mais à ce stade, il prenait les victoires où il les trouvait
--------------------------
+
+---
 
 Scène 13 — L'ultimatum
 
@@ -70,7 +71,8 @@ Sophie rit — ce rire léger qu'il aimait tant, qui signifiait qu'il était par
 Elle posa sa tête sur son épaule. Martin ferma les yeux. Dans le silence de la maison, sans le bourdonnement des appareils en veille, sans les notifications, sans les écrans, il entendait des choses qu'il avait oubliées. Le tic-tac de l'horloge murale. Le chant d'un oiseau dans le jardin. La respiration de Sophie contre lui.
 C'était peut-être ça, l'essentiel.
 (Ou peut-être qu'il romantisait un moment banal parce qu'il était fatigué et affamé. Difficile à dire.)
--------------------------
+
+---
 
 Scène 14 — La défaite des tartines
 
@@ -103,7 +105,8 @@ Juste pour la cuisson, pensa-t-il. Juste un petit timer. Sophie ne verrait pas.
 Il croisa le regard de Sophie. Elle ne dit rien. Mais son expression était claire : « Je sais ce que tu penses. N'y songe même pas. »
 Il mordit dans sa tartine carbonisée.
 Le goût du charbon, finalement, c'était le goût de l'obstination
--------------------------
+
+---
 
 Scène 15 — Le cabanon des secrets
 
@@ -142,8 +145,9 @@ Martin ne savait pas que Madame Bernard était décédée. Ou peut-être le sava
 Et c'était vrai. La technologie, finalement, ce n'était pas que des gadgets et des écrans. C'était aussi des souvenirs. Des habitudes. Des fils invisibles qui nous reliaient aux gens qu'on aimait.
 « Le râteau est derrière la tondeuse », indiqua Bernard en se levant. « Je vais vous laisser. »
 Il sortit du cabanon, ses bottes vertes disparaissant dans les hautes herbes.
-Martin resta un moment assis dans la pénombre, à réfléchir. Puis il attrapa le râteau et retourna affronter son jardin
--------------------------
+Martin resta un moment assis dans la pénombre, à réfléchir. Puis il attrapa le râteau et retourna affronter son jardin.
+
+---
 
 Scène 16 — La grande mascarade
 
@@ -188,7 +192,7 @@ Martin hocha la tête. La justice enfantine avait ses propres règles, mais elle
 Sophie sourit. « Ça pourrait marcher. Les gens aiment les échecs des autres. Ça les rassure. »
 C'était vrai. Et peut-être que c'était ça, finalement, le vrai projet : non pas réussir, mais échouer avec grâce. Ou au moins avec humour.
 Martin s'assit sur le canapé, entre ses enfants. Pour la première fois depuis le début du défi, il se sentait léger. Pas victorieux — loin de là. Mais honnête.
-Et l'honnêteté, découvrait-il, avait un goût bien meilleur que les tartines carbonisées
--------------------------
+Et l'honnêteté, découvrait-il, avait un goût bien meilleur que les tartines carbonisées.
 
+---
 Fin du Chapitre 3

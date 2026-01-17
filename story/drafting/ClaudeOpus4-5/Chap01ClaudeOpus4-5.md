@@ -28,7 +28,8 @@ Léo leva enfin les yeux. Emma arrêta d'écrire. Sophie inclina la tête.
 « Débrancher quoi, exactement ? »
 « Tout. »
 Le mot flotta dans la cuisine, énorme, absurde, magnifique
--------------------------
+
+---
 
 Scène 2 — 56k et autres traumatismes fondateurs
 
@@ -51,7 +52,7 @@ Sophie ne dit rien. Ce qui, dans son vocabulaire conjugal, signifiait quelque ch
 Martin rouvrit les yeux. Le tas de câbles le regardait, moqueur.
 Il allait leur montrer.
 
--------------------------
+---
 
 Scène 3 — Le routeur et ses douze vérifications
 
@@ -70,7 +71,8 @@ Le problème, comprit-il en fixant ses propres mains, ce n'était pas la technol
 Sans écran, comment savoir si tout allait bien ?
 (Réponse évidente : en regardant autour de soi. Mais l'évidence, parfois, demande un effort surhumain.)
 Il rangea les câbles dans une boîte. Une boîte transparente, parce qu'il n'en avait pas d'opaque, et qu'au fond — soyons honnêtes — il voulait pouvoir les voir. Juste au cas où
--------------------------
+
+---
 
 Scène 4 — L'Annonce
 
@@ -98,7 +100,8 @@ Martin sortit son téléphone. Le posa sur la table. Sous les regards de sa fami
 Cette fois, c'était un au revoir.
 « Une semaine », répéta-t-il. « Sept jours. On peut le faire. »
 Personne ne semblait convaincu. À commencer par lui-même
--------------------------
+
+---
 
 Scène 5 — Le Grand Œuvre
 
@@ -120,7 +123,8 @@ Il sourit. C'était le début de quelque chose. Peut-être un livre. Peut-être 
 Le stylo grattait le papier avec un bruit satisfaisant. Pas de correcteur automatique. Pas de suggestions. Pas de notifications.
 Juste lui et ses mots.
 (Et une petite voix dans sa tête qui lui rappelait qu'il n'avait aucune idée de comment survivre à la journée de demain. Mais ça, il ne l'écrivit pas.)
--------------------------
+
+---
 
 Scène 6 — Le Pacte
 
@@ -147,6 +151,7 @@ Elle hocha la tête, satisfaite. S'approcha. Déposa un baiser sur son front.
 Elle quitta la pièce. Martin resta là, stylo en main, conscient qu'il venait de céder une partie significative de son autonomie. Mais aussi, obscurément, soulagé. Parce que lâcher le contrôle — même un peu — c'était peut-être exactement ce dont il avait besoin.
 Il n'était pas encore prêt à l'admettre.
 Mais c'était un début
--------------------------
+
+---
 
 Fin du Chapitre 1

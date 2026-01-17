@@ -38,7 +38,8 @@ Les enfants le regardèrent comme s'il venait de leur proposer une séance de to
 Sophie referma son magazine. « Je crois que les enfants ont besoin d'un moment d'adaptation. Et toi aussi. Pourquoi tu n'irais pas t'occuper du jardin ? Il paraît que ça détend. »
 Le jardin. Martin jeta un coup d'œil par la fenêtre. Les mauvaises herbes avaient atteint une hauteur inquiétante. Quelque chose qui ressemblait à un rosier — ou peut-être à un buisson de ronces — avait colonisé l'allée.
 « Bonne idée », mentit-il
--------------------------
+
+---
 
 Scène 8 — La méthode Bernard
 
@@ -69,7 +70,8 @@ Il repartit par la brèche, ses bottes vertes disparaissant dans les troènes co
 Martin resta seul face à son jardin en friche. Les mauvaises herbes le regardaient avec défi.
 Simple comme bonjour, pensa-t-il.
 Il aurait dû se méfier
--------------------------
+
+---
 
 Scène 9 — Le mode bêta
 
@@ -106,7 +108,8 @@ Martin n'avait pas pensé à ça. Sans Pages Jaunes en ligne, sans Google, sans 
 « Monsieur Bernard en connaît peut-être un », suggéra-t-il faiblement.
 Sophie soupira — ce soupir particulier qui signifiait « je t'aime mais tu es épuisant » — et disparut vers la cuisine.
 Martin resta seul face à la cheminée vaincue, le torchon carbonisé dans l'évier, et la certitude grandissante qu'il avait peut-être surestimé ses capacités
--------------------------
+
+---
 
 Scène 10 — Le Plan
 
@@ -158,7 +161,7 @@ Martin se précipita vers l'entrée. Et là, derrière les manteaux d'hiver et l
 Il le décrocha. Tonalité.
 Pour la première fois depuis le début du défi, Martin sourit sincèrement.
 
--------------------------
+---
 
 Scène 11 — La planque
 
@@ -187,6 +190,7 @@ Elle fila dans son lit avant qu'il puisse changer d'avis.
 Martin redescendit, secoué par une révélation modeste mais significative : ses enfants n'étaient pas seulement des adversaires dans ce défi. Ils étaient aussi, à leur manière, des partenaires. Des partenaires qui trichaient, certes. Mais qui ne le faisait pas ?
 Dans son carnet, cette nuit-là, il écrivit :
 Note pour le livre : tout le monde triche. La vraie question est pourquoi on fait semblant que non
--------------------------
+
+---
 
 Fin du Chapitre 2
