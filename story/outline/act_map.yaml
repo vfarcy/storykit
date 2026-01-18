@@ -1,7 +1,7 @@
 acts:
   - id: I
-    chapters: [1,2,3]
+    chapters: [1, 2, 3] # La tentation et le pacte.
   - id: II
-    chapters: [4,5,6,7,8,9,10]
+    chapters: [4, 5, 6, 7, 8] # L'imposture et la perte de soi.
   - id: III
-    chapters: [11,12]
+    chapters: [9, 10] # Le verdict et la vérité.

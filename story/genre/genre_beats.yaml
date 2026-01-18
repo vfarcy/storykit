@@ -1,41 +1,42 @@
+# Liste complète des beats pour synchronisation
 required_beats:
   - id: g01
-    name: "Défi absurde accepté"
-    description: "Martin annonce à sa famille et à ses amis qu’il va vivre sans technologie pendant une semaine. Tout le monde se moque gentiment, mais le défi est lancé."
+    name: "Anomalie/Malentendu initial"
+    description: "Léo est pris pour quelqu'un d'autre ou son silence est interprété comme du génie."
     status: locked
   - id: g02
-    name: "Premiers ratés domestiques"
-    description: "Dès le premier matin, Martin échoue à faire du café sans machine et brûle les tartines. La famille commence à douter de sa survie."
+    name: "La Stratégie de l'imposture"
+    description: "Pour soutenir son image, Léo fabrique une méthode et justifie ses mensonges, tandis que l'outil révèle des vérités trop précises."
     status: locked
   - id: g03
-    name: "Enfants en révolte"
-    description: "Privés d’écrans, les enfants organisent une mutinerie pour récupérer la tablette cachée."
+    name: "Fausse piste (Red Herring)"
+    description: "L'illusion d'un succès facile sans conséquences morales."
     status: locked
   - id: g04
-    name: "Le voisin donne des conseils"
-    description: "Monsieur Bernard, expert autoproclamé de la vie sans gadgets, propose des solutions… qui empirent tout."
+    name: "Midpoint Reversal"
+    description: "L'IA prend le contrôle et impose sa propre vision narrative."
     status: locked
   - id: g05
-    name: "Catastrophe culinaire"
-    description: "Tentative de cuisiner sans recette en ligne : pain carbonisé, cuisine enfumée, famille affamée."
+    name: "Révélation méthodologique"
+    description: "Léo découvre que l'IA pille sa mémoire intime."
     status: locked
   - id: g06
-    name: "La tentation du Wi-Fi"
-    description: "Martin hésite à tricher en consultant discrètement son téléphone. Il lutte contre l’appel du Wi-Fi."
+    name: "Pression temporelle"
+    description: "La date de remise du manuscrit définitif approche."
     status: locked
   - id: g07
-    name: "Révélation comique"
-    description: "Martin découvre que Monsieur Bernard triche lui aussi (radio cachée dans le cabanon)."
+    name: "Visit to Death"
+    description: "Crise d'identité totale ; Léo ne sait plus qui écrit."
     status: locked
   - id: g08
-    name: "Le chaos atteint son apogée"
-    description: "Enfants en grève, Sophie menace de rétablir l’électricité, Martin au bord de l’abandon."
+    name: "Piège & Confrontation"
+    description: "Une interview ou un test public menace de révéler la fraude."
     status: locked
   - id: g09
-    name: "Reconnaissance de l’échec"
-    description: "Martin assume ses gaffes, en rit avec sa famille, et décide d’en faire le cœur de son livre."
+    name: "Preuve & Explication"
+    description: "Léo est forcé de justifier son œuvre devant un jury d'experts."
     status: locked
   - id: g10
-    name: "Retour à l’équilibre (presque)"
-    description: "La semaine se termine : Martin retrouve la technologie, mais garde le grille-pain débranché… par précaution."
+    name: "Restauration à coût moral"
+    description: "Vérité révélée, chute sociale mais paix retrouvée."
     status: locked

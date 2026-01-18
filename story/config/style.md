@@ -1,11 +1,14 @@
+# Style d’écriture
+- Ton : Cynique, nerveux, avec une pointe de pathétique.
+- Voix : Focalisation interne (3e personne) pour souligner l'anxiété de Léo.
+- Rythme : Phrases courtes et haletantes dans les moments mondains ; prose lyrique et parfaite pour les extraits d'IA.
+- Atmosphère : Claustrophobie urbaine, contrastée par l'éclat artificiel des soirées littéraires.
+
 # Rythme
-Phrases courtes à moyennes ; alternance de narration rapide et de scènes dialoguées ; paragraphes aérés, ruptures de ton pour souligner les chutes comiques.
+Ex.: Phrases 10–15 mots lors des paniques de Léo ; envolées de 30 mots pour les textes de l'IA.
 
 # Ton
-Léger, ironique, bienveillant, avec une pointe d’autodérision. Éviter le sarcasme blessant, privilégier la tendresse pour les faiblesses humaines.
+Ex.: Satire sociale, ironie mesurée sur le "milieu" ; éviter le mélodrame.
 
 # Voix
-Rédacteur omniscient. Il parle des personnages à la troisiè à la première personne ou se  focalisation  sur les pensées interne de Martin ; langage courant, images concrètes, dialogues vifs ; utiliser les parenthèses et les apartés pour renforcer la complicité avec le lecteur.
-
-# Atmosphère
-Comédie sociale humoristique, humour naissant des situations absurdes et des décalages entre intentions et résultats.
+Ex.: Vocabulaire concret pour le quotidien, métaphores technologiques pour la création.

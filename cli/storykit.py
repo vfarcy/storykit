@@ -288,14 +288,35 @@ def _read_yaml_or_error(path: Path, issues: list[str]) -> dict:
 def validate_seven_steps(issues: list[str]) -> None:
     p = STORY / "truby" / "seven_steps.yaml"
     data = _read_yaml_or_error(p, issues).get("seven_steps", {})
-    required_str = [
-        ("weakness_need.internal", data.get("weakness_need", {}).get("internal")),
-        ("desire", data.get("desire")),
-        ("opponent.name", data.get("opponent", {}).get("name")),
-    ]
-    for key, val in required_str:
-        if not isinstance(val, str) or not val.strip():
-            issues.append(f"[seven_steps] Champ requis absent/vide: {key}")
+
+    # weakness_need peut être une chaîne ou un objet avec 'internal'
+    wn = data.get("weakness_need")
+    if isinstance(wn, dict):
+        wn_internal = wn.get("internal")
+        if not (isinstance(wn_internal, str) and wn_internal.strip()):
+            issues.append("[seven_steps] Champ requis absent/vide: weakness_need.internal")
+    elif isinstance(wn, str):
+        if not wn.strip():
+            issues.append("[seven_steps] Champ requis absent/vide: weakness_need (string)")
+    else:
+        issues.append("[seven_steps] weakness_need manquant ou de type invalide (attendu str ou mapping)")
+
+    # desire doit être une chaîne non vide
+    desire = data.get("desire")
+    if not (isinstance(desire, str) and desire.strip()):
+        issues.append("[seven_steps] Champ requis absent/vide: desire")
+
+    # opponent peut être une chaîne ou un objet avec 'name'
+    op = data.get("opponent")
+    if isinstance(op, dict):
+        op_name = op.get("name")
+        if not (isinstance(op_name, str) and op_name.strip()):
+            issues.append("[seven_steps] Champ requis absent/vide: opponent.name")
+    elif isinstance(op, str):
+        if not op.strip():
+            issues.append("[seven_steps] Champ requis absent/vide: opponent (string)")
+    else:
+        issues.append("[seven_steps] opponent manquant ou de type invalide (attendu str ou mapping)")
 
 def validate_genre(issues: list[str]) -> set[str]:
     p_choice = STORY / "genre" / "genre_choice.yaml"
@@ -305,7 +326,7 @@ def validate_genre(issues: list[str]) -> set[str]:
     beats  = _read_yaml_or_error(p_beats, issues).get("required_beats", [])
 
     primary = choice.get("primary")
-    allowed = {"detective","romance","horror","action","thriller","mystery","fantasy","sci-fi","crime"}
+    allowed = {"drama","detective","romance","horror","action","thriller","mystery","fantasy","sci-fi","crime"}
     if not isinstance(primary, str) or primary not in allowed:
         issues.append(f"[genre_choice] 'primary' invalide ou absent: {primary} (attendu ∈ {sorted(allowed)})")
 

@@ -1,30 +1,16 @@
 characters:
-  characters:
-    - id: narrateur
-      name: Martin Dubois
-      function: Protagoniste, informaticien en quête de déconnexion
-      desire: Survivre une semaine sans technologie et en tirer un livre drôle
-      weakness: Dépendance extrême aux gadgets, maladresse sociale
-      need: Accepter l’imprévu, rire de ses propres échecs
-      moral_values: Auto-dérision, curiosité, honnêteté
-
-    - id: conjointe
-      name: Sophie
-      function: Compagne pragmatique, témoin ironique
-      desire: Que Martin ne mette pas le feu à la cuisine
-      weakness: Impatience face aux lubies de Martin
-      need: Reconnaître la sincérité de la démarche
-
-    - id: voisin
-      name: Monsieur Bernard
-      function: Voisin septuagénaire, expert en vie « à l’ancienne »
-      desire: Prouver que « c’était mieux avant »
-      weakness: Nostalgie excessive, mauvaise foi comique
-      need: Accepter que le progrès a du bon
-
-    - id: enfants
-      name: Les enfants
-      function: Agents du chaos, testeurs involontaires
-      desire: Récupérer la tablette confisquée
-      weakness: Impatience, créativité débordante
-      need: Découvrir d’autres formes de jeu
+  - id: hero
+    name: "Léo"
+    function: "protagoniste (l'imposteur)"
+    weakness: "Vanité démesurée."
+    need: "Retrouver sa propre voix."
+    desire: "Gagner le Goncourt."
+    contrast_with: ["opponent", "ally_true"]
+  - id: opponent
+    name: "StoriKit"
+    function: "opposant (l'IA)"
+    moral_argument_inverse: "La perfection est supérieure à l'humanité."
+  - id: ally_true
+    name: "Marc"
+    function: "ami (l'auteur honnête)"
+    desire: "Écrire sans compromis."

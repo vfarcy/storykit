@@ -1,5 +1,6 @@
+# Définition du genre et de la philosophie narrative
 genre:
-  primary: "romance"
-  blends: ["chronique familiale", "satire sociale"]
-  philosophy: "On croit pouvoir contrôler sa vie en maîtrisant la technologie, mais c’est l’humour et l’acceptation de l’imprévu qui sauvent vraiment."
-  promise: "Des situations absurdes, des quiproquos familiaux, et une réflexion drôle sur notre dépendance aux objets connectés."
+  primary: "drama"
+  blends: ["satire", "psychological thriller"]
+  philosophy: "L'art est un acte de courage ; déléguer ce courage à une machine rend l'œuvre moralement vide."
+  promise: "Une exploration cynique des coulisses de l'édition et une chute ironique vers le succès."

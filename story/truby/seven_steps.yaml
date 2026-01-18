@@ -1,81 +1,8 @@
-
 seven_steps:
-  weakness_need:
-    internal: >
-      Martin dépend tellement des technologies qu’il panique dès qu’un écran
-      s’éteint. Sous ses airs d’expert du numérique, il ne maîtrise rien sans
-      Google (et encore). Il évite l’imprévu, contourne ses propres échecs et
-      cherche désespérément à paraître compétent.
-    moral_problem: >
-      Il veut prouver qu’il peut "vivre à l’ancienne", mais triche, ruse,
-      accuse les autres, ment à lui-même… et refuse d’admettre que sa quête
-      d’authenticité n’est qu’un besoin d’admiration déguisé.
-
-  desire: >
-    Réussir sa semaine sans technologie, survivre aux siens, et écrire un livre
-    drôle qui fera oublier qu’il a failli brûler la cuisine au jour 2.
-
-  opponent:
-    name: "Monsieur Bernard, les enfants en manque d’écrans… et le pire d’entre eux : Martin."
-    description: >
-      Le voisin nostalgique qui complique tout, les enfants en révolte ouverte,
-      Sophie qui observe et attend l’explosion, et surtout Martin lui-même,
-      piégé par ses automatismes.
-
-  steps:
-    - id: g01
-      name: "Faiblesse et besoin"
-      description: >
-        Martin annonce son défi, persuadé qu’il suffit de "débrancher".
-        Immédiatement, il se révèle incapable de faire du café, de cuire du pain,
-        ou d’occuper ses enfants sans écran. Sa faiblesse centrale apparaît :
-        il ne fuit pas la technologie, il fuit la réalité — et l’imprévu.
-
-    - id: g02
-      name: "Désir"
-      description: >
-        Pour sauver la face (et peut-être écrire quelque chose de publiable),
-        Martin s’accroche à son défi. Il veut prouver qu’il peut survivre, être
-        admiré, et vivre une semaine "simple". Il promet : "Ça va être fun."
-        Personne ne le croit, à commencer par lui.
-
-    - id: g03
-      name: "Opposants"
-      description: >
-        Les enfants s’organisent comme une cellule de résistance pour retrouver
-        la tablette. Sophie surveille, dubitative. Monsieur Bernard propose
-        des solutions archaïques et foireuses. Et Martin doit affronter ce qui
-        l’effraie vraiment : ses propres contradictions.
-
-    - id: g04
-      name: "Plan"
-      description: >
-        Martin élabore une stratégie héroï-comique : remplacer chaque outil
-        moderne par une solution “rustique”. Feu de bois, courrier papier,
-        jeux de société, recettes de grand-mère… tout en notant scrupuleusement
-        ses exploits pour son futur livre. Le plan semble tenable — sur le papier.
-
-    - id: g05
-      name: "Bataille"
-      description: >
-        Tout s’écroule. Catastrophe culinaire, enfumage général, mutinerie des
-        enfants, lettre perdue, conseil douteux du voisin. La maison devient un
-        champ de bataille où Martin lutte pour garder le contrôle (de lui-même,
-        surtout). Plus il s’accroche, plus son échec devient épique… et drôle.
-
-    - id: g06
-      name: "Révélation"
-      description: >
-        Au bord de l’abandon, Martin comprend enfin : le vrai problème n’a
-        jamais été la technologie, mais son incapacité à accepter ses limites.
-        Il cesse de prétendre, rit avec les autres, et admet ses tricheries.
-        L’honnêteté le soulage plus que le Wi‑Fi retrouvé.
-
-    - id: g07
-      name: "Nouvelle synthèse"
-      description: >
-        Martin retrouve un équilibre : un peu de modernité, un soupçon de
-        débrouille, et beaucoup de dérision. Il termine son livre en assumant
-        tout — les erreurs, les ratés, et les pains carbonisés. La famille se
-        retrouve, unie dans le chaos apprivoisé, autour d’un grille-pain
-        (parfois) débranché.
+  weakness_need: "Léo a besoin de gloire mais refuse de travailler sa propre vérité."
+  desire: "Utiliser le malentendu pour devenir une star littéraire."
+  opponent: "StoriKit, qui le rend obsolète dans son propre livre."
+  plan: "Nourrir l'IA de ses traumatismes pour simuler du génie."
+  battle: "Le vote du Goncourt où il doit défendre une œuvre qu'il ne comprend plus."
+  self_revelation: "Le succès sans l'âme est une forme de mort."
+  new_equilibrium: "Il avoue tout, perd le prix mais retrouve l'envie d'écrire."

@@ -1,8 +1,8 @@
 # Thèse (départ)
-Se déconnecter, c’est retrouver l’essentiel et la vraie liberté.
+Le succès et la reconnaissance justifient tous les raccourcis techniques.
 
 # Antithèse (tentation / vision opposée)
-Sans technologie, tout devient absurde, compliqué… et franchement risqué pour la santé mentale.
+L'IA offre une perfection narrative qui rend la souffrance humaine de l'écriture obsolète et inefficace.
 
 # Synthèse (révélation finale)
-L’essentiel n’est pas de réussir à décrocher, mais d’apprendre à rire de ses propres contradictions et de trouver un équilibre joyeux entre progrès et simplicité.
+L'authenticité ne réside pas dans la qualité du texte, mais dans la vulnérabilité de celui qui l'assume — le génie n'est rien sans l'honnêteté.
