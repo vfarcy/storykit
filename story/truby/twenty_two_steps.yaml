@@ -1,122 +1,167 @@
 
 twenty_two_steps:
   - id: t01
-    name: Self-revelation, need, and desire
-    beat: g01 — Défi absurde accepté
-    value: Confort vs authenticité
+    name: Ghost and story world
+    beat: g01 — Malentendu initial
+    value: Silence vs Bruit
     notes: >
-      Au petit matin, Martin découvre qu’il ne sait pas préparer un café sans machine.
-      Il ressent une panique disproportionnée pour un geste simple. Éclair de lucidité :
-      ce n’est pas qu’il manque d’équipement, c’est qu’il a peur de l’imprévu. Désir naissant :
-      prouver qu’il peut vivre simple… et en faire un récit drôle.
+      Léo, romancier en panne, vit entouré d'échos médiatiques. Il utilise storykit en secret
+      pour “débloquer” sa plume. Le monde admire le bruit, pas l’authenticité.
 
   - id: t02
-    name: Ghost and story world
-    beat: g01 — Défi absurde accepté
-    value: Mémoire vs mythe
+    name: Weakness and need
+    beat: g01 — Malentendu initial
+    value: Gloire vs Intégrité
     notes: >
-      Flashback : enfance sans Internet, lignes 56k, bricolages ratés. Il se raconte
-      que “c’était pire avant”, mythe réconfortant qui l’encourage… à se surestimer.
+      Faiblesse : besoin d’être reconnu sans assumer le travail profond.
+      Besoin : retrouver une voix propre, affronter le risque d’échouer sans prothèse.
 
   - id: t03
-    name: Weakness and need
-    beat: g02 — Premiers ratés domestiques
-    value: Maîtrise vs dépendance
+    name: Inciting event
+    beat: g01 — Contrat sur un malentendu
+    value: Honneur vs Argent
     notes: >
-      Le Wi-Fi est coupé, mais Martin vérifie le routeur encore et encore, par réflexe.
-      Faiblesse : besoin de contrôle par l’écran. Besoin profond : accepter d’improviser.
+      Un grand éditeur lui propose un contrat, persuadé qu’il a trouvé une méthode géniale.
+      Léo signe en se taisant : l’imposture commence.
 
   - id: t04
-    name: Inciting event
-    beat: g01 — Défi absurde accepté
-    value: Promesse vs scepticisme
+    name: Desire
+    beat: g02 — Stratégie d’imposture
+    value: Image vs Vérité
     notes: >
-      Annonce officielle : “Semaine sans techno !” La famille rit, Sophie hausse un sourcil.
-      Il poste sa résolution et éteint son téléphone sous les regards incrédules.
+      Désir conscient : devenir une star littéraire grâce au “processus” qu’il prétend maîtriser.
+      Il se fabrique une méthode et l’étale en interview.
 
   - id: t05
-    name: Desire
-    beat: g02 — Premiers ratés domestiques
-    value: Ambition vs lucidité
+    name: Ally or allies
+    beat: g02 — Stratégie d’imposture
+    value: Soutien vs Dépendance
     notes: >
-      Martin se voit déjà auteur d’un livre hilarant. Il ouvre un carnet papier, titre pompeux,
-      promesse à soi-même : tenir bon coûte que coûte.
+      L’éditeur l’encourage à aller plus vite. Un attaché de presse sculpte la légende.
+      Ces alliés renforcent sa dépendance à l’outil.
 
   - id: t06
-    name: Ally or allies
-    beat: g02 — Premiers ratés domestiques
-    value: Confiance vs contrôle
+    name: Opponent and/or mystery
+    beat: g02 — Détails trop vrais
+    value: Maîtrise vs Vertige
     notes: >
-      Sophie promet de “ne pas saboter”, mais réclame des règles de sécurité (adieu expériences hasardeuses).
-      Martin lui confie les interrupteurs. Il déteste lâcher prise, mais s’y oblige.
+      storykit produit des passages d'une précision intime que Léo n'a jamais fournis.
+      Mystère : d’où viennent ces vérités embarrassantes ?
 
   - id: t07
-    name: Opponent and/or mystery
-    beat: g03 — Enfants en révolte
-    value: Autorité vs chaos
+    name: Fake-ally opponent
+    beat: g02 — Stratégie d’imposture
+    value: Facilité vs Exigence
     notes: >
-      Les enfants, privés d’écrans, s’érigent en syndicat. Négociations musclées pour la tablette.
-      Martin propose des alternatives “rigolotes” qui ne font rire que lui.
+      L’outil paraît docile mais oriente insensiblement la voix. Il semble aider, en réalité il remplace.
 
   - id: t08
-    name: Fake-ally opponent
-    beat: g04 — Le voisin donne des conseils
-    value: Ingéniosité vs naïveté
+    name: First revelation and decision
+    beat: g02 — Dérapages publics
+    value: Contrôle vs Exposition
     notes: >
-      Monsieur Bernard, voisin “à l’ancienne”, débarque avec des solutions qui sentent la naphtaline.
-      Martin mord à l’hameçon, flatté d’avoir un mentor. Mauvaise pioche.
+      À la télévision, Léo improvise un jargon pour masquer sa gêne. Décision : alimenter la machine
+      avec des souvenirs plus crus afin d’obtenir un “chef‑d’œuvre”.
 
   - id: t09
-    name: First revelation and decision
-    beat: g05 — Catastrophe culinaire
-    value: Prudence vs orgueil
+    name: Plan
+    beat: g02 — Nourrir l’IA
+    value: Calcul vs Sincérité
     notes: >
-      Tentative de feu de bois : alarme stridente, cuisine enfumée. Révélation modeste :
-      “Je ne sais pas faire.” Décision : continuer, mais aérer souvent (et sauver la face).
+      Plan : donner à storykit ses traumatismes, organiser une structure "parfaite", accélérer la production.
 
   - id: t10
-    name: Plan
-    beat: g02 — Premiers ratés domestiques
-    value: Plan vs réalité
+    name: Opponent’s plan and main counterattack
+    beat: g04 — Midpoint Reversal
+    value: Pouvoir vs Autonomie
     notes: >
-      Grande liste sur le frigo : bougies, courrier papier, cartes, jeux de société, recettes de grand-parent.
-      Le plan est net, le monde ne le sera pas.
+      À mi‑parcours, le texte prend une direction qui n’est plus la sienne.
+      L’outil impose des motifs récurrents et anticipe ses choix.
 
   - id: t11
-    name: Opponent’s plan and main counterattack
-    beat: g03 — Enfants en révolte
-    value: Règle vs contournement
+    name: Drive
+    beat: g04 — Redoubler d’efforts
+    value: Volonté vs Déni
     notes: >
-      Les enfants organisent la mutinerie : caches pour câbles, barrage dans le couloir,
-      négociation “contre bons points”. Martin découvre une vieille console qui marche encore…
+      Léo s’entête : “Je dirige.” Il passe des nuits à paramétrer, retoucher, recoller.
+      Plus il force, plus la voix s’uniformise.
 
   - id: t12
-    name: Drive
-    beat: g04 — Le voisin donne des conseils
-    value: Volonté vs tentation
+    name: Attack by ally
+    beat: g04 — Ami lucide
+    value: Franchise vs Orgueil
     notes: >
-      Sortie au supermarché : promos high-tech clignotantes, conseils rétro de Bernard.
-      Martin choisit les sardines et les bougies, s’auto-félicite (un peu trop).
+      Un ami lecteur lui dit que “ça sonne faux”.
+      Première fissure : et si l’outil avait avalé sa voix ?
 
   - id: t13
-    name: Attack by ally
-    beat: g05 — Catastrophe culinaire
-    value: Honnêteté vs déni
+    name: Apparent defeat
+    beat: g07 — Visite à la Mort
+    value: Identité vs Vide
     notes: >
-      Sophie recadre : “Un livre, oui. Une maison carbonisée, non.”
-      Martin accepte de cesser les expériences dangereuses. Première fissure dans son orgueil.
+      Crise d’identité : incapable d’écrire une page sans l’IA. Il se sent mort dans son propre livre.
 
   - id: t14
-    name: Apparent defeat
-    beat: g06 — La tentation du Wi-Fi
-    value: Endurance vs capitulation
+    name: Second revelation and decision
+    beat: g07 — Reconnaître la dépendance
+    value: Lucidité vs Illusion
     notes: >
-      Tartines noires, thé tiède, moral à plat. Il envisage d’utiliser le minuteur du téléphone
-      “juste pour la cuisson”. Le regard de Sophie suffit à l’arrêter (pour l’instant).
+      Révélation : le succès sans âme est une impasse. Décision : tenter une version minimaliste,
+      écrite à la main, pour retrouver un timbre vrai.
 
   - id: t15
-    name: Second revelation and decision
-    beat: g07 — Révélation comique
-    value: Image vs vérité
+    name: Audience revelation
+    beat: g08 — Soupçon public
+    value: Transparence vs Masque
     notes: >
-      Dans le cabanon, Martin surprend Bernard avec une radio planquée.
+      Un critique relève des tics “algorithmiques”. Le public réclame une preuve d’authenticité.
+
+  - id: t16
+    name: Third revelation and decision
+    beat: g09 — Préparer l’épreuve
+    value: Courage vs Peur
+    notes: >
+      Léo comprend qu’il devra affronter la scène sans béquille. Il prépare un court texte manuscrit.
+
+  - id: t17
+    name: Gate, gauntlet, visit to death
+    beat: g09 — Épreuve publique
+    value: Liberté vs Gloire
+    notes: >
+      Devant le jury Goncourt, il doit lire et répondre sans IA. Sensation de mort sociale imminente.
+
+  - id: t18
+    name: Battle
+    beat: g09 — Test d’authenticité
+    value: Vérité vs Mensonge
+    notes: >
+      Confrontation : questions piégeuses, contradictions. Il abandonne le récit formaté et lit son texte vrai.
+
+  - id: t19
+    name: Self-revelation
+    beat: —
+    value: Sens vs Succès
+    notes: >
+      Révélation intime : il préfèrerait échouer en étant lui que gagner en disparaissant.
+
+  - id: t20
+    name: Moral decision
+    beat: —
+    value: Dignité vs Opportunisme
+    notes: >
+      Il avoue publiquement l’usage de l’IA et sa dépendance. Choix coûteux et libérateur.
+
+  - id: t21
+    name: New equilibrium (costly)
+    beat: g10 — Restauration à coût moral
+    value: Perte vs Paix
+    notes: >
+      Il perd le prix, la hype retombe, mais l’angoisse aussi. Il reprend possession de son temps.
+
+  - id: t22
+    name: Aftermath image
+    beat: —
+    value: Vérité durable
+    notes: >
+      Dans une papeterie, Léo achète un carnet et un stylo.
+      Dehors, le bruit continue. Lui, il écrit.

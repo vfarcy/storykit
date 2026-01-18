@@ -1,4 +1,5 @@
 
+# -*- coding: utf-8 -*-
 """
 StoryKit CLI — assemble & validate
 ----------------------------------

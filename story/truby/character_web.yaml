@@ -7,7 +7,7 @@ characters:
     desire: "Gagner le Goncourt."
     contrast_with: ["opponent", "ally_true"]
   - id: opponent
-    name: "StoriKit"
+    name: "storykit"
     function: "opposant (l'IA)"
     moral_argument_inverse: "La perfection est supérieure à l'humanité."
   - id: ally_true
