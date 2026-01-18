@@ -2,6 +2,11 @@
 Adaptateur Claude (Anthropic API)
 Installer : pip install anthropic
 Config : ajouter ANTHROPIC_API_KEY dans .env ou variable d'environnement
+
+Prompt Caching activé par défaut pour réduire les coûts :
+- Les blocs de contexte (artefacts Truby, beats, style) sont mis en cache
+- Cache valide ~5 min, réduction ~90% du coût sur tokens cachés
+- Désactiver via meta["use_cache"] = False si besoin
 """
 import os
 from datetime import datetime
@@ -32,29 +37,136 @@ class ClaudeAdapter:
         """
         Envoie le prompt à Claude et retourne la réponse.
         Sauvegarde aussi la réponse dans out/responses/.
+        
+        Utilise Prompt Caching par défaut pour réduire les coûts :
+        - Sépare le contexte (cachable) de la requête (variable)
+        - Marqueurs cache_control sur les blocs de contexte
         """
         model = meta.get("model") or "claude-3-5-sonnet-20241022"
         max_tokens = meta.get("max_tokens", 4096)
+        use_cache = meta.get("use_cache", True)  # Activé par défaut
 
         try:
-            response = self.client.messages.create(
-                model=model,
-                max_tokens=max_tokens,
-                messages=[{"role": "user", "content": payload}]
-            )
+            # Construire les messages avec ou sans cache
+            if use_cache:
+                system_blocks, user_message = self._build_cached_messages(payload)
+                
+                response = self.client.messages.create(
+                    model=model,
+                    max_tokens=max_tokens,
+                    system=system_blocks,
+                    messages=[{"role": "user", "content": user_message}]
+                )
+            else:
+                response = self.client.messages.create(
+                    model=model,
+                    max_tokens=max_tokens,
+                    messages=[{"role": "user", "content": payload}]
+                )
             
             # Extraire le texte de la réponse
             content = response.content[0].text if response.content else ""
             
+            # Info sur l'utilisation du cache
+            usage = response.usage
+            cache_info = ""
+            if hasattr(usage, 'cache_creation_input_tokens') and usage.cache_creation_input_tokens:
+                cache_info = f" [Cache: {usage.cache_creation_input_tokens} créés, {usage.cache_read_input_tokens} lus]"
+            elif hasattr(usage, 'cache_read_input_tokens') and usage.cache_read_input_tokens:
+                cache_info = f" [Cache: {usage.cache_read_input_tokens} lus]"
+            
             # Sauvegarder la réponse
             self._save_response(content, meta)
             
-            return f"[claude] Réponse reçue ({len(content)} caractères) — sauvegardée dans out/responses/"
+            return f"[claude] Réponse reçue ({len(content)} caractères){cache_info} — sauvegardée dans out/responses/"
             
         except anthropic.APIError as e:
             return f"[claude] Erreur API: {e}"
         except Exception as e:
             return f"[claude] Erreur inattendue: {e}"
+    
+    def _build_cached_messages(self, payload: str):
+        """
+        Sépare le prompt en blocs cachables (contexte) et variable (requête).
+        
+        Structure optimale selon Anthropic :
+        - system: tout le contexte (artefacts) avec cache_control
+        - messages: instructions finales
+        
+        Le cache nécessite minimum 1024 tokens pour être activé.
+        """
+        # Chercher la section "INSTRUCTIONS" ou similaire qui marque la fin du contexte
+        instructions_markers = [
+            "# INSTRUCTIONS",
+            "# Instructions",
+            "# TÂCHE",
+            "# Tâche", 
+            "# MISSION",
+            "# Mission"
+        ]
+        
+        split_pos = -1
+        for marker in instructions_markers:
+            pos = payload.rfind(marker)
+            if pos != -1:
+                split_pos = pos
+                break
+        
+        if split_pos == -1:
+            # Pas de séparation claire, mettre tout le contexte en cache sauf les 2 derniers paragraphes
+            paragraphs = payload.split('\n\n')
+            if len(paragraphs) < 3:
+                return [], payload  # Trop court pour le cache
+            
+            context = '\n\n'.join(paragraphs[:-2])
+            request = '\n\n'.join(paragraphs[-2:])
+        else:
+            # Séparer au niveau du marker d'instructions
+            context = payload[:split_pos].strip()
+            request = payload[split_pos:].strip()
+        
+        # Créer un seul bloc system avec cache_control
+        system_blocks = [
+            {
+                "type": "text",
+                "text": context,
+                "cache_control": {"type": "ephemeral"}
+            }
+        ]
+        
+        return system_blocks, request
+    
+    def _split_prompt(self, payload: str):
+        """
+        Divise le prompt en sections logiques pour optimiser le cache.
+        
+        Cherche des marqueurs comme :
+        - "---" (séparateur Markdown)
+        - Titres de niveau 1 (# Titre)
+        - Sections identifiables (Prémisse, Style, Artefacts, etc.)
+        """
+        sections = []
+        current = []
+        
+        for line in payload.split('\n'):
+            # Détecter les séparateurs
+            if line.strip() in ['---', '═══']:
+                if current:
+                    sections.append('\n'.join(current))
+                    current = []
+            # Détecter les titres de niveau 1 (sauf le premier)
+            elif line.startswith('# ') and sections:
+                if current:
+                    sections.append('\n'.join(current))
+                    current = [line]
+            else:
+                current.append(line)
+        
+        # Ajouter la dernière section
+        if current:
+            sections.append('\n'.join(current))
+        
+        return sections if sections else [payload]
 
     def _save_response(self, content: str, meta: dict):
         """Sauvegarde la réponse dans out/responses/"""
