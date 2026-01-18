@@ -10,7 +10,7 @@ required_beats:
     status: locked
   - id: g03
     name: "Fausse piste (Red Herring)"
-    description: "L'illusion d'un succès facile sans conséquences morales."
+    description: "Succès médiatique initial qui masque la dépendance croissante à l'IA — le piège se referme."
     status: locked
   - id: g04
     name: "Midpoint Reversal"
@@ -22,7 +22,7 @@ required_beats:
     status: locked
   - id: g06
     name: "Pression temporelle"
-    description: "La date de remise du manuscrit définitif approche."
+    description: "Approche du vote Goncourt et enquête sur l'authenticité du manuscrit — le piège se resserre."
     status: locked
   - id: g07
     name: "Visit to Death"

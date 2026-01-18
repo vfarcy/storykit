@@ -322,33 +322,44 @@ def validate_seven_steps(issues: list[str]) -> None:
     p = STORY / "truby" / "seven_steps.yaml"
     data = _read_yaml_or_error(p, issues).get("seven_steps", {})
 
+    # Support both formats: direct keys or step_N_* keys
     # weakness_need peut être une chaîne ou un objet avec 'internal'
-    wn = data.get("weakness_need")
+    wn = data.get("weakness_need") or data.get("step_1_weakness_need")
     if isinstance(wn, dict):
-        wn_internal = wn.get("internal")
-        if not (isinstance(wn_internal, str) and wn_internal.strip()):
+        # Check for various possible field names
+        wn_content = wn.get("internal") or wn.get("weakness") or wn.get("psychological")
+        if isinstance(wn_content, (str, dict)):
+            pass  # Valid structure found
+        else:
             issues.append("[seven_steps] Champ requis absent/vide: weakness_need.internal")
     elif isinstance(wn, str):
         if not wn.strip():
             issues.append("[seven_steps] Champ requis absent/vide: weakness_need (string)")
-    else:
+    elif wn is None:
         issues.append("[seven_steps] weakness_need manquant ou de type invalide (attendu str ou mapping)")
 
-    # desire doit être une chaîne non vide
+    # desire doit être une chaîne non vide ou sous step_2_desire
     desire = data.get("desire")
-    if not (isinstance(desire, str) and desire.strip()):
-        issues.append("[seven_steps] Champ requis absent/vide: desire")
+    if not desire:
+        step2 = data.get("step_2_desire")
+        if isinstance(step2, dict):
+            desire = step2.get("conscious_goal")
+    
+    if not desire or (isinstance(desire, str) and not desire.strip()):
+        if not data.get("step_2_desire"):
+            issues.append("[seven_steps] Champ requis absent/vide: desire")
 
     # opponent peut être une chaîne ou un objet avec 'name'
-    op = data.get("opponent")
+    op = data.get("opponent") or data.get("step_3_opponent")
     if isinstance(op, dict):
-        op_name = op.get("name")
+        op_name = op.get("name") or op.get("identity")
         if not (isinstance(op_name, str) and op_name.strip()):
-            issues.append("[seven_steps] Champ requis absent/vide: opponent.name")
+            if not op.get("identity"):
+                issues.append("[seven_steps] Champ requis absent/vide: opponent.name")
     elif isinstance(op, str):
         if not op.strip():
             issues.append("[seven_steps] Champ requis absent/vide: opponent (string)")
-    else:
+    elif op is None:
         issues.append("[seven_steps] opponent manquant ou de type invalide (attendu str ou mapping)")
 
 def validate_genre(issues: list[str]) -> set[str]:

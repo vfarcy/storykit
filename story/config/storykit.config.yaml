@@ -5,7 +5,7 @@ ai:
   model: "claude-sonnet-4-5-20250929"
 #  model: "claude-sonnet-4-5-20250929" # Nom du modèle pour claude
 #  model: "gemini-2.5-flash"
-  max_tokens: 8000         # Budget de sortie (augmenté pour chapitres complets)
+  max_tokens: 20000        # Budget de sortie (augmenté pour chapitres complets)
 
 project:
   root: ./story            # Répertoire racine des artefacts

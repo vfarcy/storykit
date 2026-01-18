@@ -82,24 +82,30 @@ class ClaudeAdapter:
             # Extraire le texte de la réponse (filtrer les blocs non-texte)
             content = self._extract_text(response.content)
             
-            # Info sur l'utilisation du cache
+            # Info détaillée sur l'utilisation des tokens
             usage = response.usage
-            cache_info = ""
+            input_tokens = getattr(usage, 'input_tokens', 0) or 0
+            output_tokens = getattr(usage, 'output_tokens', 0) or 0
             cache_creation = getattr(usage, 'cache_creation_input_tokens', 0) or 0
             cache_read = getattr(usage, 'cache_read_input_tokens', 0) or 0
             
+            # Construire le message d'info
+            token_info = f"Input: {input_tokens:,} | Output: {output_tokens:,}"
+            
+            cache_info = ""
             if cache_creation:
-                cache_info = f" [Cache: {cache_creation} créés, {cache_read} lus]"
+                cache_info = f" | Cache: {cache_creation:,} créés, {cache_read:,} lus"
             elif cache_read:
-                cache_info = f" [Cache: {cache_read} lus]"
+                cache_info = f" | Cache: {cache_read:,} lus"
             elif use_cache:
-                # Cache était activé mais pas utilisé (contenu trop court)
-                cache_info = f" [Cache: inactif (contenu < 1024 tokens)]"
+                cache_info = f" | Cache: inactif (< 1024 tok)"
+            
+            total_cost_tokens = input_tokens + output_tokens + (cache_creation // 10) + (cache_read // 10)
             
             # Sauvegarder la réponse
             self._save_response(content, meta)
             
-            return f"[claude] Réponse reçue ({len(content)} caractères){cache_info} — sauvegardée dans out/responses/"
+            return f"[claude] Réponse reçue ({len(content)} caractères) — {token_info}{cache_info} — Total ~{total_cost_tokens:,} tokens"
             
         except Exception as e:
             # Capte anthropic.APIError et autres exceptions
