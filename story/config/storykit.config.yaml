@@ -2,7 +2,7 @@ key: "CHANGEMOI"           # Facultatif : peut être lu par certains adaptateurs
 
 ai:
   provider: claude         # Ex: gemini, copilot, claude, dry-run
-  model: "claude-3-5-haiku-20241022" # Nom du modèle pour l’adaptateur choisi
+  model: "claude-sonnet-4-5-20250929" # Nom du modèle pour l’adaptateur choisi
   max_tokens: 1800         # Budget de sortie
 
 project:
