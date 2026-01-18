@@ -4,18 +4,6 @@ pyyaml
 rich
 python-dotenv
 
-
-# Core dependencies
-pyyaml
-rich
-python-dotenv
-
-# Markdown parsing (lecture/écriture fichiers .md)
-markdown
-
-# CLI (optionnel, pour une meilleure expérience CLI)
-click
-
 # Optional LLM providers (install only those you use)
 # anthropic (Claude)
 anthropic
