@@ -366,6 +366,72 @@ python -m cli.storykit assemble --target truby7
 
 Les adaptateurs se chargent dynamiquement selon les modules installés et les clés disponibles.
 
+### Prompt Caching (Claude) — Réduire les coûts de ~90%
+
+L'adaptateur Claude implémente le **Prompt Caching** d'Anthropic pour réduire drastiquement les coûts sur les appels répétés.
+
+**Comment ça marche :**
+- Le contexte stable (prémisse, style, artefacts Truby, beats) est automatiquement mis en cache
+- Les instructions finales (variables selon la commande) ne sont pas cachées
+- Cache valide pendant **~5 minutes**
+- **Minimum 1024 tokens** requis pour activer le cache
+
+**Économies réelles :**
+
+Premier appel (création du cache) :
+```bash
+python -m cli.storykit assemble --target truby7
+# [Cache: 6582 créés, 0 lus]
+# → Coût normal sur 6582 tokens + petite surcharge de création
+```
+
+Appels suivants (< 5 min) :
+```bash
+python -m cli.storykit assemble --target truby7
+# [Cache: 6582 lus]
+# → ~90% d'économie sur les 6582 tokens en cache !
+```
+
+**Stratégies d'optimisation :**
+
+1. **Enchaînez vos commandes rapidement** (< 5 min entre chaque)
+   ```bash
+   python -m cli.storykit assemble --target truby7
+   # Analyser la réponse, ajuster les fichiers
+   python -m cli.storykit assemble --target truby22  # Cache réutilisé !
+   python -m cli.storykit assemble --target weave    # Cache réutilisé !
+   ```
+
+2. **Itérations rapides** : testez plusieurs versions d'une même commande
+   ```bash
+   # Modifier story/truby/seven_steps.yaml
+   python -m cli.storykit assemble --target truby7
+   # Ajuster encore...
+   python -m cli.storykit assemble --target truby7  # Cache réutilisé
+   ```
+
+3. **Désactiver ponctuellement** : si le contexte change radicalement
+   ```yaml
+   # Dans storykit.config.yaml (ou via code)
+   ai:
+     use_cache: false  # Désactive le cache temporairement
+   ```
+
+**Statistiques affichées :**
+- `[Cache: X créés]` : tokens mis en cache (premier appel)
+- `[Cache: Y lus]` : tokens lus depuis le cache (économie ~90%)
+- Aucun message : prompt trop court (< 1024 tokens) pour bénéficier du cache
+
+**Coût estimé :**
+- Tokens normaux : ~$0.003 / 1K tokens input (Sonnet 3.5)
+- Tokens en cache (création) : ~$0.00375 / 1K tokens (~25% surcharge)
+- Tokens en cache (lecture) : ~$0.0003 / 1K tokens (**90% d'économie**)
+
+Pour un projet StoryKit typique (6000 tokens de contexte) :
+- Sans cache : $0.018 par appel
+- Avec cache (après 1er appel) : $0.002 par appel
+- **Économie : $0.016 par appel (~89%)**
+
 ### Style & Voix
 - Emplacement: `story/config/style.md`. Ce fichier définit le ton, la voix et le rythme attendus.
 - Rubriques requises: Titres ou labels pour **Ton**, **Voix**, **Rythme** (ex: `# Ton` ou `Ton:`).
