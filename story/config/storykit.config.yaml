@@ -4,6 +4,7 @@ ai:
   provider: claude         # Ex: gemini, copilot, claude, dry-run
   model: "claude-sonnet-4-5-20250929"
 #  model: "claude-sonnet-4-5-20250929" # Nom du modèle pour claude
+#  model: "gemini-2.5-flash"
   max_tokens: 1800         # Budget de sortie
 
 project:
