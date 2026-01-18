@@ -1,11 +1,11 @@
 key: "CHANGEMOI"           # Facultatif : peut être lu par certains adaptateurs ; sinon supprimer.
 
 ai:
-  provider: dry-run         # Ex: gemini, copilot, claude, dry-run
+  provider: claude         # Ex: gemini, copilot, claude, dry-run
   model: "claude-sonnet-4-5-20250929"
 #  model: "claude-sonnet-4-5-20250929" # Nom du modèle pour claude
 #  model: "gemini-2.5-flash"
-  max_tokens: 1800         # Budget de sortie
+  max_tokens: 8000         # Budget de sortie (augmenté pour chapitres complets)
 
 project:
   root: ./story            # Répertoire racine des artefacts

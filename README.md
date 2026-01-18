@@ -101,9 +101,10 @@ La commande `python -m cli.storykit validate` vérifie la présence et la cohér
 
 4. **`story/truby/seven_steps.yaml`**  
    - Champs requis minimum :
-     - `weakness_need.internal` : faiblesse psychologique du protagoniste
+     - `weakness_need` : faiblesse psychologique (accepte string simple ou mapping avec `internal`)
      - `desire` : objectif conscient poursuivi
-     - `opponent.name` : identité de l'opposant principal
+     - `opponent` : identité de l'opposant (accepte string simple ou mapping avec `name`)
+   - ⚠️ **Nouveauté** : Validation robuste acceptant deux formats de YAML (string directe ou structure dict)
 
 5. **`story/outline/scene_weave.md`**  
    - Présence des pivots obligatoires : First Revelation, Midpoint, Battle
@@ -236,6 +237,27 @@ Cette approche permet à StoryKit de rester **flexible** tout en garantissant un
 
 ---
 
+### 3.3) Améliorations récentes (Janvier 2026)
+
+**Validation robuste de `seven_steps.yaml` :**
+- ✅ Accepte maintenant **deux formats YAML** pour `weakness_need` et `opponent`
+- Format simple : `weakness_need: "texte"` ou `opponent: "nom"`
+- Format structuré : `weakness_need: { internal: "texte" }` ou `opponent: { name: "nom" }`
+- Plus d'erreur `AttributeError: 'str' object has no attribute 'get'`
+
+**Estimation automatique du budget tokens :**
+- ✅ Calcul de la taille du prompt d'entrée avant envoi à l'API
+- ⚠️ Avertissement jaune si prompt > 80% de `max_tokens` (risque de troncature)
+- ❌ Avertissement rouge si prompt > 100% de `max_tokens` (requête rejetée)
+- Aide à ajuster `max_tokens` **avant** l'appel coûteux
+
+**Meilleur support Windows :**
+- ✅ Déclaration `# -*- coding: utf-8 -*-` dans tous les fichiers Python
+- ✅ Documentation pour configurer l'encodage UTF-8 sous PowerShell
+- Fini les problèmes d'affichage des caractères accentués
+
+---
+
 ## 4) Installation
 
 ```bash
@@ -294,6 +316,22 @@ Set-Alias vpy "$PWD\.venv\Scripts\python.exe"
 vpy -m cli.storykit validate
 ```
 
+**Encodage UTF-8 (Windows PowerShell) :**  
+Si vous rencontrez des problèmes d'affichage des caractères accentués :
+
+```powershell
+# Pour la session courante
+$env:PYTHONIOENCODING="utf-8"
+python -m cli.storykit validate
+
+# Ou lancer Python avec flag UTF-8
+python -X utf8 -m cli.storykit validate
+
+# Permanent : ajouter à votre profil PowerShell
+notepad $PROFILE
+# Ajouter la ligne : $env:PYTHONIOENCODING="utf-8"
+```
+
 ---
 
 ## 5) Configuration
@@ -303,8 +341,8 @@ vpy -m cli.storykit validate
 ```yaml
 ai:
   provider: dry-run        # dry-run | claude | copilot | gemini
-  model: ""                # ex: claude-3-5-sonnet, gpt-4o, gemini-1.5
-  max_tokens: 1800
+  model: ""                # ex: claude-sonnet-4-5, gpt-4o, gemini-2.5-flash
+  max_tokens: 8000         # Budget de sortie (8000 recommandé pour chapitres complets)
 project:
   root: ./story
 language: fr
@@ -316,6 +354,19 @@ style:
 ```
 
 - **dry-run** écrit simplement le **prompt** dans `out/prompts/` (aucun appel réseau).
+- **max_tokens** : Recommandé `8000` pour les chapitres complets ; StoryKit estime la taille du prompt et affiche un avertissement si elle approche cette limite.
+
+**Avertissements automatiques de budget tokens :**
+- ⚠️ **Jaune** : si le prompt d'entrée > 80% de `max_tokens` → risque de réponse tronquée
+- ❌ **Rouge** : si le prompt d'entrée > 100% de `max_tokens` → requête rejetée par l'API
+
+Exemple de sortie :
+```
+Attention: Le prompt d'entrée (3953 tokens estimés) approche la limite max_tokens (4000). 
+La réponse risque d'être tronquée.
+```
+
+L'estimation utilise une heuristique simple (~1 token par 4 caractères pour le français). Pour plus de précision, vous pouvez intégrer `tiktoken` (bibliothèque OpenAI de comptage exact de tokens) ou utiliser l'API native du provider.
 
 ### Adaptateurs IA réels
 
@@ -612,7 +663,26 @@ Ce mécanisme garantit :
 **Conseils d'usage :**
 - **Premise/Genre** : modèles légers suffisent (Haiku, GPT-3.5, Flash)
 - **Truby7/22, Weave** : modèles équilibrés (Sonnet, GPT-4o, Pro)
-- **Draft** : modèles puissants (Opus, GPT-4o, Pro) + `max_tokens: 8192` pour chapitres longs
+- **Draft** : modèles puissants (Opus, GPT-4o, Pro) + `max_tokens: 8000` pour chapitres longs
+
+**Avertissements automatiques de tokens :**
+StoryKit estime désormais la taille du prompt d'entrée et affiche un avertissement si vous approchez la limite `max_tokens` :
+- ⚠️ **Jaune** : si input > 80% du budget → risque de réponse tronquée
+- ❌ **Rouge** : si input > 100% du budget → requête rejetée par l'API
+
+Exemple de sortie :
+```
+Attention: Le prompt d'entrée (3953 tokens estimés) approche la limite max_tokens (4000). 
+La réponse risque d'être tronquée.
+```
+
+Solution : augmentez `max_tokens` dans la config :
+```yaml
+ai:
+  max_tokens: 8000  # Pour chapitres complets
+```
+
+L'estimation utilise une heuristique simple (1 token ≈ 4 caractères pour le français). Pour plus de précision, vous pouvez intégrer `tiktoken` (OpenAI) ou l'API native du provider.
 
 ---
 

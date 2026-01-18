@@ -101,6 +101,38 @@ def demote_headers(text: str, levels: int = 1) -> str:
     return re.sub(r"^(#+)", lambda m: prefix + m.group(1), text, flags=re.MULTILINE)
 
 
+def estimate_tokens(text: str) -> int:
+    """
+    Estimation simple des tokens : environ 1 token par 4 caractères (moyenne pour le français).
+    Pour une estimation précise, utiliser tiktoken ou la lib de l'API.
+    """
+    return len(text) // 4
+
+
+def check_token_budget(payload: str, max_tokens: int, target: str) -> None:
+    """
+    Vérifie si le prompt dépassera le budget de tokens et affiche un avertissement.
+    """
+    estimated_input = estimate_tokens(payload)
+    # On suppose que la réponse sera aussi longue que l'input (heuristique conservative)
+    estimated_total = estimated_input + max_tokens
+    
+    if estimated_input > max_tokens * 0.8:  # Avertissement si input > 80% du budget
+        msg = (
+            f"Attention: Le prompt d'entrée ({estimated_input} tokens estimés) "
+            f"approche la limite max_tokens ({max_tokens}). "
+            f"La réponse risque d'être tronquée."
+        )
+        console.print(f"[yellow]{msg}[/yellow]")
+    elif estimated_input > max_tokens:
+        msg = (
+            f"Erreur: Le prompt d'entrée ({estimated_input} tokens) "
+            f"dépasse max_tokens ({max_tokens}). "
+            f"L'API rejettera cette requête."
+        )
+        console.print(f"[red]{msg}[/red]")
+
+
 # ---------------------------
 # Assemble: construction de prompt
 # ---------------------------
@@ -525,13 +557,15 @@ def main(argv=None):
     ai_cfg = cfg.get("ai", {})
     provider = ai_cfg.get("provider", "dry-run")
     model = ai_cfg.get("model")
-    max_tokens = ai_cfg.get("max_tokens")
+    max_tokens = ai_cfg.get("max_tokens", 4000)
     AdapterCls = ADAPTERS.get(provider, DryRunAdapter)
-    # import os
-    # Suppression de l'affichage de la GOOGLE_API_KEY pour plus de sécurité
     adapter = AdapterCls()
 
     payload = assemble_payload(args.target, chapter=args.chapter)
+    
+    # Vérifier le budget de tokens avant d'envoyer
+    check_token_budget(payload, max_tokens, args.target)
+    
     meta = {
         "target": args.target,
         "provider": provider,
