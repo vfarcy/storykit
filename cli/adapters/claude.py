@@ -49,14 +49,29 @@ class ClaudeAdapter:
         try:
             # Construire les messages avec ou sans cache
             if use_cache:
-                system_blocks, user_message = self._build_cached_messages(payload)
+                system_text, user_message = self._build_cached_messages(payload)
                 
-                response = self.client.messages.create(
-                    model=model,
-                    max_tokens=max_tokens,
-                    system=system_blocks,
-                    messages=[{"role": "user", "content": user_message}]
-                )
+                # Si pas assez de contenu pour le cache, fallback sans cache
+                if not system_text:
+                    response = self.client.messages.create(
+                        model=model,
+                        max_tokens=max_tokens,
+                        messages=[{"role": "user", "content": user_message}]
+                    )
+                else:
+                    # Cache activé : utiliser system avec cache_control
+                    response = self.client.messages.create(
+                        model=model,
+                        max_tokens=max_tokens,
+                        system=[
+                            {
+                                "type": "text",
+                                "text": system_text,
+                                "cache_control": {"type": "ephemeral"}
+                            }
+                        ],
+                        messages=[{"role": "user", "content": user_message}]
+                    )
             else:
                 response = self.client.messages.create(
                     model=model,
@@ -64,8 +79,8 @@ class ClaudeAdapter:
                     messages=[{"role": "user", "content": payload}]
                 )
             
-            # Extraire le texte de la réponse
-            content = response.content[0].text if response.content else ""
+            # Extraire le texte de la réponse (filtrer les blocs non-texte)
+            content = self._extract_text(response.content)
             
             # Info sur l'utilisation du cache
             usage = response.usage
@@ -80,20 +95,18 @@ class ClaudeAdapter:
             
             return f"[claude] Réponse reçue ({len(content)} caractères){cache_info} — sauvegardée dans out/responses/"
             
-        except anthropic.APIError as e:
-            return f"[claude] Erreur API: {e}"
         except Exception as e:
-            return f"[claude] Erreur inattendue: {e}"
+            # Capte anthropic.APIError et autres exceptions
+            error_type = type(e).__name__
+            return f"[claude] Erreur ({error_type}): {e}"
     
     def _build_cached_messages(self, payload: str):
         """
-        Sépare le prompt en blocs cachables (contexte) et variable (requête).
+        Sépare le prompt en contexte (cachable) et requête (variable).
         
-        Structure optimale selon Anthropic :
-        - system: tout le contexte (artefacts) avec cache_control
-        - messages: instructions finales
-        
-        Le cache nécessite minimum 1024 tokens pour être activé.
+        Retourne (system_text: str, user_message: str)
+        - system_text : contexte à mettre en cache (peut être vide si trop court)
+        - user_message : instructions finales
         """
         # Chercher la section "INSTRUCTIONS" ou similaire qui marque la fin du contexte
         instructions_markers = [
@@ -116,7 +129,7 @@ class ClaudeAdapter:
             # Pas de séparation claire, mettre tout le contexte en cache sauf les 2 derniers paragraphes
             paragraphs = payload.split('\n\n')
             if len(paragraphs) < 3:
-                return [], payload  # Trop court pour le cache
+                return "", payload  # Trop court pour le cache
             
             context = '\n\n'.join(paragraphs[:-2])
             request = '\n\n'.join(paragraphs[-2:])
@@ -125,16 +138,23 @@ class ClaudeAdapter:
             context = payload[:split_pos].strip()
             request = payload[split_pos:].strip()
         
-        # Créer un seul bloc system avec cache_control
-        system_blocks = [
-            {
-                "type": "text",
-                "text": context,
-                "cache_control": {"type": "ephemeral"}
-            }
-        ]
+        return context, request
+    
+    def _extract_text(self, content_blocks):
+        """
+        Extrait le texte des blocs de contenu, en ignorant les blocs non-texte
+        (ThinkingBlock, ToolUseBlock, etc.).
+        """
+        if not content_blocks:
+            return ""
         
-        return system_blocks, request
+        text_parts = []
+        for block in content_blocks:
+            # Vérifier si le bloc a un attribut 'text'
+            if hasattr(block, 'text'):
+                text_parts.append(block.text)
+        
+        return "".join(text_parts)
     
     def _split_prompt(self, payload: str):
         """
