@@ -85,10 +85,16 @@ class ClaudeAdapter:
             # Info sur l'utilisation du cache
             usage = response.usage
             cache_info = ""
-            if hasattr(usage, 'cache_creation_input_tokens') and usage.cache_creation_input_tokens:
-                cache_info = f" [Cache: {usage.cache_creation_input_tokens} créés, {usage.cache_read_input_tokens} lus]"
-            elif hasattr(usage, 'cache_read_input_tokens') and usage.cache_read_input_tokens:
-                cache_info = f" [Cache: {usage.cache_read_input_tokens} lus]"
+            cache_creation = getattr(usage, 'cache_creation_input_tokens', 0) or 0
+            cache_read = getattr(usage, 'cache_read_input_tokens', 0) or 0
+            
+            if cache_creation:
+                cache_info = f" [Cache: {cache_creation} créés, {cache_read} lus]"
+            elif cache_read:
+                cache_info = f" [Cache: {cache_read} lus]"
+            elif use_cache:
+                # Cache était activé mais pas utilisé (contenu trop court)
+                cache_info = f" [Cache: inactif (contenu < 1024 tokens)]"
             
             # Sauvegarder la réponse
             self._save_response(content, meta)
