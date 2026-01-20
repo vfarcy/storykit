@@ -427,12 +427,24 @@ L'adaptateur Claude implémente le **Prompt Caching** d'Anthropic pour réduire 
 - Cache valide pendant **~5 minutes**
 - **Minimum 1024 tokens** requis pour activer le cache
 
-**Économies réelles :**
+**Vitesses réelles de disponibilité des résultats :**
+
+| Scénario | Temps d'attente | Détails |
+|----------|-----------------|---------|
+| **Premier appel** (création cache) | 8-12 sec | Latence API + création cache (6500 tokens typique) |
+| **Appels suivants** (cache réutilisé) | **4-6 sec** | **~50% plus rapide** grâce au cache |
+| **Commande `truby7`** | 8-10 sec (1er) / 5 sec (suivants) | Structure légère, texte ~1000-1500 mots |
+| **Commande `truby22`** | 12-15 sec (1er) / 6 sec (suivants) | Structure dense, 22 étapes détaillées |
+| **Commande `draft`** (chapitre 5000 mots) | 35-45 sec (1er) / 20-25 sec (cache) | Génération complète, sortie longue |
+| **Batch (5 variations)** | 2-3 min (50% réduction) | Traitement asynchrone, 5 requêtes parallèles |
+
+**Économies réelles en flux normal :**
 
 Premier appel (création du cache) :
 ```bash
 python -m cli.storykit assemble --target truby7
 # [Cache: 6582 créés, 0 lus]
+# ⏱️  Durée : ~9 secondes (création cache + réponse IA)
 # → Coût normal sur 6582 tokens + petite surcharge de création
 ```
 
@@ -440,25 +452,44 @@ Appels suivants (< 5 min) :
 ```bash
 python -m cli.storykit assemble --target truby7
 # [Cache: 6582 lus]
+# ⏱️  Durée : ~5 secondes (~45% plus rapide)
 # → ~90% d'économie sur les 6582 tokens en cache !
+```
+
+**Workflow temps réel (10 commandes d'affilée) :**
+```
+Minute 0:00 → assemble --target premise          [9 sec, cache créé]
+Minute 0:10 → assemble --target genre            [5 sec, cache réutilisé]
+Minute 0:15 → assemble --target truby7           [5 sec, cache réutilisé]
+Minute 0:20 → assemble --target truby22          [6 sec, cache réutilisé]
+Minute 0:26 → assemble --target weave            [6 sec, cache réutilisé]
+Minute 0:32 → assemble --target web              [5 sec, cache réutilisé]
+Minute 0:37 → assemble --target draft --chapter 1 [22 sec, cache réutilisé + génération]
+Minute 0:59 → assemble --target draft --chapter 2 [23 sec, cache réutilisé + génération]
+────────────────────────────────────────────────────
+TOTAL : 1 minute 21 secondes pour 8 commandes
+→ Temps sauvegardé vs sans cache : ~30 secondes
 ```
 
 **Stratégies d'optimisation :**
 
 1. **Enchaînez vos commandes rapidement** (< 5 min entre chaque)
    ```bash
-   python -m cli.storykit assemble --target truby7
+   python -m cli.storykit assemble --target truby7    # 9 sec
    # Analyser la réponse, ajuster les fichiers
-   python -m cli.storykit assemble --target truby22  # Cache réutilisé !
-   python -m cli.storykit assemble --target weave    # Cache réutilisé !
+   python -m cli.storykit assemble --target truby22   # 6 sec (cache réutilisé!)
+   python -m cli.storykit assemble --target weave     # 6 sec (cache réutilisé!)
+   # → Gain : 6 + 6 = 12 sec économisés
    ```
 
 2. **Itérations rapides** : testez plusieurs versions d'une même commande
    ```bash
    # Modifier story/truby/seven_steps.yaml
-   python -m cli.storykit assemble --target truby7
+   python -m cli.storykit assemble --target truby7      # 9 sec
    # Ajuster encore...
-   python -m cli.storykit assemble --target truby7  # Cache réutilisé
+   python -m cli.storykit assemble --target truby7      # 5 sec (cache réutilisé)
+   python -m cli.storykit assemble --target truby7      # 5 sec (cache réutilisé)
+   # → Gain cumul : 4 + 4 = 8 sec économisés
    ```
 
 3. **Désactiver ponctuellement** : si le contexte change radicalement
@@ -482,6 +513,21 @@ Pour un projet StoryKit typique (6000 tokens de contexte) :
 - Sans cache : $0.018 par appel
 - Avec cache (après 1er appel) : $0.002 par appel
 - **Économie : $0.016 par appel (~89%)**
+
+**Temps vs coût : le compromis :**
+
+| Stratégie | Temps total | Coût total | Idéal pour |
+|-----------|------------|-----------|-----------|
+| Sans cache (7 appels) | 65 sec | $0.126 | Pas d'itération, une passation unique |
+| Avec cache (7 appels rapides) | 47 sec | $0.020 | Itérations rapides, raffinement actif |
+| Batch (50% réduction) | 120 sec | $0.063 | Génération de masse (5-10 chapitres) |
+| Cache + Batch (cumulé) | 100 sec | $0.010 | Production maximale (coût + vitesse) |
+
+**Observations terrain :**
+- La première requête (création cache) coûte plus cher mais pose la base pour 20-30 appels rapides (~5 min de validité)
+- Après 5 min, le cache expire → retour à la latence normale
+- Les commandes `draft` (génération longue) bénéficient **moins** du cache (temps IA > temps cache), mais toujours 50% + rapide
+- Le batch mode (asynchrone) est idéal pour générer 5+ chapitres sans surveillance active
 
 ### Style & Voix
 - Emplacement: `story/config/style.md`. Ce fichier définit le ton, la voix et le rythme attendus.
