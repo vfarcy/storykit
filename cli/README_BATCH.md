@@ -22,6 +22,7 @@ ANTHROPIC_API_KEY=sk-ant-...
 | **draft-variants** | Variations d'UN même chapitre | Tester différents styles/tonalités | ~$0.025 |
 | **draft-chapters** | Générer PLUSIEURS chapitres différents | Écrire Chap 8-15 en une fois | ~$0.025 |
 | **research** | Documentation thématique | Alimenter story/research/ | ~$0.015 |
+| **list** | Lister tous les batchs | Voir l'historique complet | Gratuit |
 | **status** | Vérifier l'avancement | Polling d'un batch en cours | Gratuit |
 | **download** | Récupérer les résultats | Télécharger les fichiers générés | Gratuit |
 
@@ -140,7 +141,50 @@ python -m cli.batch research \
 
 ---
 
-### 3. **status** — Vérifier l'avancement d'un batch
+### 4. **list** — Lister tous les batchs
+
+**Objectif** : Voir l'historique complet de tous vos batchs (en cours, terminés, annulés).
+
+**Usage** : Retrouver rapidement un batch précédent ou vérifier tous les jobs en cours.
+
+#### Exemple basique
+```bash
+python -m cli.batch list
+```
+
+#### Limiter l'affichage
+```bash
+python -m cli.batch list --limit 20
+```
+
+**Affichage** :
+```
+📋 Liste des 10 derniers batchs
+
+✅ msgbatch_016Rx96kiN2QqVme4LqfNAMy
+   Type: draft_variants
+   Variations: mélancolique, brutal, poétique
+   Statut: ended (100% complété)
+   Créé: 2026-01-20 17:34:44
+   💡 python -m cli.batch download --batch-id msgbatch_016Rx96kiN2QqVme4LqfNAMy
+
+⏳ msgbatch_015AbcXYZ123456789
+   Type: draft_chapters
+   Chapitres: 8, 9, 10
+   Statut: in_progress (33% complété)
+   Créé: 2026-01-20 16:00:00
+   💡 python -m cli.batch status --batch-id msgbatch_015AbcXYZ123456789
+```
+
+**Avantages** :
+- ✅ Vue d'ensemble de tous vos batchs
+- ✅ Statut en un coup d'œil (⏳ en cours, ✅ terminé, ❌ erreur)
+- ✅ Suggestions de commandes contextuelles
+- ✅ Chargement automatique des metadata pour détails enrichis
+
+---
+
+### 5. **status** — Vérifier l'avancement d'un batch
 
 ```bash
 python -m cli.batch status --batch-id msgbatch_01ABC123
@@ -163,7 +207,7 @@ python -m cli.batch status --batch-id msgbatch_01ABC123
 
 ---
 
-### 4. **download** — Télécharger les résultats
+### 6. **download** — Télécharger les résultats
 
 ```bash
 python -m cli.batch download --batch-id msgbatch_01ABC123
@@ -432,7 +476,12 @@ python -m cli.batch draft-variants --chapter ChapXX.md --styles "variations"
 
 ### Pour démarrer maintenant
 
-**Option A : Tester avec variations stylistiques**
+**Option A : Voir tous vos batchs**
+```bash
+python -m cli.batch list
+```
+
+**Option B : Tester avec variations stylistiques**
 ```bash
 python -m cli.batch draft-variants \
   --chapter "story/drafting/LeSilenceDesAlgorithmes/20260118_213305_draft_response.md" \
@@ -440,7 +489,7 @@ python -m cli.batch draft-variants \
   --wait
 ```
 
-**Option B : Générer les prochains chapitres**
+**Option C : Générer les prochains chapitres**
 ```bash
 python -m cli.batch draft-chapters \
   --project "LeSilenceDesAlgorithmes" \
@@ -448,7 +497,7 @@ python -m cli.batch draft-chapters \
   --wait
 ```
 
-**Option C : Construire votre documentation**
+**Option D : Construire votre documentation**
 ```bash
 python -m cli.batch research \
   --topic "IA et création littéraire" \
