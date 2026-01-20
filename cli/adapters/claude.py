@@ -210,3 +210,115 @@ class ClaudeAdapter:
         fname = out_dir / f"{ts}_{target}_response.md"
         
         fname.write_text(content, encoding="utf-8")
+    
+    # ========== BATCH PROCESSING ==========
+    
+    def create_batch(self, requests: list) -> dict:
+        """
+        Crée un batch job avec plusieurs requêtes.
+        
+        Args:
+            requests: Liste de dicts avec format:
+                {
+                    "custom_id": str,
+                    "params": {
+                        "model": str,
+                        "max_tokens": int,
+                        "messages": list,
+                        "system": str (optionnel)
+                    }
+                }
+        
+        Returns:
+            dict avec batch_id, status, etc.
+        """
+        if len(requests) > 100000:
+            raise ValueError("Maximum 100,000 requests per batch")
+        
+        try:
+            batch = self.client.messages.batches.create(requests=requests)
+            
+            return {
+                "batch_id": batch.id,
+                "status": batch.processing_status,
+                "created_at": batch.created_at,
+                "expires_at": batch.expires_at,
+                "request_count": len(requests)
+            }
+        except Exception as e:
+            return {"error": str(e)}
+    
+    def get_batch_status(self, batch_id: str) -> dict:
+        """
+        Récupère le statut d'un batch.
+        
+        Returns:
+            dict avec status, progress, etc.
+        """
+        try:
+            batch = self.client.messages.batches.retrieve(batch_id)
+            
+            counts = batch.request_counts
+            total = (counts.processing + counts.succeeded + 
+                    counts.errored + counts.canceled + counts.expired)
+            
+            result = {
+                "batch_id": batch.id,
+                "status": batch.processing_status,
+                "progress": {
+                    "total": total,
+                    "succeeded": counts.succeeded,
+                    "processing": counts.processing,
+                    "errored": counts.errored,
+                    "canceled": counts.canceled,
+                    "expired": counts.expired
+                },
+                "created_at": batch.created_at,
+                "expires_at": batch.expires_at
+            }
+            
+            if batch.processing_status == "ended":
+                result["results_url"] = batch.results_url
+                result["ended_at"] = batch.ended_at
+            
+            return result
+        except Exception as e:
+            return {"error": str(e)}
+    
+    def download_batch_results(self, batch_id: str) -> list:
+        """
+        Télécharge les résultats d'un batch terminé.
+        
+        Returns:
+            Liste de dicts avec custom_id et résultats
+        """
+        try:
+            batch = self.client.messages.batches.retrieve(batch_id)
+            
+            if batch.processing_status != "ended":
+                return {"error": f"Batch not ended yet (status: {batch.processing_status})"}
+            
+            results = []
+            for result in self.client.messages.batches.results(batch_id):
+                item = {
+                    "custom_id": result.custom_id,
+                    "result_type": result.result.type
+                }
+                
+                if result.result.type == "succeeded":
+                    item["content"] = self._extract_text(result.result.message.content)
+                    item["usage"] = {
+                        "input_tokens": result.result.message.usage.input_tokens,
+                        "output_tokens": result.result.message.usage.output_tokens
+                    }
+                elif result.result.type == "errored":
+                    item["error"] = {
+                        "type": result.result.error.type,
+                        "message": result.result.error.message
+                    }
+                
+                results.append(item)
+            
+            return results
+        except Exception as e:
+            return {"error": str(e)}
