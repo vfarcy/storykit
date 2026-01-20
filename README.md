@@ -543,7 +543,110 @@ Templates utiles:
 
 ## 6) Commandes disponibles
 
-### Assemble : générer des prompts
+### Batch Processing : génération en masse avec 50% de réduction de coût 🚀
+
+StoryKit inclut un **système de batch processing** via l'API Message Batches de Claude, permettant de générer plusieurs chapitres ou variations en parallèle avec **50% de réduction de coût**.
+
+#### Pourquoi utiliser le batch ?
+
+- ✅ **50% moins cher** que le mode normal
+- ✅ **Génération parallèle** (jusqu'à 100,000 requêtes par batch)
+- ✅ **Compatible avec prompt caching** (économies cumulées jusqu'à 95%)
+- ✅ **Asynchrone** : lancez et continuez votre travail
+- ✅ **Contexte enrichi automatique** : charge les artefacts Truby, scene_weave, style
+
+#### Commandes batch disponibles
+
+| Commande | Objectif | Exemple |
+|----------|----------|---------|
+| **draft-variants** | Variations stylistiques d'UN chapitre | `python -m cli.batch draft-variants --chapter Chap10.md --styles "mélancolique,brutal,poétique"` |
+| **draft-chapters** | Générer PLUSIEURS chapitres différents | `python -m cli.batch draft-chapters --project MonProjet --chapters "8,9,10"` |
+| **research** | Documentation thématique en masse | `python -m cli.batch research --topic "IA" --subtopics "histoire,éthique,GPT"` |
+| **list** | Lister tous les batchs | `python -m cli.batch list` |
+| **status** | Vérifier l'avancement | `python -m cli.batch status --batch-id msgbatch_XXX` |
+| **download** | Récupérer les résultats | `python -m cli.batch download --batch-id msgbatch_XXX` |
+
+#### Exemples d'utilisation
+
+**1. Tester 5 variations stylistiques d'un chapitre**
+```bash
+python -m cli.batch draft-variants \
+  --chapter "story/drafting/MonProjet/Chap10.md" \
+  --styles "mélancolique,brutal,poétique,minimaliste,lyrique" \
+  --wait
+```
+→ 5 versions complètes en 45min pour ~$0.075 (vs $0.15 en mode normal)
+
+**2. Générer plusieurs chapitres d'un coup**
+```bash
+python -m cli.batch draft-chapters \
+  --project "MonProjet" \
+  --chapters "8,9,10" \
+  --wait
+```
+→ 3 chapitres complets en 60min avec contexte Truby automatique
+
+**3. Construire votre documentation**
+```bash
+python -m cli.batch research \
+  --topic "Intelligence artificielle et littérature" \
+  --subtopics "histoire,éthique,créativité,prix_littéraires" \
+  --count 5
+```
+→ 20 fiches de recherche dans `story/research/`
+
+**4. Voir l'historique de tous vos batchs**
+```bash
+python -m cli.batch list
+```
+
+#### Workflows recommandés
+
+**Workflow vitesse** (premier draft complet en 48h) :
+```bash
+# Jour 1 : Recherche
+python -m cli.batch research --topic "Votre thème" --subtopics "A,B,C,D,E" --count 5
+
+# Jour 2 : Génération de tous les chapitres
+python -m cli.batch draft-chapters --project "MonProjet" --chapters "1,2,3,4,5,6,7,8,9,10"
+```
+
+**Workflow qualité** (itératif) :
+```bash
+# Phase 1 : Draft initial
+python -m cli.batch draft-chapters --chapters "1,2,3,4,5,6,7,8,9,10"
+
+# Phase 2 : Raffinement des chapitres clés
+python -m cli.batch draft-variants --chapter Chap01.md --styles "A,B,C"
+python -m cli.batch draft-variants --chapter Chap06.md --styles "D,E,F"
+python -m cli.batch draft-variants --chapter Chap10.md --styles "G,H,I"
+```
+
+#### Coûts et économies
+
+| Scénario | Mode normal | Mode batch | Économie |
+|----------|-------------|------------|----------|
+| 5 variations d'un chapitre | $0.15 | **$0.075** | 50% |
+| 3 chapitres différents | $0.15 | **$0.075** | 50% |
+| 10 chapitres complets | $0.50 | **$0.25** | 50% |
+| 20 fiches recherche | $0.30 | **$0.15** | 50% |
+| Roman complet (10 ch) + recherche | $1.07 | **$0.535** | 50% |
+
+**Avec prompt caching :** Économies cumulées jusqu'à **95%** si les requêtes partagent le même contexte système.
+
+#### Documentation complète
+
+Consultez [cli/README_BATCH.md](cli/README_BATCH.md) pour :
+- Guide complet des 6 commandes
+- 5 cas d'usage détaillés
+- 3 workflows complets (vitesse/qualité/équilibre)
+- Stratégies d'optimisation des coûts
+- Matrice de décision draft-variants vs draft-chapters
+- Troubleshooting et bonnes pratiques
+
+---
+
+### Assemble : générer des prompts (mode standard)
 
 1) **Affiner la prémisse** (1 phrase + principe organisateur)  
 ```bash
