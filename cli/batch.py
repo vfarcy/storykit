@@ -41,6 +41,11 @@ from datetime import datetime
 from pathlib import Path
 
 try:
+    import yaml
+except ImportError:
+    yaml = None
+
+try:
     from cli.adapters.claude import ClaudeAdapter
 except ImportError:
     print("Erreur : Impossible d'importer ClaudeAdapter")
@@ -102,6 +107,19 @@ Adapte le rythme, le vocabulaire et la ponctuation selon la tonalité demandée.
         chapter_name = chapter_path.stem.replace("_draft_response", "")
         
         for idx, style in enumerate(styles):
+            # Nettoyer le style pour custom_id (ASCII seulement, pas d'accents)
+            safe_style = (style
+                .replace('é', 'e')
+                .replace('è', 'e')
+                .replace('ê', 'e')
+                .replace('à', 'a')
+                .replace('ù', 'u')
+                .replace('ô', 'o')
+                .replace('î', 'i')
+                .replace('ç', 'c')
+                .replace(' ', '_')
+                .replace(',', '_'))
+            
             prompt = f"""Voici un chapitre de roman littéraire.
 
 CONSIGNE : Réécris ce chapitre avec une tonalité **{style.upper()}**, tout en conservant :
@@ -119,7 +137,7 @@ NOUVELLE VERSION ({style.upper()}) :
 """
             
             requests.append({
-                "custom_id": f"{chapter_name}_variant_{idx:02d}_{style}",
+                "custom_id": f"{chapter_name}_variant_{idx:02d}_{safe_style}",
                 "params": {
                     "model": "claude-sonnet-4-20250514",
                     "max_tokens": 8000,
@@ -172,6 +190,183 @@ NOUVELLE VERSION ({style.upper()}) :
         
         return batch_id
     
+    def draft_chapters(
+        self,
+        chapters: list,
+        project_name: str,
+        wait: bool = False,
+        system_context: str = None
+    ) -> str:
+        """
+        Générer plusieurs chapitres différents en batch.
+        
+        Args:
+            chapters: Liste de dicts avec 'number', 'title', 'outline'
+            project_name: Nom du projet (ex: "LeSilenceDesAlgorithmes")
+            wait: Attendre la fin du batch
+            system_context: Contexte système (optionnel)
+        
+        Returns:
+            batch_id
+        """
+        print(f"📚 Génération de {len(chapters)} chapitres pour : {project_name}")
+        
+        # Charger le style guide si disponible
+        if system_context is None:
+            style_file = self.project_root / "story" / "config" / "style.md"
+            if style_file.exists():
+                with open(style_file, 'r', encoding='utf-8') as f:
+                    system_context = f.read()
+            else:
+                system_context = """Tu es un écrivain littéraire français.
+Tu écris des romans contemporains avec une attention particulière au rythme, aux détails sensoriels et à la profondeur psychologique."""
+        
+        # Charger les artefacts Truby pour contexte enrichi
+        truby_context = self._load_truby_context()
+        scene_weave = self._load_scene_weave()
+        
+        # Créer les requêtes batch
+        requests = []
+        
+        for chapter in chapters:
+            chapter_num = chapter['number']
+            chapter_title = chapter.get('title', f'Chapitre {chapter_num}')
+            outline = chapter.get('outline', '')
+            scenes = chapter.get('scenes', [])
+            
+            # Construire le prompt pour ce chapitre
+            prompt = f"""Tu dois écrire le **Chapitre {chapter_num} : {chapter_title}** d'un roman littéraire.
+
+## CONTEXTE DU ROMAN
+{truby_context}
+
+## PLAN GÉNÉRAL DES SCÈNES
+{scene_weave}
+
+## CHAPITRE {chapter_num} : {chapter_title}
+
+### Synopsis
+{outline}
+
+### Scènes à inclure
+{chr(10).join(f'- Scène {s["number"]}: {s["description"]}' for s in scenes)}
+
+## CONSIGNES D'ÉCRITURE
+
+1. **Longueur** : 2500-3500 mots
+2. **Structure** : Découper en 8-12 sections numérotées (I, II, III...)
+3. **Style** : Littéraire contemporain, introspection psychologique
+4. **Narration** : Troisième personne, focalisation interne (Léo)
+5. **Rythme** : Alterner entre action, dialogue, introspection
+6. **Détails** : Sensorialité (lieux, objets, atmosphères)
+
+## TON
+- Mélancolie sous-jacente
+- Tension dramatique progressive
+- Ironie distanciée sur le milieu littéraire
+
+Écris maintenant le chapitre complet.
+"""
+            
+            # Nettoyer le chapter_num pour custom_id
+            safe_title = (chapter_title
+                .replace(' ', '_')
+                .replace("'", '')
+                .replace('é', 'e')
+                .replace('è', 'e')
+                .replace('ê', 'e')
+                .replace('à', 'a')
+                .replace('ù', 'u')
+                .replace('ô', 'o')
+                .replace('î', 'i')
+                .replace('ç', 'c')[:30])  # Limiter la longueur
+            
+            requests.append({
+                "custom_id": f"chapter_{chapter_num:02d}_{safe_title}",
+                "params": {
+                    "model": "claude-sonnet-4-20250514",
+                    "max_tokens": 8000,
+                    "temperature": 0.85,
+                    "messages": [
+                        {"role": "user", "content": prompt}
+                    ],
+                    "system": system_context
+                }
+            })
+        
+        print(f"🚀 Création du batch avec {len(requests)} chapitres...")
+        result = self.adapter.create_batch(requests)
+        
+        if "error" in result:
+            print(f"❌ Erreur : {result['error']}")
+            return None
+        
+        batch_id = result["batch_id"]
+        
+        # Sauvegarder metadata
+        metadata = {
+            "batch_id": batch_id,
+            "type": "draft_chapters",
+            "created_at": datetime.now().isoformat(),
+            "project_name": project_name,
+            "chapters": [{"number": ch['number'], "title": ch.get('title', '')} for ch in chapters],
+            "status": "created",
+            "request_count": len(requests)
+        }
+        
+        metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
+        with open(metadata_file, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Batch créé : {batch_id}")
+        print(f"📊 {len(requests)} chapitres demandés")
+        print(f"⏱️  Temps estimé : 45-90 minutes")
+        print(f"💰 Coût estimé : ~${len(requests) * 0.025} (vs ${len(requests) * 0.05} en mode normal)")
+        
+        if wait:
+            print(f"\n⏳ Attente de la fin du traitement...")
+            self.poll_until_complete(batch_id)
+            self.download_results(batch_id)
+        else:
+            print(f"\n💡 Pour télécharger les résultats :")
+            print(f"   python -m cli.batch download --batch-id {batch_id}")
+        
+        return batch_id
+    
+    def _load_truby_context(self) -> str:
+        """Charger les artefacts Truby pour enrichir le contexte"""
+        truby_dir = self.project_root / "story" / "truby"
+        
+        context_parts = []
+        
+        # Prémisse
+        premise_file = truby_dir / "premise.md"
+        if premise_file.exists():
+            with open(premise_file, 'r', encoding='utf-8') as f:
+                context_parts.append(f"### Prémisse\n{f.read()}\n")
+        
+        # Personnages
+        char_file = truby_dir / "character_web.yaml"
+        if char_file.exists():
+            with open(char_file, 'r', encoding='utf-8') as f:
+                import yaml
+                chars = yaml.safe_load(f)
+                if chars and 'characters' in chars:
+                    context_parts.append("### Personnages principaux")
+                    for char in chars['characters'][:3]:  # Limiter aux 3 premiers
+                        context_parts.append(f"- **{char.get('name', 'N/A')}** : {char.get('role', 'N/A')}")
+                    context_parts.append("")
+        
+        return "\n".join(context_parts) if context_parts else "Roman littéraire contemporain."
+    
+    def _load_scene_weave(self) -> str:
+        """Charger le plan des scènes"""
+        scene_file = self.project_root / "story" / "outline" / "scene_weave.md"
+        if scene_file.exists():
+            with open(scene_file, 'r', encoding='utf-8') as f:
+                return f.read()
+        return ""
+    
     def research(
         self,
         topic: str,
@@ -204,11 +399,11 @@ Privilégie les faits, les références historiques et les exemples concrets."""
             for i in range(count):
                 # Varier les angles d'approche
                 angles = [
-                    "Histoire et évolution",
+                    "Histoire et evolution",
                     "Enjeux contemporains",
                     "Exemples marquants",
                     "Perspectives critiques",
-                    "Implications créatives"
+                    "Implications creatives"
                 ]
                 angle = angles[i % len(angles)]
                 
@@ -225,7 +420,21 @@ Structure attendue :
 
 Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 
-                custom_id = f"research_{subtopic.replace(' ', '_')}_{i:02d}_{angle.replace(' ', '_')}"
+                # Nettoyer les caractères pour custom_id (ASCII uniquement)
+                safe_subtopic = (subtopic
+                    .replace('é', 'e')
+                    .replace('è', 'e')
+                    .replace('ê', 'e')
+                    .replace('à', 'a')
+                    .replace('ù', 'u')
+                    .replace('ô', 'o')
+                    .replace('î', 'i')
+                    .replace('ç', 'c')
+                    .replace(' ', '_')
+                    .replace(',', '_'))
+                safe_angle = angle.replace(' ', '_')
+                
+                custom_id = f"research_{safe_subtopic}_{i:02d}_{safe_angle}"
                 
                 requests.append({
                     "custom_id": custom_id,
@@ -376,6 +585,17 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                     output_dir = self.research_dir
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"{timestamp}_{custom_id}.md"
+                
+                elif metadata['type'] == 'draft_chapters':
+                    # Sauvegarder dans drafting
+                    project_name = metadata['project_name']
+                    output_dir = self.project_root / "story" / "drafting" / project_name
+                    output_dir.mkdir(exist_ok=True, parents=True)
+                    
+                    # Extraire le numéro de chapitre du custom_id
+                    chapter_num = custom_id.split('_')[1]
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    filename = f"Chap{chapter_num}_{timestamp}_draft.md"
                     
                 else:
                     # Par défaut dans batch_dir
@@ -446,6 +666,27 @@ def main():
         help='Attendre la fin du traitement'
     )
     
+    # draft-chapters
+    chapters_parser = subparsers.add_parser(
+        'draft-chapters',
+        help='Générer plusieurs chapitres différents en batch'
+    )
+    chapters_parser.add_argument(
+        '--project',
+        required=True,
+        help='Nom du projet (ex: LeSilenceDesAlgorithmes)'
+    )
+    chapters_parser.add_argument(
+        '--chapters',
+        required=True,
+        help='Numéros de chapitres séparés par des virgules (ex: "8,9,10")'
+    )
+    chapters_parser.add_argument(
+        '--wait',
+        action='store_true',
+        help='Attendre la fin du traitement'
+    )
+    
     # research
     research_parser = subparsers.add_parser(
         'research',
@@ -510,6 +751,30 @@ def main():
         chapter_path = Path(args.chapter)
         styles = [s.strip() for s in args.styles.split(',')]
         service.draft_variants(chapter_path, styles, wait=args.wait)
+    
+    elif args.command == 'draft-chapters':
+        # Charger le scene_weave pour extraire les chapitres
+        scene_weave_file = project_root / "story" / "outline" / "scene_weave.md"
+        
+        if not scene_weave_file.exists():
+            print("❌ Fichier scene_weave.md introuvable")
+            return
+        
+        # Parser les numéros demandés
+        chapter_nums = [int(n.strip()) for n in args.chapters.split(',')]
+        
+        # Construire les chapitres à partir du scene_weave
+        chapters = []
+        for num in chapter_nums:
+            # Pour l'instant, structure simple - peut être enrichie
+            chapters.append({
+                "number": num,
+                "title": f"Chapitre {num}",
+                "outline": f"Consulter scene_weave.md, scènes liées au chapitre {num}",
+                "scenes": []
+            })
+        
+        service.draft_chapters(chapters, args.project, wait=args.wait)
     
     elif args.command == 'research':
         subtopics = [s.strip() for s in args.subtopics.split(',')]
