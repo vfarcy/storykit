@@ -10,6 +10,9 @@
     "littérature"
   ],
   "count_per_subtopic": 3,
-  "status": "created",
-  "request_count": 12
+  "status": "completed",
+  "request_count": 12,
+  "completed_at": "2026-01-20T18:56:16.743829",
+  "saved_files": 12,
+  "errors": 0
 }
