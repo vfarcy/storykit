@@ -916,10 +916,294 @@ L'estimation utilise une heuristique simple (1 token ≈ 4 caractères pour le f
 **Phase 3 — Scènes**
 - `outline/scene_weave.md` : tissage des scènes **avant** d’écrire (conflit, décision, valeur, beat).
 
+**Phase 3.5 — Scene Weave (avant rédaction)**
+- `outline/scene_weave.md` : tableau structurant les scènes selon les 7 étapes, beats de genre et pivots narratifs.  
+- Détail ci-dessous.
+
 **Phase 4 — Rédaction & révisions**
 - `drafting/` : brouillons de chapitres via `--target draft`.  
-- Relectures centrées sur **l’argument moral** et les **valeurs** scène par scène.  
+- Relectures centrées sur **l'argument moral** et les **valeurs** scène par scène.  
 - Ajuster les **beats de genre** pour honorer la promesse au lectorat.
+
+---
+
+## 7.5) Scene Weave — Structurer les scènes avec les 7 étapes
+
+Le **scene_weave** est le tableau qui **concrétise** les 7 étapes en **scènes narratives numérotées**. C'est le plan détaillé avant rédaction.
+
+### Pourquoi le scene_weave ?
+
+Les 7 étapes donnent la **structure émotionnelle** (arc du héros) ; le scene_weave ajoute la **structure tactique** (lieux, conflits, décisions, beats) scène par scène.
+
+**Avantage** : avant d'écrire un chapitre, tu sais exactement :
+- Quelle fonction narrative elle remplit (Ghost, Inciting Event, Desire, Opponent, etc.)
+- Où elle se situe (lieu)
+- Quel conflit elle contient
+- Quelle décision le héros y prend (irréversible)
+- Quel beat de genre elle valide
+
+### Structure du tableau scene_weave
+
+```markdown
+| # | Fonction Truby        | Lieu             | Conflit                    | Décision                 | Beat |
+|----|----------------------|------------------|--------------------------|----------------------|------|
+| 1  | Ghost                | Appartement Léo  | Page blanche vs Ambition  | Ouvrir StoriKit      | g01  |
+| 2  | Inciting Event       | Bureau Éditeur   | Contrat offert par erreur | Signer sans lire     | g01  |
+| 3  | Desire               | Plateau TV       | On le questionne          | Mentir en citant l'IA| g02  |
+| 4  | Opponent/Mystery     | Chambre Léo      | L'IA écrit ses secrets    | Accepter l'aide      | g02  |
+| 5  | Fake-Ally Opponent   | Soirée littéraire| L'ami doute               | Rompre avec l'ami    | g03  |
+| 6  | Midpoint Reversal    | Bureau Léo       | L'IA génère une fin       | Se plier à l'algo    | g04  |
+| 7  | Method Revelation    | Interface StoriKit| Vol de données           | Choisir la vérité    | g05  |
+| 8  | Visit to Death       | Miroir salle SdB | Dissolution d'identité    | Continuer au Prix    | g07  |
+| 9  | Battle               | Restaurant Drouant| Question piège du jury    | Mensonge ou aveu ?   | g09  |
+|10  | Self-Revelation      | Place Gaillon    | Il a tué l'auteur         | Détruire le manuscrit| g10  |
+```
+
+### Colonnes expliquées
+
+#### 1. **#** (numéro de scène)
+- Ordre narrative (1-10+ généralement)
+- Correspond approximativement à 1 chapitre ou groupe de scènes
+
+#### 2. **Fonction Truby**
+Lien avec les 7 étapes :
+
+| Étape Truby | Fonction(s) narrative(s) | Scènes typiques |
+|-------------|-------------------------|-----------------|
+| **1. Faiblesse & Besoin** | `Ghost` : montrer l'état initial, le monde du héros | Scène 1 : le héros dans sa faiblesse |
+| **2. Désir** | `Inciting Event` → `Desire` : le déclenchement, l'engagement | Scènes 2-3 : l'événement qui déclenche tout + la décision d'agir |
+| **3. Opposant** | `Opponent` / `Mystery` : révéler la force antagoniste | Scènes 4-5 : révélation progressive de l'opposant, premiers doutes |
+| **5. Bataille** | `Midpoint Reversal` → `Method Revelation` → `Visit to Death` → `Battle` : escalade et confrontation | Scènes 6-9 : le plan échoue → révélations → point de non-retour → affrontement |
+| **6. Auto-révélation** | `Self-Revelation` : l'épiphanie, la compréhension | Scène 10 : le héros comprend ce qu'il doit vraiment faire |
+| **7. Nouvel équilibre** | Dénouement : conséquences et nouvelle réalité | Scène 10+ : les actions finales, la nouvelle réalité établie |
+
+**⚠️ Note importante** : L'**Étape 4 (Plan)** n'apparaît pas comme fonction à elle seule — elle est **intégrée** dans les scènes 5-6 comme "préparation" et "fausse victoire" (Fake-Ally Opponent + Midpoint Reversal).
+
+### Mapping détaillé : 7 étapes → 10 scènes
+
+Voici comment **structurer concrètement** tes scènes pour respecter les 7 étapes :
+
+**ÉTAPE 1 : Faiblesse & Besoin (Scène 1)**
+```
+Fonction : Ghost
+Objectif : Montrer le héros dans sa faiblesse intérieure
+Conflit interne : La lutte du héros avec lui-même
+Décision : Aucune (c'est le point de départ)
+Exemple : Léo, page blanche, contemple son inactivité
+```
+
+**ÉTAPE 2 : Désir (Scènes 2-3)**
+```
+Scène 2 — Inciting Event (l'événement déclencheur)
+Fonction : Opportunity / Call to Adventure
+Objectif : Un événement externe pousse le héros à agir
+Conflit : Opportunité vs doute
+Décision : Le héros s'engage (accepte le défi)
+Exemple : Léo reçoit un contrat d'édition (par erreur)
+
+Scène 3 — Desire (le désir explicité)
+Fonction : Commitment
+Objectif : Le héros s'engage publiquement dans sa quête
+Conflit : Garder le secret vs être honnête
+Décision : Le héros choisit le mensonge/masquage
+Exemple : Léo ment à la télévision sur son processus créatif
+```
+
+**ÉTAPE 3 : Opposant (Scènes 4-5)**
+```
+Scène 4 — Opponent Revealed (révélation de l'opposant)
+Fonction : Raising Stakes
+Objectif : L'adversaire/l'obstacle apparaît
+Conflit : Le héros découvre qu'il n'est pas seul/pas invisible
+Décision : Le héros accepte l'aide malgré le malaise
+Exemple : L'IA (StoriKit) écrit les secrets intimes de Léo
+
+Scène 5 — Fake-Ally Opponent (faux allié)
+Fonction : Complications
+Objectif : Montrer que certains "alliés" posent problème
+Conflit : La confiance du héros est ébranlée
+Décision : Le héros rompt avec cet allié pour protéger le secret
+Exemple : L'ami littéraire de Léo commence à douter → Léo le lâche
+```
+
+**ÉTAPE 4 : Plan (Scènes 5-6) — intégré au conflit**
+```
+Scène 6 — Midpoint Reversal (retournement du point médian)
+Fonction : Changed Circumstances / False Victory
+Objectif : Le plan semble fonctionner MAIS montre ses failles
+Conflit : Le héros obtient ce qu'il désire (succès apparent) mais découvre le coût
+Décision : Le héros se plie à la logique de l'AI plutôt que de lutter
+Exemple : L'IA génère une fin magnifique → Léo réalise qu'il n'a plus de contrôle créatif
+```
+
+**ÉTAPE 5 : Bataille (Scènes 7-9) — l'escalade**
+```
+Scène 7 — Method Revelation (révélation du "comment")
+Fonction : Discovery / Turning Point
+Objectif : Le héros découvre le fonctionnement réel de l'opposant
+Conflit : Comprendre qu'il a été manipulé/trahi
+Décision : Choisir la complaisance (continuer) ou la vérité
+Exemple : Léo réalise que l'IA a accédé à ses données privées
+
+Scène 8 — Visit to Death (visite à la mort)
+Fonction : All is Lost / Dark Night of the Soul
+Objectif : Le point le plus bas, le doute total
+Conflit : Dissolution d'identité, nihilisme
+Décision : Le héros choisit de continuer malgré tout (au lieu d'abandonner)
+Exemple : Léo se regarde dans le miroir et ne reconnaît plus son reflet
+
+Scène 9 — Battle (affrontement majeur)
+Fonction : Climax
+Objectif : La confrontation finale avec l'opposant
+Conflit : Le moment de vérité — mensonge ou révélation ?
+Décision : Le héros fait son choix crucial (mensonge vs aveu)
+Exemple : Le jury pose une question piège au banquet du Prix Goncourt
+```
+
+**ÉTAPE 6 : Auto-révélation (Scène 10)**
+```
+Fonction : Self-Revelation / Realization
+Objectif : Le héros comprend enfin ce dont il avait BESOIN
+Conflit : Accepter la transformation intérieure
+Décision : Le héros agit sur cette révélation
+Exemple : Léo réalise qu'il a "tué l'auteur" (lui-même) → il détruit le manuscrit gagnant
+```
+
+**ÉTAPE 7 : Nouvel équilibre (Scène 10+)**
+```
+Fonction : New Equilibrium / Resolution
+Objectif : Établir la nouvelle réalité post-transformation
+Conflit : Aucun (le conflit est résolu)
+Décision : Le héros vit selon sa nouvelle compréhension
+Exemple : Léo, libéré du mensonge, recommence à écrire humblement
+```
+
+### Tableau de progression : Étapes → Scènes → Conflits
+
+#### 3. **Lieu**
+Où la scène se déroule
+- Varie pour rythmer le lecteur
+- Reflète souvent l'état interne du héros (prison interne = chambre, bataille = confrontation dehors)
+
+#### 4. **Conflit**
+Le cœur dramatique de la scène
+- Externe (affrontement, obstacle) ou interne (doute, révélation)
+- Doit escalader progressivement vers le climax
+
+#### 5. **Décision**
+L'action irréversible du héros
+- Le héros doit choisir (ne pas agir = une décision)
+- Chaque décision le rapproche du nouvel équilibre
+- Ce choix crée les conséquences de la scène suivante
+
+#### 6. **Beat**
+Référence au beat de genre (depuis `genre_beats.yaml`)
+- Format : `gNN` (ex: `g01`, `g02`, `g09`)
+- Chaque scène valide un beat structurant du genre
+- Assure que la promesse au lecteur est honorée
+
+### Comment créer un scene_weave
+
+#### Étape 1 : partir des 7 étapes
+
+Desde `seven_steps.yaml`, liste les pivots clés :
+- Étape 1 (Faiblesse) : Où commence l'histoire ?
+- Étape 2 (Désir) : Quel événement déclenche l'action ?
+- Étape 3 (Opposant) : Qui/quoi apparaît comme obstacle ?
+- Étape 4 (Plan) : Comment le héros se prépare ?
+- Étape 5 (Bataille) : Quel affrontement majeur ?
+- Étape 6 (Auto-révélation) : Quelle prise de conscience ?
+- Étape 7 (Nouvel équilibre) : Quelle nouvelle réalité ?
+
+#### Étape 2 : détailler les scènes entre les pivots
+
+Entre chaque pivot majeur, ajoute des scènes qui :
+- Développent le conflit progressivement
+- Révèlent des informations au lecteur
+- Nouent des alliances ou trahisons
+- Créent des fausses victoires (midpoint reversal)
+
+Exemple :
+- Scènes 1-2 : Faiblesse + Inciting Event (étapes 1-2)
+- Scènes 3-4 : Introduction Opposant (étape 3)
+- Scènes 5-6 : Plan et préparation (étape 4)
+- Scènes 7-9 : Bataille et révélations (étape 5)
+- Scène 10+ : Auto-révélation et dénouement (étapes 6-7)
+
+#### Étape 3 : relier les beats de genre
+
+Pour chaque scène, identifie quel beat de genre elle valide :
+- Consulte `genre_beats.yaml`
+- Chaque scène doit valider au moins 1 beat (parfois 2-3)
+- Les beats doivent être présents dans l'ordre logique du genre
+
+#### Étape 4 : valider et affiner
+
+```bash
+# Vérifie que le scene_weave est structurellement valide
+python -m cli.storykit validate
+
+# Génère le prompt complet avec le weave
+python -m cli.storykit assemble --target weave
+```
+
+### Utiliser le scene_weave pour générer les chapitres
+
+Une fois le scene_weave validé, tu peux lancer la génération en batch :
+
+```bash
+# Le système charge automatiquement scene_weave.md
+# et génère 1 chapitre par scène (ou groupe)
+python -m cli.batch draft-chapters \
+  --project "MonProjet" \
+  --chapters "1,2,3,4,5,6,7,8,9,10" \
+  --wait
+```
+
+**Le contexte injecté inclut** :
+- La scène correspondante (fonction, lieu, conflit, décision)
+- Les 7 étapes complètes
+- Les beats de genre validés
+- Le style défini
+- La prémisse et l'argument moral
+
+Chaque chapitre généré respecte donc la structure préparée.
+
+### Checklist scene_weave
+
+- ✅ **Chaque scène a une fonction Truby** (Ghost, Inciting Event, etc.)
+- ✅ **Lieux distincts** (variation d'ambiance)
+- ✅ **Conflits escaladants** (vers le climax)
+- ✅ **Décisions irréversibles** (le héros avance toujours)
+- ✅ **Beats de genre présents** (g01, g02... valides)
+- ✅ **Pivots clés identifiés** :
+  - First Revelation (première révélation)
+  - Midpoint (point médian / retournement)
+  - Battle (bataille majeure)
+- ✅ **8-15 scènes minimum** pour un arc complet (ajustable selon la longueur)
+
+### Exemple : du scene_weave au chapitre
+
+**Scene_weave, Scène 5 :**
+```
+| 5 | Fake-Ally Opponent | Soirée littéraire | L'ami doute de la paternité | Rompre avec l'ami | g03 |
+```
+
+**Prompt généré pour le chapitre 5** :
+```
+Scène 5 — Fake-Ally Opponent
+Lieu : Soirée littéraire
+Conflit : Un ami (allié apparent) commence à douter que Léo ait vraiment écrit le texte.
+Décision : Léo rompt avec cet ami pour protéger son secret.
+Beat de genre : g03 (à valider selon genre_beats.yaml)
+
+Contexte Truby :
+- 7 étapes : [complètes]
+- Argument moral : [thèse/antithèse/synthèse]
+- Style : [Ton/Voix/Rythme]
+
+Instructions : Générer la scène en 1500-2000 mots, respectant le style défini.
+```
 
 ---
 
