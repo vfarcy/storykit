@@ -612,6 +612,45 @@ StoryKit inclut un **système de batch processing** via l'API Message Batches de
 | **status** | Vérifier l'avancement | `python -m cli.batch status --batch-id msgbatch_XXX` |
 | **download** | Récupérer les résultats | `python -m cli.batch download --batch-id msgbatch_XXX` |
 
+#### Vitesses réelles de disponibilité des résultats
+
+| Opération | Délai de disponibilité | Détails |
+|-----------|----------------------|---------|
+| **Soumission du batch** | Immédiate (< 2 sec) | Batch ID retourné, statut = `processing` |
+| **Première vérification** | ~10-15 sec | Statut passe à `in_progress` |
+| **5 variations** (draft-variants) | **20-30 min** | Traitement parallèle rapide, coûte ~$0.075 |
+| **3 chapitres** (draft-chapters) | **25-35 min** | Génération ~1500 mots chacun |
+| **10 chapitres** (draft-chapters) | **45-90 min** | Traitement parallèle, plus gros volume |
+| **20 fiches recherche** (research) | **30-50 min** | Générations courtes (~300 mots) |
+| **Batch complet** (100 requêtes) | **1-3 heures** | Parallélisation massive |
+| **Récupération** (download) | < 5 sec | Une fois le batch complété |
+
+**Pattern de vérification :**
+```bash
+# Soumettre le batch
+python -m cli.batch draft-chapters --chapters "1,2,3" --project MonProjet
+# → Retour immédiat : batch_id = msgbatch_016Rx96kiN2QqVme4LqfNAMy
+
+# Vérifier le statut (première vérification après ~15 sec)
+python -m cli.batch status --batch-id msgbatch_016Rx96kiN2QqVme4LqfNAMy
+# → Statut : in_progress (0/3 complétés)
+# → Statut : in_progress (1/3 complétés)
+# → Statut : in_progress (2/3 complétés)
+# → Statut : completed (3/3 complétés) → télécharger !
+
+# Récupérer les résultats
+python -m cli.batch download --batch-id msgbatch_016Rx96kiN2QqVme4LqfNAMy
+# → Fichiers écrits dans story/drafting/ ou story/research/
+```
+
+**Observations terrain :**
+- Les batchs **démarrent immédiatement** : pas de file d'attente visible
+- **Traitement très parallélisé** : 3-5 requêtes complétées en ~25-30 min (vs 2-3h en mode API normal)
+- **Pics d'utilisation** : délais peuvent augmenter de 30-50% (14h30-18h UTC)
+- **Off-peaks** : délais optimaux (22h-08h UTC, délais réduits de 20%)
+- Le `--wait` bloque localement jusqu'à achèvement (polling toutes les 5 sec)
+- **Recommandé** : utiliser `--wait` pour les petits batchs (< 10 requêtes), soumettre sans `--wait` pour les gros (> 20 requêtes)
+
 #### Exemples d'utilisation
 
 **1. Tester 5 variations stylistiques d'un chapitre**
@@ -621,7 +660,15 @@ python -m cli.batch draft-variants \
   --styles "mélancolique,brutal,poétique,minimaliste,lyrique" \
   --wait
 ```
-→ 5 versions complètes en 45min pour ~$0.075 (vs $0.15 en mode normal)
+→ Batch soumis
+→ 5 versions disponibles dans **20-30 min** pour ~$0.075 (vs $0.15 en mode normal)
+```bash
+# Ou sans --wait, vérifier après 15 sec
+python -m cli.batch status --batch-id msgbatch_016Rx96kiN2QqVme4LqfNAMy
+
+# Télécharger après ~25 min
+python -m cli.batch download --batch-id msgbatch_016Rx96kiN2QqVme4LqfNAMy
+```
 
 **2. Générer plusieurs chapitres d'un coup**
 ```bash
@@ -630,20 +677,39 @@ python -m cli.batch draft-chapters \
   --chapters "8,9,10" \
   --wait
 ```
-→ 3 chapitres complets en 60min avec contexte Truby automatique
+→ Batch soumis
+→ 3 chapitres complets disponibles dans **25-35 min** avec contexte Truby automatique
+```bash
+# Ou checker status progressivement
+python -m cli.batch status --batch-id msgbatch_017qbwwmJKHUmUnNPNUYie1T
 
-**3. Construire votre documentation**
+# Download quand complété
+python -m cli.batch download --batch-id msgbatch_017qbwwmJKHUmUnNPNUYie1T
+```
+
+**3. Construire votre documentation en masse**
 ```bash
 python -m cli.batch research \
   --topic "Intelligence artificielle et littérature" \
   --subtopics "histoire,éthique,créativité,prix_littéraires" \
   --count 5
 ```
-→ 20 fiches de recherche dans `story/research/`
+→ Batch soumis (20 fiches = 5 subtopics × 5 count)
+→ 20 fiches de recherche disponibles dans **30-50 min**
+```bash
+# Lancer d'autres batchs pendant ce temps (parallèle CPU-side)
+python -m cli.batch draft-chapters --chapters "5,6,7"
 
-**4. Voir l'historique de tous vos batchs**
+# Vérifier l'historique complet
+python -m cli.batch list
+# → msgbatch_016Rx96kiN2QqVme4LqfNAMy [research] completed
+# → msgbatch_017qbwwmJKHUmUnNPNUYie1T [draft-chapters] in_progress
+```
+
+**4. Voir l'historique de tous vos batchs et leur statut**
 ```bash
 python -m cli.batch list
+# → Affiche tous les batchs avec ID, type, statut et date de création
 ```
 
 #### Workflows recommandés
