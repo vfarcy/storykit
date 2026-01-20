@@ -534,11 +534,18 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 metadata_file = self.batch_dir / f"{batch.id}_metadata.json"
                 batch_type = "unknown"
                 description = ""
+                downloaded = False
+                saved_count = 0
                 
                 if metadata_file.exists():
                     with open(metadata_file, 'r', encoding='utf-8') as f:
                         metadata = json.load(f)
                         batch_type = metadata.get('type', 'unknown')
+                        
+                        # Vérifier si téléchargé
+                        if 'saved_files' in metadata:
+                            downloaded = True
+                            saved_count = metadata.get('saved_files', 0)
                         
                         if batch_type == 'draft_variants':
                             styles = metadata.get('styles', [])
@@ -572,9 +579,16 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 print(f"   Statut: {batch.processing_status} ({progress_pct:.0f}% complété)")
                 print(f"   Créé: {batch.created_at}")
                 
+                # Indicateur de téléchargement
+                if downloaded:
+                    print(f"   📥 Téléchargé : {saved_count} fichiers")
+                elif batch.processing_status == 'ended':
+                    print(f"   ⚠️  Non téléchargé")
+                
+                # Suggestions d'action
                 if batch.processing_status == 'in_progress':
                     print(f"   💡 python -m cli.batch status --batch-id {batch.id}")
-                elif batch.processing_status == 'ended':
+                elif batch.processing_status == 'ended' and not downloaded:
                     print(f"   💡 python -m cli.batch download --batch-id {batch.id}")
                 
                 print()
