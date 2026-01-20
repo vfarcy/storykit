@@ -518,6 +518,70 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
             print(f"\n💡 Télécharger les résultats :")
             print(f"   python -m cli.batch download --batch-id {batch_id}")
     
+    def list_batches(self, limit: int = 10):
+        """Lister tous les batchs récents"""
+        print(f"📋 Liste des {limit} derniers batchs\n")
+        
+        try:
+            batches = list(self.adapter.client.messages.batches.list(limit=limit))
+            
+            if not batches:
+                print("Aucun batch trouvé.")
+                return
+            
+            for batch in batches:
+                # Charger metadata si disponible
+                metadata_file = self.batch_dir / f"{batch.id}_metadata.json"
+                batch_type = "unknown"
+                description = ""
+                
+                if metadata_file.exists():
+                    with open(metadata_file, 'r', encoding='utf-8') as f:
+                        metadata = json.load(f)
+                        batch_type = metadata.get('type', 'unknown')
+                        
+                        if batch_type == 'draft_variants':
+                            styles = metadata.get('styles', [])
+                            description = f"Variations: {', '.join(styles[:3])}"
+                        elif batch_type == 'draft_chapters':
+                            chapters = metadata.get('chapters', [])
+                            ch_nums = [str(ch.get('number', '?')) for ch in chapters]
+                            description = f"Chapitres: {', '.join(ch_nums)}"
+                        elif batch_type == 'research':
+                            topic = metadata.get('topic', 'N/A')
+                            description = f"Topic: {topic[:40]}"
+                
+                # Statut avec emoji
+                status_emoji = {
+                    'in_progress': '⏳',
+                    'ended': '✅',
+                    'canceling': '⚠️',
+                    'canceled': '❌'
+                }.get(batch.processing_status, '❓')
+                
+                # Calculer progression
+                counts = batch.request_counts
+                total = (counts.processing + counts.succeeded + 
+                        counts.errored + counts.canceled + counts.expired)
+                progress_pct = (counts.succeeded / total * 100) if total > 0 else 0
+                
+                print(f"{status_emoji} {batch.id}")
+                print(f"   Type: {batch_type}")
+                if description:
+                    print(f"   {description}")
+                print(f"   Statut: {batch.processing_status} ({progress_pct:.0f}% complété)")
+                print(f"   Créé: {batch.created_at}")
+                
+                if batch.processing_status == 'in_progress':
+                    print(f"   💡 python -m cli.batch status --batch-id {batch.id}")
+                elif batch.processing_status == 'ended':
+                    print(f"   💡 python -m cli.batch download --batch-id {batch.id}")
+                
+                print()
+        
+        except Exception as e:
+            print(f"❌ Erreur lors de la récupération des batchs : {e}")
+    
     def poll_until_complete(self, batch_id: str, interval: int = 60):
         """Attendre que le batch soit terminé"""
         while True:
@@ -736,6 +800,18 @@ def main():
         help='ID du batch'
     )
     
+    # list
+    list_parser = subparsers.add_parser(
+        'list',
+        help='Lister tous les batchs récents'
+    )
+    list_parser.add_argument(
+        '--limit',
+        type=int,
+        default=10,
+        help='Nombre de batchs à afficher (défaut: 10)'
+    )
+    
     args = parser.parse_args()
     
     if not args.command:
@@ -785,6 +861,9 @@ def main():
     
     elif args.command == 'download':
         service.download_results(args.batch_id)
+    
+    elif args.command == 'list':
+        service.list_batches(limit=args.limit)
 
 
 if __name__ == "__main__":
