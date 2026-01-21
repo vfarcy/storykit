@@ -8,6 +8,9 @@
     "moi"
   ],
   "count_per_subtopic": 5,
-  "status": "created",
-  "request_count": 10
+  "status": "completed",
+  "request_count": 10,
+  "completed_at": "2026-01-21T20:37:39.696509",
+  "saved_files": 10,
+  "errors": 0
 }
