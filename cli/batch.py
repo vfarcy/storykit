@@ -39,6 +39,12 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
+# Charger .env explicitement
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / '.env')
+except ImportError:
+    pass
 
 try:
     import yaml
@@ -136,11 +142,18 @@ CHAPITRE ORIGINAL :
 NOUVELLE VERSION ({style.upper()}) :
 """
             
+            # Charger le modèle depuis la config YAML
+            config_file = self.project_root / "story" / "config" / "storykit.config.yaml"
+            model_name = "claude-sonnet-4-20250514"
+            if config_file.exists() and yaml:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    config = yaml.safe_load(f)
+                    model_name = config.get('ai', {}).get('model', model_name)
             requests.append({
                 "custom_id": f"{chapter_name}_variant_{idx:02d}_{safe_style}",
                 "params": {
-                    "model": "claude-sonnet-4-20250514",
-                    "max_tokens": 8000,
+                    "model": model_name,
+                    "max_tokens": 256,  # Limité pour test
                     "temperature": 0.85,
                     "messages": [
                         {"role": "user", "content": prompt}
@@ -281,10 +294,17 @@ Tu écris des romans contemporains avec une attention particulière au rythme, a
                 .replace('î', 'i')
                 .replace('ç', 'c')[:30])  # Limiter la longueur
             
+            # Charger le modèle depuis la config YAML
+            config_file = self.project_root / "story" / "config" / "storykit.config.yaml"
+            model_name = "claude-sonnet-4-20250514"
+            if config_file.exists() and yaml:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    config = yaml.safe_load(f)
+                    model_name = config.get('ai', {}).get('model', model_name)
             requests.append({
                 "custom_id": f"chapter_{chapter_num:02d}_{safe_title}",
                 "params": {
-                    "model": "claude-sonnet-4-20250514",
+                    "model": model_name,
                     "max_tokens": 8000,
                     "temperature": 0.85,
                     "messages": [
@@ -436,10 +456,17 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 
                 custom_id = f"research_{safe_subtopic}_{i:02d}_{safe_angle}"
                 
+                # Charger le modèle depuis la config YAML
+                config_file = self.project_root / "story" / "config" / "storykit.config.yaml"
+                model_name = "claude-sonnet-4-20250514"
+                if config_file.exists() and yaml:
+                    with open(config_file, 'r', encoding='utf-8') as f:
+                        config = yaml.safe_load(f)
+                        model_name = config.get('ai', {}).get('model', model_name)
                 requests.append({
                     "custom_id": custom_id,
                     "params": {
-                        "model": "claude-sonnet-4-20250514",
+                        "model": model_name,
                         "max_tokens": 2048,
                         "temperature": 0.7,
                         "messages": [
