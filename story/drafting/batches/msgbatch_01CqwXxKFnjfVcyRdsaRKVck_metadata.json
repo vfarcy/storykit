@@ -6,6 +6,9 @@
   "styles": [
     "minimaliste"
   ],
-  "status": "created",
-  "request_count": 1
+  "status": "completed",
+  "request_count": 1,
+  "completed_at": "2026-01-21T14:43:03.016941",
+  "saved_files": 1,
+  "errors": 0
 }
