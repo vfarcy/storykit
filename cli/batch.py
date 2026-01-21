@@ -108,10 +108,19 @@ class BatchService:
 Tu maîtrises les styles d'écriture variés tout en gardant une cohérence narrative.
 Adapte le rythme, le vocabulaire et la ponctuation selon la tonalité demandée."""
         
+        # Charger le genre principal et la philosophie
+        genre_file = self.project_root / "story" / "genre" / "genre_choice.yaml"
+        genre_context = ""
+        if genre_file.exists() and yaml:
+            with open(genre_file, 'r', encoding='utf-8') as f:
+                genre_data = yaml.safe_load(f)
+                g = genre_data.get('genre', {})
+                genre_context = f"GENRE PRINCIPAL : {g.get('primary','')}.\nBLENDS : {', '.join(g.get('blends', []))}\nPHILOSOPHIE : {g.get('philosophy','')}\nPROMESSE : {g.get('promise','')}\n"
+
         # Créer les requêtes batch
         requests = []
         chapter_name = chapter_path.stem.replace("_draft_response", "")
-        
+
         for idx, style in enumerate(styles):
             # Nettoyer le style pour custom_id (ASCII seulement, pas d'accents)
             safe_style = (style
@@ -126,7 +135,8 @@ Adapte le rythme, le vocabulaire et la ponctuation selon la tonalité demandée.
                 .replace(' ', '_')
                 .replace(',', '_'))
             
-            prompt = f"""Voici un chapitre de roman littéraire.
+            prompt = f"""{genre_context}
+Voici un chapitre de roman littéraire.
 
 CONSIGNE : Réécris ce chapitre avec une tonalité **{style.upper()}**, tout en conservant :
 - La structure narrative existante
@@ -238,9 +248,18 @@ Tu écris des romans contemporains avec une attention particulière au rythme, a
         truby_context = self._load_truby_context()
         scene_weave = self._load_scene_weave()
         
+        # Charger le genre principal et la philosophie
+        genre_file = self.project_root / "story" / "genre" / "genre_choice.yaml"
+        genre_context = ""
+        if genre_file.exists() and yaml:
+            with open(genre_file, 'r', encoding='utf-8') as f:
+                genre_data = yaml.safe_load(f)
+                g = genre_data.get('genre', {})
+                genre_context = f"GENRE PRINCIPAL : {g.get('primary','')}.\nBLENDS : {', '.join(g.get('blends', []))}\nPHILOSOPHIE : {g.get('philosophy','')}\nPROMESSE : {g.get('promise','')}\n"
+
         # Créer les requêtes batch
         requests = []
-        
+
         for chapter in chapters:
             chapter_num = chapter['number']
             chapter_title = chapter.get('title', f'Chapitre {chapter_num}')
@@ -248,7 +267,8 @@ Tu écris des romans contemporains avec une attention particulière au rythme, a
             scenes = chapter.get('scenes', [])
             
             # Construire le prompt pour ce chapitre
-            prompt = f"""Tu dois écrire le **Chapitre {chapter_num} : {chapter_title}** d'un roman littéraire.
+            prompt = f"""{genre_context}
+Tu dois écrire le **Chapitre {chapter_num} : {chapter_title}** d'un roman littéraire.
 
 ## CONTEXTE DU ROMAN
 {truby_context}
@@ -413,8 +433,17 @@ Tu écris des romans contemporains avec une attention particulière au rythme, a
 Tu fournis des analyses détaillées, documentées et nuancées sur le thème : {topic}.
 Privilégie les faits, les références historiques et les exemples concrets."""
         
+        # Charger le genre principal et la philosophie
+        genre_file = self.project_root / "story" / "genre" / "genre_choice.yaml"
+        genre_context = ""
+        if genre_file.exists() and yaml:
+            with open(genre_file, 'r', encoding='utf-8') as f:
+                genre_data = yaml.safe_load(f)
+                g = genre_data.get('genre', {})
+                genre_context = f"GENRE PRINCIPAL : {g.get('primary','')}.\nBLENDS : {', '.join(g.get('blends', []))}\nPHILOSOPHIE : {g.get('philosophy','')}\nPROMESSE : {g.get('promise','')}\n"
+
         requests = []
-        
+
         for subtopic in subtopics:
             for i in range(count):
                 # Varier les angles d'approche
@@ -427,7 +456,8 @@ Privilégie les faits, les références historiques et les exemples concrets."""
                 ]
                 angle = angles[i % len(angles)]
                 
-                prompt = f"""Sujet : {topic} — {subtopic}
+                prompt = f"""{genre_context}
+Sujet : {topic} — {subtopic}
 Angle : {angle}
 
 Rédige une fiche de recherche détaillée (500-800 mots) qui explore cet aspect.
