@@ -1,0 +1,16 @@
+# TEMPLATE: genre_choice.yaml
+# Utilité : Ce fichier définit le genre principal de votre histoire, ses éventuels mélanges (blends), la philosophie narrative et la promesse faite au lecteur.
+# Comment configurer :
+# - Modifiez le champ 'primary' pour indiquer le genre principal (ex : "detective", "thriller", etc.).
+# - Ajoutez ou retirez des genres dans 'blends' selon vos besoins.
+# - Personnalisez la 'philosophy' pour refléter la vision morale ou narrative de votre histoire.
+# - Adaptez la 'promise' pour clarifier ce que le lecteur doit attendre.
+#
+# IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
+
+# ---
+genre:
+  primary: "detective"
+  blends: ["thriller"]
+  philosophy: "La vérité se découvre par l’enquête et la comparaison d’histoires concurrentes."
+  promise: "Mystère résolu honnêtement, renversements logiques, fermeture des fausses pistes."
