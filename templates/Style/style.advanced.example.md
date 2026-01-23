@@ -18,3 +18,6 @@
 
 ## Show, don't tell
 Utilise la technique du 'Show, don't tell' (Montre, ne raconte pas). Décris les sensations physiques (odeurs, textures, bruits) plutôt que d'énoncer les émotions du personnage.
+
+## Pas de clichés IA
+Pas de listes, pas de résumé final, pas de conclusion moralisatrice.
