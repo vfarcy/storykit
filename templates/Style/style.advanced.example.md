@@ -15,3 +15,6 @@
   "Il frappe. Rien. Il recommence — plus doucement. La serrure respire."
 - Non conforme: phrase à rallonge sans respiration
   "Il frappe et comme rien ne se produit il recommence plus doucement ce qui finalement provoque une réaction dans la serrure qui semble respirer comme une bête et soudain une pensée l’envahit sur l’absurdité de la situation."
+
+## Show, don't tell
+Utilise la technique du 'Show, don't tell' (Montre, ne raconte pas). Décris les sensations physiques (odeurs, textures, bruits) plutôt que d'énoncer les émotions du personnage.
