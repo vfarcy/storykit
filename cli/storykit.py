@@ -74,6 +74,33 @@ CONFIG = STORY / "config" / "storykit.config.yaml"
 OUTDIR = ROOT / "out" / "prompts"
 
 # ---------------------------
+# Détection du livre en cours
+# ---------------------------
+
+def detect_current_book():
+    """
+    Détecte le livre en cours en cherchant storykit.config.yaml
+    dans le répertoire courant ou ses parents (jusqu'à ROOT).
+    Retourne (livre_name, config_path) ou (None, None) si non trouvé.
+    """
+    cwd = Path.cwd()
+    # Chercher storykit.config.yaml en montant l'arborescence
+    for path in [cwd, *cwd.parents]:
+        config_candidate = path / "storykit.config.yaml"
+        if config_candidate.exists():
+            # Déterminer le nom du livre
+            book_name = path.name if path != ROOT else "root"
+            return book_name, config_candidate
+    return None, None
+
+def get_book_info():
+    """Retourne une chaîne avec le nom et chemin du livre en cours."""
+    book_name, config_path = detect_current_book()
+    if book_name and config_path:
+        return f"{book_name} ({config_path.parent.relative_to(ROOT)})"
+    return "projet global"
+
+# ---------------------------
 # Utilitaires de lecture
 # ---------------------------
 
@@ -543,6 +570,10 @@ def main(argv=None):
     validate.add_argument("--no-autofix-style", action="store_true", help="Désactiver l'auto-fix de style.md (Ton/Voix/Rythme)")
 
     args = parser.parse_args(argv)
+
+    # Afficher le livre en cours
+    book_info = get_book_info()
+    console.print(f"[*] Livre en cours: {book_info}", style="dim")
 
     if args.cmd == "validate":
         cfg = load_config()
