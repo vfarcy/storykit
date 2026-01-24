@@ -588,6 +588,7 @@ def validate_all(autofix_style: bool, optional_autofix: str) -> list[str]:
 def show_structure() -> None:
     """
     Génère un fichier avec la structure synthétique du livre : chapitres, scènes et beats.
+    Inclut également les personnages impliqués dans chaque scène.
     """
     story_root = get_story_root()
     
@@ -599,6 +600,20 @@ def show_structure() -> None:
     scene_weave_path = story_root / "outline" / "scene_weave.md"
     scene_weave_text = read_text(scene_weave_path)
     scenes = _parse_scene_weave_table(scene_weave_text)
+    
+    # Lire character_web.yaml
+    character_web_path = story_root / "truby" / "character_web.yaml"
+    character_web = read_yaml(character_web_path)
+    characters = character_web.get("characters", [])
+    
+    # Créer un mapping character id -> (name, function)
+    char_map = {}
+    for char in characters:
+        char_id = char.get("id", "")
+        char_name = char.get("name", "")
+        char_func = char.get("function", "")
+        if char_id:
+            char_map[char_id] = {"name": char_name, "function": char_func}
     
     if not scenes:
         console.print("[red]Aucune scène trouvée dans scene_weave.md[/red]")
@@ -651,8 +666,20 @@ def show_structure() -> None:
                         fonction = scene["fonction"] or "-"
                         conflit = scene["conflit"] or "-"
                         decision = scene["decision"] or "-"
+                        
+                        # Détecter les personnages mentionnés
+                        scene_text = f"{fonction} {conflit} {decision}".lower()
+                        characters_in_scene = []
+                        for char_id, char_info in char_map.items():
+                            char_name = char_info["name"].lower()
+                            # Chercher le nom du personnage dans le texte de la scène
+                            if char_name in scene_text or char_id in scene_text.lower():
+                                characters_in_scene.append(f"{char_info['name']} ({char_info['function']})")
+                        
                         output.append(f"- **Scène {scene_num}** [{beat}]: {fonction}\n")
                         output.append(f"  - Lieu: {lieu}\n")
+                        if characters_in_scene:
+                            output.append(f"  - Personnages: {', '.join(characters_in_scene)}\n")
                         output.append(f"  - Conflit: {conflit}\n")
                         output.append(f"  - Décision: {decision}\n")
                 else:
@@ -667,8 +694,19 @@ def show_structure() -> None:
             fonction = scene["fonction"] or "-"
             conflit = scene["conflit"] or "-"
             decision = scene["decision"] or "-"
+            
+            # Détecter les personnages mentionnés
+            scene_text = f"{fonction} {conflit} {decision}".lower()
+            characters_in_scene = []
+            for char_id, char_info in char_map.items():
+                char_name = char_info["name"].lower()
+                if char_name in scene_text or char_id in scene_text.lower():
+                    characters_in_scene.append(f"{char_info['name']} ({char_info['function']})")
+            
             output.append(f"- **Scène {idx}** [{beat}]: {fonction}\n")
             output.append(f"  - Lieu: {lieu}\n")
+            if characters_in_scene:
+                output.append(f"  - Personnages: {', '.join(characters_in_scene)}\n")
             output.append(f"  - Conflit: {conflit}\n")
             output.append(f"  - Décision: {decision}\n")
     
