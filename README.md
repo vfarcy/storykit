@@ -990,3 +990,93 @@ Le dossier `templates/` contient des exemples de fichiers modèles (Markdown ou 
 - `style.example.md`, `style.forbidden.example.md`, `style.advanced.example.md` : Exemples de styles d'écriture, d'interdits stylistiques et de variantes avancées.
 
 Ces fichiers servent de référence pour créer tes propres artefacts dans le dossier story/. Ils garantissent la bonne structure, la cohérence des rubriques et facilitent la prise en main de StoryKit.
+
+---
+## Arborescence du projet
+
+```
+.env
+.env.example
+.git/
+.github/
+.gitignore
+.venvHOME/
+.venvWORK/
+.vscode/
+AUDIT_REPORT.md
+BATCH_README.md
+cli/
+  adapters/
+  batch.py
+  storykit.py
+  validate.py
+  __pycache__/
+custom-styles/
+LICENSE
+README.md
+requirements.txt
+temp/
+  deleted-files-unstaged.txt
+  image-cache/
+templates/
+  Genre/
+  Outline/
+  Style/
+  Truby/
+tools/
+  batch-run.ps1
+  batch-run.sh
+  load-aliases.ps1
+  open-latest-response.ps1
+  open-latest.ps1
+  README.md
+  storykit-run.ps1
+  storykit-run.sh
+TRUBY_GUIDE.md
+writing/
+  livre1-truby/
+    out/
+    story/
+      config/
+      drafting/
+      genre/
+      outline/
+      research/
+      tasks/
+      truby/
+    storykit.config.yaml
+  livre2-maigretlike/
+    out/
+    story/
+      config/
+      drafting/
+      genre/
+      outline/
+      research/
+      tasks/
+      truby/
+    storykit.config.yaml
+  livre3-sana/
+    out/
+    story/
+      config/
+        style.md
+      drafting/
+      genre/
+        genre_beats.md
+        genre_beats.yaml
+        genre_choice.yaml
+      outline/
+        act_map.yaml
+        scene_weave.md
+      research/
+      tasks/
+      truby/
+        character_web.yaml
+        moral_argument.md
+        premise.md
+        seven_steps.yaml
+        story_world.md
+        symbol_web.yaml
+    storykit.config.yaml
+```
