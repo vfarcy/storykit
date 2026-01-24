@@ -352,13 +352,14 @@ python -c "import sys; print(sys.executable)"
 .venv\Scripts\python.exe -m cli.batch list --limit 10
 ```
 
-**Encodage UTF-8 (Windows PowerShell) :**  
-Si vous rencontrez des problèmes d'affichage des caractères accentués :
+**Encodage UTF-8 (Windows PowerShell):**  
+Les helpers `storykit-run.ps1` et `batch-run.ps1` **forcent automatiquement** l'encodage UTF-8 pour PowerShell.  
+Si vous utilisez directement `python -m cli.*`, définissez l'encodage manuellement:
 
 ```powershell
 # Pour la session courante
-$env:PYTHONIOENCODING="utf-8"
-../storykit-run.ps1 validate
+$env:PYTHONIOENCODING = "utf-8"
+python -m cli.storykit validate
 
 # Ou permanent : ajouter à votre profil PowerShell
 notepad $PROFILE
