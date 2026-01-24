@@ -94,37 +94,8 @@ Notes:
 - En mode **dry-run**, il n'y a pas de `livre/out/responses`. Le script **bascule automatiquement** vers le dernier prompt (`livre/out/prompts`) si `FallbackToPrompt` est activé (par défaut).
 - Pour forcer l'erreur si aucune réponse n'est disponible, désactivez le fallback: `../../tools/open-latest-response.ps1 -FallbackToPrompt:$false`.
 
-## Options communes
-- `-Editor`: `notepad` (défaut) ou `code` (VS Code)
-
-## Scripts helpers du CLI (depuis n'importe quel répertoire)
-
-### 3) Helper StoryKit CLI
-- **Chemin**: `../storykit-run.ps1`
-- **But**: lancer les commandes CLI StoryKit depuis n'importe quel répertoire (même sans .venv activé)
-- **Usage**:
-
-```powershell
-# Détecte automatiquement le livre courant
-../storykit-run.ps1 validate
-../storykit-run.ps1 assemble --target premise
-../storykit-run.ps1 assemble --target truby7
-../storykit-run.ps1 assemble --target draft --chapter 1
-```
-
-### 4) Helper Batch CLI
-- **Chemin**: `../batch-run.ps1`
-- **But**: lancer les commandes batch depuis n'importe quel répertoire (même sans .venv activé)
-- **Usage**:
-
-```powershell
-# Détecte automatiquement le livre courant
-../batch-run.ps1 list --limit 10
-../batch-run.ps1 download msgbatch_XXXX
-../batch-run.ps1 status msgbatch_XXXX
-```
-
 ## Notes
-- Ces scripts ciblent Windows PowerShell. Sur macOS/Linux, adaptez avec `bash`/`zsh` et les utilitaires disponibles.
-- Les helpers (`storykit-run.ps1`, `batch-run.ps1`) détectent automatiquement le livre en remontant depuis le répertoire courant pour trouver `storykit.config.yaml`.
+- Les helpers (`storykit-run.ps1`, `batch-run.ps1`, `storykit-run.sh`, `batch-run.sh`) détectent automatiquement le livre en remontant depuis le répertoire courant pour trouver `storykit.config.yaml`.
+- Sur macOS/Linux, utilisez les versions `.sh` des helpers.
+- Windows PowerShell nécessite parfois : `Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned`
 

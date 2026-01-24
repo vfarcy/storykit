@@ -962,7 +962,7 @@ Pour plus de détails et options, voir [tools/README.md](tools/README.md)
 
 > **Note** : En mode dry-run, `out/responses/` est vide. Les scripts basculent automatiquement vers le dernier prompt si aucune réponse n'est disponible.
 
-## 3.2) Dossier templates/
+## 3.3) Dossier templates/
 
 Le dossier `templates/` contient des exemples de fichiers modèles (Markdown ou YAML) pour chaque artefact narratif attendu par StoryKit :
 
