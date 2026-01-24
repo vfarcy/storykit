@@ -176,9 +176,6 @@ Repository/
 │  ├─ AUDIT_REPORT.md      # Historique améliorations
 │  └─ LICENSE
 │
-├─ temp/                   # 🗑️ Fichiers temporaires
-│  └─ image-cache/
-│
 └─ custom-styles/          # 🎨 Styles personnalisés (optionnel)
 ```
 
