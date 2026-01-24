@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+param(
+    [Parameter(ValueFromRemainingArguments=$true)]
+    [string[]]$Arguments
+)
+
 <#
 .SYNOPSIS
 Helper pour lancer storykit CLI avec détection automatique du livre en cours
@@ -12,10 +17,9 @@ et lance le CLI StoryKit avec le répertoire courant approprié.
 ./storykit-run.ps1 assemble --target truby7
 #>
 
-param(
-    [Parameter(ValueFromRemainingArguments=$true)]
-    [string[]]$Arguments
-)
+# Force l'encodage UTF-8 pour PowerShell
+$env:PYTHONIOENCODING = 'utf-8'
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 $repoRoot = $PSScriptRoot
 

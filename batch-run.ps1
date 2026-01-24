@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+param(
+    [Parameter(ValueFromRemainingArguments=$true)]
+    [string[]]$Arguments
+)
+
 <#
 .SYNOPSIS
 Helper pour lancer les commandes batch depuis n'importe où
@@ -13,10 +18,9 @@ peu importe le répertoire courant.
 ./batch-run.ps1 status msgbatch_XXXXX
 #>
 
-param(
-    [Parameter(ValueFromRemainingArguments=$true)]
-    [string[]]$Arguments
-)
+# Force l'encodage UTF-8 pour PowerShell
+$env:PYTHONIOENCODING = 'utf-8'
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 $repoRoot = $PSScriptRoot
 
