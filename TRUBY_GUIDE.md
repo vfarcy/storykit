@@ -707,7 +707,11 @@ Les **symboles** compriment du **sens** ; un objet, un lieu, une action qu'on re
 - Quel genre promets-je au lecteur ?
 
 **Commande StoryKit :**
-```bash
+```powershell
+# Depuis le répertoire du livre (livre1-truby, livre2-monsoon, etc.)
+../storykit-run.ps1 assemble --target premise
+
+# Ou directement depuis le repo root (après avoir activé .venv et changé de répertoire)
 python -m cli.storykit assemble --target premise
 ```
 
@@ -728,7 +732,12 @@ python -m cli.storykit assemble --target premise
 - Comment le **monde** reflète ce conflit interne ?
 
 **Commandes StoryKit :**
-```bash
+```powershell
+# Via helpers (recommandé, depuis n'importe quel répertoire du livre)
+../storykit-run.ps1 assemble --target truby7
+../storykit-run.ps1 assemble --target truby22  # optionnel
+
+# Ou directement
 python -m cli.storykit assemble --target truby7
 python -m cli.storykit assemble --target truby22  # optionnel
 ```
@@ -747,7 +756,11 @@ python -m cli.storykit assemble --target truby22  # optionnel
 - Quel **beat de genre** cette scène remplit-elle ?
 
 **Commande StoryKit :**
-```bash
+```powershell
+# Via helper
+../storykit-run.ps1 assemble --target weave
+
+# Ou directement
 python -m cli.storykit assemble --target weave
 ```
 
@@ -762,7 +775,11 @@ python -m cli.storykit assemble --target weave
 - Vérifiez que vous **respektez le style & voix** (ton, rythme, focalisation)
 
 **Commande StoryKit :**
-```bash
+```powershell
+# Via helper
+../storykit-run.ps1 assemble --target draft --chapter 1
+
+# Ou directement
 python -m cli.storykit assemble --target draft --chapter 1
 ```
 
@@ -771,38 +788,38 @@ python -m cli.storykit assemble --target draft --chapter 1
 ## Commandes StoryKit
 
 ### Valider le projet
-```bash
-python -m cli.storykit validate
+```powershell
+../storykit-run.ps1 validate
 ```
 Vérifie que tous vos fichiers sont cohérents et complets.
 
 ### Assembler un prompt pour la prémisse
-```bash
-python -m cli.storykit assemble --target premise
+```powershell
+../storykit-run.ps1 assemble --target premise
 ```
 Génère un prompt pour affiner votre prémisse avec une IA.
 
 ### Assembler un prompt pour les 7 étapes
-```bash
-python -m cli.storykit assemble --target truby7
+```powershell
+../storykit-run.ps1 assemble --target truby7
 ```
 Génère un prompt pour développer vos 7 étapes.
 
 ### Assembler un prompt pour les 22 étapes
-```bash
-python -m cli.storykit assemble --target truby22
+```powershell
+../storykit-run.ps1 assemble --target truby22
 ```
 Génère un prompt pour structurer les pivots.
 
 ### Assembler un prompt pour le scene-weave
-```bash
-python -m cli.storykit assemble --target weave
+```powershell
+../storykit-run.ps1 assemble --target weave
 ```
 Génère un prompt pour planifier vos scènes.
 
 ### Assembler un prompt pour un brouillon de chapitre
-```bash
-python -m cli.storykit assemble --target draft --chapter 1
+```powershell
+../storykit-run.ps1 assemble --target draft --chapter 1
 ```
 Génère un prompt pour rédiger un chapitre spécifique.
 
