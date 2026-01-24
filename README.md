@@ -65,123 +65,147 @@ de ces fichiers ;
 
 ## 3) Arborescence — Architecture multi-livres
 
-StoryKit supporte plusieurs livres indépendants dans un seul repository :
+StoryKit supporte plusieurs livres indépendants dans un seul repository, désormais tous regroupés dans le dossier writing/ :
 
 ```
-Repository/
-├─ .venvWORK/              # Environnement virtuel Python (ou .venv)
-├─ .vscode/
-│  └─ tasks.json           # Tâches VS Code pour batch.py
-├─ .env / .env.example     # Variables d'environnement (clés API, config)
-│
-├─ cli/                    # 🐍 Modules Python
-│  ├─ storykit.py          # CLI principal (validate, assemble)
-│  ├─ batch.py             # CLI batch (draft-variants, research, etc.)
-│  ├─ validate.py          # Validations YAML/MD
-│  └─ adapters/            # Adaptateurs IA (Claude, OpenAI, Gemini)
-│     ├─ base.py
-│     ├─ claude.py
-│     ├─ copilot.py
-│     └─ gemini.py
-│
-├─ tools/                  # 🔧 Scripts utilitaires
-│  ├─ storykit-run.ps1     # ✨ Helper CLI (Windows)
-│  ├─ storykit-run.sh      # ✨ Helper CLI (Linux/macOS)
-│  ├─ batch-run.ps1        # ✨ Helper batch (Windows)
-│  ├─ batch-run.sh         # ✨ Helper batch (Linux/macOS)
-│  ├─ open-latest.ps1      # Ouvrir dernier prompt (Windows)
-│  ├─ open-latest-response.ps1
-│  └─ README.md
-│
-├─ templates/              # 📋 Modèles d'artefacts
-│  ├─ Truby/
-│  │  ├─ premise.example.md
-│  │  ├─ seven_steps.example.yaml
-│  │  ├─ twenty_two_steps.example.yaml
-│  │  ├─ character_web.example.yaml
-│  │  ├─ moral_argument.example.md
-│  │  ├─ story_world.example.md
-│  │  └─ symbol_web.example.yaml
-│  ├─ Genre/
-│  │  ├─ genre_choice.example.yaml
-│  │  └─ genre_beats.example.yaml
-│  ├─ Outline/
-│  │  ├─ act_map.example.yaml
-│  │  └─ scene_weave.example.md
-│  └─ Style/
-│     ├─ style.example.md
-│     ├─ style.forbidden.example.md
-│     ├─ style.advanced.example.md
-│     └─ style.md.example.md
-│
-├─ livre1-truby/           # 📖 PROJET 1 (isolé, structure complète)
-│  ├─ storykit.config.yaml # Config du projet
-│  ├─ story/
-│  │  ├─ truby/            # Prémisse, 7 étapes, 22 étapes, web, argument moral, monde, symboles
-│  │  │  ├─ premise.md
-│  │  │  ├─ seven_steps.yaml
-│  │  │  ├─ twenty_two_steps.yaml    # Optionnel
-│  │  │  ├─ character_web.yaml
-│  │  │  ├─ moral_argument.md
-│  │  │  ├─ story_world.md           # Optionnel
-│  │  │  └─ symbol_web.yaml          # Optionnel
-│  │  ├─ genre/            # Choix de genre & beats
-│  │  │  ├─ genre_choice.yaml
-│  │  │  └─ genre_beats.yaml
-│  │  ├─ outline/          # Scene‑weave & carte actes/chapitres
-│  │  │  ├─ scene_weave.md
-│  │  │  └─ act_map.yaml              # Optionnel
-│  │  ├─ config/           # Configuration stylistique
-│  │  │  └─ style.md       # Ton, Voix, Rythme (requis)
-│  │  ├─ research/         # Sources, notes, documentation
-│  │  │  └─ *.md
-│  │  ├─ drafting/         # Brouillons de chapitres
-│  │  │  ├─ LeSilenceDesAlgorithmes/
-│  │  │  ├─ SolitudeGeometrique/
-│  │  │  ├─ ClaudeSonnet4-5/
-│  │  │  └─ Gemini3/
-│  │  └─ tasks/            # Tâches éditoriales
-│  │     └─ tasks.yaml
-│  └─ out/                 # 💾 Artefacts générés (par livre!)
-│     ├─ prompts/          # Prompts assemblés
-│     │  ├─ 20260124_132149_premise.md
-│     │  ├─ 20260124_132214_truby7.md
-│     │  ├─ ...
-│     │  └─ YYYYMMDD_HHMMSS_<target>.md
-│     └─ responses/        # Réponses IA téléchargées
-│        └─ YYYYMMDD_HHMMSS_<target>_response.md
-│
-├─ livre2-monsoon/         # 📖 PROJET 2 (structure identique, isolée)
-│  ├─ storykit.config.yaml
-│  ├─ story/
-│  │  ├─ truby/
-│  │  ├─ genre/
-│  │  ├─ outline/
-│  │  ├─ config/
-│  │  ├─ research/
-│  │  ├─ drafting/
-│  │  └─ tasks/
-│  └─ out/                 # Prompts/réponses ISOLÉS pour livre2
-│     ├─ prompts/
-│     └─ responses/
-│
-├─ [autres livres...]      # Ajouter autant de livres que nécessaire
-│
-├─ Documentation
-│  ├─ README.md            # Ce fichier
-│  ├─ TRUBY_GUIDE.md       # Guide Truby complet
-│  ├─ BATCH_README.md      # Documentation batch API
-│  ├─ AUDIT_REPORT.md      # Historique améliorations
-│  └─ LICENSE
-│
-└─ custom-styles/          # 🎨 Styles personnalisés (optionnel)
+AUDIT_REPORT.md
+BATCH_README.md
+LICENSE
+README.md
+requirements.txt
+TRUBY_GUIDE.md
+cli/
+  batch.py
+  storykit.py
+  validate.py
+  __pycache__/
+  adapters/
+    base.py
+    claude.py
+    copilot.py
+    gemini.py
+    __pycache__/
+custom-styles/
+temp/
+  deleted-files-unstaged.txt
+  image-cache/
+templates/
+  Genre/
+    genre_beats.example.yaml
+    genre_choice.example.yaml
+  Outline/
+    act_map.example.yaml
+    scene_weave.example.md
+  Style/
+    style.advanced.example.md
+    style.example.md
+    style.forbidden.example.md
+    style.md.example.md
+  Truby/
+    character_web.example.yaml
+    moral_argument.example.md
+    premise.example.md
+    seven_steps.example.yaml
+    story_world.example.md
+    symbol_web.example.yaml
+    twenty_two_steps.example.yaml
+tools/
+  batch-run.ps1
+  batch-run.sh
+  load-aliases.ps1
+  open-latest-response.ps1
+  open-latest.ps1
+  README.md
+  storykit-run.ps1
+  storykit-run.sh
+writing/
+  livre1-truby/
+    storykit.config.yaml
+    story/
+      config/
+        style.md
+      drafting/
+        batches/
+        batches_archived_old/
+        ClaudeSonnet4-5/
+        Gemini3/
+        LeSilenceDesAlgorithmes/
+        SolitudeGeometrique/
+      genre/
+        genre_beats.yaml
+        genre_choice.yaml
+      outline/
+        act_map.yaml
+        scene_weave.md
+      research/
+        *.md
+      tasks/
+        tasks.yaml
+      truby/
+        character_web.yaml
+        moral_argument.md
+        premise.md
+        seven_steps.yaml
+        story_world.md
+        symbol_web.yaml
+    out/
+      prompts/
+      responses/
+  livre2-maigretlike/
+    storykit.config.yaml
+    story/
+      config/
+        style.md
+      drafting/
+        batches/
+        test_batch/
+      genre/
+        genre_beats.md
+        genre_beats.yaml
+        genre_choice.yaml
+      outline/
+        act_map.yaml
+        scene_weave.md
+      research/
+      tasks/
+      truby/
+        character_web.yaml
+        moral_argument.md
+        premise.md
+        seven_steps.yaml
+        story_world.md
+        symbol_web.yaml
+    out/
+      prompts/
+      responses/
+  livre3-sana/
+    storykit.config.yaml
+    story/
+      config/
+        style.md
+      drafting/
+      genre/
+        genre_beats.md
+        genre_beats.yaml
+        genre_choice.yaml
+      outline/
+        act_map.yaml
+        scene_weave.md
+      research/
+      tasks/
+      truby/
+        character_web.yaml
+        moral_argument.md
+        premise.md
+        seven_steps.yaml
+        story_world.md
+        symbol_web.yaml
+    out/
+      prompts/
+      responses/
 ```
 
-**Points clés :**
-- **Chaque livre** = dossier indépendant avec sa propre config et artefacts
-- **Détection automatique** : CLI détecte le livre en cherchant `storykit.config.yaml` en remontant depuis le répertoire courant
-- **Isolement complet** : prompts/réponses sont dans `livre/out/`, **pas** dans un dossier global
-- **Helpers cross-directory** : `storykit-run.ps1` et `batch-run.ps1` permettent d'utiliser le CLI/batch de n'importe quel répertoire
+Chaque livre possède sa propre structure, artefacts et configuration, garantissant l’isolement des prompts et des réponses IA. Les scripts et helpers fonctionnent dans tous les sous-dossiers, et l’ajout d’un nouveau livre se fait simplement en copiant la structure existante dans writing/.
 
 ### 3.1) Fichiers obligatoires et optionnels
 
@@ -686,15 +710,18 @@ Templates utiles:
 
 ### Utilisation via helpers PowerShell (recommandé)
 
-```powershell
-# Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
-# Aucun besoin d'activer .venv ou de cd au repo root
+> Les batchs doivent être lancés **depuis le dossier du livre** (ex: `writing/livre1-truby`) pour isoler les sorties dans `out/` du livre : prompts/réponses **et JSON batch** y sont générés.
 
-../tools/storykit-run.ps1 validate
-../tools/storykit-run.ps1 assemble --target premise
-../tools/storykit-run.ps1 assemble --target truby7 --styles minimaliste
-../tools/batch-run.ps1 list --limit 10
-../tools/batch-run.ps1 download msgbatch_XXXX
+```powershell
+# Charger les alias (à faire une fois par session, depuis le repo root)
+. .\tools\load-aliases.ps1
+
+# Ensuite, depuis writing/livreX/ (ou un sous-dossier du livre) :
+sk validate
+sk assemble --target premise
+sk assemble --target truby7 --styles minimaliste
+batch list --limit 10
+batch download msgbatch_XXXX
 ```
 
 ### Utilisation directe (depuis le repo root)
@@ -703,13 +730,13 @@ Templates utiles:
 # Activer l'environnement virtuel
 .venv\Scripts\Activate.ps1
 
-# Puis changer vers le livre désiré
-cd livre1-truby
+# Puis changer vers le livre désiré (désormais sous writing/)
+cd writing/livre1-truby
 python -m cli.storykit validate
 python -m cli.storykit assemble --target premise
 
 cd ../livre2-monsoon
-python -m cli.batch list --limit 10
+python -m cli.batch list --limit 10   # toujours depuis le dossier livre
 ```
 
 ### Assemble : générer des prompts

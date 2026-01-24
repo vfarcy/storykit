@@ -24,6 +24,7 @@ $env:PYTHONIOENCODING = 'utf-8'
 
 # $PSScriptRoot pointe vers tools/, donc repo root = parent
 $repoRoot = Split-Path -Parent $PSScriptRoot
+$originalCwd = Get-Location  # On veut respecter le chemin depuis lequel l'utilisateur lance la commande
 
 Push-Location $repoRoot
 try {
@@ -32,11 +33,15 @@ try {
     if ($argList) { $argList = "'$argList'" }
     
     # Utiliser des slashes pour les chemins Windows en Python
-    $repoRootPy = $repoRoot.Replace('\', '/')
+    # Forcer les slashes pour éviter les problèmes d'escape Python
+    $repoRootPy = $repoRoot -replace '\\','/'
+    $originalCwdPy = $originalCwd.Path -replace '\\','/'
     
     $pythonCmd = @"
-import sys
-sys.path.insert(0, '$repoRootPy')
+import os, sys
+# Garder l'emplacement où l'utilisateur était (pour les chemins relatifs de chapitres)
+os.chdir(r'$originalCwdPy')
+sys.path.insert(0, r'$repoRootPy')
 sys.argv = ['cli.batch', $argList]
 from cli.batch import main
 main()

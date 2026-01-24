@@ -30,14 +30,17 @@ OU en une ligne (exécuter dans PowerShell) :
    if (!(Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force | Out-Null }; Add-Content $PROFILE '. "C:\Users\vfarc\OneDrive - Groupe ESIEA\Dev\story-repo-polar\tools\load-aliases.ps1"'
 #>
 
-# Déterminer la racine du repo
+# Déterminer la racine du repo et le dossier des livres (writing/)
 $repoRoot = Split-Path -Parent $PSScriptRoot
+$booksRoot = Join-Path $repoRoot "writing"
 
-# Vérifier que le repo est valide
-if (!(Test-Path "$repoRoot\livre1-truby\storykit.config.yaml")) {
+# Vérifier que le repo est valide (nouvelle architecture : writing/livreX)
+$bookConfigExists = Test-Path "$booksRoot\*\storykit.config.yaml"
+if (-not $bookConfigExists) {
     Write-Host "✗ ERREUR : Impossible de trouver le répertoire du projet StoryKit" -ForegroundColor Red
     Write-Host "   Assurez-vous d'être dans le repository story-repo-polar" -ForegroundColor Yellow
     Write-Host "   Chemin attendu : $repoRoot" -ForegroundColor Gray
+    Write-Host "   Dossier livres attendu : $booksRoot" -ForegroundColor Gray
     break
 }
 
@@ -120,16 +123,16 @@ function tools {
 function livres {
     $current = Get-Location
     while ($current -ne $current.Parent) {
-        if (Test-Path "$current\livre1-truby") {
+        if (Test-Path "$current\writing") {
             Write-Host "Dossiers de projets disponibles :" -ForegroundColor Green
-            Get-ChildItem -Path $current -Directory | Where-Object {$_.Name -match "^livre"} | ForEach-Object {
+            Get-ChildItem -Path "$current\writing" -Directory | Where-Object {$_.Name -match "^livre"} | ForEach-Object {
                 Write-Host "  - $($_.Name)/" -ForegroundColor Cyan
             }
             return
         }
         $current = $current.Parent
     }
-    Write-Host "✗ Impossible de trouver les projets" -ForegroundColor Red
+    Write-Host "✗ Impossible de trouver les projets (writing/)" -ForegroundColor Red
 }
 
 # ============================================

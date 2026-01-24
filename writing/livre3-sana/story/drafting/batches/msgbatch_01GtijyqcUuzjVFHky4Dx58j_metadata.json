@@ -1,0 +1,11 @@
+{
+  "batch_id": "msgbatch_01GtijyqcUuzjVFHky4Dx58j",
+  "type": "draft_variants",
+  "created_at": "2026-01-24T22:59:15.898793",
+  "chapter_file": "C:\\Users\\vfarc\\OneDrive - Groupe ESIEA\\Dev\\story-repo-polar\\writing\\livre3-sana\\story\\drafting\\test_batch\\test_chapitre.md",
+  "styles": [
+    "minimaliste"
+  ],
+  "status": "created",
+  "request_count": 1
+}
