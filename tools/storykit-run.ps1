@@ -21,7 +21,8 @@ et lance le CLI StoryKit avec le répertoire courant approprié.
 $env:PYTHONIOENCODING = 'utf-8'
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$repoRoot = $PSScriptRoot
+# $PSScriptRoot pointe vers tools/, donc repo root = parent
+$repoRoot = Split-Path -Parent $PSScriptRoot
 
 # Détecter le livre en cours en cherchant depuis le répertoire courant
 function Find-CurrentBook {

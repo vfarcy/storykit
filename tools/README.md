@@ -41,10 +41,10 @@ chmod +x tools/storykit-run.sh tools/batch-run.sh
 
 ```powershell
 # Depuis livre1-truby, livre2-monsoon, etc.
-../storykit-run.ps1 validate
-../storykit-run.ps1 assemble --target premise
-../batch-run.ps1 list --limit 10
-../batch-run.ps1 draft-variants --chapter story/drafting/Chap01.md --styles minimaliste
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+../tools/batch-run.ps1 list --limit 10
+../tools/batch-run.ps1 draft-variants --chapter story/drafting/Chap01.md --styles minimaliste
 ```
 
 #### Linux/macOS: `storykit-run.sh` / `batch-run.sh`
@@ -54,10 +54,10 @@ chmod +x tools/storykit-run.sh tools/batch-run.sh
 
 ```bash
 # Depuis livre1-truby, livre2-monsoon, etc.
-../storykit-run.sh validate
-../storykit-run.sh assemble --target premise
-../batch-run.sh list --limit 10
-../batch-run.sh draft-variants --chapter story/drafting/Chap01.md --styles minimaliste
+../tools/storykit-run.sh validate
+../tools/storykit-run.sh assemble --target premise
+../tools/batch-run.sh list --limit 10
+../tools/batch-run.sh draft-variants --chapter story/drafting/Chap01.md --styles minimaliste
 ```
 
 ### 2) Ouvrir le dernier prompt généré (Windows)

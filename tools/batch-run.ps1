@@ -22,7 +22,8 @@ peu importe le répertoire courant.
 $env:PYTHONIOENCODING = 'utf-8'
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$repoRoot = $PSScriptRoot
+# $PSScriptRoot pointe vers tools/, donc repo root = parent
+$repoRoot = Split-Path -Parent $PSScriptRoot
 
 Push-Location $repoRoot
 try {

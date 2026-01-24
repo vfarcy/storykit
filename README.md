@@ -73,10 +73,6 @@ Repository/
 ├─ .vscode/
 │  └─ tasks.json           # Tâches VS Code pour batch.py
 ├─ .env / .env.example     # Variables d'environnement (clés API, config)
-├─ storykit-run.ps1        # ✨ Helper pour CLI (cross-directory)
-├─ storykit-run.sh         # ✨ Helper pour CLI (Linux/macOS)
-├─ batch-run.ps1           # ✨ Helper pour batch (cross-directory)
-├─ batch-run.sh            # ✨ Helper pour batch (Linux/macOS)
 │
 ├─ cli/                    # 🐍 Modules Python
 │  ├─ storykit.py          # CLI principal (validate, assemble)
@@ -89,8 +85,10 @@ Repository/
 │     └─ gemini.py
 │
 ├─ tools/                  # 🔧 Scripts utilitaires
-│  ├─ storykit-run.sh      # Helper Linux/macOS
-│  ├─ batch-run.sh         # Helper Linux/macOS
+│  ├─ storykit-run.ps1     # ✨ Helper CLI (Windows)
+│  ├─ storykit-run.sh      # ✨ Helper CLI (Linux/macOS)
+│  ├─ batch-run.ps1        # ✨ Helper batch (Windows)
+│  ├─ batch-run.sh         # ✨ Helper batch (Linux/macOS)
 │  ├─ open-latest.ps1      # Ouvrir dernier prompt (Windows)
 │  ├─ open-latest-response.ps1
 │  └─ README.md
@@ -189,7 +187,7 @@ Repository/
 
 #### Fichiers obligatoires (requis pour `validate`)
 
-La commande `../storykit-run.ps1 validate` vérifie la présence et la cohérence de **5 fichiers minimum** :
+La commande `../tools/storykit-run.ps1 validate` vérifie la présence et la cohérence de **5 fichiers minimum** :
 
 1. **`story/config/style.md`**  
    - Rubriques requises : `Ton`, `Voix`, `Rythme`
@@ -425,9 +423,9 @@ notepad storykit.config.yaml
 python -c "import sys; print(sys.executable)"
 
 # Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
-../storykit-run.ps1 validate
-../storykit-run.ps1 assemble --target premise
-../batch-run.ps1 list --limit 10
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+../tools/batch-run.ps1 list --limit 10
 
 # Si vous préférez utiliser Python directement (depuis repo root)
 .venv\Scripts\python.exe -m cli.storykit validate
@@ -458,9 +456,9 @@ source .venv/bin/activate
 python -c "import sys; print(sys.executable)"
 
 # Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
-../storykit-run.sh validate
-../storykit-run.sh assemble --target premise
-../batch-run.sh list --limit 10
+../tools/storykit-run.sh validate
+../tools/storykit-run.sh assemble --target premise
+../tools/batch-run.sh list --limit 10
 
 # Si vous préférez utiliser Python directement (depuis repo root)
 python -m cli.storykit validate
@@ -551,7 +549,7 @@ ai:
 **Utilisation :**
 ```bash
 # Assemblage avec appel API direct
-../storykit-run.ps1 assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 
 # Les fichiers générés :
 # - livre/out/prompts/YYYYMMDD_HHMMSS_truby7.md (prompt envoyé)
@@ -574,14 +572,14 @@ L'adaptateur Claude implémente le **Prompt Caching** d'Anthropic pour réduire 
 
 Premier appel (création du cache) :
 ```bash
-../storykit-run.ps1 assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 # [Cache: 6582 créés, 0 lus]
 # → Coût normal sur 6582 tokens + petite surcharge de création
 ```
 
 Appels suivants (< 5 min) :
 ```bash
-../storykit-run.ps1 assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 # [Cache: 6582 lus]
 # → ~90% d'économie sur les 6582 tokens en cache !
 ```
@@ -590,18 +588,18 @@ Appels suivants (< 5 min) :
 
 1. **Enchaînez vos commandes rapidement** (< 5 min entre chaque)
    ```bash
-   ../storykit-run.ps1 assemble --target truby7
+   ../tools/storykit-run.ps1 assemble --target truby7
    # Analyser la réponse, ajuster les fichiers
-   ../storykit-run.ps1 assemble --target truby22  # Cache réutilisé !
-   ../storykit-run.ps1 assemble --target weave    # Cache réutilisé !
+   ../tools/storykit-run.ps1 assemble --target truby22  # Cache réutilisé !
+   ../tools/storykit-run.ps1 assemble --target weave    # Cache réutilisé !
    ```
 
 2. **Itérations rapides** : testez plusieurs versions d'une même commande
    ```bash
    # Modifier story/truby/seven_steps.yaml
-   ../storykit-run.ps1 assemble --target truby7
+   ../tools/storykit-run.ps1 assemble --target truby7
    # Ajuster encore...
-   ../storykit-run.ps1 assemble --target truby7  # Cache réutilisé
+   ../tools/storykit-run.ps1 assemble --target truby7  # Cache réutilisé
    ```
 
 3. **Désactiver ponctuellement** : si le contexte change radicalement
@@ -631,9 +629,9 @@ Pour un projet StoryKit typique (6000 tokens de contexte) :
 - Rubriques requises: Titres ou labels pour **Ton**, **Voix**, **Rythme** (ex: `# Ton` ou `Ton:`).
 - Inclusion automatique: la section "Style & Voix" est ajoutée au prompt assemblé après la **Prémisse**.
 - Rappels d'instructions: un rappel "Respecter le style défini dans Style & Voix." est inclus pour `truby7`, `truby22`, `weave` et `draft`.
-- Validation: `../storykit-run.ps1 validate` vérifie que `style.md` contient ces rubriques.
+- Validation: `../tools/storykit-run.ps1 validate` vérifie que `style.md` contient ces rubriques.
 - Auto-fix: si `style.autofix: true` (par défaut), les rubriques manquantes sont ajoutées automatiquement avec un squelette et un message est affiché.
-- Désactiver ponctuellement: `../storykit-run.ps1 validate --no-autofix-style` (prioritaire sur la config).
+- Désactiver ponctuellement: `../tools/storykit-run.ps1 validate --no-autofix-style` (prioritaire sur la config).
 - Sections optionnelles: `optional_autofix` contrôle l'insertion automatique de sections facultatives :
   - `none` (défaut) : Ton/Voix/Rythme uniquement
   - `forbidden` : ajoute "Interdits stylistiques" si absente
@@ -643,18 +641,18 @@ Pour un projet StoryKit typique (6000 tokens de contexte) :
 Exemples d'usage :
 ```bash
 # Config par défaut (Ton/Voix/Rythme uniquement)
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 
 # Activer auto-insertion des interdits : éditer storykit.config.yaml
 # style:
 #   optional_autofix: forbidden
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 # → affiche "Section 'Interdits' ajoutée" si absente
 
 # Activer auto-insertion des exemples et interdits
 # style:
 #   optional_autofix: both
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 ```
 
 Conseils pratiques pour `style.md`:
@@ -692,11 +690,11 @@ Templates utiles:
 # Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
 # Aucun besoin d'activer .venv ou de cd au repo root
 
-../storykit-run.ps1 validate
-../storykit-run.ps1 assemble --target premise
-../storykit-run.ps1 assemble --target truby7 --styles minimaliste
-../batch-run.ps1 list --limit 10
-../batch-run.ps1 download msgbatch_XXXX
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+../tools/storykit-run.ps1 assemble --target truby7 --styles minimaliste
+../tools/batch-run.ps1 list --limit 10
+../tools/batch-run.ps1 download msgbatch_XXXX
 ```
 
 ### Utilisation directe (depuis le repo root)
@@ -718,37 +716,37 @@ python -m cli.batch list --limit 10
 
 1) **Affiner la prémisse** (1 phrase + principe organisateur)  
 ```powershell
-../storykit-run.ps1 assemble --target premise
+../tools/storykit-run.ps1 assemble --target premise
 ```
 
 2) **7 étapes** (faiblesse/besoin → nouvel équilibre)  
 ```powershell
-../storykit-run.ps1 assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 ```
 
 3) **22 étapes** (chaînage fin : révélations, décisions, gauntlet…)  
 ```powershell
-../storykit-run.ps1 assemble --target truby22
+../tools/storykit-run.ps1 assemble --target truby22
 ```
 
 4) **Scene‑weave** (liste de scènes, conflit/décision/valeur/beat de genre)  
 ```powershell
-../storykit-run.ps1 assemble --target weave
+../tools/storykit-run.ps1 assemble --target weave
 ```
 
 5) **Genre (beats + choix)**  
 ```powershell
-../storykit-run.ps1 assemble --target genre
+../tools/storykit-run.ps1 assemble --target genre
 ```
 
 6) **Web de personnages**  
 ```powershell
-../storykit-run.ps1 assemble --target web
+../tools/storykit-run.ps1 assemble --target web
 ```
 
 7) **Brouillon de chapitre** (à partir du scene‑weave)  
 ```powershell
-../storykit-run.ps1 assemble --target draft --chapter 1
+../tools/storykit-run.ps1 assemble --target draft --chapter 1
 ```
 
 > Chaque commande génère `livre/out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
@@ -759,10 +757,10 @@ python -m cli.batch list --limit 10
 
 ```powershell
 # Valider le livre courant
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 
 # Désactiver l'auto-fix de style.md
-../storykit-run.ps1 validate --no-autofix-style
+../tools/storykit-run.ps1 validate --no-autofix-style
 ```
 
 **Contrôles effectués :**
@@ -810,7 +808,7 @@ ai:
 
 **Transmission de la config au CLI :**
 
-La commande `../storykit-run.ps1 assemble` lit automatiquement `ai.model` et `ai.max_tokens` depuis `livre/storykit.config.yaml` et les transmet aux adaptateurs via `meta`. Cela signifie :
+La commande `../tools/storykit-run.ps1 assemble` lit automatiquement `ai.model` et `ai.max_tokens` depuis `livre/storykit.config.yaml` et les transmet aux adaptateurs via `meta`. Cela signifie :
 
 - Si vous définissez `model: gemini-2.5-pro`, ce modèle sera utilisé pour **tous les appels**.
 - Si vous laissez `model: ""` (vide), l'adaptateur applique sa logique par défaut (ex. Gemini choisit flash ou pro selon la tâche).
@@ -893,10 +891,10 @@ Trois commandes pour tester le flux minimal dans un livre spécifique :
 cd livre1-truby
 
 # 2) Vérifier la cohérence des artefacts (détecte auto le livre)
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 
 # 3) Générer le prompt de la prémisse
-../storykit-run.ps1 assemble --target premise
+../tools/storykit-run.ps1 assemble --target premise
 
 # 4) Ouvrir le prompt généré
 # → livre1-truby/out/prompts/YYYYMMDD_HHMMSS_premise.md
@@ -911,8 +909,8 @@ Ensuite, collez le prompt dans votre assistant IA et intégrez la réponse dans 
 cd ../livre2-monsoon
 
 # Même flux, mais dans le contexte de livre2-monsoon
-../storykit-run.ps1 validate
-../storykit-run.ps1 assemble --target premise
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
 
 # Les outputs se créent dans livre2-monsoon/out/prompts/
 # → Isolement complet garanti
@@ -930,7 +928,7 @@ notepad storykit.config.yaml
 
 # Modifier les artefacts dans story/ selon vos besoins
 # La détection automatique fonctionne immédiatement
-../storykit-run.ps1 validate
+../tools/storykit-run.ps1 validate
 ```
 
 ### Ouvrir le dernier prompt généré
