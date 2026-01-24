@@ -44,12 +44,16 @@ if (!(Test-Path "$repoRoot\livre1-truby\storykit.config.yaml")) {
 # Fonction pour détecter le chemin de tools depuis n'importe où
 function Get-ToolsPath {
     # Chercher tools/ en remontant depuis le répertoire courant
-    $current = Get-Location
-    while ($current -ne $current.Parent) {
+    $current = (Get-Location).Path
+    while ($current) {
         if (Test-Path "$current\tools\storykit-run.ps1") {
             return "$current\tools"
         }
-        $current = $current.Parent
+        $parent = Split-Path -Parent $current
+        if ($parent -eq $current -or -not $parent) { 
+            break  # on est à la racine
+        }
+        $current = $parent
     }
     # Aucun repo trouvé
     return $null
