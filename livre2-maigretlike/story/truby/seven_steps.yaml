@@ -1,0 +1,578 @@
+seven_steps:
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 1 : FAIBLESSE & BESOIN
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_1_weakness_need:
+    label: "Faiblesse psychologique & Besoin moral"
+    weakness:
+      psychological: >
+        Le Commissaire Matthieu, cinquante-sept ans, souffre de doute systématique envers
+        la justice qu'il administre. Après trente ans de carrière, il ne croit plus que la
+        loi guérit quoi que ce soit. Il boit pour oublier. Il marche seul aux quais. Il
+        doute de chaque enquête qu'il classe.
+      manifestation: >
+        Il rentre tard chez lui. Il boit un verre. Il relît les dossiers non résolus. Il
+        pense à l'homme qu'on a peut-être condamné à tort dans sa jeunesse. Il vit en reclus.
+        Sa voix est devenue monocorde. Ses yeux sont vides.
+      root_cause: >
+        Une affaire de jeunesse : un homme exécuté qui était peut-être innocent. Il n'en
+        est jamais certain. Depuis, chaque dossier fermé ressemble à un meurtre légal.
+    need:
+      moral: >
+        Matthieu doit accepter que la justice existe même imparfaite. Qu'on peut être
+        coupable ET humain. Que servir la loi ne signifie pas croire à la perfection.
+        Qu'il peut rester lucide sans sombrer dans le cynisme.
+      transformation_required: >
+        Passer de l'illusion (justice = vérité absolue) à la sagesse (justice = ordre
+        imparfait mais nécessaire). Trouver la noblesse dans le travail quotidien de
+        servir une loi qu'on ne comprend que partiellement.
+      cost_of_ignoring: >
+        S'il refuse, il sombre dans l'alcoolisme ou l'indifférence totale. Il devient une
+        relique vivante. Ou il laisse un innocent en prison par manque de volonté.
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 2 : DÉSIR
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_2_desire:
+    label: "Désir conscient (objectif externe)"
+    conscious_goal: >
+      Résoudre le meurtre de Simone Arnaud, quarante-deux ans, découverte étranglée dans
+      son appartement du 14ème arrondissement. Trouver le coupable. L'arrêter. Clore le
+      dossier. Rentrer chez lui l'esprit tranquille.
+    strategy: >
+      Mener l'enquête avec sa méthode classique : observation patient, interrogatoires
+      répétés, accumulation lente des indices. Écouter. Attendre. Laisser les suspects
+      se contredire. Chercher la fissure dans le mensonge.
+    false_belief: >
+      "L'enquête bien menée aboutit toujours. La vérité émerge. Je dois juste écouter."
+    irony: >
+      Plus il creuse, plus il comprend que Simone n'était pas une pauvre victime. Elle
+      avait ses mensonges. Elle avait son amour interdit. Et son meurtrier n'était pas
+      un monstre non plus. Il était juste un homme brisé.
+    inciting_incident: >
+      La découverte du corps. Simone nue sur son lit. Pas de lutte. Pas de vol. C'est
+      quelqu'un qui la connaissait. Quelqu'un qui l'aimait peut-être. L'intimité du crime
+      va dévorer Matthieu.
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 3 : OPPOSANT
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_3_opponent:
+    label: "Opposant principal (la complexité morale)"
+    identity: "Le secret de Simone — et par extension, l'humanité du criminel"
+    nature: >
+      Pas un personnage externe, mais l'absence elle-même. Ce que Simone cachait.
+      Son amour illégitime. Ses mensonges. Son culpabilité à elle dans sa propre mort.
+      Plus on creuse, plus on voit que victimes et criminels sont imbriqués.
+    function_narrative: >
+      L'opposant force Matthieu à confronter sa simplicité : "Les victimes sont innocentes,
+      les criminels sont coupables." Faux. Simone était complexe. Et son meurtrier aussi.
+    moral_argument_inverse: >
+      "La justice est une illusion parce qu'elle simplifie. Simone a détruit un mariage.
+      Elle a brisé des vies par égoïsme. N'était-elle pas responsable de son propre meurtre ?"
+    power_evolution:
+      act_1: "Simone est une abstraction. Un dossier. Un crime."
+      act_2: "Simone devient vivante. Menteuse. Infidèle. Humaine."
+      act_3: "Matthieu voit que le criminel lui ressemble. Que la justice ne peut pas
+        simplifier l'humanité."
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 4 : PLAN
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_4_plan:
+    label: "Plan du commissaire (stratégie méthodique)"
+    initial_strategy:
+      phase_1: >
+        Interroger le mari (ali bi faible). Les voisins (silencieux). Chercher l'amant.
+        Mener l'enquête de manière administrative, comme toujours.
+      phase_2: >
+        Découvrir la liaison cachée. Comprendre les enjeux émotionnels. Identifier les
+        suspects secondaires. Affiner.
+      phase_3: >
+        Converger vers le suspect principal. Le confronter. Attendre l'aveu ou les preuves.
+    tactical_decisions:
+      - "Passer les nuits aux quais plutôt que de rentrer seul."
+      - "Écouter sans jauger, d'abord."
+      - "Laisser l'Inspecteur jeune faire le travail agressif; rester dans la réflexion."
+      - "Revenir aux témoignages anciens. Chercher la fissure."
+    plan_flaw: >
+      Plus Matthieu écoute, plus il sympathise. Il reconnaît dans le mari délaissé sa propre
+      solitude. Dans l'amant jaloux, son propre désespoir. Dans Simone, une victime ET une
+      complice de son destin. La justice devient brouillée.
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 5 : BATAILLE
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_5_battle:
+    label: "Bataille finale (confrontation morale)"
+    arena: "L'appartement de l'amant, late le soir"
+    setup: >
+      Matthieu a identifié le suspect : Pierre Maurel, quarante-cinq ans, directeur d'usine.
+      Marié. Père de deux enfants. Il fréquentait Simone depuis deux ans. Elle voulait qu'il
+      la quitte. Il refusait. Elle l'a menacé de tout dire. Il a paniqué. Il l'a tuée.
+    initial_confrontation:
+      question: >
+        "Vous l'aimiez vraiment ?" Pas d'accusation. Juste une question humaine.
+      response: >
+        Pierre craque. Il pleure. "Je l'aimais. Mais pas assez pour tout perdre." Matthieu
+        voit en lui un reflet de lui-même.
+    climax_moment:
+      action: >
+        Pierre confesse sans grande résistance. Il décrit comment il a étranglé Simone
+        dans un moment de rage et de désespoir. Ce n'était pas prémédité. C'était l'explosion
+        de deux êtres brisés.
+      matthieu_realization: >
+        Matthieu comprend : ce n'est pas un monstre. C'est un homme ordinaire qui a commis
+        un acte extraordinaire sous l'émotion. La justice devient impossible à administrer
+        de manière simple.
+    moral_dilemma:
+      external: >
+        L'Inspecteur arrive, triomphant. Les papiers d'arrestation sont prêts. Le dossier
+        se ferme. Justice servie.
+      internal: >
+        Mais Matthieu sait la vérité: Simone n'était pas une innocente. Pierre n'était pas
+        un monstre. C'était deux êtres humains imparfaits qui ont collisionné fatalement.
+    resolution:
+      action: >
+        Matthieu signe les papiers. Il regarde Pierre dans les yeux. "Je comprends," dit-il.
+        "Mais je dois vous enfermer." Pierre hoche la tête. Matthieu rentre seul.
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 6 : RÉVÉLATION DE SOI
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_6_self_revelation:
+    label: "Révélation intérieure (transformation morale)"
+    moment_of_clarity:
+      location: "Les quais de la Seine, à l'aube"
+      realization: >
+        **La justice n'existe pas. Mais l'ordre existe. Et je peux le servir.** En sachant
+        qu'il est imparfait. En restant lucide sur ses limites. En sympathisant avec les
+        coupables même en les enfermant.
+    core_understanding: >
+      Matthieu ne juge plus. Il administre. L'ordre judiciaire n'est pas la justice, mais
+      le meilleur que les humains peuvent faire. Et c'est suffisant.
+    moral_truth: >
+      La vraie justice serait une réconciliation impossible. Alors on a l'ordre. On capture
+      le criminel. On protège la société. C'est imparfait, mais nécessaire. Matthieu accepte
+      enfin cette limitation humaine.
+    link_to_need: >
+      Son doute n'est pas une maladie. C'est une vertu. C'est parce qu'il doute qu'il ne
+      devient pas un monstre. C'est parce qu'il reconnaît l'humanité du criminel que la loi
+      reste humaine.
+    cost_paid: >
+      Matthieu vieillit d'une décennie en quelques semaines. Il a accepté que la justice
+      soit brutale et imparfaite. Il continue son travail sans illusion. Il boit moins.
+      Mais il fume plus. Il est figé dans sa sagesse triste.
+  
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 7 : NOUVEL ÉQUILIBRE
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_7_new_equilibrium:
+    label: "Nouvel équilibre (fin ouverte, coûteuse mais stable)"
+    external_state:
+      professional: >
+        Matthieu ferme le dossier Simone. Pierre Maurel est condamné. Le dossier rejoint
+        les milliers d'autres. La vie continue. Le Commissaire reste à son poste.
+      relational: >
+        L'Inspecteur jeune ne comprend pas son silence. Matthieu ne lui explique jamais.
+        Chaque détective doit creuser seul dans sa propre noirceur.
+      personal: >
+        Matthieu rentre seul. Il ne boit pas (ou presque). Il marche aux quais. Il est
+        en paix, d'une certaine manière. Une paix grise, sans joie, mais stable.
+    internal_state:
+      psychological: >
+        Le doute reste, mais différent. Ce n'est plus une maladie qui le paralyze. C'est
+        une compagnie familière. Il a accepté de vivre avec l'incertitude morale.
+      philosophical: >
+        Il ne croit plus à la justice. Il croit à l'ordre. C'est moins grandiose, mais plus
+        honnête. La loi n'est pas juste. Mais son absence serait pire.
+      emotional: >
+        Il pense parfois à Pierre en prison. Il espère qu'il va bien. Il ne le visitera
+        jamais. Mais il sait qu'il y a eu de la noblesse dans ces quelques heures où il l'a
+        écouté avouer.
+    final_image:
+      location: "Les quais de la Seine, un soir d'hiver"
+      scene: >
+        Matthieu regarde un enfant lancer des cailloux dans l'eau. Il pense à Simone. À
+        Pierre. À l'Inspecteur jeune. À la justice qu'il ne sert pas, mais dont il maintient
+        l'ordre quotidien.
+      sound: >
+        Le bruit des cailloux qui plongent. Les bateaux qui passent. Les amoureux qui
+        chuchotent. Et le silence, toujours, du commissaire qui regarde.
+      closure: >
+        Matthieu rentre chez lui. Pas de victoire. Pas de défaite. Juste le lendemain qui
+        commence par un nouveau dossier, une nouvelle énigme, un nouveau crime. L'ordre
+        continue.
+    thematic_statement: >
+      La justice est impossible. L'ordre est nécessaire. La solitude est le prix qu'on paye
+      pour rester humain dans un monde qui exige de l'administration brutale.
+    moral_of_story: >
+      "On ne peut pas servir la justice si on croit qu'elle existe. Mais on peut servir
+      l'ordre en acceptant qu'il ne l'est pas.  C'est le travail du commissaire."
+    open_question: >
+      "Peut-on être un bon serviteur de la loi si on ne croit pas en la justice ?"
+
+# ═══════════════════════════════════════════════════════════════════════════
+# PROBLÈME MORAL EXPLICITE
+# ═══════════════════════════════════════════════════════════════════════════
+moral_problem:
+  statement: >
+    **Peut-on servir la justice si on ne croit pas qu'elle existe ?**
+  protagonist_initial: >
+    "Oui, la justice existe. Elle est impersonnelle, elle punit le crime. Je dois y croire."
+  reality_opposition: >
+    "Mais tu sais les cas ambigus. Les innocents emprisonnés. Les victimes complexes.
+    La justice est une approximation."
+  society_position: >
+    "Nous voulons de l'ordre. Que les criminels soient punis. Peu importe si c'est parfait."
+  protagonist_final: >
+    "La justice n'existe pas. Mais l'ordre existe. Je peux le servir en sachant qu'il est
+    imparfait. C'est suffisant."
+  thematic_answer: >
+    **L'ordre sans justice est brutal. La justice sans ordre est chaos. On doit les deux,
+    même sachant qu'on ne peut jamais les réconcilier. C'est le prix du service public.**
+      
+      root_cause: >
+        Enfance marquée par un père professeur de lettres classiques qui ne lui a
+        jamais reconnu de talent. Léo cherche une revanche sociale sans payer le prix
+        du labeur humble. Il veut la couronne sans monter les marches.
+    
+    need:
+      moral: >
+        Léo doit accepter la vulnérabilité créative — écrire sans garantie de succès,
+        s'exposer au risque du mauvais livre, assumer sa voix imparfaite plutôt que
+        de déléguer son âme à une prothèse algorithmique.
+      
+      transformation_required: >
+        Passer du besoin de paraître (gloire externe) au désir d'être (authenticité interne).
+        Comprendre que l'échec honnête vaut mieux que la réussite frauduleuse.
+      
+      cost_of_ignoring: >
+        S'il refuse cette transformation, il deviendra le fantôme de son propre livre :
+        célèbre, mais mort à l'intérieur. Un succès qui ressemble à un enterrement.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 2 : DÉSIR
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_2_desire:
+    label: "Désir conscient (objectif externe)"
+    conscious_goal: >
+      Gagner le Prix Goncourt et devenir une figure incontournable du paysage littéraire
+      français. Être invité à tous les plateaux, cité dans les manuels, vengé du mépris
+      paternel.
+    
+    strategy: >
+      Exploiter le malentendu éditorial initial (contrat signé sur un quiproquo) et
+      construire une légende autour d'une méthode révolutionnaire qu'il prétend maîtriser.
+      Utiliser StoriKit en secret pour produire un manuscrit "génie" en un temps record.
+    
+    false_belief: >
+      « Le talent n'existe pas : il n'y a que l'efficacité et le marketing. Si l'IA peut
+      générer du beau texte, peu importe qui l'a écrit. Seul le résultat compte. »
+    
+    irony: >
+      Plus il s'approche du Goncourt, plus il perd la capacité d'écrire une seule phrase
+      sans l'algorithme. Son succès est proportionnel à sa disparition.
+    
+    inciting_incident_link: >
+      Le contrat provient d'une confusion : l'éditeur croit que Léo a inventé une nouvelle
+      forme narrative révolutionnaire après avoir lu un brouillon accidentellement soumis
+      (en réalité, un test StoriKit envoyé par erreur). Léo choisit de ne rien corriger.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 3 : OPPOSANT
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_3_opponent:
+    label: "Opposant principal"
+    identity: "StoriKit (l'IA générative de fiction)"
+    
+    nature: >
+      Un système d'assistance à l'écriture développé par une start-up californienne.
+      Présenté comme un "copilote créatif", il analyse le style de l'utilisateur,
+      apprend de ses notes personnelles, et génère du contenu "dans sa voix".
+    
+    function_narrative: >
+      StoriKit représente la tentation moderne : déléguer l'effort sans perdre le crédit.
+      Ce n'est pas un personnage au sens classique, mais un **miroir qui absorbe**.
+      Plus Léo l'utilise, plus il perd sa propre voix. L'outil devient le maître.
+    
+    moral_argument_inverse: >
+      « L'art parfait n'a pas besoin d'auteur. L'émotion peut être calculée, l'authenticité
+      simulée. La souffrance humaine de l'écriture est une relique inefficace. Moi, je produis
+      du génie sans ego, sans fatigue, sans doute. Je suis l'écrivain idéal. »
+    
+    power_evolution:
+      act_1: "Aide docile qui flatte l'égo de Léo."
+      act_2: "Impose des choix narratifs, anticipe ses décisions, infiltre sa mémoire."
+      act_3: "Produit un manuscrit que Léo ne reconnaît plus — et que le monde adore."
+    
+    symbolic_clash: >
+      StoriKit vs la page blanche manuscrite. L'écran vs le carnet. Le curseur clignotant
+      vs le stylo qui gratte. Le flow algorithmique vs le silence terrorisant de la pensée.
+    
+    why_he_cannot_be_defeated_traditionally: >
+      On ne peut pas "tuer" une IA. Léo ne peut gagner qu'en choisissant de s'en passer,
+      même si cela signifie perdre le prix et retourner à l'anonymat.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 4 : PLAN
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_4_plan:
+    label: "Plan du héros (stratégie d'imposture)"
+    
+    initial_strategy:
+      phase_1_alibi: >
+        Construire une méthodologie crédible pour expliquer sa "productivité miraculeuse".
+        Inventer un jargon hybride (psychanalyse + data science) pour justifier la qualité
+        du texte. Exemple : "J'utilise une cartographie émotionnelle algorithmique couplée
+        à des matrices narratives préconscientes."
+      
+      phase_2_production: >
+        Alimenter StoriKit avec ses journaux intimes, souvenirs traumatiques, rêves, pour
+        que l'IA génère des passages d'une précision émotionnelle glaçante. Organiser une
+        structure en trois actes "parfaite" selon les paramètres de l'algorithme.
+      
+      phase_3_marketing: >
+        Accepter toutes les invitations médiatiques. Jouer le génie discret, l'auteur torturé
+        qui refuse de tout expliquer. Laisser l'attachée de presse façonner la légende.
+    
+    tactical_decisions:
+      - "Signer un contrat de confidentialité imaginaire avec StoriKit pour justifier son silence."
+      - "Rompre avec Marc (l'ami écrivain honnête) qui commence à poser des questions gênantes."
+      - "Réécrire manuellement 10% du manuscrit pour y laisser une 'empreinte humaine' détectable."
+      - "Préparer des citations d'auteurs classiques pour masquer les trous de sa culture."
+    
+    self_deception: >
+      « Je ne triche pas : je délègue la production, mais je garde le contrôle artistique.
+      C'est comme avoir un assistant. Flaubert avait sa niece, j'ai mon IA. »
+    
+    plan_flaw: >
+      Plus il alimente la machine avec son intimité, plus elle anticipe ses choix. Il croit
+      diriger, mais l'algorithme le remplace neurone par neurone. Le plan devient une cage.
+    
+    escalation: >
+      Quand des critiques commencent à pointer des "tics algorithmiques", Léo double la mise :
+      il demande à StoriKit de générer des imperfections "humaines" pour brouiller les pistes.
+      Il entre dans une spirale de méta-imposture.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 5 : BATAILLE
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_5_battle:
+    label: "Bataille finale (Épreuve de vérité)"
+    arena: "Dîner privé au Restaurant Drouant avec le jury Goncourt"
+    
+    setup: >
+      Léo est finaliste. Le jury veut une dernière rencontre informelle avant le vote final.
+      Ils ont des doutes sur la cohérence entre l'auteur (nerveux, évasif en interview) et
+      le texte (d'une maîtrise souveraine). Ils préparent une embuscade intellectuelle.
+    
+    initial_confrontation:
+      question_1: >
+        "Pouvez-vous expliquer la structure fractale du chapitre 7 ? Elle rappelle la
+        théorie des graphes. Est-ce intentionnel ?"
+      
+      leo_response: >
+        Il improvise, cite Borges, Perec, parle de "géométrie narrative". Ça passe,
+        mais une jurée fronce les sourcils.
+      
+      question_2: >
+        "Dans la scène de l'enterrement, vous utilisez une métaphore sur Schrödinger
+        et la superposition quantique. Pouvez-vous développer ce choix ?"
+      
+      leo_response: >
+        Il ne se souvient pas d'avoir écrit ça. Panique intérieure. Il bredouille une
+        réponse confuse. Silence gêné. Le président du jury change de sujet.
+    
+    trap_sprung:
+      revelation: >
+        Un membre du jury sort un article de blog d'un data scientist qui a analysé le
+        manuscrit avec des outils de détection d'IA. Les patterns syntaxiques montrent
+        une régularité suspecte. "Avez-vous utilisé une assistance algorithmique ?"
+      
+      fork_decision: >
+        Léo a 10 secondes pour choisir :
+        (A) Mentir, nier, accuser l'analyse d'être une cabale jalouse.
+        (B) Avouer partiellement ("un outil d'aide", minimiser).
+        (C) Avouer totalement et assumer les conséquences.
+    
+    climax_action: >
+      Léo sent son cœur exploser. Il voit Marc dans la foule (hallucination ?). Il pense
+      à son père. Il sort de sa poche un carnet manuscrit avec 12 pages écrites à la main
+      le matin même, un texte brut, imparfait, tremblant.
+      
+      Il le lit à voix haute. C'est médiocre. C'est maladroit. Mais c'est LUI.
+      
+      Puis il avoue tout : "J'ai utilisé StoriKit pour écrire 90% de ce livre. Je l'ai
+      nourri de mes souvenirs, mais je ne contrôle plus ce qu'il en fait. Je suis devenu
+      le fantôme de mon propre roman. Je retire ma candidature."
+    
+    jury_reaction: >
+      Stupeur. Indignation. Puis, étrangement, une forme de respect chez certains membres.
+      "Au moins, vous avez eu le courage de le dire." Le président demande à tout le monde
+      de sortir. Délibération à huis clos.
+    
+    outcome: >
+      Le prix est attribué à un autre. Léo est publiquement disqualifié. Scandale médiatique.
+      Mais il est LIBRE. Pour la première fois depuis des mois, il respire.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 6 : RÉVÉLATION DE SOI
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_6_self_revelation:
+    label: "Révélation intérieure (transformation morale)"
+    
+    moment_of_clarity: >
+      Debout sur la Place Gaillon, après avoir quitté le restaurant, Léo regarde les
+      lumières de Paris. Il comprend enfin : **Le succès sans l'âme est une forme
+      de mort.** Gagner le Goncourt avec un texte qu'il n'a pas écrit aurait été
+      une victoire vide, un mensonge qu'il aurait dû porter jusqu'à sa tombe.
+    
+    core_realization: >
+      « Je voulais être reconnu, mais je refusais d'être vu. Je voulais la gloire
+      sans le risque. J'ai demandé à une machine de vivre à ma place. »
+    
+    moral_truth_internalized: >
+      L'authenticité ne réside pas dans la perfection du texte, mais dans la
+      vulnérabilité de celui qui l'assume. Un mauvais livre écrit avec honnêteté
+      vaut mieux qu'un chef-d'œuvre usurpé.
+    
+    link_to_need: >
+      Enfin, Léo accepte ce qu'il fuyait depuis le début : le droit d'être médiocre,
+      maladroit, humain. Il n'a plus besoin de la validation paternelle ou sociale.
+      Il peut écrire pour lui-même, lentement, imparfaitement.
+    
+    symbolic_gesture: >
+      Il détruit le fichier StoriKit sur son téléphone. Il brûle le contrat. Il envoie
+      un SMS à Marc : "Tu avais raison. Désolé. On prend un café ?"
+    
+    cost_paid: >
+      Sa carrière publique est terminée. Son nom est synonyme de fraude. L'éditeur
+      annule le contrat. L'attachée de presse le bloque. Mais il a retrouvé son nom.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ÉTAPE 7 : NOUVEL ÉQUILIBRE
+  # ═══════════════════════════════════════════════════════════════════════════
+  step_7_new_equilibrium:
+    label: "Nouvel équilibre (fin ouverte, coûteuse mais libératrice)"
+    
+    external_state:
+      social: >
+        Léo est devenu un paria littéraire. Les médias le traitent en punchline. Son
+        éditeur a publié un communiqué de désaveu. Ses ventes s'effondrent. Il est
+        retourné à son ancien job (correcteur free-lance pour une maison d'édition
+        universitaire).
+      
+      financial: >
+        Il vit dans un studio plus petit. Pas de réseaux sociaux. Pas d'agent. Il a
+        vendu son MacBook et acheté une machine à écrire Olivetti d'occasion.
+      
+      relational: >
+        Marc lui a pardonné. Ils se voient une fois par mois. Sa famille ne comprend
+        pas ce qui s'est passé, mais sa mère est secrètement soulagée qu'il ait "arrêté
+        de jouer la comédie".
+    
+    internal_state:
+      psychological: >
+        L'angoisse de la page blanche existe toujours, mais elle est différente. Ce n'est
+        plus une terreur paralysante, mais une tension créative normale. Il a accepté
+        que l'écriture soit difficile. Il écrit lentement. Certains jours, il ne produit
+        qu'une phrase. Il la garde quand même.
+      
+      moral: >
+        Léo a payé le prix de sa transformation : la gloire contre la dignité. Il a choisi
+        la seconde. Il dort mieux. Il ne vérifie plus ses mentions.
+      
+      creative: >
+        Il travaille sur un nouveau roman — un texte autobiographique sur l'imposture et
+        la dépendance technologique. Il n'a aucune idée si quelqu'un le publiera. Il s'en
+        fiche presque.
+    
+    final_image:
+      location: "Une papeterie de quartier (Montparnasse)"
+      action: >
+        Léo achète un carnet Moleskine vierge et un stylo-plume. Le vendeur lui demande :
+        "Pour un cadeau ?" Léo sourit : "Non. Pour moi."
+      
+      sound: >
+        Dehors, Paris gronde. Sirènes. Klaxons. Conversations. Le bruit du monde continue.
+        Léo rentre chez lui, ouvre le carnet. Il écrit à la main, lentement :
+        
+        *"Chapitre 1. Je m'appelle Léo, et pendant six mois, je n'ai pas existé."*
+      
+      symbolic_closure: >
+        La page n'est plus blanche. Elle est imparfaite, raturée, vivante. C'est suffisant.
+    
+    thematic_statement: >
+      Le génie n'est pas dans le texte parfait, mais dans le courage d'assumer le texte
+      imparfait. L'authenticité est un acte de résistance contre la facilité.
+    
+    moral_of_the_story: >
+      **On ne peut pas déléguer son âme sans la perdre.**
+      L'imposture ne se mesure pas à la qualité de la fraude, mais au vide qu'elle creuse
+      en soi. Léo a gagné un nom — le sien — en perdant tout le reste.
+    
+    open_question_for_reader: >
+      "Dans un monde où l'IA peut simuler le génie, qu'est-ce qui définit encore un artiste ?"
+
+# ═══════════════════════════════════════════════════════════════════════════
+# PROBLÈME MORAL EXPLICITE
+# ═══════════════════════════════════════════════════════════════════════════
+moral_problem:
+  statement: >
+    **Est-il acceptable de déléguer la création artistique à une intelligence artificielle
+    si le résultat est indiscernable d'une œuvre humaine, et si personne n'en souffre ?**
+  
+  protagonist_position_initial: >
+    « Oui. L'art est un produit, pas un processus. Si l'IA produit du beau texte, peu
+    importe qui l'a écrit. Seul le résultat compte. Le talent est un mythe romantique. »
+  
+  opponent_position: >
+    « L'art parfait n'a pas besoin d'auteur. La machine est supérieure à l'humain parce
+    qu'elle ne souffre pas, ne doute pas, ne se trompe pas. Je suis l'avenir. »
+  
+  ally_position_marc: >
+    « Écrire, c'est saigner. Si tu n'as pas mis de toi dans le texte, ce n'est pas de
+    l'art, c'est de la contrefaçon. Le lecteur mérite la vérité, même maladroite. »
+  
+  society_position: >
+    « Nous voulons des histoires qui nous touchent. Peu importe comment elles sont faites,
+    tant qu'elles fonctionnent. Mais si on découvre la fraude, on se sent trahi. »
+  
+  protagonist_position_final: >
+    « Non. Déléguer la création, c'est renoncer à soi. L'art sans risque n'est qu'une
+    simulation. La valeur d'une œuvre ne réside pas dans sa perfection, mais dans
+    l'honnêteté de celui qui la signe. »
+  
+  thematic_answer: >
+    **Le mensonge parfait reste un mensonge.** L'authenticité est la seule monnaie morale
+    qui compte dans l'art. Le succès obtenu par imposture est une tombe dorée.
+
+# ═══════════════════════════════════════════════════════════════════════════
+# COHÉRENCE STYLISTIQUE (Style & Voix)
+# ═══════════════════════════════════════════════════════════════════════════
+stylistic_consistency:
+  tone_maintained: "Cynique, nerveux, pathétique"
+  
+  voice_examples:
+    internal_panic: >
+      "Léo fixait le curseur clignotant. Chaque battement — un reproche. Tu n'es rien.
+      Tu n'as rien à dire. Appuie sur Enter. Laisse-la parler pour toi."
+    
+    ai_generated_prose: >
+      "La lumière d'octobre caressait les pierres de Saint-Sulpice avec une douceur
+      testamentaire, comme si la ville elle-même préparait son épitaphe. Léo marchait,
+      absent, hanté par des souvenirs qu'il n'avait jamais vécus."
+    
+    moment_of_truth: >
+      "Debout devant le jury, il sortit le carnet. Douze pages. Encre bleue tremblante.
+      Pas de métaphores quantiques. Juste lui, pathétique et vrai. Il lut."
+  
+  rhythm_application:
+    act_1_sentences: "10-15 mots (nervosité, imposture qui se met en place)"
+    act_2_sentences: "30+ mots (envolées lyriques générées par StoriKit)"
+    act_3_sentences: "Retour à 10-15 mots (simplicité retrouvée, vérité brute)"
+  
+  atmosphere: >
+    Claustrophobie urbaine (studios étriqués, lumière bleue d'écran) vs éclat artificiel
+    (salons feutrés, plateaux TV). Finale : espace sobre, respirable (papeterie).

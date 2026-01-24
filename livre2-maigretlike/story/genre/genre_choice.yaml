@@ -1,0 +1,9 @@
+# Définition du genre et de la philosophie narrative (Polar Maigret)
+genre:
+  primary: "detective"
+  blends: ["psychological drama", "philosophical inquiry", "intimate character study"]
+  philosophy: >
+    La frontière entre justice et vengeance, innocence et culpabilité, s'efface quand on creuse assez profond dans le cœur humain. Enquêter, c'est se confronter à soi-même.
+  promise: >
+    Une enquête méthodique et lente qui révèle non pas la vérité absolue du crime, maisl'humanité complexe du détective et du criminel. L'ordre judiciaire y triomphe, sans
+    gloire ; la justice reste insaisissable.
