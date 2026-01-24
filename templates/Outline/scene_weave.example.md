@@ -7,7 +7,7 @@ Comment configurer :
 IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
 -->
 
-# Scene Weave (tissage de scènes) 
+## Scene Weave
 
 | Chapitre | Scène | Fonction Truby                       | Lieu                   | Conflit                                             | Décision                                   | Valeur en jeu              | Beat |
 |----------|---|--------------------------------------|------------------------|-----------------------------------------------------|--------------------------------------------|----------------------------|------|
@@ -20,5 +20,5 @@ IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier 
 | 4        | 7 | Pression institutionnelle            | Commissariat           | Chef exige "crime passionnel, dossier plié"        | Négocier 48h supplémentaires               | Intégrité vs. carrière     | g06  |
 | 5        | 8 | Confrontation intime                 | Quai de nuit           | L'amant veut se livrer puis se ravise               | Forcer un face-à-face final                | Vérité vs. compassion      | g07  |
 | 6        | 9 | Battle / Arrestation sans triomphe   | Salle d'interrogatoire | Aveu en larmes, prêter serment de ne pas en dire plus| Signer le PV et déclencher la garde à vue  | Ordre vs. justice morale   | g08  |
-| 9        |10 | Self-Revelation / Moral Decision     | Quai au petit matin    | Matthieu accepte l'imperfection de la justice       | Endosser l'arrestation malgré l'empathie   | Ordre fragile vs. vérité   | g09  |
-|10        |11 | New Equilibrium                      | Commissariat           | Affaire close, solitude intacte                     | Reprendre la routine avec plus de doute    | Paix relative              | g10  |
+| 7        |10 | Self-Revelation / Moral Decision     | Quai au petit matin    | Matthieu accepte l'imperfection de la justice       | Endosser l'arrestation malgré l'empathie   | Ordre fragile vs. vérité   | g09  |
+|8        |11 | New Equilibrium                      | Commissariat           | Affaire close, solitude intacte                     | Reprendre la routine avec plus de doute    | Paix relative              | g10  |
