@@ -205,7 +205,30 @@ test_cli/
 
 ---
 
-## 10. Conclusion
+## 9.1) Améliorations depuis janvier 2026
+
+**Architecture multi-livres (NOUVEAU) :**
+- ✅ Support de plusieurs projets indépendants dans un seul repository
+- ✅ Détection automatique du livre via `detect_current_book()`
+- ✅ Isolement complet des configs et outputs par livre
+- ✅ Helpers PowerShell (`storykit-run.ps1`, `batch-run.ps1`) pour cross-directory
+- ✅ Tous les README mis à jour avec exemples multi-livres
+
+**Isolation des outputs :**
+- ✅ Chaque livre possède ses propres `out/prompts/` et `out/responses/`
+- ✅ Passage de `out_dir` via `meta` dict à tous les adapters
+- ✅ Plus de mélange d'outputs entre les projets
+
+**Documentation améliorée :**
+- ✅ README.md complètement refondu (sections installation, config, commandes)
+- ✅ TRUBY_GUIDE.md mis à jour avec helpers PowerShell
+- ✅ BATCH_README.md documenté pour architecture multi-livres
+- ✅ tools/README.md: documentation des helpers et scripts
+- ✅ Tous les exemples utilisent maintenant `../storykit-run.ps1` et `../batch-run.ps1`
+
+---
+
+## 10) Conclusion
 
 **Verdict :** 🟡 **Projet bien structuré, mais fragile sans tests**
 
