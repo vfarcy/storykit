@@ -649,8 +649,12 @@ def show_structure() -> None:
                         beat = scene["beat"] or "-"
                         lieu = scene["lieu"] or "-"
                         fonction = scene["fonction"] or "-"
+                        conflit = scene["conflit"] or "-"
+                        decision = scene["decision"] or "-"
                         output.append(f"- **Scène {scene_num}** [{beat}]: {fonction}\n")
                         output.append(f"  - Lieu: {lieu}\n")
+                        output.append(f"  - Conflit: {conflit}\n")
+                        output.append(f"  - Décision: {decision}\n")
                 else:
                     output.append("*(aucune scène)*\n")
     else:
@@ -661,8 +665,12 @@ def show_structure() -> None:
             beat = scene["beat"] or "-"
             lieu = scene["lieu"] or "-"
             fonction = scene["fonction"] or "-"
+            conflit = scene["conflit"] or "-"
+            decision = scene["decision"] or "-"
             output.append(f"- **Scène {idx}** [{beat}]: {fonction}\n")
             output.append(f"  - Lieu: {lieu}\n")
+            output.append(f"  - Conflit: {conflit}\n")
+            output.append(f"  - Décision: {decision}\n")
     
     output.append(f"\n---\n")
     output.append(f"**Total:** {len(scenes)} scène(s)\n")
