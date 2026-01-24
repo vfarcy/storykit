@@ -188,12 +188,6 @@ Repository/
 - **Isolement complet** : prompts/réponses sont dans `livre/out/`, **pas** dans un dossier global
 - **Helpers cross-directory** : `storykit-run.ps1` et `batch-run.ps1` permettent d'utiliser le CLI/batch de n'importe quel répertoire
 
-⚠️ **Remarque** : Deux dossiers existent encore à la racine du repo (vestiges de l'ancienne architecture, avant janvier 2026) :
-- `/out/` — contient des anciens prompts/réponses globaux (ignorés par le CLI)
-- `/story/` — dossier vide de la structure ancienne
-
-Ils ne sont **jamais utilisés** par le CLI actuel. Tous les nouveaux prompts/réponses sont créés dans `livre*/out/`. Vous pouvez archiver ou supprimer ces dossiers sans impact.
-
 ### 3.1) Fichiers obligatoires et optionnels
 
 #### Fichiers obligatoires (requis pour `validate`)
