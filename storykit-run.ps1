@@ -17,7 +17,7 @@ param(
     [string[]]$Arguments
 )
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = $PSScriptRoot
 
 # Détecter le livre en cours en cherchant depuis le répertoire courant
 function Find-CurrentBook {
@@ -51,25 +51,21 @@ $bookName = Split-Path -Leaf $bookPath
 Write-Host "[*] Livre détecté: $bookName" -ForegroundColor Cyan
 
 # Changer le répertoire courant au livre et lancer le CLI
-# En utilisant un wrapper Python qui ajoute le repo root au sys.path
+# Le répertoire courant doit être celui du livre pour la détection de config
 Push-Location $bookPath
 try {
-    # Écrire un wrapper temporaire pour charger le module avec le bon sys.path
-    $wrapperCode = @"
-if __name__ == '__main__':
-    import sys
-    import os
-    # Ajouter le repo root au sys.path AVANT d'importer
-    repo_root = r'$repoRoot'
-    if repo_root not in sys.path:
-        sys.path.insert(0, repo_root)
+    # Construire la commande avec les arguments correctement échappés
+    $argList = $Arguments -join "',  '"
+    if ($argList) { $argList = "'$argList'" }
     
-    from cli.storykit import main
-    main($($Arguments | ConvertTo-Json))
+    # Utiliser des slashes pour les chemins Windows en Python
+    $repoRootPy = $repoRoot.Replace('\', '/')
+    
+    $pythonCmd = @"
+import sys; sys.path.insert(0, '$repoRootPy'); from cli.storykit import main; main([$argList])
 "@
     
-    # Lancer le wrapper
-    & python -c $wrapperCode
+    & python -c $pythonCmd
 }
 finally {
     Pop-Location
