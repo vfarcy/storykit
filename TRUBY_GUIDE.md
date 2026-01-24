@@ -18,7 +18,7 @@
 
 ### Qu'est-ce que la méthode Truby ?
 
-John Truby propose une approche **organique** de la dramaturgie qui dépasse le schéma traditionnel "3 actes". 
+John Truby propose une approche **organique** de la dramaturgie qui dépasse le schéma traditionnel des "3 actes".
 Au lieu de voir l'histoire comme une mécanique linéaire, Truby la conçoit comme un **système vivant** où :
 
 - **Personnages** : chacun incarne des valeurs en tension
@@ -31,8 +31,7 @@ Au lieu de voir l'histoire comme une mécanique linéaire, Truby la conçoit com
 
 **"L'histoire est l'enregistrement des changements de valeurs chez le protagoniste."**
 
-Chaque scène, chaque décision, chaque révélation doit servir ce changement. C'est le contraire d'une intrigue 
-venue du dehors où le héros est passif.
+Chaque scène, chaque décision, chaque révélation doit servir ce changement. C'est l'inverse d'une intrigue venue de l'extérieur où le héros est passif.
 
 ### Trois piliers
 
@@ -44,20 +43,19 @@ venue du dehors où le héros est passif.
 
 ## Les 7 étapes
 
-C'est le **squelette** que partagent toutes les bonnes histoires selon Truby.
+C'est le **squelette** que partagent toutes les bonnes histoires selon Truby. Chaque étape représente un **pivot moral** — un moment où le protagoniste change de compréhension ou est confronté à une vérité.
 
 ### 1. Faiblesse & Besoin (Weakness & Need)
 
 **Définition :** Qui est le protagoniste au départ ? Quel est son **handicap moral ou psychologique** ?
 
-Le handicap n'est pas une faiblesse physique, c'est une **limite morale** ou une **croyance erronée** qui 
-le paralyse ou le pousse vers de mauvaises décisions.
+Le handicap n'est pas une faiblesse physique, c'est une **limite morale** ou une **croyance erronée** qui le paralyse ou le pousse vers de mauvaises décisions.
 
 **Exemples :**
 - Naïveté morale : croire que la loyauté envers les proches prime sur la vérité
 - Orgueil : refuser de demander de l'aide
 - Peur : éviter de prendre des risques par peur de l'échec
-- Culpabilité : se punir pour un erreur passée
+- Culpabilité : se punir pour une erreur passée
 
 **Le besoin :** c'est ce que le protagoniste **doit apprendre** pour évoluer.
 - Si sa faiblesse est la naïveté → il doit apprendre le discernement
@@ -79,7 +77,7 @@ weakness_need:
 
 C'est souvent quelque chose de **superficiel ou trompeur** — ce n'est **pas** ce dont il a besoin.
 
-**Importante distinction :**
+**Distinction importante :**
 - **Désir** (Want) : ce que le personnage croit vouloir
 - **Besoin** (Need) : ce qui le transformera réellement
 
@@ -100,10 +98,9 @@ desire: "Objectif concret du protagoniste au démarrage de l'histoire"
 
 **Définition :** Qui ou qu'est-ce qui **s'oppose au désir du protagoniste** ?
 
-L'opposant n'est **pas nécessairement le méchant**. C'est celui qui a des **intérêts incompatibles** avec 
-le protagoniste.
+L'opposant n'est **pas nécessairement le méchant**. C'est celui qui a des **intérêts incompatibles** avec le protagoniste.
 
-**Point clé :** L'opposant doit avoir sa propre logique, ses propres raisons. Il croit qu'il a raison.
+**Point clé :** L'opposant doit avoir sa propre logique et ses propres raisons. Il croit sincèrement qu'il a raison.
 
 **Exemples :**
 - Un parent qui refuse le rêve de l'enfant (pour le "protéger")
@@ -126,9 +123,9 @@ opponent:
 
 C'est la **stratégie initiale** du héros. Elle sera souvent brisée ou contredite par les événements.
 
-**Importantes :**
+**Important :**
 - Le plan révèle la **personnalité** du héros
-- Il montre son niveau de **compréhension** du problème
+- Il montre son niveau de **compréhension** du problème réel
 - Il doit être **plausible** — pas juste "prier que tout s'arrange"
 
 **Exemples :**
@@ -224,8 +221,7 @@ new_equilibrium: "L'état du protagoniste et du monde après la transformation"
 
 ## Les 22 étapes
 
-Les **22 étapes** sont une **extension optionnelle** des 7 étapes. Elles détaillent les **pivots** (révélations, 
-décisions, retournements) qui rendent la progression plus **précise** et **surprenante**.
+Les **22 étapes** sont une **extension optionnelle** des 7 étapes. Elles détaillent les **pivots** (révélations, décisions, retournements) qui rendent la progression plus **précise** et **surprenante**.
 
 ### Structure des 22 étapes
 
@@ -242,9 +238,9 @@ décisions, retournements) qui rendent la progression plus **précise** et **sur
 
 ### Quand les utiliser ?
 
-- **Histoires courtes (< 50 pages)** : les 7 étapes suffisent
-- **Romans (100-300 pages)** : les 22 étapes aident à structurer sans créer de "trous"
-- **Saga ou épique** : les 22 étapes + subdivisions par chapitre
+- **Histoires courtes (< 50 pages)** : les 7 étapes suffisent amplement
+- **Romans (100-300 pages)** : les 22 étapes aident à structurer sans laisser de vides narratifs
+- **Sagas ou épopées** : les 22 étapes + subdivisions par chapitre ou arc
 
 ### Comment les appliquer
 
@@ -263,8 +259,10 @@ décisions, retournements) qui rendent la progression plus **précise** et **sur
 
 Truby dit : **"Chaque personnage représente une position dans le débat moral de l'histoire."**
 
-Ce n'est pas : "Voilà mon perso, il a un défaut et une force"
-C'est : "Voilà mon perso, il incarne cette valeur **contre** celle-ci"
+**Mauvaise approche :** "Voilà mon personnage, il a un défaut et une force"
+**Bonne approche :** "Voilà mon personnage, il incarne cette valeur **contre** celle-ci"
+
+En autres termes, les personnages ne sont **pas des individus isolés**. Ils sont les **incarnations des tensions morales** de votre histoire.
 
 ### Structure du web
 
@@ -277,8 +275,8 @@ C'est : "Voilà mon perso, il incarne cette valeur **contre** celle-ci"
    - Mentor inverse (incarne ce que le héros ne doit PAS devenir)
 
 2. **Valeurs en tension** : quelles valeurs défend ce personnage ?
-   - Le héros croit en : "La loyauté prime"
-   - L'opposant croit en : "Le pouvoir prime"
+   - Le héros croit en : "La loyauté prime sur tout"
+   - L'opposant croit en : "Le pouvoir prime sur la morale"
 
 3. **Contraste** : comment ce personnage contraste-t-il avec les autres ?
    - Intellectuel vs impulsif
@@ -316,8 +314,8 @@ characters:
 
 ### Règle d'or
 
-**Pas de personnage sans fonction.**
-Si un perso ne sert pas à explorer une **tension de valeurs**, supprimez-le ou donnez-lui un rôle.
+**Pas de personnage sans fonction dramatique.**
+Si un personnage ne sert pas à explorer une **tension de valeurs**, supprimez-le ou donnez-lui un rôle clair.
 
 **Fichier StoryKit :** `story/truby/character_web.yaml`
 
@@ -329,8 +327,8 @@ Si un perso ne sert pas à explorer une **tension de valeurs**, supprimez-le ou 
 
 L'**argument moral** est le **débat central** de ton histoire, incarné par les **choix** du héros.
 
-Ce n'est **pas** un message qu'on plaque sur l'histoire.
-C'est le **cœur** qui fait battre l'intrigue.
+Ce n'est **pas** un message qu'on plaque artificiellement sur l'histoire.
+C'est le **cœur** qui fait battre l'intrigue entière.
 
 ### Structure
 
@@ -350,7 +348,7 @@ Thèse : "La loyauté envers les proches prime sur la vérité"
 Antithèse : "La transparence absolue détruit les liens"
            → Révéler tout expose tout le monde au danger
 
-Synthèse : "Dire la vérité avec méthode et preuves est juste — 
+Synthèse : "Dire la vérité avec méthode et preuves est juste,
            même si le prix personnel est réel"
           → Nora publie et accepte les conséquences
 ```
@@ -374,8 +372,8 @@ Synthèse : "La réussite sans sens creux ; le sens sans effort ne vaut rien"
 L'argument moral **n'est jamais énoncé en paroles**. Il est **incarné par les actes** :
 
 - **Scènes** où le héros choisit une valeur contre l'autre
-- **Conséquences** réelles de ce choix
-- **Révélation** où le héros comprend enfin ce qu'il a choisi
+- **Conséquences** réelles, durables de ce choix
+- **Révélation** où le héros comprend enfin l'enjeu profond de ses choix
 
 **Fichier StoryKit :** `story/truby/moral_argument.md`
 
@@ -392,17 +390,17 @@ Ces beats ne sont **pas facultatifs** ; respecter la promesse de genre c'est **l
 
 ### Beats courants par genre
 
-#### Polar/Thriller d'enquête
-- Crime/Anomalie révélée + Misdirection initiale
+#### Polar / Thriller d'enquête
+- Crime ou anomalie révélée + Misdirection initiale (fausse piste)
 - Matrice d'enquête (suspects, indices, versions)
 - Fausse piste significative (red herring)
 - Renversement au milieu (midpoint reversal)
-- Révélation méthodologique (le **comment**)
-- Pression temporelle (horloge qui tourne)
-- Menace physique / "Visit to death"
-- Piège & Confrontation
-- Preuve & Explication
-- Restauration de l'ordre, à coût moral
+- Révélation méthodologique (le **comment** du crime)
+- Pression temporelle (horloge qui tourne, deadline)
+- Menace physique ou "rencontre avec la mort"
+- Piège et confrontation finale
+- Preuve et explication rationnelle
+- Restauration de l'ordre, à coût moral réel
 
 #### Science-fiction
 - Monde établi avec **une règle inviolable**
@@ -413,17 +411,17 @@ Ces beats ne sont **pas facultatifs** ; respecter la promesse de genre c'est **l
 - Nouvelle compréhension du monde
 
 #### Romance
-- Rencontre (attraction)
-- Complications (obstacles extérieurs/intérieurs)
-- Faux équilibre (ils se rapprochent, puis séparation)
-- Point bas (tout semble perdu)
-- Révélation & confession
-- Nouvel équilibre (ensemble, transformés)
+- Rencontre et attraction initiale
+- Complications (obstacles extérieurs et/ou intérieurs)
+- Faux équilibre (rapprochement suivi d'une séparation)
+- Point bas (tout semble perdu, désespoir)
+- Révélation de vérité et confession
+- Nouvel équilibre (réunion, transformation mutuelle)
 
-### Comment les définir
+### Comment les définir dans votre histoire
 
-1. Identifiez votre **genre principal**
-2. Listez les **beats attendus**
+1. Identifiez votre **genre principal** (et sous-genres)
+2. Listez les **beats attendus** par le lecteur
 3. Adaptez-les à votre **histoire spécifique**
 4. Vérifiez qu'ils **convergent vers votre argument moral**
 
@@ -431,9 +429,9 @@ Ces beats ne sont **pas facultatifs** ; respecter la promesse de genre c'est **l
 
 ---
 
-## Non-fiction & Truby
+## Truby en non-fiction
 
-### Adapter la méthode à la non-fiction
+### Adapter la méthode Truby à la non-fiction
 
 La méthode Truby s'applique aussi à la **non-fiction narrative** (biographies, enquêtes, mémoires, essais narratifs).
 La différence clé : au lieu d'un **héros fictif qui change**, c'est le **lecteur qui se transforme** à travers la compréhension.
@@ -444,13 +442,13 @@ La différence clé : au lieu d'un **héros fictif qui change**, c'est le **lect
 - Quelle est la **fausse croyance** que le lecteur partage avant de lire ?
 - Qu'est-ce que le lecteur **ne comprend pas** sur le sujet ?
 
-**Exemple :** "On croit que cet événement historique était un accident; en réalité, c'était systématique."
+**Exemple :** "On croit que cet événement historique était un accident ; en réalité, c'était systématique."
 
 **2. Désir**
 - Que **veut** le lecteur/l'auteur au départ ?
 - Quelle est la **quête superficielle** ?
 
-**Exemple :** "Trouver ce qui est arrivé au juge disparu" (apparemment)
+**Exemple :** "Trouver ce qui est arrivé au juge disparu" (le désir apparent)
 
 **3. Opposant**
 - Qu'est-ce qui s'oppose à la **découverte de la vérité** ?
@@ -606,14 +604,14 @@ required_beats:
     status: locked
 ```
 
-### Conseils pour écrire une non-fiction avec Truby
+### Conseils pour écrire une non-fiction structurée par Truby
 
-- **Faites un plan temporel clair** : le processus de découverte se fait dans le temps
-- **Montrez les fausses pistes** : le lecteur doit vivre votre confusion avant votre clarté
+- **Chronologie claire** : le processus de découverte se déploie dans le temps
+- **Montrez les fausses pistes** : le lecteur vit votre confusion avant votre clarté
 - **Créez de la tension** : "Vais-je trouver la réponse avant que..."
-- **Restez honnête sur vos limitations** : "Voici ce que je ne peux pas savoir"
-- **Humanisez les sujets** : même les antagonistes ont des motivations
-- **Terminez avec une synthèse morale** : pas juste "voilà les faits", mais "voilà ce que ça signifie"
+- **Soyez honnête sur vos limitations** : "Voici ce que je ne peux pas savoir"
+- **Humanisez les sujets** : même les antagonistes ont des motivations compréhensibles
+- **Terminez avec une synthèse morale** : pas juste "voilà les faits", mais "voilà ce que cela signifie pour notre compréhension"
 
 ---
 
@@ -707,12 +705,15 @@ Les **symboles** compriment du **sens** ; un objet, un lieu, une action qu'on re
 - Quel genre promets-je au lecteur ?
 
 **Commande StoryKit :**
-```powershell
-# Depuis le répertoire du livre (livre1-truby, livre2-monsoon, etc.)
-../storykit-run.ps1 assemble --target premise
 
-# Ou directement depuis le repo root (après avoir activé .venv et changé de répertoire)
-python -m cli.storykit assemble --target premise
+**Windows (PowerShell) :**
+```powershell
+../storykit-run.ps1 assemble --target premise
+```
+
+**macOS / Linux (Bash) :**
+```bash
+../storykit-run.sh assemble --target premise
 ```
 
 ---
@@ -732,14 +733,17 @@ python -m cli.storykit assemble --target premise
 - Comment le **monde** reflète ce conflit interne ?
 
 **Commandes StoryKit :**
+
+**Windows (PowerShell) :**
 ```powershell
-# Via helpers (recommandé, depuis n'importe quel répertoire du livre)
 ../storykit-run.ps1 assemble --target truby7
 ../storykit-run.ps1 assemble --target truby22  # optionnel
+```
 
-# Ou directement
-python -m cli.storykit assemble --target truby7
-python -m cli.storykit assemble --target truby22  # optionnel
+**macOS / Linux (Bash) :**
+```bash
+../storykit-run.sh assemble --target truby7
+../storykit-run.sh assemble --target truby22  # optionnel
 ```
 
 ---
@@ -750,18 +754,21 @@ python -m cli.storykit assemble --target truby22  # optionnel
 - `story/outline/scene_weave.md` : liste des scènes avec leurs enjeux
 
 **Dans chaque scène, demandez-vous :**
-- Quelle **valeur** est testée ici ?
+- Quelle **valeur** (ou tension de valeurs) est testée dans cette scène ?
 - Le héros **change-t-il** de position sur cette valeur ?
 - Comment cette scène prépare-t-elle la **révélation finale** ?
 - Quel **beat de genre** cette scène remplit-elle ?
 
 **Commande StoryKit :**
-```powershell
-# Via helper
-../storykit-run.ps1 assemble --target weave
 
-# Ou directement
-python -m cli.storykit assemble --target weave
+**Windows (PowerShell) :**
+```powershell
+../storykit-run.ps1 assemble --target weave
+```
+
+**macOS / Linux (Bash) :**
+```bash
+../storykit-run.sh assemble --target weave
 ```
 
 ---
@@ -770,83 +777,104 @@ python -m cli.storykit assemble --target weave
 
 **Pour chaque chapitre/scène :**
 - Relisez le **scene-weave** et les **7 étapes**
-- Vérifiez que la scène **incarne une valeur** du débat moral
-- Assurez-vous que les **dialogue et action** révèlent la **personnalité** des persos
-- Vérifiez que vous **respektez le style & voix** (ton, rythme, focalisation)
+- Vérifiez que la scène **incarne une tension de valeurs** du débat moral
+- Assurez-vous que le **dialogue et l'action** révèlent la **personnalité** authentique des personnages
+- Vérifiez que vous **respectez le style et la voix** (ton, rythme, focalisation, perspective)
 
 **Commande StoryKit :**
-```powershell
-# Via helper
-../storykit-run.ps1 assemble --target draft --chapter 1
 
-# Ou directement
-python -m cli.storykit assemble --target draft --chapter 1
+**Windows (PowerShell) :**
+```powershell
+../storykit-run.ps1 assemble --target draft --chapter 1
+```
+
+**macOS / Linux (Bash) :**
+```bash
+../storykit-run.sh assemble --target draft --chapter 1
 ```
 
 ---
 
+## Bonnes pratiques — Au-delà de la structure
+
+### Conseil 1 : La cohérence des enjeux
+
+Chaque **beat**, chaque **scène** doit illuminer votre **argument moral**. Si une scène ne teste pas une valeur du débat central, c'est qu'elle dilate l'histoire inutilement.
+
+### Conseil 2 : L'authenticité du coût
+
+Le **nouvel équilibre** doit montrer un **prix réel**. Même les "happy endings" coûtent quelque chose — l'innocence perdue, le temps sacrifié, la relation modifiée. C'est ce coût qui rend la transformation **crédible**.
+
 ## Commandes StoryKit
 
-### Valider le projet
+### Valider le projet complet
+
+**Windows (PowerShell) :**
 ```powershell
 ../storykit-run.ps1 validate
 ```
-Vérifie que tous vos fichiers sont cohérents et complets.
+
+**macOS / Linux (Bash) :**
+```bash
+../storykit-run.sh validate
+```
+
+Vérifie que tous les fichiers YAML/Markdown sont cohérents et complets.
 
 ### Assembler un prompt pour la prémisse
 ```powershell
 ../storykit-run.ps1 assemble --target premise
 ```
-Génère un prompt pour affiner votre prémisse avec une IA.
+Génère un prompt structuré pour affiner votre prémisse avec une IA.
 
 ### Assembler un prompt pour les 7 étapes
 ```powershell
 ../storykit-run.ps1 assemble --target truby7
 ```
-Génère un prompt pour développer vos 7 étapes.
+Génère un prompt structuré pour développer vos 7 étapes.
 
 ### Assembler un prompt pour les 22 étapes
 ```powershell
 ../storykit-run.ps1 assemble --target truby22
 ```
-Génère un prompt pour structurer les pivots.
+Génère un prompt structuré pour détailler les pivots (étapes 2-20).
 
 ### Assembler un prompt pour le scene-weave
 ```powershell
 ../storykit-run.ps1 assemble --target weave
 ```
-Génère un prompt pour planifier vos scènes.
+Génère un prompt structuré pour planifier et séquencer vos scènes.
 
 ### Assembler un prompt pour un brouillon de chapitre
 ```powershell
 ../storykit-run.ps1 assemble --target draft --chapter 1
 ```
-Génère un prompt pour rédiger un chapitre spécifique.
+Génère un prompt structuré pour rédiger un chapitre spécifique.
 
 ---
 
 ## Checklist finale
 
-Avant de publier, vérifiez que votre histoire :
+Avant de publier ou de présenter, vérifiez que votre histoire :
 
-- [ ] **Prémisse** : 1 phrase claire + principe organisateur
-- [ ] **7 étapes** : faiblesse → nouvel équilibre, avec transformation réelle
+- [ ] **Prémisse** : 1 phrase claire + principe organisateur explicite
+- [ ] **7 étapes** : progression de faiblesse → nouvel équilibre, avec transformation morale réelle
 - [ ] **Argument moral** : thèse visible dans les choix du héros, antithèse incarnée, synthèse révélée
-- [ ] **Personnages** : chacun incarne une position du débat, contraste clair
-- [ ] **Beats de genre** : tous les beats attendus sont présents et naturels
-- [ ] **Monde & symboles** : le monde reflète l'arc interne, symboles répétés et transformés
-- [ ] **Style & Voix** : cohérent du début à la fin
-- [ ] **Scènes** : chacune teste une valeur de l'argument moral
-- [ ] **Coût** : le nouvel équilibre inclut une **perte** réelle, pas un happy ending gratuit
+- [ ] **Personnages** : chacun incarne une position du débat moral, contrastes clairs
+- [ ] **Beats de genre** : tous les beats attendus sont présents et paraissent naturels
+- [ ] **Monde & symboles** : le monde reflète l'arc interne du héros, symboles répétés et transformés
+- [ ] **Style & Voix** : cohérents et distinctifs du début à la fin
+- [ ] **Scènes** : chacune teste une valeur ou tension de l'argument moral
+- [ ] **Coût réel** : le nouvel équilibre inclut une **perte** ou **transformation** tangible, pas un happy ending gratuit
 
 ---
 
-## Ressources
+## Ressources et références
 
-- **Livre de référence** : "The Anatomy of Story" par John Truby (anglais)
-- **Application dans StoryKit** : voir `README.md`, section "Workflow recommandé"
-- **Prompts IA** : générés par `assemble` à partir de vos fichiers YAML/Markdown
+- **Livre fondateur** : *The Anatomy of Story* par John Truby (disponible en anglais, traduction française *La Mécanique de l'Histoire*)
+- **Intégration StoryKit** : voir [README.md](README.md), section "Workflow recommandé"
+- **Prompts générés** : tous les prompts IA sont générés dynamiquement par la commande `assemble` à partir de vos fichiers YAML/Markdown
 
 ---
 
-**Bonne écriture !**
+**Bonne création !**
