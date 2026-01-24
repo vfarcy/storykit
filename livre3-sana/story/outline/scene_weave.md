@@ -1,4 +1,4 @@
-| Chapitre | # | Fonction Truby                       | Lieu                   | Conflit                                             | Décision                                   | Valeur en jeu              | Beat |
+| Chapitre | Scène | Fonction Truby                       | Lieu                   | Conflit                                             | Décision                                   | Valeur en jeu              | Beat |
 |----------|---|--------------------------------------|------------------------|-----------------------------------------------------|--------------------------------------------|----------------------------|------|
 | 1        | 1 | Ghost & Story World                  | Commissariat des quais | Pluie, fatigue, crime intime qui rompt la routine   | Prendre l'affaire personnellement          | Devoir vs. lassitude       | g01  |
 | 1        | 2 | Inciting Event                       | Appartement de Simone  | Scène sans effraction, mari sidéré                  | Refuser l'hypothèse cambriolage            | Rigueur vs. conclusion hâtive| g01  |
