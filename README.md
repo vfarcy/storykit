@@ -749,6 +749,18 @@ python -m cli.batch list --limit 10
 ../tools/storykit-run.ps1 assemble --target draft --chapter 1
 ```
 
+### Structure : afficher la synthèse du livre
+
+Génère un fichier Markdown avec une vue synthétique de la structure du livre (chapitres, scènes, beats) :
+
+```powershell
+../tools/storykit-run.ps1 structure
+```
+
+Le fichier est sauvegardé dans `out/structure/` avec un timestamp.
+
+Cela permet d'avoir rapidement un aperçu de l'organisation globale du récit et de vérifier la cohérence des beats de genre.
+
 > Chaque commande génère `livre/out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
 > Les prompts sont **isolés par livre** : `livre1-truby/out/` vs `livre2-monsoon/out/`.  
 > **Collez** ce prompt dans votre assistant IA, **intégrez** la réponse dans `livre/story/`, puis **commit**.
