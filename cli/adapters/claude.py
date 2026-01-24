@@ -201,8 +201,10 @@ class ClaudeAdapter:
         return sections if sections else [payload]
 
     def _save_response(self, content: str, meta: dict):
-        """Sauvegarde la réponse dans out/responses/"""
-        out_dir = Path(__file__).resolve().parents[2] / "out" / "responses"
+        """Sauvegarde la réponse dans out/responses/ du livre en cours"""
+        # Utiliser le chemin fourni par meta, ou fallback au repo root
+        out_base = meta.get("out_dir") or str(Path(__file__).resolve().parents[2] / "out" / "prompts")
+        out_dir = Path(out_base).parent.parent / "responses"  # passer de prompts/ à responses/
         out_dir.mkdir(parents=True, exist_ok=True)
         
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")

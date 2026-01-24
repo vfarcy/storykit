@@ -112,6 +112,15 @@ def get_story_root() -> Path:
     # Fallback (ne devrait pas arriver ici)
     return ROOT / "livre1-truby" / "story"
 
+def get_out_dir() -> Path:
+    """Retourne le chemin du répertoire 'out/prompts/' du livre en cours."""
+    _, config_path = detect_current_book()
+    if config_path:
+        # Les prompts sont stockés dans livre/out/prompts/
+        return config_path.parent / "out" / "prompts"
+    # Fallback
+    return ROOT / "out" / "prompts"
+
 # ---------------------------
 # Utilitaires de lecture
 # ---------------------------
@@ -317,9 +326,10 @@ def assemble_payload(target: str, chapter: int | None = None) -> str:
 
 class DryRunAdapter:
     def send(self, payload: str, meta: dict) -> str:
-        OUTDIR.mkdir(parents=True, exist_ok=True)
+        outdir = get_out_dir()
+        outdir.mkdir(parents=True, exist_ok=True)
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        fname = OUTDIR / f"{ts}_{meta.get('target','prompt')}.md"
+        fname = outdir / f"{ts}_{meta.get('target','prompt')}.md"
         fname.write_text(payload, encoding="utf-8")
         return f"[dry-run] prompt écrit: {fname}"
 
@@ -637,6 +647,7 @@ def main(argv=None):
         "provider": provider,
         "model": model,
         "max_tokens": max_tokens,
+        "out_dir": str(get_out_dir()),  # Chemin de sortie du livre en cours
     }
     result = adapter.send(payload, meta)
     console.print(Panel(f"{result}", title="Assemble"))
