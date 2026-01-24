@@ -11,6 +11,23 @@ Crée des aliases et des fonctions pour éviter de taper ../tools/ systématique
 . "C:\path\to\tools\load-aliases.ps1"
 sk validate
 batch list
+
+.INSTALLATION
+Pour charger automatiquement cet alias à chaque démarrage de PowerShell :
+
+1. Ouvrir le profil PowerShell :
+   notepad $PROFILE
+
+2. Ajouter cette ligne au fichier (créer le fichier s'il n'existe pas) :
+   . "C:\Users\vfarc\OneDrive - Groupe ESIEA\Dev\story-repo-polar\tools\load-aliases.ps1"
+
+3. Sauvegarder et redémarrer PowerShell
+
+4. Vérifier que ça fonctionne :
+   sk validate
+
+OU en une ligne (exécuter dans PowerShell) :
+   if (!(Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force | Out-Null }; Add-Content $PROFILE '. "C:\Users\vfarc\OneDrive - Groupe ESIEA\Dev\story-repo-polar\tools\load-aliases.ps1"'
 #>
 
 # Déterminer la racine du repo
