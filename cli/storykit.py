@@ -69,9 +69,11 @@ console = Console()
 
 # Racines
 ROOT = Path(__file__).resolve().parents[1]
-STORY = ROOT / "story"
-CONFIG = STORY / "config" / "storykit.config.yaml"
 OUTDIR = ROOT / "out" / "prompts"
+
+# Config et STORY seront détectés dynamiquement
+CONFIG = None
+STORY = None
 
 # ---------------------------
 # Détection du livre en cours
@@ -100,6 +102,16 @@ def get_book_info():
         return f"{book_name} ({config_path.parent.relative_to(ROOT)})"
     return "projet global"
 
+def get_story_root() -> Path:
+    """Retourne le chemin du répertoire 'story/' du livre en cours."""
+    _, config_path = detect_current_book()
+    if config_path:
+        # storykit.config.yaml est directement dans le répertoire du livre
+        # donc le chemin story/ est config_path.parent / "story"
+        return config_path.parent / "story"
+    # Fallback (ne devrait pas arriver ici)
+    return ROOT / "livre1-truby" / "story"
+
 # ---------------------------
 # Utilitaires de lecture
 # ---------------------------
@@ -117,7 +129,11 @@ def read_yaml(path: Path) -> dict:
         return {"__YAML_ERROR__": str(e)}
 
 def load_config() -> dict:
-    return read_yaml(CONFIG)
+    """Charge la config du livre détecté, ou retourne {} si aucune config trouvée."""
+    _, config_path = detect_current_book()
+    if config_path and config_path.exists():
+        return read_yaml(config_path)
+    return {}
 
 
 def demote_headers(text: str, levels: int = 1) -> str:
@@ -165,21 +181,24 @@ def check_token_budget(payload: str, max_tokens: int, target: str) -> None:
 # ---------------------------
 
 def assemble_payload(target: str, chapter: int | None = None) -> str:
+    # Obtenir le chemin story/ du livre en cours
+    story_root = get_story_root()
+    
     # Charger le contenu nécessaire
     p = {
-        "premise": read_text(STORY / "truby" / "premise.md"),
-        "seven": read_text(STORY / "truby" / "seven_steps.yaml"),
-        "twentytwo": read_text(STORY / "truby" / "twenty_two_steps.yaml"),
-        "moral": read_text(STORY / "truby" / "moral_argument.md"),
-        "web": read_text(STORY / "truby" / "character_web.yaml"),
-        "world": read_text(STORY / "truby" / "story_world.md"),
-        "symbols": read_text(STORY / "truby" / "symbol_web.yaml"),
-        "genre": read_text(STORY / "genre" / "genre_choice.yaml"),
-        "beats": read_text(STORY / "genre" / "genre_beats.yaml"),
-        "weave": read_text(STORY / "outline" / "scene_weave.md"),
-        "acts": read_text(STORY / "outline" / "act_map.yaml"),
-        "tasks": read_text(STORY / "tasks" / "tasks.yaml"),
-        "style": read_text(STORY / "config" / "style.md"),
+        "premise": read_text(story_root / "truby" / "premise.md"),
+        "seven": read_text(story_root / "truby" / "seven_steps.yaml"),
+        "twentytwo": read_text(story_root / "truby" / "twenty_two_steps.yaml"),
+        "moral": read_text(story_root / "truby" / "moral_argument.md"),
+        "web": read_text(story_root / "truby" / "character_web.yaml"),
+        "world": read_text(story_root / "truby" / "story_world.md"),
+        "symbols": read_text(story_root / "truby" / "symbol_web.yaml"),
+        "genre": read_text(story_root / "genre" / "genre_choice.yaml"),
+        "beats": read_text(story_root / "genre" / "genre_beats.yaml"),
+        "weave": read_text(story_root / "outline" / "scene_weave.md"),
+        "acts": read_text(story_root / "outline" / "act_map.yaml"),
+        "tasks": read_text(story_root / "tasks" / "tasks.yaml"),
+        "style": read_text(story_root / "config" / "style.md"),
     }
 
     # Construire le header de manière sûre (évite l’erreur d’“unterminated f-string”)
@@ -555,6 +574,8 @@ def validate_all(autofix_style: bool, optional_autofix: str) -> list[str]:
 # ---------------------------
 
 def main(argv=None):
+    global STORY  # Mettre à jour la variable globale STORY
+    
     argv = argv or sys.argv[1:]
     parser = argparse.ArgumentParser(prog="storykit", description="CLI StoryKit (assemble & validate)")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -571,6 +592,9 @@ def main(argv=None):
 
     args = parser.parse_args(argv)
 
+    # Détecter le livre en cours et initialiser STORY
+    STORY = get_story_root()
+    
     # Afficher le livre en cours
     book_info = get_book_info()
     console.print(f"[*] Livre en cours: {book_info}", style="dim")
