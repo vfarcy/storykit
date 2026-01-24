@@ -33,6 +33,14 @@ OU en une ligne (exécuter dans PowerShell) :
 # Déterminer la racine du repo
 $repoRoot = Split-Path -Parent $PSScriptRoot
 
+# Vérifier que le repo est valide
+if (!(Test-Path "$repoRoot\livre1-truby\storykit.config.yaml")) {
+    Write-Host "✗ ERREUR : Impossible de trouver le répertoire du projet StoryKit" -ForegroundColor Red
+    Write-Host "   Assurez-vous d'être dans le repository story-repo-polar" -ForegroundColor Yellow
+    Write-Host "   Chemin attendu : $repoRoot" -ForegroundColor Gray
+    break
+}
+
 # Fonction pour détecter le chemin de tools depuis n'importe où
 function Get-ToolsPath {
     # Chercher tools/ en remontant depuis le répertoire courant
@@ -43,8 +51,8 @@ function Get-ToolsPath {
         }
         $current = $current.Parent
     }
-    # Fallback : utiliser le chemin absolu du repo
-    return $repoRoot + "\tools"
+    # Aucun repo trouvé
+    return $null
 }
 
 # ============================================
@@ -54,12 +62,24 @@ function Get-ToolsPath {
 # sk = storykit (détecte le dossier tools automatiquement)
 function sk {
     $toolsPath = Get-ToolsPath
+    if (-not $toolsPath) {
+        Write-Host "✗ ERREUR : Vous n'êtes pas dans un répertoire valide" -ForegroundColor Red
+        Write-Host "   Naviguez vers un livre (livre1-truby, livre2-monsoon, etc.)" -ForegroundColor Yellow
+        Write-Host "   ou vers un sous-dossier du repository" -ForegroundColor Gray
+        return
+    }
     & "$toolsPath\storykit-run.ps1" @args
 }
 
 # batch = cli batch (détecte le dossier tools automatiquement)
 function batch {
     $toolsPath = Get-ToolsPath
+    if (-not $toolsPath) {
+        Write-Host "✗ ERREUR : Vous n'êtes pas dans un répertoire valide" -ForegroundColor Red
+        Write-Host "   Naviguez vers un livre (livre1-truby, livre2-monsoon, etc.)" -ForegroundColor Yellow
+        Write-Host "   ou vers un sous-dossier du repository" -ForegroundColor Gray
+        return
+    }
     & "$toolsPath\batch-run.ps1" @args
 }
 
