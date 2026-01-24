@@ -53,6 +53,7 @@ else
     exit 1
 fi
 
-# Exécuter la commande depuis le repo root
-cd "$REPO_ROOT"
+# Ajouter la racine du repo au PYTHONPATH pour trouver le module cli
+# On reste dans le répertoire courant pour que les chemins relatifs fonctionnent
+export PYTHONPATH="$REPO_ROOT:$PYTHONPATH"
 python -m cli.storykit "$@"
