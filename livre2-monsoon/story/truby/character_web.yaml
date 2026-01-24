@@ -1,0 +1,16 @@
+characters:
+  - id: hero
+    name: "TBD"
+    function: "protagoniste"
+    weakness: "À définir"
+    need: "À définir"
+    desire: "À définir"
+    contrast_with: []
+  - id: opponent
+    name: "TBD"
+    function: "opposant"
+    moral_argument_inverse: "À définir"
+  - id: ally
+    name: "TBD"
+    function: "allié"
+    desire: "À définir"

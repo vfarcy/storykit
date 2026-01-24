@@ -1,8 +1,8 @@
-# StoryKit — Écrire avec la méthode Truby + un workflow “spec-driven”
+# StoryKit — Écrire avec la méthode Truby + un workflow "spec-driven"
 
-StoryKit transpose à l’écriture (roman, fiction, non-fiction narrative) une logique inspirée de SpecKit :
+StoryKit transpose à l'écriture (roman, fiction, non-fiction narrative) une logique inspirée de SpecKit :
 on **prépare des artefacts** (Markdown/YAML) qui rendent les intentions **claires et vérifiables**, puis on
-**assemble un prompt** propre et reproductible à destination d’un assistant IA (au choix), sans runtime
+**assemble un prompt** propre et reproductible à destination d'un assistant IA (au choix), sans runtime
 propriétaire.
 
 > Principe : **commande → artefacts → prompt → IA → texte**.
@@ -11,11 +11,11 @@ propriétaire.
 
 ## 1) Pourquoi la méthode Truby ?
 
-John Truby est un pédagogue de la dramaturgie reconnu pour une approche **organique** de l’histoire,
-qui dépasse la stricte “structure en trois actes”. Son cadre relie **personnages, intrigue, thème,
+John Truby est un pédagogue de la dramaturgie reconnu pour une approche **organique** de l'histoire,
+qui dépasse la stricte "structure en trois actes". Son cadre relie **personnages, intrigue, thème,
 monde et symboles** dans un système vivant où chaque élément agit sur les autres. Truby met
-notamment l’accent sur :  
-- une **prémisse** forte (la “graine” qui détermine le potentiel du récit),  
+notamment l'accent sur :  
+- une **prémisse** forte (la "graine" qui détermine le potentiel du récit),  
 - un **fil thématique** formulé en **argument moral** (thèse ↔ antithèse ↔ synthèse),  
 - une **progression** structurée par les **7 étapes fondamentales** et, au besoin, par **22 étapes**
 plus détaillées,  
@@ -23,25 +23,25 @@ plus détaillées,
 - un **scene‑weave** (tissage de scènes) préparé **avant** la rédaction.
 
 ### 1.1 Les 7 étapes fondamentales
-Le “squelette” que partagent toutes les bonnes histoires selon Truby :
+Le "squelette" que partagent toutes les bonnes histoires selon Truby :
 **faiblesse & besoin → désir → opposant → plan → bataille → auto‑révélation → nouvel équilibre**.
-Elles modélisent la transformation du/de la protagoniste et rendent l’arc **nécessaire** et **satisfaisant**.
+Elles modélisent la transformation du/de la protagoniste et rendent l'arc **nécessaire** et **satisfaisant**.
 
 ### 1.2 Les 22 étapes (pour les récits plus denses)
-Les **22 steps** détaillent les pivots (révélations/décisions, fausse défaite, “visite à la mort”,
+Les **22 steps** détaillent les pivots (révélations/décisions, fausse défaite, "visite à la mort",
 bataille, décision morale, etc.) et aident à tisser une progression **précise** qui reste logique mais
-surprenante. C’est une extension **pratique** — pas un carcan — pour prévenir les “trous” de causalité.
+surprenante. C'est une extension **pratique** — pas un carcan — pour prévenir les "trous" de causalité.
 
 ### 1.3 Web de personnages, argument moral, monde & symboles
 - **Web de personnages** : définir chacun par **contraste** (valeurs, fonctions dramatiques).  
 - **Argument moral** : articuler **thèse/antithèse** et viser une **synthèse incarnée** par les actes
-(éviter le “message plaqué”).  
-- **Monde & symboles** : le **story world** reflète l’intériorité du héros et les **symboles** compressent
+(éviter le "message plaqué").  
+- **Monde & symboles** : le **story world** reflète l'intériorité du héros et les **symboles** compressent
 du sens pour guider scènes et motifs.
 
-### 1.4 Genres : promesse, “beats” et philosophie
-Dans *The Anatomy of Genres*, Truby montre que chaque genre s’appuie sur des **beats** profonds (événements
-structurants) et **porte une philosophie** (une “manière d’agir dans le monde”). Maîtriser ces beats est
+### 1.4 Genres : promesse, "beats" et philosophie
+Dans *The Anatomy of Genres*, Truby montre que chaque genre s'appuie sur des **beats** profonds (événements
+structurants) et **porte une philosophie** (une "manière d'agir dans le monde"). Maîtriser ces beats est
 crucial pour respecter la **promesse au lectorat** tout en innovant (mélanges de genres inclus).
 
 ---
@@ -56,34 +56,138 @@ StoryKit fournit :
 **argument moral**, **beats de genre**, **scene‑weave** ;
 - un **CLI Python minimal** (`storykit`) qui **assemble un prompt** clair (contexte + instructions) à partir
 de ces fichiers ;
-- des **templates d’issues** (slash‑commands) pour guider la collaboration et garder la **traçabilité**.
+- des **templates d'issues** (slash‑commands) pour guider la collaboration et garder la **traçabilité**.
 
-> Le kit **n’impose pas** de modèle IA : vous restez libre d’utiliser Copilot, Claude, Gemini, etc.  
-> L’assemblage produit un **prompt reproductible** que vous collez tel quel dans l’assistant IA.
+> Le kit **n'impose pas** de modèle IA : vous restez libre d'utiliser Copilot, Claude, Gemini, etc.  
+> L'assemblage produit un **prompt reproductible** que vous collez tel quel dans l'assistant IA.
 
 ---
 
-## 3) Arborescence
+## 3) Arborescence — Architecture multi-livres
+
+StoryKit supporte plusieurs livres indépendants dans un seul repository :
 
 ```
-story/
-├─ truby/            # Prémisse, 7 étapes, 22 étapes, web de personnages, argument moral, monde, symboles
-├─ genre/            # Choix de genre & beats requis
-├─ outline/          # Scene‑weave & carte des actes/chapitres
-├─ research/         # Sources, notes (utile en non‑fiction)
-├─ drafting/         # Brouillons de chapitres
-├─ tasks/            # Tâches éditoriales
-config/              # storykit.config.yaml (IA, langue)
-cli/                 # storykit.py (assemble prompts) + adapters (Claude/OpenAI/Gemini)
-.github/ISSUE_TEMPLATE # Issues modèles (slash‑commands)
-out/prompts/         # Prompts générés (dry‑run)
+Repository/
+├─ .venvWORK/              # Environnement virtuel Python (ou .venv)
+├─ .vscode/
+│  └─ tasks.json           # Tâches VS Code pour batch.py
+├─ .env / .env.example     # Variables d'environnement (clés API, config)
+│
+├─ cli/                    # 🐍 Modules Python
+│  ├─ storykit.py          # CLI principal (validate, assemble)
+│  ├─ batch.py             # CLI batch (draft-variants, research, etc.)
+│  ├─ validate.py          # Validations YAML/MD
+│  └─ adapters/            # Adaptateurs IA (Claude, OpenAI, Gemini)
+│     ├─ base.py
+│     ├─ claude.py
+│     ├─ copilot.py
+│     └─ gemini.py
+│
+├─ tools/                  # 🔧 Scripts utilitaires
+│  ├─ storykit-run.ps1     # ✨ Helper CLI (Windows)
+│  ├─ storykit-run.sh      # ✨ Helper CLI (Linux/macOS)
+│  ├─ batch-run.ps1        # ✨ Helper batch (Windows)
+│  ├─ batch-run.sh         # ✨ Helper batch (Linux/macOS)
+│  ├─ open-latest.ps1      # Ouvrir dernier prompt (Windows)
+│  ├─ open-latest-response.ps1
+│  └─ README.md
+│
+├─ templates/              # 📋 Modèles d'artefacts
+│  ├─ Truby/
+│  │  ├─ premise.example.md
+│  │  ├─ seven_steps.example.yaml
+│  │  ├─ twenty_two_steps.example.yaml
+│  │  ├─ character_web.example.yaml
+│  │  ├─ moral_argument.example.md
+│  │  ├─ story_world.example.md
+│  │  └─ symbol_web.example.yaml
+│  ├─ Genre/
+│  │  ├─ genre_choice.example.yaml
+│  │  └─ genre_beats.example.yaml
+│  ├─ Outline/
+│  │  ├─ act_map.example.yaml
+│  │  └─ scene_weave.example.md
+│  └─ Style/
+│     ├─ style.example.md
+│     ├─ style.forbidden.example.md
+│     ├─ style.advanced.example.md
+│     └─ style.md.example.md
+│
+├─ livre1-truby/           # 📖 PROJET 1 (isolé, structure complète)
+│  ├─ storykit.config.yaml # Config du projet
+│  ├─ story/
+│  │  ├─ truby/            # Prémisse, 7 étapes, 22 étapes, web, argument moral, monde, symboles
+│  │  │  ├─ premise.md
+│  │  │  ├─ seven_steps.yaml
+│  │  │  ├─ twenty_two_steps.yaml    # Optionnel
+│  │  │  ├─ character_web.yaml
+│  │  │  ├─ moral_argument.md
+│  │  │  ├─ story_world.md           # Optionnel
+│  │  │  └─ symbol_web.yaml          # Optionnel
+│  │  ├─ genre/            # Choix de genre & beats
+│  │  │  ├─ genre_choice.yaml
+│  │  │  └─ genre_beats.yaml
+│  │  ├─ outline/          # Scene‑weave & carte actes/chapitres
+│  │  │  ├─ scene_weave.md
+│  │  │  └─ act_map.yaml              # Optionnel
+│  │  ├─ config/           # Configuration stylistique
+│  │  │  └─ style.md       # Ton, Voix, Rythme (requis)
+│  │  ├─ research/         # Sources, notes, documentation
+│  │  │  └─ *.md
+│  │  ├─ drafting/         # Brouillons de chapitres
+│  │  │  ├─ LeSilenceDesAlgorithmes/
+│  │  │  ├─ SolitudeGeometrique/
+│  │  │  ├─ ClaudeSonnet4-5/
+│  │  │  └─ Gemini3/
+│  │  └─ tasks/            # Tâches éditoriales
+│  │     └─ tasks.yaml
+│  └─ out/                 # 💾 Artefacts générés (par livre!)
+│     ├─ prompts/          # Prompts assemblés
+│     │  ├─ 20260124_132149_premise.md
+│     │  ├─ 20260124_132214_truby7.md
+│     │  ├─ ...
+│     │  └─ YYYYMMDD_HHMMSS_<target>.md
+│     └─ responses/        # Réponses IA téléchargées
+│        └─ YYYYMMDD_HHMMSS_<target>_response.md
+│
+├─ livre2-monsoon/         # 📖 PROJET 2 (structure identique, isolée)
+│  ├─ storykit.config.yaml
+│  ├─ story/
+│  │  ├─ truby/
+│  │  ├─ genre/
+│  │  ├─ outline/
+│  │  ├─ config/
+│  │  ├─ research/
+│  │  ├─ drafting/
+│  │  └─ tasks/
+│  └─ out/                 # Prompts/réponses ISOLÉS pour livre2
+│     ├─ prompts/
+│     └─ responses/
+│
+├─ [autres livres...]      # Ajouter autant de livres que nécessaire
+│
+├─ Documentation
+│  ├─ README.md            # Ce fichier
+│  ├─ TRUBY_GUIDE.md       # Guide Truby complet
+│  ├─ BATCH_README.md      # Documentation batch API
+│  ├─ AUDIT_REPORT.md      # Historique améliorations
+│  └─ LICENSE
+│
+└─ custom-styles/          # 🎨 Styles personnalisés (optionnel)
 ```
+
+**Points clés :**
+- **Chaque livre** = dossier indépendant avec sa propre config et artefacts
+- **Détection automatique** : CLI détecte le livre en cherchant `storykit.config.yaml` en remontant depuis le répertoire courant
+- **Isolement complet** : prompts/réponses sont dans `livre/out/`, **pas** dans un dossier global
+- **Helpers cross-directory** : `storykit-run.ps1` et `batch-run.ps1` permettent d'utiliser le CLI/batch de n'importe quel répertoire
 
 ### 3.1) Fichiers obligatoires et optionnels
 
 #### Fichiers obligatoires (requis pour `validate`)
 
-La commande `python -m cli.storykit validate` vérifie la présence et la cohérence de **5 fichiers minimum** :
+La commande `../tools/storykit-run.ps1 validate` vérifie la présence et la cohérence de **5 fichiers minimum** :
 
 1. **`story/config/style.md`**  
    - Rubriques requises : `Ton`, `Voix`, `Rythme`
@@ -150,8 +254,7 @@ Ces fichiers enrichissent le contexte et la profondeur du récit selon la comple
 
 **Documentation et planification :**
 
-
-**`story/truby/premise.md`**  
+- **`story/truby/premise.md`**  
   *Utilité* : Cristalliser l'intention initiale  
   - 1 phrase = germe de l'histoire
   - Principe organisateur (ce qui rend le récit unique)
@@ -237,7 +340,7 @@ Cette approche permet à StoryKit de rester **flexible** tout en garantissant un
 
 ---
 
-### 3.3) Améliorations récentes (Janvier 2026)
+### 3.2) Améliorations récentes (Janvier 2026)
 
 **Validation robuste de `seven_steps.yaml` :**
 - ✅ Accepte maintenant **deux formats YAML** pour `weakness_need` et `opponent`
@@ -256,9 +359,18 @@ Cette approche permet à StoryKit de rester **flexible** tout en garantissant un
 - ✅ Documentation pour configurer l'encodage UTF-8 sous PowerShell
 - Fini les problèmes d'affichage des caractères accentués
 
+**Architecture multi-livres (Janvier 2026) :**
+- ✅ Chaque livre = dossier indépendant avec config et artefacts isolés
+- ✅ Détection automatique du livre en remontant depuis le répertoire courant
+- ✅ Prompts/réponses isolés dans `livre/out/` (pas de mélange global)
+- ✅ Helpers PowerShell (`storykit-run.ps1`, `batch-run.ps1`) pour cross-directory
+- ✅ Support de la Batch API Anthropic pour parallélisation massive
+
 ---
 
-## 4) Installation
+## 4) Installation & Configuration
+
+### Étape 1 — Environnement Python
 
 ```bash
 python -m venv .venv
@@ -272,79 +384,114 @@ pip install -r requirements.txt
 > Pour activer un adaptateur et envoyer les prompts à une API, installe le module du provider
 > (voir section « Adaptateurs IA réels »).
 
-### Windows PowerShell — aide‑mémoire
+### Étape 2 — Clés API
 
 ```powershell
-# Activer l'environnement virtuel
-.venv\Scripts\Activate.ps1
-
-# Vérifier l'interpréteur Python utilisé (chemin dans .venv)
-python -c "import sys; print(sys.executable)"
-
-# Mettre à jour pip et installer les dépendances de base
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-
-# Créer le fichier .env à partir du template et l'ouvrir
+# Créer le fichier .env à partir du template
 Copy-Item .env.example .env
+
+# Éditer .env et renseigner vos clés
 notepad .env
 
 # (Optionnel) Définir les clés API pour la session courante
-# Utiliser selon le provider choisi
 $env:ANTHROPIC_API_KEY = "sk-ant-..."    # Claude
 $env:OPENAI_API_KEY    = "sk-proj-..."   # OpenAI / Copilot
 $env:GOOGLE_API_KEY    = "AIza..."       # Gemini
-
-# Premier check de cohérence du projet
-python -m cli.storykit validate
-
-# (Optionnel) Sans auto-fix de style.md
-python -m cli.storykit validate --no-autofix-style
 ```
 
-Astuce PowerShell (chemins avec espaces) :
+### Étape 3 — Configuration par livre
+
+Chaque livre possède son propre `storykit.config.yaml` (voir section « Configuration »).
+Pour modifier la config d'un livre spécifique :
 
 ```powershell
-# Utiliser l'opérateur d'appel & avec un chemin entre guillemets
-& "C:\Users\vfarc\OneDrive - Groupe ESIEA\Dev\story-repo-polar\.venv\Scripts\python.exe" -m cli.storykit validate
+# Depuis n'importe quel répertoire
+cd livre1-truby
+notepad storykit.config.yaml
 
-# Variante relative depuis le repo
-& .\.venv\Scripts\python.exe -m cli.storykit validate
-
-# Alias pratique pour la session courante
-Set-Alias vpy "$PWD\.venv\Scripts\python.exe"
-vpy -m cli.storykit validate
+cd ../livre2-monsoon
+notepad storykit.config.yaml
 ```
 
-**Encodage UTF-8 (Windows PowerShell) :**  
-Si vous rencontrez des problèmes d'affichage des caractères accentués :
+### Windows PowerShell — aide‑mémoire
+
+```powershell
+# Activer l'environnement virtuel (depuis le repo root)
+.venv\Scripts\Activate.ps1
+
+# Vérifier l'interpréteur Python utilisé
+python -c "import sys; print(sys.executable)"
+
+# Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+../tools/batch-run.ps1 list --limit 10
+
+# Si vous préférez utiliser Python directement (depuis repo root)
+.venv\Scripts\python.exe -m cli.storykit validate
+.venv\Scripts\python.exe -m cli.batch list --limit 10
+```
+
+**Encodage UTF-8 (Windows PowerShell):**  
+Les helpers `storykit-run.ps1` et `batch-run.ps1` **forcent automatiquement** l'encodage UTF-8 pour PowerShell.  
+Si vous utilisez directement `python -m cli.*`, définissez l'encodage manuellement:
 
 ```powershell
 # Pour la session courante
-$env:PYTHONIOENCODING="utf-8"
+$env:PYTHONIOENCODING = "utf-8"
 python -m cli.storykit validate
 
-# Ou lancer Python avec flag UTF-8
-python -X utf8 -m cli.storykit validate
-
-# Permanent : ajouter à votre profil PowerShell
+# Ou permanent : ajouter à votre profil PowerShell
 notepad $PROFILE
 # Ajouter la ligne : $env:PYTHONIOENCODING="utf-8"
+```
+
+### Linux / macOS — aide‑mémoire
+
+```bash
+# Activer l'environnement virtuel (depuis le repo root)
+source .venv/bin/activate
+
+# Vérifier l'interpréteur Python utilisé
+python -c "import sys; print(sys.executable)"
+
+# Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
+../tools/storykit-run.sh validate
+../tools/storykit-run.sh assemble --target premise
+../tools/batch-run.sh list --limit 10
+
+# Si vous préférez utiliser Python directement (depuis repo root)
+python -m cli.storykit validate
+python -m cli.batch list --limit 10
+```
+
+**Encodage UTF-8 (Linux / macOS):**  
+Les helpers `storykit-run.sh` et `batch-run.sh` **forcent automatiquement** l'encodage UTF-8.  
+Si vous utilisez directement `python -m cli.*`, définissez l'encodage en session:
+
+```bash
+# Pour la session courante
+export PYTHONIOENCODING=utf-8
+python -m cli.storykit validate
+
+# Ou permanent : ajouter à votre ~/.bashrc ou ~/.zshrc
+echo 'export PYTHONIOENCODING=utf-8' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ---
 
 ## 5) Configuration
 
-Édite `story/config/storykit.config.yaml` :
+Chaque livre possède sa propre config : **`livre/storykit.config.yaml`**
 
 ```yaml
 ai:
   provider: dry-run        # dry-run | claude | copilot | gemini
-  model: ""                # ex: claude-sonnet-4-5, gpt-4o, gemini-2.5-flash
+  model: ""                # ex: claude-3-5-sonnet-20241022, gpt-4o, gemini-2.5-flash
   max_tokens: 8000         # Budget de sortie (8000 recommandé pour chapitres complets)
 project:
-  root: ./story
+  root: ./story            # Relatif au dossier du livre (ne pas modifier)
 language: fr
 format:
   line_width: 100
@@ -353,8 +500,13 @@ style:
   optional_autofix: none   # none | forbidden | examples | both (sections optionnelles)
 ```
 
-- **dry-run** écrit simplement le **prompt** dans `out/prompts/` (aucun appel réseau).
-- **max_tokens** : Recommandé `8000` pour les chapitres complets ; StoryKit estime la taille du prompt et affiche un avertissement si elle approche cette limite.
+**Chemins importants** (détectés automatiquement) :
+- `Config` : `livre/storykit.config.yaml`
+- `Story root` : `livre/story/`
+- `Output prompts` : `livre/out/prompts/`
+- `Output responses` : `livre/out/responses/`
+
+La détection fonctionne en remontant depuis le répertoire courant pour trouver le premier `storykit.config.yaml`.
 
 **Avertissements automatiques de budget tokens :**
 - ⚠️ **Jaune** : si le prompt d'entrée > 80% de `max_tokens` → risque de réponse tronquée
@@ -386,17 +538,6 @@ pip install openai                 # OpenAI/Copilot
 pip install google-genai           # Gemini (nouveau)
 ```
 
-**Configuration des clés API :**
-```bash
-# Copier le template
-copy .env.example .env
-
-# Éditer .env et renseigner vos clés
-# ANTHROPIC_API_KEY=sk-ant-...
-# OPENAI_API_KEY=sk-proj-...
-# GOOGLE_API_KEY=AIza...
-```
-
 **Activer dans storykit.config.yaml :**
 ```yaml
 ai:
@@ -408,11 +549,11 @@ ai:
 **Utilisation :**
 ```bash
 # Assemblage avec appel API direct
-python -m cli.storykit assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 
 # Les fichiers générés :
-# - out/prompts/YYYYMMDD_HHMMSS_truby7.md (prompt envoyé)
-# - out/responses/YYYYMMDD_HHMMSS_truby7_response.md (réponse IA)
+# - livre/out/prompts/YYYYMMDD_HHMMSS_truby7.md (prompt envoyé)
+# - livre/out/responses/YYYYMMDD_HHMMSS_truby7_response.md (réponse IA)
 ```
 
 Les adaptateurs se chargent dynamiquement selon les modules installés et les clés disponibles.
@@ -431,14 +572,14 @@ L'adaptateur Claude implémente le **Prompt Caching** d'Anthropic pour réduire 
 
 Premier appel (création du cache) :
 ```bash
-python -m cli.storykit assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 # [Cache: 6582 créés, 0 lus]
 # → Coût normal sur 6582 tokens + petite surcharge de création
 ```
 
 Appels suivants (< 5 min) :
 ```bash
-python -m cli.storykit assemble --target truby7
+../tools/storykit-run.ps1 assemble --target truby7
 # [Cache: 6582 lus]
 # → ~90% d'économie sur les 6582 tokens en cache !
 ```
@@ -447,18 +588,18 @@ python -m cli.storykit assemble --target truby7
 
 1. **Enchaînez vos commandes rapidement** (< 5 min entre chaque)
    ```bash
-   python -m cli.storykit assemble --target truby7
+   ../tools/storykit-run.ps1 assemble --target truby7
    # Analyser la réponse, ajuster les fichiers
-   python -m cli.storykit assemble --target truby22  # Cache réutilisé !
-   python -m cli.storykit assemble --target weave    # Cache réutilisé !
+   ../tools/storykit-run.ps1 assemble --target truby22  # Cache réutilisé !
+   ../tools/storykit-run.ps1 assemble --target weave    # Cache réutilisé !
    ```
 
 2. **Itérations rapides** : testez plusieurs versions d'une même commande
    ```bash
    # Modifier story/truby/seven_steps.yaml
-   python -m cli.storykit assemble --target truby7
+   ../tools/storykit-run.ps1 assemble --target truby7
    # Ajuster encore...
-   python -m cli.storykit assemble --target truby7  # Cache réutilisé
+   ../tools/storykit-run.ps1 assemble --target truby7  # Cache réutilisé
    ```
 
 3. **Désactiver ponctuellement** : si le contexte change radicalement
@@ -486,11 +627,11 @@ Pour un projet StoryKit typique (6000 tokens de contexte) :
 ### Style & Voix
 - Emplacement: `story/config/style.md`. Ce fichier définit le ton, la voix et le rythme attendus.
 - Rubriques requises: Titres ou labels pour **Ton**, **Voix**, **Rythme** (ex: `# Ton` ou `Ton:`).
-- Inclusion automatique: la section “Style & Voix” est ajoutée au prompt assemblé après la **Prémisse**.
-- Rappels d’instructions: un rappel “Respecter le style défini dans Style & Voix.” est inclus pour `truby7`, `truby22`, `weave` et `draft`.
-- Validation: `python -m cli.storykit validate` vérifie que `style.md` contient ces rubriques.
+- Inclusion automatique: la section "Style & Voix" est ajoutée au prompt assemblé après la **Prémisse**.
+- Rappels d'instructions: un rappel "Respecter le style défini dans Style & Voix." est inclus pour `truby7`, `truby22`, `weave` et `draft`.
+- Validation: `../tools/storykit-run.ps1 validate` vérifie que `style.md` contient ces rubriques.
 - Auto-fix: si `style.autofix: true` (par défaut), les rubriques manquantes sont ajoutées automatiquement avec un squelette et un message est affiché.
-- Désactiver ponctuellement: `python -m cli.storykit validate --no-autofix-style` (prioritaire sur la config).
+- Désactiver ponctuellement: `../tools/storykit-run.ps1 validate --no-autofix-style` (prioritaire sur la config).
 - Sections optionnelles: `optional_autofix` contrôle l'insertion automatique de sections facultatives :
   - `none` (défaut) : Ton/Voix/Rythme uniquement
   - `forbidden` : ajoute "Interdits stylistiques" si absente
@@ -500,26 +641,26 @@ Pour un projet StoryKit typique (6000 tokens de contexte) :
 Exemples d'usage :
 ```bash
 # Config par défaut (Ton/Voix/Rythme uniquement)
-python -m cli.storykit validate
+../tools/storykit-run.ps1 validate
 
 # Activer auto-insertion des interdits : éditer storykit.config.yaml
 # style:
 #   optional_autofix: forbidden
-python -m cli.storykit validate
+../tools/storykit-run.ps1 validate
 # → affiche "Section 'Interdits' ajoutée" si absente
 
 # Activer auto-insertion des exemples et interdits
 # style:
 #   optional_autofix: both
-python -m cli.storykit validate
+../tools/storykit-run.ps1 validate
 ```
 
 Conseils pratiques pour `style.md`:
 - Clarté: phrases concrètes, critères observables (éviter les injonctions vagues).
 - Voix: préciser focalisation, niveau de langue, champs lexicaux à privilégier/éviter.
 - Rythme: donner des repères (longueur moyenne de phrases, variation court/long, taille des paragraphes).
-- Exemples: 2–3 mini-exemples de style conforme et non conforme aident beaucoup l’IA.
-- Cohérence: garder `style.md` bref et resserré; c’est un contrat stylistique.
+- Exemples: 2–3 mini-exemples de style conforme et non conforme aident beaucoup l'IA.
+- Cohérence: garder `style.md` bref et resserré; c'est un contrat stylistique.
 
 Exemple minimal (copier-coller dans `story/config/style.md`):
 
@@ -543,54 +684,83 @@ Templates utiles:
 
 ## 6) Commandes disponibles
 
+### Utilisation via helpers PowerShell (recommandé)
+
+```powershell
+# Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
+# Aucun besoin d'activer .venv ou de cd au repo root
+
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+../tools/storykit-run.ps1 assemble --target truby7 --styles minimaliste
+../tools/batch-run.ps1 list --limit 10
+../tools/batch-run.ps1 download msgbatch_XXXX
+```
+
+### Utilisation directe (depuis le repo root)
+
+```powershell
+# Activer l'environnement virtuel
+.venv\Scripts\Activate.ps1
+
+# Puis changer vers le livre désiré
+cd livre1-truby
+python -m cli.storykit validate
+python -m cli.storykit assemble --target premise
+
+cd ../livre2-monsoon
+python -m cli.batch list --limit 10
+```
+
 ### Assemble : générer des prompts
 
 1) **Affiner la prémisse** (1 phrase + principe organisateur)  
-```bash
-python -m cli.storykit assemble --target premise
+```powershell
+../tools/storykit-run.ps1 assemble --target premise
 ```
 
 2) **7 étapes** (faiblesse/besoin → nouvel équilibre)  
-```bash
-python -m cli.storykit assemble --target truby7
+```powershell
+../tools/storykit-run.ps1 assemble --target truby7
 ```
 
 3) **22 étapes** (chaînage fin : révélations, décisions, gauntlet…)  
-```bash
-python -m cli.storykit assemble --target truby22
+```powershell
+../tools/storykit-run.ps1 assemble --target truby22
 ```
 
 4) **Scene‑weave** (liste de scènes, conflit/décision/valeur/beat de genre)  
-```bash
-python -m cli.storykit assemble --target weave
+```powershell
+../tools/storykit-run.ps1 assemble --target weave
 ```
 
 5) **Genre (beats + choix)**  
-```bash
-python -m cli.storykit assemble --target genre
+```powershell
+../tools/storykit-run.ps1 assemble --target genre
 ```
 
 6) **Web de personnages**  
-```bash
-python -m cli.storykit assemble --target web
+```powershell
+../tools/storykit-run.ps1 assemble --target web
 ```
 
 7) **Brouillon de chapitre** (à partir du scene‑weave)  
-```bash
-python -m cli.storykit assemble --target draft --chapter 1
+```powershell
+../tools/storykit-run.ps1 assemble --target draft --chapter 1
 ```
 
-> Chaque commande génère `out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
-> **Collez** ce prompt dans votre assistant IA, **intégrez** la réponse dans les fichiers du dossier `story/`, puis **commit**.
+> Chaque commande génère `livre/out/prompts/YYYYMMDD_HHMMSS_<target>.md`.  
+> Les prompts sont **isolés par livre** : `livre1-truby/out/` vs `livre2-monsoon/out/`.  
+> **Collez** ce prompt dans votre assistant IA, **intégrez** la réponse dans `livre/story/`, puis **commit**.
 
 ### Validate : vérifier la cohérence
 
-```bash
-# Valider tout le projet
-python -m cli.storykit validate
+```powershell
+# Valider le livre courant
+../tools/storykit-run.ps1 validate
 
 # Désactiver l'auto-fix de style.md
-python -m cli.storykit validate --no-autofix-style
+../tools/storykit-run.ps1 validate --no-autofix-style
 ```
 
 **Contrôles effectués :**
@@ -604,7 +774,7 @@ Si des problèmes sont détectés, un tableau récapitulatif s'affiche avec le n
 
 ### Choix des modèles LLM
 
-Modifier `story/config/storykit.config.yaml` selon le provider :
+Modifier `livre/storykit.config.yaml` selon le provider :
 
 **Claude (Anthropic) :**
 ```yaml
@@ -638,7 +808,7 @@ ai:
 
 **Transmission de la config au CLI :**
 
-La commande `python -m cli.storykit assemble` lit automatiquement `ai.model` et `ai.max_tokens` depuis `story/config/storykit.config.yaml` et les transmet aux adaptateurs via `meta`. Cela signifie :
+La commande `../tools/storykit-run.ps1 assemble` lit automatiquement `ai.model` et `ai.max_tokens` depuis `livre/storykit.config.yaml` et les transmet aux adaptateurs via `meta`. Cela signifie :
 
 - Si vous définissez `model: gemini-2.5-pro`, ce modèle sera utilisé pour **tous les appels**.
 - Si vous laissez `model: ""` (vide), l'adaptateur applique sa logique par défaut (ex. Gemini choisit flash ou pro selon la tâche).
@@ -652,12 +822,12 @@ Par défaut, si `model:` est vide, StoryKit choisit automatiquement le modèle G
 
 Si vous renseignez explicitement `model:` dans la config, ce modèle sera utilisé pour tous les appels (override). Sinon, la sélection automatique s'applique.
 
-Ce mécanisme garantit :
-- Robustesse (jamais d’erreur 404 si un modèle disparaît)
+Ce mécanisme garantit :
+- Robustesse (jamais d'erreur 404 si un modèle disparaît)
 - Performance optimale selon la tâche
 - Liberté utilisateur pour forcer un modèle précis si besoin
 
-> Astuce : vous pouvez toujours surcharger ponctuellement le modèle via la config YAML ou en passant `model` dans les options avancées Python.
+> Astuce : vous pouvez toujours surcharger ponctuellement le modèle via la config YAML ou en passant `model` dans les options avancées Python.
 > ⚠️ Les modèles Gemini évoluent régulièrement. Si une erreur "404 NOT_FOUND" apparaît, essayez la version la plus récente (ex : gemini-2.5-flash). Utilisez la commande ListModels de l'API Google pour voir les modèles disponibles avec votre clé.
 
 **Conseils d'usage :**
@@ -699,11 +869,11 @@ L'estimation utilise une heuristique simple (1 token ≈ 4 caractères pour le f
 - `truby/moral_argument.md` : thèse ↔ antithèse ↔ synthèse (incarnée par des actes).
 
 **Phase 3 — Scènes**
-- `outline/scene_weave.md` : tissage des scènes **avant** d’écrire (conflit, décision, valeur, beat).
+- `outline/scene_weave.md` : tissage des scènes **avant** d'écrire (conflit, décision, valeur, beat).
 
 **Phase 4 — Rédaction & révisions**
 - `drafting/` : brouillons de chapitres via `--target draft`.  
-- Relectures centrées sur **l’argument moral** et les **valeurs** scène par scène.  
+- Relectures centrées sur **l'argument moral** et les **valeurs** scène par scène.  
 - Ajuster les **beats de genre** pour honorer la promesse au lectorat.
 
 ---
@@ -712,70 +882,99 @@ L'estimation utilise une heuristique simple (1 token ≈ 4 caractères pour le f
 
 ---
 
-## 8) Premiers pas
+## 8) Premiers pas — Architecture multi-livres
 
-Trois commandes pour tester le flux minimal :
+Trois commandes pour tester le flux minimal dans un livre spécifique :
 
 ```powershell
-# 1) Vérifier la cohérence des artefacts
-python -m cli.storykit validate
+# 1) Se placer dans le répertoire du livre
+cd livre1-truby
 
-# 2) Générer le prompt de la prémisse
-python -m cli.storykit assemble --target premise
+# 2) Vérifier la cohérence des artefacts (détecte auto le livre)
+../tools/storykit-run.ps1 validate
 
-# 3) Ouvrir le prompt généré
-# → out/prompts/YYYYMMDD_HHMMSS_premise.md
+# 3) Générer le prompt de la prémisse
+../tools/storykit-run.ps1 assemble --target premise
+
+# 4) Ouvrir le prompt généré
+# → livre1-truby/out/prompts/YYYYMMDD_HHMMSS_premise.md
 ```
 
-Ensuite, collez le prompt dans votre assistant IA et intégrez la réponse dans les fichiers du dossier `story/`.
+Ensuite, collez le prompt dans votre assistant IA et intégrez la réponse dans `livre1-truby/story/`.
 
-### Ouvrir le dernier prompt généré (one‑liner PowerShell)
+### Basculer vers un autre livre
 
 ```powershell
-# Ouvrir le plus récent dans Notepad
-Get-ChildItem .\out\prompts -Filter *.md | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | ForEach-Object { notepad $_.FullName }
+# Changer vers livre2-monsoon
+cd ../livre2-monsoon
 
-# (Alternative) Ouvrir dans VS Code si disponible
-Get-ChildItem .\out\prompts -Filter *.md | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | ForEach-Object { code $_.FullName }
+# Même flux, mais dans le contexte de livre2-monsoon
+../tools/storykit-run.ps1 validate
+../tools/storykit-run.ps1 assemble --target premise
+
+# Les outputs se créent dans livre2-monsoon/out/prompts/
+# → Isolement complet garanti
 ```
 
-Ou via le script utilitaire :
+### Ajouter un nouveau livre
 
 ```powershell
-# Notepad par défaut
-./tools/open-latest.ps1
+# Copier la structure d'un livre existant
+Copy-Item -Recurse livre1-truby livre3-nouveau-projet
+
+# Éditer la config
+cd livre3-nouveau-projet
+notepad storykit.config.yaml
+
+# Modifier les artefacts dans story/ selon vos besoins
+# La détection automatique fonctionne immédiatement
+../tools/storykit-run.ps1 validate
+```
+
+### Ouvrir le dernier prompt généré
+
+```powershell
+# Depuis n'importe quel répertoire du livre (livre1-truby, livre2-monsoon, etc.)
+# Les scripts ouvrent le dernier fichier du dossier courant
+
+# Ouvrir avec Notepad (par défaut)
+../../tools/open-latest.ps1
 
 # Ouvrir avec VS Code
-./tools/open-latest.ps1 -Editor code
-```
-
-### Ouvrir la dernière réponse IA (script PowerShell)
-
-```powershell
-# Notepad par défaut
-./tools/open-latest-response.ps1
-
-# Ouvrir avec VS Code
-./tools/open-latest-response.ps1 -Editor code
+../../tools/open-latest.ps1 -Editor code
 ```
 
 Pour plus de détails et options, voir [tools/README.md](tools/README.md)
 
-## 3.2) Dossier templates/
+### Ouvrir la dernière réponse IA
 
-Le dossier `templates/` contient des exemples de fichiers modèles (Markdown ou YAML) pour chaque artefact narratif attendu par StoryKit :
+```powershell
+# Depuis n'importe quel répertoire du livre
+
+# Ouvrir avec Notepad
+../../tools/open-latest-response.ps1
+
+# Ouvrir avec VS Code
+../../tools/open-latest-response.ps1 -Editor code
+```
+
+> **Note** : En mode dry-run, `out/responses/` est vide. Les scripts basculent automatiquement vers le dernier prompt si aucune réponse n'est disponible.
+
+## 3.3) Dossier templates/
+
+Le dossier `templates/` contient des exemples de fichiers modèles (Markdown ou YAML) pour chaque artefact narratif attendu par StoryKit :
 
 - `premise.example.md` : Exemple de prémisse structurée (phrase, principe organisateur, promesse).
-- `seven_steps.example.yaml` : Exemple des 7 étapes Truby, pour structurer l’arc du protagoniste.
+- `seven_steps.example.yaml` : Exemple des 7 étapes Truby, pour structurer l'arc du protagoniste.
 - `twenty_two_steps.example.yaml` : Exemple détaillé des 22 étapes Truby (pour récits complexes).
 - `character_web.example.yaml` : Modèle pour cartographier les personnages et leurs fonctions.
-- `moral_argument.example.md` : Exemple d’argument moral (thèse, antithèse, synthèse).
+- `moral_argument.example.md` : Exemple d'argument moral (thèse, antithèse, synthèse).
 - `story_world.example.md` : Exemple de description du monde narratif.
 - `symbol_web.example.yaml` : Modèle pour structurer les symboles récurrents du récit.
 - `genre_choice.example.yaml` : Exemple de choix de genre, philosophie et promesse au lecteur.
 - `genre_beats.example.yaml` : Modèle de beats de genre (moments-clés à respecter).
 - `scene_weave.example.md` : Exemple de tissage de scènes (scene weave).
 - `act_map.example.yaml` : Exemple de carte des actes/chapitres.
-- `style.example.md`, `style.forbidden.example.md`, `style.advanced.example.md` : Exemples de styles d’écriture, d’interdits stylistiques et de variantes avancées.
+- `style.example.md`, `style.forbidden.example.md`, `style.advanced.example.md` : Exemples de styles d'écriture, d'interdits stylistiques et de variantes avancées.
 
 Ces fichiers servent de référence pour créer tes propres artefacts dans le dossier story/. Ils garantissent la bonne structure, la cohérence des rubriques et facilitent la prise en main de StoryKit.

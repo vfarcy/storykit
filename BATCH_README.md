@@ -30,16 +30,49 @@ Le mode **batch** de StoryKit utilise l'API Message Batches de Claude pour gén�
    ANTHROPIC_API_KEY=sk-ant-...
    ```
 
-3. **Configuration** dans `story/config/storykit.config.yaml` :
+3. **Configuration** dans `livre/storykit.config.yaml` :
    ```yaml
    ai:
      provider: claude  # PAS dry-run pour les batchs
-     model: "claude-sonnet-4-5-20250929"
+     model: "claude-3-5-sonnet-20241022"
    ```
+
+> **Depuis janvier 2026** : Les commandes batch détectent automatiquement le livre courant via `../batch-run.ps1`. Voir section « Utilisation » ci-dessous.
 
 ---
 
-## Commandes disponibles
+## Utilisation (Architecture multi-livres)
+
+### Via helpers PowerShell (recommandé)
+
+Depuis n'importe quel répertoire du livre (livre1-truby, livre2-monsoon, etc.) :
+
+```powershell
+# Lancer un batch
+../batch-run.ps1 draft-variants --chapter story/drafting/.../chapitre.md --styles "style1,style2" --wait
+
+# Vérifier le statut
+../batch-run.ps1 status --batch-id msgbatch_XXXX
+
+# Télécharger les résultats
+../batch-run.ps1 download --batch-id msgbatch_XXXX
+
+# Lister les batchs récents
+../batch-run.ps1 list --limit 10
+```
+
+### Utilisation directe (ligne de commande)
+
+Depuis le répertoire du livre (après avoir activé .venv depuis le repo root) :
+
+```powershell
+python -m cli.batch draft-variants --chapter story/drafting/.../chapitre.md --styles "style1,style2" --wait
+python -m cli.batch status --batch-id msgbatch_XXXX
+python -m cli.batch download --batch-id msgbatch_XXXX
+python -m cli.batch list --limit 10
+```
+
+---
 
 ### 1. `draft-variants` — Variations stylistiques
 
@@ -47,6 +80,13 @@ Génère plusieurs versions d'un même chapitre avec des tonalités différentes
 
 **Syntaxe :**
 ```powershell
+# Via helper
+../batch-run.ps1 draft-variants `
+  --chapter <chemin_vers_chapitre.md> `
+  --styles "style1,style2,style3" `
+  [--wait]
+
+# Directement
 python -m cli.batch draft-variants `
   --chapter <chemin_vers_chapitre.md> `
   --styles "style1,style2,style3" `
@@ -60,16 +100,17 @@ python -m cli.batch draft-variants `
 
 **Exemple :**
 ```powershell
-python -m cli.batch draft-variants `
+# Via helper (depuis livre1-truby)
+../batch-run.ps1 draft-variants `
   --chapter story/drafting/LeSilenceDesAlgorithmes/20260118_213305_draft_response.md `
   --styles "mélancolique,brutal,poétique,minimaliste" `
   --wait
 ```
 
 **Sortie :**
-- Fichiers générés dans `story/drafting/<titre_histoire>/`
+- Fichiers générés dans `livre/story/drafting/<titre_histoire>/`
 - Nommage : `YYYYMMDD_HHMMSS_draft_variant_<style>.md`
-- Métadonnées dans `story/drafting/batches/msgbatch_<id>_metadata.json`
+- Métadonnées dans `livre/story/drafting/batches/msgbatch_<id>_metadata.json`
 
 ---
 
@@ -79,6 +120,14 @@ Génère plusieurs fiches de recherche structurées sur un thème.
 
 **Syntaxe :**
 ```powershell
+# Via helper
+../batch-run.ps1 research `
+  --topic "<thème_principal>" `
+  --subtopics "sous-thème1,sous-thème2,sous-thème3" `
+  [--count <nombre>] `
+  [--wait]
+
+# Directement
 python -m cli.batch research `
   --topic "<thème_principal>" `
   --subtopics "sous-thème1,sous-thème2,sous-thème3" `
@@ -114,12 +163,16 @@ Affiche le statut détaillé d'un batch en cours ou terminé.
 
 **Syntaxe :**
 ```powershell
+# Via helper
+../batch-run.ps1 status --batch-id <msgbatch_id>
+
+# Directement
 python -m cli.batch status --batch-id <msgbatch_id>
 ```
 
 **Exemple :**
 ```powershell
-python -m cli.batch status --batch-id msgbatch_014R2qqquriKSPkS2WYBkRXv
+../batch-run.ps1 status --batch-id msgbatch_014R2qqquriKSPkS2WYBkRXv
 ```
 
 **Informations affichées :**
@@ -136,19 +189,23 @@ Télécharge et sauvegarde tous les résultats d'un batch terminé.
 
 **Syntaxe :**
 ```powershell
+# Via helper
+../batch-run.ps1 download --batch-id <msgbatch_id>
+
+# Directement
 python -m cli.batch download --batch-id <msgbatch_id>
 ```
 
 **Exemple :**
 ```powershell
-python -m cli.batch download --batch-id msgbatch_014R2qqquriKSPkS2WYBkRXv
+../batch-run.ps1 download --batch-id msgbatch_014R2qqquriKSPkS2WYBkRXv
 ```
 
 **Comportement :**
 - Télécharge tous les résultats depuis l'API
 - Sauvegarde selon le type de batch :
-  - `draft-variants` → `story/drafting/<titre>/`
-  - `research` → `story/research/`
+  - `draft-variants` → `livre/story/drafting/<titre>/`
+  - `research` → `livre/story/research/`
 - Crée/met à jour le fichier `_metadata.json`
 - Affiche un résumé : fichiers sauvegardés, erreurs éventuelles
 
@@ -160,12 +217,16 @@ Liste les derniers batchs avec leur statut.
 
 **Syntaxe :**
 ```powershell
+# Via helper
+../batch-run.ps1 list [--limit <nombre>]
+
+# Directement
 python -m cli.batch list [--limit <nombre>]
 ```
 
 **Exemple :**
 ```powershell
-python -m cli.batch list --limit 10
+../batch-run.ps1 list --limit 10
 ```
 
 **Affichage :**
@@ -183,18 +244,18 @@ python -m cli.batch list --limit 10
 ### Scénario 1 : Variations d'un chapitre
 
 ```powershell
-# 1. Lancer la génération
-python -m cli.batch draft-variants `
+# 1. Lancer la génération (via helper depuis livre1-truby)
+../batch-run.ps1 draft-variants `
   --chapter story/drafting/MonHistoire/chapitre_01.md `
   --styles "sombre,léger,lyrique"
 
 # Sortie : msgbatch_abc123xyz
 
 # 2. Vérifier l'avancement (après quelques minutes)
-python -m cli.batch status --batch-id msgbatch_abc123xyz
+../batch-run.ps1 status --batch-id msgbatch_abc123xyz
 
 # 3. Télécharger quand terminé (ended)
-python -m cli.batch download --batch-id msgbatch_abc123xyz
+../batch-run.ps1 download --batch-id msgbatch_abc123xyz
 
 # 4. Consulter les fichiers générés
 ls story/drafting/MonHistoire/*_variant_*.md
@@ -203,8 +264,8 @@ ls story/drafting/MonHistoire/*_variant_*.md
 ### Scénario 2 : Recherche documentaire
 
 ```powershell
-# 1. Lancer la recherche
-python -m cli.batch research `
+# 1. Lancer la recherche (via helper)
+../batch-run.ps1 research `
   --topic "Prémisse Truby" `
   --subtopics "identité,moi" `
   --count 5 `

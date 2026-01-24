@@ -45,6 +45,7 @@ desktop.ini
 # StoryKit outputs
 out/
 temp/image-cache/
+temp/
 
 # Logs
 *.log

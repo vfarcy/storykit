@@ -3,7 +3,26 @@ param(
     [string]$Editor = 'notepad'
 )
 
-$promptsDir = Join-Path $PSScriptRoot '..' 'out' 'prompts'
+# Détecter le livre courant en cherchant storykit.config.yaml
+function Find-BookRoot {
+    $current = Get-Location
+    while ($current) {
+        $configPath = Join-Path $current 'storykit.config.yaml'
+        if (Test-Path $configPath) { return $current }
+        $parent = Split-Path $current -Parent
+        if ($parent -eq $current) { break }  # Racine atteinte
+        $current = $parent
+    }
+    return $null
+}
+
+$bookRoot = Find-BookRoot
+if (-not $bookRoot) {
+    Write-Error "Aucun livre détecté (storykit.config.yaml introuvable). Lancez depuis un répertoire livre*/ ou ses sous-dossiers."
+    exit 1
+}
+
+$promptsDir = Join-Path $bookRoot 'out' 'prompts'
 if (-not (Test-Path $promptsDir)) {
     Write-Error "Dossier introuvable: $promptsDir"
     exit 1
