@@ -26,17 +26,17 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 
 # Détecter le livre en cours en cherchant depuis le répertoire courant
 function Find-CurrentBook {
-    $current = Get-Location
+    $current = (Get-Location).Path
     
     # Chercher storykit.config.yaml en montant l'arborescence
-    while ($true) {
+    while ($current) {
         $configPath = Join-Path $current "storykit.config.yaml"
         if (Test-Path $configPath) {
             return $current
         }
         
         $parent = Split-Path -Parent $current
-        if ($parent -eq $current) { 
+        if ($parent -eq $current -or -not $parent) { 
             break  # on est à la racine
         }
         $current = $parent
@@ -48,7 +48,15 @@ function Find-CurrentBook {
 $bookPath = Find-CurrentBook
 
 if (-not $bookPath) {
-    Write-Error "Erreur: impossible de détecter le livre en cours (storykit.config.yaml non trouvé)"
+    Write-Host "✗ ERREUR : Impossible de détecter le livre en cours" -ForegroundColor Red
+    Write-Host "   Le fichier storykit.config.yaml n'a pas été trouvé" -ForegroundColor Yellow
+    Write-Host "" -ForegroundColor White
+    Write-Host "   Pour utiliser StoryKit, naviguez vers un livre :" -ForegroundColor Cyan
+    Write-Host "   - cd livre1-truby" -ForegroundColor White
+    Write-Host "   - cd livre2-monsoon" -ForegroundColor White
+    Write-Host "   - ou un autre dossier contenant storykit.config.yaml" -ForegroundColor White
+    Write-Host "" -ForegroundColor White
+    Write-Host "   Puis relancez : sk validate" -ForegroundColor Green
     exit 1
 }
 
