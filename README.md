@@ -69,32 +69,117 @@ de ces fichiers ;
 
 ```
 Repository/
-├─ storykit-run.ps1       # Helper pour CLI (cross-directory)
-├─ batch-run.ps1          # Helper pour batch (cross-directory)
-├─ cli/                   # storykit.py, batch.py + adapters (Claude/OpenAI/Gemini)
-├─ tools/                 # Utilitaires PowerShell
-├─ templates/             # Modèles d'artefacts
-├─ livre1-truby/          # Projet 1 (complet, en production)
+├─ .venvWORK/              # Environnement virtuel Python (ou .venv)
+├─ .vscode/
+│  └─ tasks.json           # Tâches VS Code pour batch.py
+├─ .env / .env.example     # Variables d'environnement (clés API, config)
+├─ storykit-run.ps1        # ✨ Helper pour CLI (cross-directory)
+├─ storykit-run.sh         # ✨ Helper pour CLI (Linux/macOS)
+├─ batch-run.ps1           # ✨ Helper pour batch (cross-directory)
+├─ batch-run.sh            # ✨ Helper pour batch (Linux/macOS)
+│
+├─ cli/                    # 🐍 Modules Python
+│  ├─ storykit.py          # CLI principal (validate, assemble)
+│  ├─ batch.py             # CLI batch (draft-variants, research, etc.)
+│  ├─ validate.py          # Validations YAML/MD
+│  └─ adapters/            # Adaptateurs IA (Claude, OpenAI, Gemini)
+│     ├─ base.py
+│     ├─ claude.py
+│     ├─ copilot.py
+│     └─ gemini.py
+│
+├─ tools/                  # 🔧 Scripts utilitaires
+│  ├─ storykit-run.sh      # Helper Linux/macOS
+│  ├─ batch-run.sh         # Helper Linux/macOS
+│  ├─ open-latest.ps1      # Ouvrir dernier prompt (Windows)
+│  ├─ open-latest-response.ps1
+│  └─ README.md
+│
+├─ templates/              # 📋 Modèles d'artefacts
+│  ├─ Truby/
+│  │  ├─ premise.example.md
+│  │  ├─ seven_steps.example.yaml
+│  │  ├─ twenty_two_steps.example.yaml
+│  │  ├─ character_web.example.yaml
+│  │  ├─ moral_argument.example.md
+│  │  ├─ story_world.example.md
+│  │  └─ symbol_web.example.yaml
+│  ├─ Genre/
+│  │  ├─ genre_choice.example.yaml
+│  │  └─ genre_beats.example.yaml
+│  ├─ Outline/
+│  │  ├─ act_map.example.yaml
+│  │  └─ scene_weave.example.md
+│  └─ Style/
+│     ├─ style.example.md
+│     ├─ style.forbidden.example.md
+│     ├─ style.advanced.example.md
+│     └─ style.md.example.md
+│
+├─ livre1-truby/           # 📖 PROJET 1 (isolé, structure complète)
+│  ├─ storykit.config.yaml # Config du projet
+│  ├─ story/
+│  │  ├─ truby/            # Prémisse, 7 étapes, 22 étapes, web, argument moral, monde, symboles
+│  │  │  ├─ premise.md
+│  │  │  ├─ seven_steps.yaml
+│  │  │  ├─ twenty_two_steps.yaml    # Optionnel
+│  │  │  ├─ character_web.yaml
+│  │  │  ├─ moral_argument.md
+│  │  │  ├─ story_world.md           # Optionnel
+│  │  │  └─ symbol_web.yaml          # Optionnel
+│  │  ├─ genre/            # Choix de genre & beats
+│  │  │  ├─ genre_choice.yaml
+│  │  │  └─ genre_beats.yaml
+│  │  ├─ outline/          # Scene‑weave & carte actes/chapitres
+│  │  │  ├─ scene_weave.md
+│  │  │  └─ act_map.yaml              # Optionnel
+│  │  ├─ config/           # Configuration stylistique
+│  │  │  └─ style.md       # Ton, Voix, Rythme (requis)
+│  │  ├─ research/         # Sources, notes, documentation
+│  │  │  └─ *.md
+│  │  ├─ drafting/         # Brouillons de chapitres
+│  │  │  ├─ LeSilenceDesAlgorithmes/
+│  │  │  ├─ SolitudeGeometrique/
+│  │  │  ├─ ClaudeSonnet4-5/
+│  │  │  └─ Gemini3/
+│  │  └─ tasks/            # Tâches éditoriales
+│  │     └─ tasks.yaml
+│  └─ out/                 # 💾 Artefacts générés (par livre!)
+│     ├─ prompts/          # Prompts assemblés
+│     │  ├─ 20260124_132149_premise.md
+│     │  ├─ 20260124_132214_truby7.md
+│     │  ├─ ...
+│     │  └─ YYYYMMDD_HHMMSS_<target>.md
+│     └─ responses/        # Réponses IA téléchargées
+│        └─ YYYYMMDD_HHMMSS_<target>_response.md
+│
+├─ livre2-monsoon/         # 📖 PROJET 2 (structure identique, isolée)
 │  ├─ storykit.config.yaml
 │  ├─ story/
-│  │  ├─ truby/           # Prémisse, 7 étapes, 22 étapes, web, argument moral, monde, symboles
-│  │  ├─ genre/           # Choix de genre & beats
-│  │  ├─ outline/         # Scene‑weave & carte actes/chapitres
-│  │  ├─ research/        # Sources, notes
-│  │  ├─ drafting/        # Brouillons de chapitres
-│  │  ├─ tasks/           # Tâches éditoriales
-│  │  └─ config/          # style.md (Ton, Voix, Rythme)
-│  └─ out/
-│     ├─ prompts/         # Prompts générés pour livre1
-│     └─ responses/        # Réponses IA pour livre1
-├─ livre2-monsoon/        # Projet 2 (structure identique, isolée)
-│  ├─ storykit.config.yaml
-│  ├─ story/
-│  │  └─ [structure identique à livre1]
-│  └─ out/
-│     ├─ prompts/         # Prompts générés pour livre2
-│     └─ responses/        # Réponses IA pour livre2
-└─ [autres livres...]
+│  │  ├─ truby/
+│  │  ├─ genre/
+│  │  ├─ outline/
+│  │  ├─ config/
+│  │  ├─ research/
+│  │  ├─ drafting/
+│  │  └─ tasks/
+│  └─ out/                 # Prompts/réponses ISOLÉS pour livre2
+│     ├─ prompts/
+│     └─ responses/
+│
+├─ [autres livres...]      # Ajouter autant de livres que nécessaire
+│
+├─ Documentation
+│  ├─ README.md            # Ce fichier
+│  ├─ TRUBY_GUIDE.md       # Guide Truby complet
+│  ├─ BATCH_README.md      # Documentation batch API
+│  ├─ AUDIT_REPORT.md      # Historique améliorations
+│  └─ LICENSE
+│
+├─ temp/                   # 🗑️ Fichiers temporaires
+│  └─ image-cache/
+│
+└─ custom-styles/          # 🎨 Styles personnalisés (optionnel)
 ```
 
 **Points clés :**
@@ -102,6 +187,12 @@ Repository/
 - **Détection automatique** : CLI détecte le livre en cherchant `storykit.config.yaml` en remontant depuis le répertoire courant
 - **Isolement complet** : prompts/réponses sont dans `livre/out/`, **pas** dans un dossier global
 - **Helpers cross-directory** : `storykit-run.ps1` et `batch-run.ps1` permettent d'utiliser le CLI/batch de n'importe quel répertoire
+
+⚠️ **Remarque** : Deux dossiers existent encore à la racine du repo (vestiges de l'ancienne architecture, avant janvier 2026) :
+- `/out/` — contient des anciens prompts/réponses globaux (ignorés par le CLI)
+- `/story/` — dossier vide de la structure ancienne
+
+Ils ne sont **jamais utilisés** par le CLI actuel. Tous les nouveaux prompts/réponses sont créés dans `livre*/out/`. Vous pouvez archiver ou supprimer ces dossiers sans impact.
 
 ### 3.1) Fichiers obligatoires et optionnels
 
