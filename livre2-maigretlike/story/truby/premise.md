@@ -1,7 +1,7 @@
 # Prémisse (Livre 2 — Polar Maigret)
 
 ## Phrase germe
-Un vieux commissaire las, hanté par ses doutes sur la justice, doit résoudre un meurtre qui le force à confront ses propres démons et à redécouvrir l'humanité sous le crime.
+Un vieux commissaire las, hanté par ses doutes sur la justice, doit résoudre un meurtre qui le force à confronter ses propres démons et à redécouvrir l'humanité sous le crime.
 
 ## Principe organisateur
 **L'enquête comme miroir** : Chaque découverte sur le criminel et sa victime renforce la question morale du détective : la justice existe-t-elle, ou sommes-nous juste des vengeurs qui s'ignorent ?

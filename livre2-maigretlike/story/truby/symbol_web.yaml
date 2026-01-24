@@ -1,0 +1,41 @@
+symbols:
+  palettes:
+    color:
+      - gris
+      - jaune réverbère
+      - bleu nuit
+    objects:
+      - verre
+      - briquet
+      - pipe
+      - dossier
+      - horloge
+      - carnet
+      - alliance
+      - photo
+      - cravate
+    motifs:
+      - pluie
+      - brume
+      - quais
+      - péniche
+      - pas lents
+  mapping:
+    hero:
+      - verre
+      - briquet
+      - pipe
+      - carnet
+      - horloge
+      - quais
+    opponent:
+      - alliance
+      - photo
+      - cravate
+      - dossier (accusation)
+    story_world:
+      - réverbères jaunes
+      - brume
+      - péniches
+      - cafés
+      - commissariat

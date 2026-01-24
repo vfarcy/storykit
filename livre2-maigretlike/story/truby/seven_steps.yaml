@@ -1,4 +1,10 @@
 seven_steps:
+  # Résumé minimal pour validation
+  weakness_need:
+    internal: "Doute chronique sur la justice; solitude; alcool; besoin d'accepter un ordre imparfait."
+  desire: "Résoudre le meurtre de Simone Arnaud et clore l'affaire honnêtement."
+  opponent:
+    name: "Pierre Maurel et la complexité morale du crime passionnel"
   # ═══════════════════════════════════════════════════════════════════════════
   # ÉTAPE 1 : FAIBLESSE & BESOIN
   # ═══════════════════════════════════════════════════════════════════════════

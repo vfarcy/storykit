@@ -3,6 +3,7 @@ Sobre, mélancolique, introspectif. Ton d'enquête méthodique plutôt que spect
 Éviter le sensationnalisme ; privilégier l'observation psychologique des personnages.
 Légère teinte de cynisme tendre envers la nature humaine.
 
+
 # Voix
 Focalisation interne sur le détective (type Maigret).
 Lexique francophone parisien/français ; références géographiques (quais de la Seine, cafés, commissariats).
@@ -31,3 +32,6 @@ Pas de précipitation ; le rythme suit la lenteur méthodique de l'enquête.
 "L'assassin bondit par la fenêtre, tirant à bout portant sur la foule horrifiée !"
 
 "Maigret expliqua patiemment à l'inspecteur la théorie complète du criminel, révélant ainsi tous les indices au lecteur."
+
+## Show, don't tell
+Utiliserla technique du 'Show, don't tell' (Montre, ne raconte pas). Décris les sensations physiques (odeurs, textures, bruits) plutôt que d'énoncer les émotions du personnage.
