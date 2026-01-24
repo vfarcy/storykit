@@ -14,7 +14,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # Vérifier que le repo est valide
-if [ ! -f "$REPO_ROOT/livre1-truby/storykit.config.yaml" ]; then
+if [ ! -d "$REPO_ROOT/cli" ]; then
     echo "✗ ERREUR : Impossible de trouver le répertoire du projet StoryKit"
     echo "   Assurez-vous d'être dans le repository story-repo-polar"
     echo "   Chemin attendu : $REPO_ROOT"
@@ -32,6 +32,7 @@ else
     exit 1
 fi
 
-# Exécuter la commande
-cd "$REPO_ROOT"
+# Ajouter la racine du repo au PYTHONPATH pour trouver le module cli
+# On reste dans le répertoire courant pour que les chemins relatifs fonctionnent
+export PYTHONPATH="$REPO_ROOT:$PYTHONPATH"
 python -m cli.batch "$@"
