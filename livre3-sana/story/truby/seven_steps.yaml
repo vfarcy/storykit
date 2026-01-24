@@ -1,0 +1,132 @@
+
+seven_steps:
+  weakness_need:
+    internal: "Toujours à douter, toujours à picoler, et toujours à se marrer pour pas pleurer. Besoin d’accepter que la justice, c’est pas du couscous garni : y’a des grumeaux."
+  desire: "Résoudre le meurtre de Simone Arnaud, mais surtout prouver qu’un flic grande gueule peut encore faire le boulot sans finir à la casse."
+  opponent:
+    name: "Pierre Maurel, et tous les zigotos qui transforment un crime passionnel en sac de nœuds moral."
+  step_1_weakness_need:
+    label: "Faiblesse psychologique & Besoin moral"
+    weakness:
+      psychological: >
+        Notre commissaire, il a la cinquantaine bien tapée, la bedaine qui déborde et le foie qui crie grâce. Il doute de tout, surtout de lui-même, et il planque ses angoisses derrière des vannes à deux balles. La justice ? Il y croit encore, mais comme on croit au Père Noël : pour faire plaisir aux gosses.
+      manifestation: >
+        Il rentre tard, il s’enfile un canon, il relit les vieux dossiers en se demandant s’il n’a pas envoyé un innocent au trou. Il fait le malin au bureau, mais le soir, il cause à son chat et à sa bouteille.
+      root_cause: >
+        Une vieille affaire qui lui colle à la peau : un type envoyé à l’échafaud, et si ça se trouve, c’était pas le bon. Depuis, il ferme les dossiers comme on ferme les yeux : à regret.
+    need:
+      moral: >
+        Il doit piger que la justice, c’est pas la perfection, c’est juste le moins pire. Qu’on peut coffrer un salaud sans se prendre pour Dieu. Et qu’on peut rester humain, même en serrant des mains sales.
+      transformation_required: >
+        Faut qu’il passe du rêve de justice nickel à l’acceptation du bazar humain. Trouver la noblesse dans le fait de continuer, même quand c’est pas glorieux.
+      cost_of_ignoring: >
+        S’il pige pas, il finit vieux pochtron, ou pire : indifférent. Et là, c’est la vraie mort du flic.
+  step_2_desire:
+    label: "Désir conscient (objectif externe)"
+    conscious_goal: >
+      Résoudre le meurtre de Simone Arnaud, mais surtout montrer qu’un flic à l’ancienne, ça peut encore faire le job sans IA ni gadgets. Et, entre nous, rentrer chez lui avec la conscience pas trop sale.
+    strategy: >
+      Interroger tout ce qui bouge, flairer les embrouilles, et balancer des vannes pour détendre l’atmosphère (ou l’enquêté). Laisser traîner ses oreilles au bistrot, et ses yeux sur les détails qui clochent.
+    false_belief: >
+      "Si je fais tout dans les règles, la vérité va tomber toute seule. Suffit d’être patient et de pas se laisser embobiner."
+    irony: >
+      Plus il avance, plus il pige que la vérité, c’est comme le pastis : ça se trouble dès qu’on remue un peu trop. Et que les victimes sont rarement des anges.
+    inciting_incident: >
+      On retrouve Simone, raide sur son lit, pas un poil de lutte, pas de vol, rien. Juste un parfum de drame intime. Et là, notre flic sent que ça va pas être du gâteau.
+  step_3_opponent:
+    label: "Opposant principal (la complexité humaine)"
+    identity: "Le secret de Simone — et l’humanité du criminel"
+    nature: >
+      Pas juste un méchant, mais tout un tas de secrets, de mensonges, de passions à la noix. Plus il creuse, plus il voit que tout le monde a une bonne raison de mentir, et que la justice, c’est pas un jeu d’enfant.
+    function_narrative: >
+      L’opposant, c’est la vie elle-même : bordélique, injuste, pleine de surprises. Notre flic doit arrêter de croire que tout est simple, sinon il va se faire balader.
+    moral_argument_inverse: >
+      "La justice, c’est pour les naïfs. La vraie vie, c’est magouille, coups bas et petits arrangements."
+    power_evolution:
+      act_1: "Simone, c’est juste un nom sur un dossier."
+      act_2: "Simone devient une vraie personne, avec ses failles, ses secrets, ses amants."
+      act_3: "Le flic se rend compte qu’il ressemble plus au coupable qu’il voudrait l’avouer."
+  step_4_plan:
+    label: "Plan du flic (stratégie à la San-Antonio)"
+    initial_strategy:
+      phase_1: >
+        Faire le tour des suspects, poser des questions qui piquent, et surtout écouter les ragots du quartier. Rien de tel qu’un bon vieux café pour délier les langues.
+      phase_2: >
+        Mettre la pression sur le mari, faire parler la voisine, et surveiller l’amant du coin de l’œil. Surtout, ne jamais montrer qu’on a pigé le truc.
+      phase_3: >
+        Coincer le coupable dans ses contradictions, et lui balancer la vérité en pleine poire, avec une vanne pour la route.
+    tactical_decisions:
+      - "Toujours avoir un carnet et un stylo, et un alibi pour chaque verre."
+      - "Faire croire qu’on est plus bête qu’on ne l’est, pour que les autres se trahissent."
+      - "Ne jamais refuser un café, ni une info, même louche."
+      - "Laisser l’adjoint faire le sale boulot, mais garder l’œil sur tout."
+    plan_flaw: >
+      Plus il s’attache aux suspects, plus il doute. Il voit l’humain derrière le coupable, et ça, ça complique tout.
+  step_5_battle:
+    label: "Bataille finale (confrontation morale et punchlines)"
+    arena: "Un bistrot parisien, tard dans la nuit"
+    setup: >
+      Le flic a coincé Pierre Maurel, mais au lieu de l’engueuler, il lui offre un verre. Discussion à cœur ouvert, entre deux vannes et trois silences lourds.
+    initial_confrontation:
+      question: >
+        "Alors, Pierrot, t’as craqué pour Simone ou t’as juste eu la main lourde ?"
+      response: >
+        Pierre baisse les yeux, avoue tout, mais sans haine. Juste de la fatigue et du regret.
+    climax_moment:
+      action: >
+        Pierre raconte comment il a tout foiré, le flic écoute, sans juger. Il pige que la frontière entre salaud et victime, c’est mince comme une feuille de PQ.
+      realization: >
+        Le flic comprend qu’il n’est pas là pour punir, mais pour empêcher que ça recommence. La justice, c’est pas la vengeance.
+    moral_dilemma:
+      external: >
+        L’adjoint veut boucler l’affaire, faire du chiffre. Le flic hésite, mais il sait qu’il doit faire son boulot, même si ça lui arrache le cœur.
+      internal: >
+        Il arrête Pierre, mais il sait qu’il vient de perdre un peu plus de sa naïveté. Il rentre chez lui, la gorge serrée, mais la conscience droite.
+    resolution:
+      action: >
+        Il signe les papiers, serre la main de Pierre, et lui glisse : "T’aurais dû choisir le tricot, mon vieux." Puis il sort, la nuit sur les épaules.
+  step_6_self_revelation:
+    label: "Révélation intérieure (transformation morale)"
+    moment_of_clarity:
+      location: "Un pont sur la Seine, à l’aube"
+      realization: >
+        Il pige enfin que la justice, c’est pas un idéal, c’est un boulot. Faut faire de son mieux, même quand c’est moche. Et garder un peu d’humour, sinon on finit fou.
+    core_understanding: >
+      Il arrête de se prendre pour un héros. Il devient juste un type qui fait ce qu’il peut, avec ses failles et ses doutes. Et c’est déjà pas mal.
+    moral_truth: >
+      La vraie noblesse, c’est de continuer à chercher la vérité, même quand elle fait mal. Et de rester humain, même en serrant des mains sales.
+    link_to_need: >
+      Son doute, c’est sa force. C’est parce qu’il doute qu’il reste du bon côté de la barrière.
+    cost_paid: >
+      Il a perdu ses illusions, mais il a gagné le droit de se regarder dans la glace. Il boit moins, mais il rigole plus.
+  step_7_new_equilibrium:
+    label: "Nouvel équilibre (fin ouverte, mais digne)"
+    external_state:
+      professional: >
+        L’affaire est classée, Pierre est sous les verrous, mais le flic sait que la prochaine histoire sera tout aussi tordue. Il garde son badge, son humour, et son vieux manteau râpé.
+      relational: >
+        L’adjoint ne comprend toujours rien, mais il commence à respecter le vieux. Le flic lui apprend deux-trois trucs sur la vie, entre deux cafés.
+      personal: >
+        Il rentre chez lui, caresse son chat, et se sert un dernier verre. Il pense à Simone, à Pierre, à tous les autres. Il sait qu’il ne sauvera pas le monde, mais il continue.
+    internal_state:
+      psychological: >
+        Le doute est toujours là, mais il ne fait plus mal. C’est devenu un vieux pote, un garde-fou.
+      philosophical: >
+        Il ne croit plus à la justice avec un grand J, mais il croit à l’humanité, même cabossée.
+      emotional: >
+        Il a appris à pleurer en rigolant, et à rigoler en pleurant. C’est ça, la vie de flic.
+    final_image:
+      location: "Un bistrot au petit matin, Paris qui s’éveille"
+      scene: >
+        Le flic regarde la ville, un café à la main, et se dit que, malgré tout, il aime encore ce foutu métier.
+      sound: >
+        Les bruits de Paris, les vannes des collègues, et le silence complice du matin.
+      closure: >
+        Il sort, relève le col de son manteau, et s’en va vers la prochaine embrouille, le sourire en coin.
+    thematic_statement: >
+      La justice, c’est pas parfait, mais c’est mieux que rien. Et tant qu’il y aura des flics pour douter, y’aura de l’espoir.
+    moral_of_story: >
+      "On n’est pas des héros, mais on fait le boulot. Et parfois, c’est déjà beaucoup."
+    open_question: >
+      "Faut-il être un peu désabusé pour rester humain dans ce métier ?"
+

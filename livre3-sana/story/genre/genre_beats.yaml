@@ -1,0 +1,42 @@
+# Liste complète des beats pour synchronisation
+required_beats:
+  - id: g01
+    name: "Découverte du corps (Anomalie initiale)"
+    description: "Simone Arnaud est trouvée étranglée dans son appartement. Pas de lutte, pas de vol : crime intime."
+    status: locked
+  - id: g02
+    name: "Cercles de suspects"
+    description: "Mari délaissé, voisins silencieux, amant caché : Matthieu dresse le cercle proche."
+    status: locked
+  - id: g03
+    name: "Fausse piste (Red Herring)"
+    description: "Un voisin jaloux ou un collègue rancunier semble idéal, mais l'alibi tient."
+    status: locked
+  - id: g04
+    name: "Confidences sur la victime"
+    description: "Simone n'était pas qu'une victime : mensonges, liaison, menaces. L'image s'obscurcit."
+    status: locked
+  - id: g05
+    name: "Midpoint — Empathie dangereuse"
+    description: "Matthieu comprend le mobile potentiel (jalousie, peur de tout perdre) et commence à sympathiser."
+    status: locked
+  - id: g06
+    name: "Pression institutionnelle"
+    description: "La hiérarchie veut clore : crime passionnel, dossier plié. Matthieu doute."
+    status: locked
+  - id: g07
+    name: "Confrontation intime"
+    description: "Face-à-face avec l'amant : aveu en larmes. Matthieu voit un homme ordinaire, pas un monstre."
+    status: locked
+  - id: g08
+    name: "Arrestation sans triomphe"
+    description: "Matthieu signe les papiers. Il comprend mais enferme quand même. Justice administrative, pas morale."
+    status: locked
+  - id: g09
+    name: "Révélation intérieure"
+    description: "Sur les quais, il accepte : la justice est impossible, l'ordre est nécessaire. Son doute est sa vertu."
+    status: locked
+  - id: g10
+    name: "Nouvel équilibre gris"
+    description: "Affaire close, vie qui continue. Pas de victoire, juste l'ordre maintenu et la solitude du commissaire."
+    status: locked

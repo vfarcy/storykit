@@ -1,0 +1,7 @@
+acts:
+  - id: I
+    chapters: [1, 2, 3] # Découverte, cercles de suspects, fausse piste.
+  - id: II
+    chapters: [4, 5, 6, 7, 8] # Confidences, empathie (midpoint), pression, confrontation, arrestation.
+  - id: III
+    chapters: [9, 10] # Révélation intérieure et nouvel équilibre gris.

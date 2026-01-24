@@ -1,0 +1,71 @@
+symbols:
+  palettes:
+    color:
+      - gris zinc
+      - jaune pastis
+      - bleu flic
+      - rouge comptoir
+    objects:
+      - verre à ballon
+      - mégot
+      - pipe
+      - carnet à spirale
+      - cravate de travers
+      - dossier qui déborde
+      - horloge fêlée
+      - alliance ternie
+      - photo froissée
+      - trousseau de clés
+      - béret
+      - journal froissé
+      - tablier de bistrot
+    motifs:
+      - pluie qui dégouline
+      - brume sur les quais
+      - péniche qui klaxonne
+      - éclats de rire au comptoir
+      - engueulades de service
+      - pas traînants sur les pavés
+      - lampadaires qui clignotent
+  mapping:
+    hero:
+      - verre à ballon
+      - mégot
+      - pipe
+      - carnet à spirale
+      - horloge fêlée
+      - quais
+      - béret
+    killer:           # Pierre Maurel
+      - alliance ternie
+      - photo froissée
+      - cravate de travers
+      - dossier qui déborde
+    victim:           # Simone Arnaud
+      - photo froissée
+      - carnet à spirale
+      - parfum entêtant
+    young_inspector:  # Inspecteur Julien Morel
+      - carnet à spirale
+      - cravate de travers
+      - stylo neuf
+    widow_or_family:  # Élodie Arnaud (sœur)
+      - photo froissée
+      - dossier qui déborde
+      - mouchoir brodé
+    suspect_secondary: # Paul Delmas (voisin)
+      - briquet
+      - trousseau de clés
+      - journal froissé
+    police_chief:     # Directeur Lefèvre
+      - dossier qui déborde
+      - horloge fêlée
+      - cravate de travers
+      - stylo rouge
+    story_world:
+      - lampadaires qui clignotent
+      - brume sur les quais
+      - péniche qui klaxonne
+      - cafés bruyants
+      - commissariat enfumé
+      - tablier de bistrot
