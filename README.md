@@ -366,6 +366,39 @@ notepad $PROFILE
 # Ajouter la ligne : $env:PYTHONIOENCODING="utf-8"
 ```
 
+### Linux / macOS — aide‑mémoire
+
+```bash
+# Activer l'environnement virtuel (depuis le repo root)
+source .venv/bin/activate
+
+# Vérifier l'interpréteur Python utilisé
+python -c "import sys; print(sys.executable)"
+
+# Depuis n'importe quel répertoire (livre1-truby, livre2-monsoon, etc.)
+../storykit-run.sh validate
+../storykit-run.sh assemble --target premise
+../batch-run.sh list --limit 10
+
+# Si vous préférez utiliser Python directement (depuis repo root)
+python -m cli.storykit validate
+python -m cli.batch list --limit 10
+```
+
+**Encodage UTF-8 (Linux / macOS):**  
+Les helpers `storykit-run.sh` et `batch-run.sh` **forcent automatiquement** l'encodage UTF-8.  
+Si vous utilisez directement `python -m cli.*`, définissez l'encodage en session:
+
+```bash
+# Pour la session courante
+export PYTHONIOENCODING=utf-8
+python -m cli.storykit validate
+
+# Ou permanent : ajouter à votre ~/.bashrc ou ~/.zshrc
+echo 'export PYTHONIOENCODING=utf-8' >> ~/.bashrc
+source ~/.bashrc
+```
+
 ---
 
 ## 5) Configuration
