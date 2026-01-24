@@ -48,24 +48,16 @@ function Get-ToolsPath {
 }
 
 # ============================================
-# 1. Alias rapides pour les scripts
+# Fonctions courtes avec arguments
 # ============================================
 
-# sk = storykit
-New-Alias -Name sk -Value (Get-ToolsPath) + "\storykit-run.ps1" -Force
-
-# b = batch
-New-Alias -Name b -Value (Get-ToolsPath) + "\batch-run.ps1" -Force
-
-# ============================================
-# 2. Fonctions courtes avec arguments
-# ============================================
-
+# sk = storykit (détecte le dossier tools automatiquement)
 function sk {
     $toolsPath = Get-ToolsPath
     & "$toolsPath\storykit-run.ps1" @args
 }
 
+# batch = cli batch (détecte le dossier tools automatiquement)
 function batch {
     $toolsPath = Get-ToolsPath
     & "$toolsPath\batch-run.ps1" @args
