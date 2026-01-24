@@ -28,11 +28,27 @@ symbols:
       - carnet
       - horloge
       - quais
-    opponent:
+    killer:           # Pierre Maurel
       - alliance
       - photo
       - cravate
-      - dossier (accusation)
+      - dossier
+    victim:           # Simone Arnaud
+      - photo
+      - carnet
+    young_inspector:  # Inspecteur Julien Morel
+      - carnet
+      - cravate
+    widow_or_family:  # Élodie Arnaud (sœur)
+      - photo
+      - dossier
+    suspect_secondary: # Paul Delmas (voisin)
+      - briquet
+      - dossier
+    police_chief:     # Directeur Lefèvre
+      - dossier
+      - horloge
+      - cravate
     story_world:
       - réverbères jaunes
       - brume
