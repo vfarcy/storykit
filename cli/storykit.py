@@ -4,7 +4,7 @@
 StoryKit CLI — assemble & validate
 ----------------------------------
 
-Ce CLI propose deux commandes :
+Ce CLI propose trois commandes :
 
 1) assemble : génère un prompt prêt à coller dans ton assistant IA
    Exemples :
@@ -17,6 +17,10 @@ Ce CLI propose deux commandes :
 2) validate : vérifie la validité et la cohérence des fichiers YAML/MD
    Exemples :
      python -m cli.storykit validate
+
+3) structure : affiche la structure synthétique du livre (chapitres, scènes, beats)
+   Exemples :
+     python -m cli.storykit structure
 
 Dépendances : pyyaml (yaml), rich (facultatif pour l’affichage)
 """
@@ -578,8 +582,108 @@ def validate_all(autofix_style: bool, optional_autofix: str) -> list[str]:
     return issues
 
 
+# ---------------------------# Structure : affichage synthétique
 # ---------------------------
-# Main
+
+def show_structure() -> None:
+    """
+    Génère un fichier avec la structure synthétique du livre : chapitres, scènes et beats.
+    """
+    story_root = get_story_root()
+    
+    # Lire act_map.yaml
+    act_map_path = story_root / "outline" / "act_map.yaml"
+    act_map = read_yaml(act_map_path)
+    
+    # Lire scene_weave.md
+    scene_weave_path = story_root / "outline" / "scene_weave.md"
+    scene_weave_text = read_text(scene_weave_path)
+    scenes = _parse_scene_weave_table(scene_weave_text)
+    
+    if not scenes:
+        console.print("[red]Aucune scène trouvée dans scene_weave.md[/red]")
+        return
+    
+    # Construire le contenu du fichier
+    output = ["# Structure du Livre\n"]
+    
+    # Afficher par acte si act_map disponible
+    if act_map and "acts" in act_map:
+        # Créer un mapping des chapitres vers les scènes
+        all_chapters = []
+        for act in act_map["acts"]:
+            all_chapters.extend(act.get("chapters", []))
+        
+        # Grouper les scènes par beat identique
+        scene_index = 0
+        chapter_to_scenes = {}
+        
+        for chapter_num in all_chapters:
+            chapter_to_scenes[chapter_num] = []
+            if scene_index < len(scenes):
+                # Ajouter la scène actuelle
+                current_scene = scenes[scene_index]
+                chapter_to_scenes[chapter_num].append(current_scene)
+                current_beat = current_scene.get("beat", "")
+                scene_index += 1
+                
+                # Ajouter les scènes suivantes si elles ont le même beat
+                while scene_index < len(scenes) and scenes[scene_index].get("beat", "") == current_beat and current_beat:
+                    chapter_to_scenes[chapter_num].append(scenes[scene_index])
+                    scene_index += 1
+        
+        # Générer le contenu par acte
+        for act in act_map["acts"]:
+            act_id = act.get("id", "?")
+            chapters = act.get("chapters", [])
+            output.append(f"\n## Acte {act_id}\n")
+            output.append(f"Chapitres : {', '.join(str(c) for c in chapters)}\n")
+            
+            for chapter_num in chapters:
+                chapter_scenes = chapter_to_scenes.get(chapter_num, [])
+                output.append(f"\n### Chapitre {chapter_num}\n")
+                
+                if chapter_scenes:
+                    for scene in chapter_scenes:
+                        scene_num = scene["index"] or "?"
+                        beat = scene["beat"] or "-"
+                        lieu = scene["lieu"] or "-"
+                        fonction = scene["fonction"] or "-"
+                        output.append(f"- **Scène {scene_num}** [{beat}]: {fonction}\n")
+                        output.append(f"  - Lieu: {lieu}\n")
+                else:
+                    output.append("*(aucune scène)*\n")
+    else:
+        # Affichage simple sans regroupement par acte
+        output.append("\n## Scènes\n")
+        for scene in scenes:
+            idx = scene["index"] or "?"
+            beat = scene["beat"] or "-"
+            lieu = scene["lieu"] or "-"
+            fonction = scene["fonction"] or "-"
+            output.append(f"- **Scène {idx}** [{beat}]: {fonction}\n")
+            output.append(f"  - Lieu: {lieu}\n")
+    
+    output.append(f"\n---\n")
+    output.append(f"**Total:** {len(scenes)} scène(s)\n")
+    
+    # Sauvegarder le fichier dans out/structure
+    _, config_path = detect_current_book()
+    if config_path:
+        out_dir = config_path.parent / "out" / "structure"
+    else:
+        out_dir = ROOT / "out" / "structure"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_path = out_dir / f"{timestamp}_structure.md"
+    
+    output_path.write_text("".join(output), encoding="utf-8")
+    
+    console.print(f"[green]✓ Structure générée[/green]: {output_path.relative_to(ROOT)}")
+
+
+# ---------------------------# Main
 # ---------------------------
 
 def main(argv=None):
@@ -598,6 +702,9 @@ def main(argv=None):
     # validate
     validate = sub.add_parser("validate", help="Valider les YAML/MD et la cohérence du projet")
     validate.add_argument("--no-autofix-style", action="store_true", help="Désactiver l'auto-fix de style.md (Ton/Voix/Rythme)")
+    
+    # structure
+    structure = sub.add_parser("structure", help="Afficher la structure synthétique du livre (chapitres, scènes, beats)")
 
     args = parser.parse_args(argv)
 
@@ -607,6 +714,10 @@ def main(argv=None):
     # Afficher le livre en cours
     book_info = get_book_info()
     console.print(f"[*] Livre en cours: {book_info}", style="dim")
+
+    if args.cmd == "structure":
+        show_structure()
+        return
 
     if args.cmd == "validate":
         cfg = load_config()
