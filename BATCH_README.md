@@ -37,7 +37,9 @@ Le mode **batch** de StoryKit utilise l'API Message Batches de Claude pour gén�
      model: "claude-3-5-sonnet-20241022"
    ```
 
-> **Depuis janvier 2026** : Les commandes batch détectent automatiquement le livre courant via `../batch-run.ps1`. Voir section « Utilisation » ci-dessous.
+> **Depuis janvier 2026** : Les commandes batch détectent automatiquement le livre courant (via `storykit.config.yaml`) et scopent les sorties par livre : `livre*/story/drafting/` au lieu de `story/` global. Voir section « Utilisation » ci-dessous.
+
+> **Note** : Le dossier `story/` à la racine du repo n'est plus utilisé pour les batchs. Toute sortie est rangée dans le livre courant (`livreX/...`).
 
 ---
 
@@ -45,19 +47,28 @@ Le mode **batch** de StoryKit utilise l'API Message Batches de Claude pour gén�
 
 ### Via helpers PowerShell (recommandé)
 
-Depuis n'importe quel répertoire du livre (livre1-truby, livre2-monsoon, etc.) :
+Deux options identiques :
 
+1) **Alias `batch`** (après avoir chargé `tools/load-aliases.ps1`) :
 ```powershell
 # Lancer un batch
-../batch-run.ps1 draft-variants --chapter story/drafting/.../chapitre.md --styles "style1,style2" --wait
+batch draft-variants --chapter story/drafting/.../chapitre.md --styles "style1,style2" --wait
 
 # Vérifier le statut
-../batch-run.ps1 status --batch-id msgbatch_XXXX
+batch status --batch-id msgbatch_XXXX
 
 # Télécharger les résultats
-../batch-run.ps1 download --batch-id msgbatch_XXXX
+batch download --batch-id msgbatch_XXXX
 
 # Lister les batchs récents
+batch list --limit 10
+```
+
+2) **Script direct** (sans alias) :
+```powershell
+../batch-run.ps1 draft-variants --chapter story/drafting/.../chapitre.md --styles "style1,style2" --wait
+../batch-run.ps1 status --batch-id msgbatch_XXXX
+../batch-run.ps1 download --batch-id msgbatch_XXXX
 ../batch-run.ps1 list --limit 10
 ```
 
@@ -108,9 +119,9 @@ python -m cli.batch draft-variants `
 ```
 
 **Sortie :**
-- Fichiers générés dans `livre/story/drafting/<titre_histoire>/`
+- Fichiers générés dans `story/drafting/<titre_histoire>/` (du livre courant)
 - Nommage : `YYYYMMDD_HHMMSS_draft_variant_<style>.md`
-- Métadonnées dans `livre/story/drafting/batches/msgbatch_<id>_metadata.json`
+- Métadonnées dans `story/drafting/batches/msgbatch_<id>_metadata.json` (du livre courant)
 
 ---
 
@@ -151,7 +162,7 @@ python -m cli.batch research `
 ```
 
 **Sortie :**
-- Fichiers dans `story/research/`
+- Fichiers dans `story/research/` (du livre courant)
 - Nommage : `YYYYMMDD_HHMMSS_research_<sous-thème>_<index>_<angle>.md`
 - Angles générés : "Histoire et évolution", "Enjeux contemporains", "Exemples marquants", etc.
 
@@ -203,9 +214,9 @@ python -m cli.batch download --batch-id <msgbatch_id>
 
 **Comportement :**
 - Télécharge tous les résultats depuis l'API
-- Sauvegarde selon le type de batch :
-  - `draft-variants` → `livre/story/drafting/<titre>/`
-  - `research` → `livre/story/research/`
+- Sauvegarde selon le type de batch et le livre courant :
+  - `draft-variants` → `story/drafting/<titre>/`
+  - `research` → `story/research/`
 - Crée/met à jour le fichier `_metadata.json`
 - Affiche un résumé : fichiers sauvegardés, erreurs éventuelles
 
@@ -377,4 +388,4 @@ Vous pouvez ajouter des tâches dans `.vscode/tasks.json` :
 
 ---
 
-**Dernière mise à jour** : 2026-01-23
+**Dernière mise à jour** : 2026-01-24

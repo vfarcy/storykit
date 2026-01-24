@@ -5,15 +5,17 @@ StoryKit Batch CLI — Batch processing pour Claude API
 ------------------------------------------------------
 
 Génération en masse avec réduction de coût de 50% via Message Batches API.
+À partir de janvier 2026, les batchs sont automatiquement scopés par livre (via storykit.config.yaml).
 
 Commandes disponibles :
 
 1) draft-variants : Générer plusieurs variations stylistiques d'un chapitre
-   Exemple :
+   Exemple (depuis livre1-truby) :
      python -m cli.batch draft-variants \
        --chapter story/drafting/LeSilenceDesAlgorithmes/20260118_213305_draft_response.md \
        --styles "mélancolique,brutal,poétique,minimaliste" \
        --wait
+   Sortie : livre1-truby/story/drafting/LeSilenceDesAlgorithmes/
 
 2) research : Générer du contenu de recherche en masse
    Exemple :
@@ -21,6 +23,7 @@ Commandes disponibles :
        --topic "IA et littérature" \
        --subtopics "histoire,éthique,créativité,prix_littéraires" \
        --count 5
+   Sortie : livre1-truby/story/research/
 
 3) status : Vérifier le statut d'un batch
    Exemple :
@@ -58,15 +61,57 @@ except ImportError:
     sys.exit(1)
 
 
+def get_current_book(project_root: Path, chapter_path: Path | None = None) -> Path | None:
+    """
+    Détecte le livre courant en cherchant storykit.config.yaml.
+    Ordre de priorité :
+      1) Chemin du chapitre (si fourni)
+      2) CWD et ses parents
+      3) Sous-dossiers du projet
+    """
+    # 1) Depuis le chemin du chapitre
+    if chapter_path:
+        chapter_path = Path(chapter_path) if not isinstance(chapter_path, Path) else chapter_path
+        current = chapter_path if chapter_path.is_absolute() else Path.cwd() / chapter_path
+        current = current.parent if current.is_file() else current
+        for parent in [current] + list(current.parents):
+            if (parent / "storykit.config.yaml").exists():
+                return parent
+
+    # 2) Depuis le CWD (utile quand on se place dans le livre)
+    cwd = Path.cwd()
+    for parent in [cwd] + list(cwd.parents):
+        if (parent / "storykit.config.yaml").exists():
+            return parent
+
+    # 3) Parcours des sous-dossiers du repo (fallback)
+    for subdir in project_root.iterdir():
+        if subdir.is_dir() and (subdir / "storykit.config.yaml").exists():
+            return subdir
+
+    return None
+
+
 class BatchService:
     """Service pour orchestrer les opérations batch"""
     
-    def __init__(self, project_root: Path):
+    def __init__(self, project_root: Path, chapter_path: Path | None = None):
         self.project_root = project_root
         self.adapter = ClaudeAdapter()
-        self.batch_dir = project_root / "story" / "drafting" / "batches"
+        
+        # Détecte le livre courant et scopes les outputs au livre
+        self.current_book = get_current_book(project_root, chapter_path)
+        if self.current_book:
+            self.batch_dir = self.current_book / "story" / "drafting" / "batches"
+            self.research_dir = self.current_book / "story" / "research"
+            self.drafting_base = self.current_book / "story" / "drafting"
+        else:
+            # Fallback global si pas de livre détecté (pour compatibilité)
+            self.batch_dir = project_root / "story" / "drafting" / "batches"
+            self.research_dir = project_root / "story" / "research"
+            self.drafting_base = project_root / "story" / "drafting"
+        
         self.batch_dir.mkdir(exist_ok=True, parents=True)
-        self.research_dir = project_root / "story" / "research"
         self.research_dir.mkdir(exist_ok=True, parents=True)
     
     def draft_variants(
@@ -88,6 +133,34 @@ class BatchService:
         Returns:
             batch_id
         """
+        # Résoudre le chemin du chapitre
+        chapter_path = Path(chapter_path) if not isinstance(chapter_path, Path) else chapter_path
+        
+        # Si le fichier n'existe pas en absolu, chercher dans les sous-dossiers du projet
+        if not chapter_path.is_absolute():
+            # Essayer le chemin absolu depuis le CWD d'abord
+            abs_path = Path.cwd() / chapter_path
+            if abs_path.exists():
+                chapter_path = abs_path
+            else:
+                # Chercher dans les sous-dossiers du projet (livre1-truby, livre2-maigretlike, etc.)
+                found = False
+                for subdir in self.project_root.iterdir():
+                    if subdir.is_dir():
+                        alt_path = subdir / chapter_path
+                        if alt_path.exists():
+                            chapter_path = alt_path
+                            # Mettre à jour current_book si on a trouvé le fichier
+                            if (subdir / "storykit.config.yaml").exists():
+                                self.current_book = subdir
+                                self.batch_dir = self.current_book / "story" / "drafting" / "batches"
+                                self.research_dir = self.current_book / "story" / "research"
+                                self.drafting_base = self.current_book / "story" / "drafting"
+                                self.batch_dir.mkdir(exist_ok=True, parents=True)
+                                self.research_dir.mkdir(exist_ok=True, parents=True)
+                            found = True
+                            break
+        
         print(f"📖 Lecture du chapitre : {chapter_path.name}")
         
         if not chapter_path.exists():
@@ -99,7 +172,13 @@ class BatchService:
         
         # Charger le style guide si disponible
         if system_context is None:
-            style_file = self.project_root / "story" / "config" / "style.md"
+            # Cherche d'abord dans le livre courant, sinon dans la racine
+            style_file = None
+            if self.current_book:
+                style_file = self.current_book / "story" / "config" / "style.md"
+            if not style_file or not style_file.exists():
+                style_file = self.project_root / "story" / "config" / "style.md"
+            
             if style_file.exists():
                 with open(style_file, 'r', encoding='utf-8') as f:
                     system_context = f.read()
@@ -109,7 +188,11 @@ Tu maîtrises les styles d'écriture variés tout en gardant une cohérence narr
 Adapte le rythme, le vocabulaire et la ponctuation selon la tonalité demandée."""
         
         # Charger le genre principal et la philosophie
-        genre_file = self.project_root / "story" / "genre" / "genre_choice.yaml"
+        genre_file = None
+        if self.current_book:
+            genre_file = self.current_book / "story" / "genre" / "genre_choice.yaml"
+        if not genre_file or not genre_file.exists():
+            genre_file = self.project_root / "story" / "genre" / "genre_choice.yaml"
         genre_context = ""
         if genre_file.exists() and yaml:
             with open(genre_file, 'r', encoding='utf-8') as f:
@@ -573,7 +656,7 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
             print(f"\n✅ Batch terminé !")
             print(f"   Terminé le : {result.get('ended_at', 'N/A')}")
             print(f"\n💡 Télécharger les résultats :")
-            print(f"   python -m cli.batch download --batch-id {batch_id}")
+            print(f"   batch download --batch-id {batch_id}")
     
     def list_batches(self, limit: int = 10):
         """Lister tous les batchs récents"""
@@ -644,9 +727,9 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 
                 # Suggestions d'action
                 if batch.processing_status == 'in_progress':
-                    print(f"   💡 python -m cli.batch status --batch-id {batch.id}")
+                    print(f"   💡 batch status --batch-id {batch.id}")
                 elif batch.processing_status == 'ended' and not downloaded:
-                    print(f"   💡 python -m cli.batch download --batch-id {batch.id}")
+                    print(f"   💡 batch download --batch-id {batch.id}")
                 
                 print()
         
@@ -891,7 +974,16 @@ def main():
     
     # Initialiser le service
     project_root = Path(__file__).resolve().parents[1]
-    service = BatchService(project_root)
+    
+    # Passer le chapter_path pour une meilleure détection du livre
+    chapter_path = None
+    if args.command == 'draft-variants' and hasattr(args, 'chapter'):
+        chapter_path = Path(args.chapter)
+    elif args.command == 'draft-chapters' and hasattr(args, 'chapters'):
+        # Pour draft-chapters, on ne peut pas passer UN chapitre, donc pas de path
+        chapter_path = None
+    
+    service = BatchService(project_root, chapter_path)
     
     # Exécuter la commande
     if args.command == 'draft-variants':

@@ -1,0 +1,11 @@
+{
+  "batch_id": "msgbatch_01BQHMAQQPTcxcgsV9tEQW3F",
+  "type": "draft_variants",
+  "created_at": "2026-01-24T17:42:21.320896",
+  "chapter_file": "livre2-maigretlike\\story\\drafting\\test_batch\\test_chapitre.md",
+  "styles": [
+    "sobre"
+  ],
+  "status": "created",
+  "request_count": 1
+}
