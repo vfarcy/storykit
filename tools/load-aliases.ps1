@@ -75,14 +75,12 @@ function sk {
     & "$toolsPath\storykit-run.ps1" @args
 }
 
-# batch = cli batch (détecte le dossier tools automatiquement)
+# batch = cli batch (fonctionne depuis la racine du repo)
 function batch {
     $toolsPath = Get-ToolsPath
     if (-not $toolsPath) {
-        Write-Host "✗ ERREUR : Vous n'êtes pas dans un répertoire valide" -ForegroundColor Red
-        Write-Host "   Naviguez vers un livre (livre1-truby, livre2-monsoon, etc.)" -ForegroundColor Yellow
-        Write-Host "   ou vers un sous-dossier du repository" -ForegroundColor Gray
-        return
+        # Fallback : utiliser le chemin absolu si on est vraiment loin
+        $toolsPath = "$(Split-Path -Parent $PSScriptRoot)\tools"
     }
     & "$toolsPath\batch-run.ps1" @args
 }
