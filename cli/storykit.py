@@ -313,9 +313,8 @@ def assemble_payload(target: str, chapter: int | None = None) -> str:
         instructions_lines += [
             f"- Rédiger le brouillon du Chapitre {chapter} en suivant le scene-weave correspondant.\n",
             "- Respecter la trajectoire morale et les valeurs en jeu.\n",
-            "- Style : français clair, focalisation interne limitée.\n",
             "- Respecter le style défini dans Style & Voix.\n",
-            "- Sortie : Markdown, sections = scènes, sans méta-commentaires.\n",
+            "- Sortie : Markdown, sections : scènes, sans méta-commentaires.\n",
         ]
     else:
         instructions_lines.append("- Tâche générique : synthétiser et proposer des options.\n")
