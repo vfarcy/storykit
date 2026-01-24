@@ -65,7 +65,7 @@ de ces fichiers ;
 
 ## 3) Arborescence — Architecture multi-livres
 
-**Depuis janvier 2026**, StoryKit supporte **plusieurs livres indépendants** dans un seul repository :
+StoryKit supporte plusieurs livres indépendants** dans un seul repository :
 
 ```
 Repository/
