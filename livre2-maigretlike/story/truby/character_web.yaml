@@ -1,56 +1,163 @@
+
 characters:
   - id: hero
     name: "Commissaire Matthieu"
     function: "protagoniste / détective"
-    weakness: "Tendance à douter de lui-même ; isolement affectif croissant ; alcool comme refuge"
-    need: "Retrouver sa foi en la justice, renouer avec l'humanité malgré les crimes"
-    desire: "Résoudre l'enquête, comprendre le mobile du criminel"
-    moral_argument: "La justice existe-t-elle vraiment, ou n'est-ce que vengeance déguisée ?"
-    contrast_with: 
-      - young_inspector: "l'idéalisme vs. le cynisme tendre"
-      - victim: "l'inaction vs. le dénouement"
-    
+    role: "Conscience vacillante au cœur de la machine"
+    values:
+      - "Ordre vs. Justice"
+      - "Empathie vs. Devoir"
+      - "Silence vs. Vérité"
+    desire: "Résoudre honnêtement la mort de Simone Arnaud, sans se mentir."
+    need: "Accepter l’ordre imparfait sans renier l’humanité des coupables."
+    lie_he_believes: "Une procédure propre suffit à faire naître la vérité."
+    tactics: ["Écouter", "Revenir", "Laisser parler les silences"]
+    relationship_to_hero: "—"
+    symbols: ["verre", "briquet", "pipe", "carnet", "horloge", "quais"]
+    stakes: "S’il échoue: indifférence cynique ou faute judiciaire."
+    contradiction: "Cœur tendre sous une carapace administrative."
+
   - id: killer
     name: "Pierre Maurel"
-    function: "opposant / coupable"
-    role: "Criminel dissimulé dans l'ordre social ; motif complexe et humain"
-    moral_argument_inverse: "La vengeance / la passion / l'honneur justifie le crime"
-    contrast_with:
-      - hero: "l'impulsivité vs. la réflexion méthodique"
-    reveal: "Tardivement ; d'abord suspect secondaire"
-    
+    function: "opposant / coupable (crime passionnel)"
+    role: "Homme ordinaire écrasé par la peur de tout perdre"
+    values:
+      - "Honneur familial vs. Désir"
+      - "Apparences vs. Vérité"
+      - "Contrôle vs. Panique"
+    desire: "Conserver sa double vie intacte (famille et amante)."
+    need: "Regarder son mensonge en face; assumer la perte."
+    lie_he_believes: "Un dernier mensonge sauvera tout."
+    tactics: ["Dissimulation polie", "Alibi prudent", "Larmes retenues"]
+    relationship_to_hero: "Miroir moral: le non-monstre qui a tué."
+    symbols: ["alliance", "cravate", "photo", "dossier"]
+    stakes: "Prison et honte publique; famille brisée."
+    contradiction: "Homme correct, geste irréparable."
+
   - id: victim
     name: "Simone Arnaud"
-    function: "catalyseur / point de départ"
-    role: "Mort bien avant le début du récit ; révélée par bribes"
-    moral_argument: "Sa vie cache des secrets qui expliqueront son meurtre"
-    
+    function: "catalyseur / victime"
+    role: "Présence en creux qui réécrit les vivants"
+    values:
+      - "Liberté vs. Loyauté"
+      - "Vérité intime vs. Secret social"
+    desire: "Être aimée au grand jour; cesser d’être l’ombre."
+    need: "Renoncer à l’ultimatum; choisir sans menacer."
+    lie_she_believes: "La vérité imposée délivre toujours."
+    tactics: ["Mensonges doux", "Carnet dissimulé", "Ultimatums chuchotés"]
+    relationship_to_hero: "Mystère qui ébrèche ses catégories."
+    symbols: ["photo", "carnet"]
+    stakes: "Sa mémoire jugée plus que son meurtre."
+    contradiction: "Victime et actrice de son destin."
+
   - id: young_inspector
     name: "Inspecteur Julien Morel"
     function: "allié / faire-valoir"
-    desire: "Plaire au commissaire, apprendre la vraie méthode"
-    weakness: "Inexpérience ; tendance à sauter aux conclusions"
-    contrast_with:
-      - hero: "l'idéalisme naïf vs. le cynisme tendre du vieux détective"
-    
-  - id: widow_or_family
-    name: "Élodie Arnaud (sœur)"
-    function: "allié / témoignage"
-    role: "Détient des secrets, émotionnellement instable"
-    desire: "Que la justice soit faite ; ou bien : couvrir un secret"
-    
-  - id: suspect_secondary
-    name: "Paul Delmas (voisin)"
-    function: "leurre / conflit local"
-    role: "Criminel secondaire ou complice involontaire"
-    desire: "Se disculper / fuir"
-    contrast_with:
-      - killer: "l'innocent apparent vs. le vrai coupable"
-    
+    role: "Élan de carrière, curiosité trop vive"
+    values:
+      - "Efficacité vs. Justesse"
+      - "Admiration vs. Frustration"
+    desire: "Prouver sa valeur au commissaire."
+    need: "Apprendre la lenteur; écouter les angles morts."
+    lie_he_believes: "Un bon suspect tôt, c’est une bonne enquête."
+    tactics: ["Courses d’alibis", "Confrontations rapides", "Langage procédural"]
+    relationship_to_hero: "Fils professionnel; disciple qui presse trop."
+    symbols: ["carnet", "cravate"]
+    stakes: "Erreur hâtive qui ferme mal le dossier."
+    contradiction: "Zélé et sincère, mais aveugle aux nuances."
+
   - id: police_chief
     name: "Directeur Lefèvre"
-    function: "contrainte institutionnelle"
-    role: "Pouvoir politique, pression pour clore l'affaire"
-    desire: "Fermer le dossier rapidement, éviter le scandale"
-    contrast_with:
-      - hero: "la pragmatique administrative vs. la quête de vérité"
+    function: "antagoniste secondaire / contrainte institutionnelle"
+    role: "Horloge de la Préfecture; politique avant morale"
+    values:
+      - "Image publique vs. Vérité lente"
+      - "Délai vs. Finesse"
+    desire: "Clore vite: ‘crime passionnel, pas de scandale’."
+    need: "Tolérer l’ambiguïté, laisser le temps aux faits."
+    lie_he_believes: "Un dossier fermé est une vérité acquise."
+    tactics: ["Notes sèches", "Pressions hiérarchiques", "Menace feutrée"]
+    relationship_to_hero: "Rappel brutal que l’ordre prime tout."
+    symbols: ["dossier", "horloge", "cravate"]
+    stakes: "Blâme disciplinaire, mutation, dossier enterré."
+    contradiction: "Pas méchant; seulement fidèle au calendrier."
+
+  - id: suspect_secondary
+    name: "Paul Delmas"
+    function: "antagoniste secondaire / leurre"
+    role: "Voisin jaloux, colérique, mais innocent"
+    values:
+      - "Propriété vs. Intrusion"
+      - "Rancœur vs. Peur"
+    desire: "Échapper au soupçon et garder ses secrets (dettes, petits trafics)."
+    need: "Dire la vérité utile sans se condamner."
+    lie_he_believes: "Mentir sur tout le protège de tout."
+    tactics: ["Alibi bricolé", "Éclats de voix", "Briquet qui claque"]
+    relationship_to_hero: "Fausse bonne piste qui teste la méthode."
+    symbols: ["briquet", "dossier"]
+    stakes: "GAV abusive, réputation du quartier."
+    contradiction: "Coupable d’autre chose, innocent du meurtre."
+
+  - id: widow_or_family
+    name: "Élodie Arnaud"
+    function: "alliée ambivalente / famille"
+    role: "Sœur endeuillée qui choisit ses vérités"
+    values:
+      - "Mémoire familiale vs. Faits"
+      - "Pudeur vs. Colère"
+    desire: "Protéger l’image de Simone et la leur."
+    need: "Accepter les zones sombres de sa sœur."
+    lie_she_believes: "Cacher les failles est une forme d’amour."
+    tactics: ["Silences choisis", "Photos triées", "Larmes sèches"]
+    relationship_to_hero: "Source d’indices filtrés."
+    symbols: ["photo", "dossier"]
+    stakes: "Exposition de secrets familiaux."
+    contradiction: "Compatissante, mais gardienne d’omissions."
+
+  - id: ally_revealer
+    name: "Docteure Jeanne Sorel"
+    function: "alliée révélatrice / médecin légiste"
+    role: "Froid scalpel du réel"
+    values:
+      - "Fait vs. Interprétation"
+      - "Mesure vs. Intuition"
+    desire: "Énoncer ce que le corps sait, rien de plus."
+    need: "Entendre parfois ce que le silence raconte."
+    lie_she_believes: "Tout ce qui compte s’écrit en chiffres."
+    tactics: ["Constats précis", "Horaires exacts", "Détails discrets (traces, fibres)"]
+    relationship_to_hero: "Ancre factuelle; ses timings brisent les alibis."
+    symbols: ["dossier", "horloge", "carnet"]
+    stakes: "Erreur d’expertise = affaire tordue pour de bon."
+    contradiction: "Clinique, mais troublée par certaines scènes intimes."
+
+  - id: media_antagonist
+    name: "Antoine Bréval"
+    function: "antagoniste secondaire / journaliste"
+    role: "Faiseur de récit public, friand de passion simple"
+    values:
+      - "Scandale vs. Nuance"
+      - "Vitesse vs. Exactitude"
+    desire: "Titres qui claquent: mari jaloux, crime clair."
+    need: "Admettre que le vrai ne tient pas en manchette."
+    lie_he_believes: "Si ça se lit, c’est que c’est vrai."
+    tactics: ["Micro tendu aux voisins", "Fuites instrumentalisées", "Questions-pièges"]
+    relationship_to_hero: "Met la pression; déforme les silences en aveux."
+    symbols: ["photo", "dossier"]
+    stakes: "Opinion chauffée à blanc, enquête biaisée."
+    contradiction: "Cynique au travail, sincère avec sa mère malade."
+
+  - id: landlord
+    name: "Madame Vidal"
+    function: "alliée périphérique / concierge-observatrice"
+    role: "Mémoire du palier, nez pour les heures et les pas"
+    values:
+      - "Habitude vs. Événement"
+      - "Discrétion vs. Curiosité"
+    desire: "Que l’immeuble reste tranquille et propre."
+    need: "Distinguer le ragot de l’indice."
+    lie_she_believes: "Tout ce qui change est suspect."
+    tactics: ["Clés qui tintent", "Registre des visites", "Remarques sur les odeurs"]
+    relationship_to_hero: "Fragments sensoriels (talons, parfum, horaires) utiles."
+    symbols: ["horloge", "carnet"]
+    stakes: "Se brouiller avec les locataires; perdre son poste."
+    contradiction: "Intrusive, mais protectrice des siens."
