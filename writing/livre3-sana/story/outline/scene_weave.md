@@ -1,3 +1,5 @@
+# Scene Weave
+
 | Chapitre | Scène | Fonction Truby                       | Lieu                   | Conflit                                             | Décision                                   | Valeur en jeu              | Beat |
 |----------|---|--------------------------------------|------------------------|-----------------------------------------------------|--------------------------------------------|----------------------------|------|
 | 1        | 1 | Ghost & Story World                  | Commissariat des quais | Pluie, fatigue, crime intime qui rompt la routine   | Prendre l'affaire personnellement          | Devoir vs. lassitude       | g01  |
