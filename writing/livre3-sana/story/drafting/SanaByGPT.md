@@ -1,82 +1,6 @@
-# Structure du Livre
 
-## Acte I
-Chapitres : 1, 2, 3
-
-### Chapitre 1
-- **Scène ?** [g01]: Ghost & Story World
-  - Lieu: Commissariat des quais
-  - Conflit: Pluie, fatigue, crime intime qui rompt la routine
-  - Décision: Prendre l'affaire personnellement
-- **Scène ?** [g01]: Inciting Event
-  - Lieu: Appartement de Simone
-  - Conflit: Scène sans effraction, mari sidéré
-  - Décision: Refuser l'hypothèse cambriolage
-
-### Chapitre 2
-- **Scène ?** [g02]: Desire
-  - Lieu: Commissariat
-  - Conflit: Hiérarchie veut accuser le mari
-  - Décision: Cartographier les proches et alibis
-
-### Chapitre 3
-- **Scène ?** [g03]: First Revelation & Decision
-  - Lieu: Café du voisin
-  - Conflit: Voisin jaloux plausible mais alibi solide
-  - Décision: Poursuivre la piste malgré la faille
-
-## Acte II
-Chapitres : 4, 5, 6, 7, 8
-
-### Chapitre 4
-- **Scène ?** [g04]: Opponent/Mystery
-  - Lieu: Salon de Simone
-  - Personnages: Simone Arnaud (Catalyseur)
-  - Conflit: Amie révèle mensonges et menaces reçues
-  - Décision: Explorer la face cachée de la victime
-
-### Chapitre 5
-- **Scène ?** [g05]: Midpoint — Empathie dangereuse
-  - Lieu: Appartement de l'amant
-  - Conflit: Confession partielle, peur de tout perdre
-  - Décision: Protéger la source pour obtenir l'aveu
-
-### Chapitre 6
-- **Scène ?** [g06]: Pression institutionnelle
-  - Lieu: Commissariat
-  - Conflit: Chef exige "crime passionnel, dossier plié"
-  - Décision: Négocier 48h supplémentaires
-
-### Chapitre 7
-- **Scène ?** [g07]: Confrontation intime
-  - Lieu: Quai de nuit
-  - Conflit: L'amant veut se livrer puis se ravise
-  - Décision: Forcer un face-à-face final
-
-### Chapitre 8
-- **Scène ?** [g08]: Battle / Arrestation sans triomphe
-  - Lieu: Salle d'interrogatoire
-  - Conflit: Aveu en larmes, prêter serment de ne pas en dire plus
-  - Décision: Signer le PV et déclencher la garde à vue
-
-## Acte III
-Chapitres : 9, 10
-
-### Chapitre 9
-- **Scène ?** [g09]: Self-Revelation / Moral Decision
-  - Lieu: Quai au petit matin
-  - Conflit: Matthieu accepte l'imperfection de la justice
-  - Décision: Endosser l'arrestation malgré l'empathie
-
-### Chapitre 10
-- **Scène ?** [g10]: New Equilibrium
-  - Lieu: Commissariat
-  - Conflit: Affaire close, solitude intacte
-  - Décision: Reprendre la routine avec plus de doute
 
 ---
-**Total:** 11 scène(s)
-
 
 
 # Chapitre 1
@@ -163,6 +87,7 @@ Même quand elle te tend les bras.
 
 *(Fin du Chapitre 1)*
 
+---
 
 # Chapitre 2
 
@@ -248,6 +173,8 @@ Même si elle avait le parfum d’un mensonge bien serré.
 
 *(Fin du Chapitre 2)*
 
+---
+
 # Chapitre 3
 
 ## Scène 6 — Appartement de l’amant
@@ -311,6 +238,8 @@ Et moi, j’étais parti pour marcher longtemps avant de voir le bout du pavé.
 
 *(Fin du Chapitre 3)*
 
+---
+
 # Chapitre 4
 
 ## Scène 7 — Commissariat
@@ -368,6 +297,8 @@ Comme moi.
 ***
 
 *(Fin du Chapitre 4)*
+
+---
 
 # Chapitre 5
 
@@ -439,6 +370,7 @@ C’est un cadeau qu’on arrache.
 
 *(Fin du Chapitre 5)*
 
+---
 
 # Chapitre 6
 
@@ -530,6 +462,8 @@ Et que le pire restait à faire.
 
 *(Fin du Chapitre 6)*
 
+---
+
 # Chapitre 7
 
 ## Scène 10 — Quai au petit matin
@@ -611,6 +545,8 @@ Et moi, ce matin-là, j’étais prêt à la porter.
 ***
 
 *(Fin du Chapitre 7)*
+
+---
 
 # Chapitre 8
 
@@ -715,6 +651,8 @@ et une illusion de moins.
 ***
 
 *(Fin du Chapitre 8)*
+
+---
 
 # Chapitre 9
 
@@ -840,6 +778,8 @@ Mais bordel… que c’était lourd à porter.
 ***
 
 *(Fin du Chapitre 9)*
+
+---
 
 # Chapitre 10
 
