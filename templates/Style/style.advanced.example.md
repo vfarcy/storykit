@@ -1,5 +1,3 @@
-# Exemples avancés — conforme / non conforme
-
 ## Ton
 - Conforme: "Il observa sans dramatiser, pesant les faits comme des pierres froides."
 - Non conforme: "C’était absolument incroyable, une histoire inimaginable qui dépassait tout entendement !!!"

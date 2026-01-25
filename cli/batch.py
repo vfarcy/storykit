@@ -61,7 +61,16 @@ except ImportError:
     sys.exit(1)
 
 
-def get_current_book(project_root: Path, chapter_path: Path | None = None) -> Path | None:
+def find_book_roots(project_root: Path) -> list[Path]:
+    """Retourne les répertoires contenant storykit.config.yaml."""
+    return sorted({p.parent for p in project_root.rglob("storykit.config.yaml")})
+
+
+def get_current_book(
+    project_root: Path,
+    chapter_path: Path | None = None,
+    book_roots: list[Path] | None = None
+) -> Path | None:
     """
     Détecte le livre courant en cherchant storykit.config.yaml.
     Ordre de priorité :
@@ -69,6 +78,8 @@ def get_current_book(project_root: Path, chapter_path: Path | None = None) -> Pa
       2) CWD et ses parents
       3) Sous-dossiers du projet
     """
+    book_roots = book_roots or find_book_roots(project_root)
+
     # 1) Depuis le chemin du chapitre
     if chapter_path:
         chapter_path = Path(chapter_path) if not isinstance(chapter_path, Path) else chapter_path
@@ -78,6 +89,13 @@ def get_current_book(project_root: Path, chapter_path: Path | None = None) -> Pa
             if (parent / "storykit.config.yaml").exists():
                 return parent
 
+        # Essayer de mapper le chemin relatif sur chaque livre connu
+        if not chapter_path.is_absolute():
+            for book in book_roots:
+                alt = book / chapter_path
+                if alt.exists():
+                    return book
+
     # 2) Depuis le CWD (utile quand on se place dans le livre)
     cwd = Path.cwd()
     for parent in [cwd] + list(cwd.parents):
@@ -85,9 +103,8 @@ def get_current_book(project_root: Path, chapter_path: Path | None = None) -> Pa
             return parent
 
     # 3) Parcours des sous-dossiers du repo (fallback)
-    for subdir in project_root.iterdir():
-        if subdir.is_dir() and (subdir / "storykit.config.yaml").exists():
-            return subdir
+    for book in book_roots:
+        return book
 
     return None
 
@@ -98,19 +115,29 @@ class BatchService:
     def __init__(self, project_root: Path, chapter_path: Path | None = None):
         self.project_root = project_root
         self.adapter = ClaudeAdapter()
+        self.book_roots = find_book_roots(project_root)
         
         # Détecte le livre courant et scopes les outputs au livre
-        self.current_book = get_current_book(project_root, chapter_path)
-        if self.current_book:
-            self.batch_dir = self.current_book / "story" / "drafting" / "batches"
-            self.research_dir = self.current_book / "story" / "research"
-            self.drafting_base = self.current_book / "story" / "drafting"
+        initial_book = get_current_book(project_root, chapter_path, self.book_roots)
+        if initial_book:
+            self._set_book(initial_book)
+        elif self.book_roots:
+            self._set_book(self.book_roots[0])
+            print(f"⚠️ Aucun livre détecté, fallback vers {self.current_book.name}")
         else:
             # Fallback global si pas de livre détecté (pour compatibilité)
+            self.current_book = None
             self.batch_dir = project_root / "story" / "drafting" / "batches"
             self.research_dir = project_root / "story" / "research"
             self.drafting_base = project_root / "story" / "drafting"
-        
+            self.batch_dir.mkdir(exist_ok=True, parents=True)
+            self.research_dir.mkdir(exist_ok=True, parents=True)
+
+    def _set_book(self, book_root: Path):
+        self.current_book = book_root
+        self.batch_dir = book_root / "story" / "drafting" / "batches"
+        self.research_dir = book_root / "story" / "research"
+        self.drafting_base = book_root / "story" / "drafting"
         self.batch_dir.mkdir(exist_ok=True, parents=True)
         self.research_dir.mkdir(exist_ok=True, parents=True)
     
@@ -145,21 +172,13 @@ class BatchService:
             else:
                 # Chercher dans les sous-dossiers du projet (livre1-truby, livre2-maigretlike, etc.)
                 found = False
-                for subdir in self.project_root.iterdir():
-                    if subdir.is_dir():
-                        alt_path = subdir / chapter_path
-                        if alt_path.exists():
-                            chapter_path = alt_path
-                            # Mettre à jour current_book si on a trouvé le fichier
-                            if (subdir / "storykit.config.yaml").exists():
-                                self.current_book = subdir
-                                self.batch_dir = self.current_book / "story" / "drafting" / "batches"
-                                self.research_dir = self.current_book / "story" / "research"
-                                self.drafting_base = self.current_book / "story" / "drafting"
-                                self.batch_dir.mkdir(exist_ok=True, parents=True)
-                                self.research_dir.mkdir(exist_ok=True, parents=True)
-                            found = True
-                            break
+                for book_root in self.book_roots:
+                    alt_path = book_root / chapter_path
+                    if alt_path.exists():
+                        chapter_path = alt_path
+                        self._set_book(book_root)
+                        found = True
+                        break
         
         print(f"📖 Lecture du chapitre : {chapter_path.name}")
         
@@ -274,6 +293,9 @@ NOUVELLE VERSION ({style.upper()}) :
             "status": "created",
             "request_count": len(requests)
         }
+        if self.current_book:
+            metadata["book_root"] = str(self.current_book.relative_to(self.project_root))
+            metadata["book_name"] = self.current_book.name
         
         metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
         with open(metadata_file, 'w', encoding='utf-8') as f:
@@ -436,6 +458,9 @@ Tu dois écrire le **Chapitre {chapter_num} : {chapter_title}** d'un roman litt�
             "status": "created",
             "request_count": len(requests)
         }
+        if self.current_book:
+            metadata["book_root"] = str(self.current_book.relative_to(self.project_root))
+            metadata["book_name"] = self.current_book.name
         
         metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
         with open(metadata_file, 'w', encoding='utf-8') as f:
@@ -609,6 +634,9 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
             "status": "created",
             "request_count": len(requests)
         }
+        if self.current_book:
+            metadata["book_root"] = str(self.current_book.relative_to(self.project_root))
+            metadata["book_name"] = self.current_book.name
         
         metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
         with open(metadata_file, 'w', encoding='utf-8') as f:
@@ -671,13 +699,13 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
             
             for batch in batches:
                 # Charger metadata si disponible
-                metadata_file = self.batch_dir / f"{batch.id}_metadata.json"
+                metadata_file = self._find_metadata_file(batch.id)
                 batch_type = "unknown"
                 description = ""
                 downloaded = False
                 saved_count = 0
                 
-                if metadata_file.exists():
+                if metadata_file and metadata_file.exists():
                     with open(metadata_file, 'r', encoding='utf-8') as f:
                         metadata = json.load(f)
                         batch_type = metadata.get('type', 'unknown')
@@ -754,15 +782,43 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
             
             time.sleep(interval)
     
+    def _find_metadata_file(self, batch_id: str) -> Path | None:
+        candidates = []
+        if self.current_book:
+            candidates.append(self.batch_dir / f"{batch_id}_metadata.json")
+        for book in self.book_roots:
+            candidates.append(book / "story" / "drafting" / "batches" / f"{batch_id}_metadata.json")
+        candidates.append(self.project_root / "story" / "drafting" / "batches" / f"{batch_id}_metadata.json")
+
+        seen = set()
+        for path in candidates:
+            if path in seen:
+                continue
+            seen.add(path)
+            if path.exists():
+                return path
+        return None
+
     def download_results(self, batch_id: str):
         """Télécharger et sauvegarder les résultats"""
         # Charger metadata
-        metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
-        if metadata_file.exists():
+        metadata_file = self._find_metadata_file(batch_id)
+        if metadata_file and metadata_file.exists():
             with open(metadata_file, 'r', encoding='utf-8') as f:
                 metadata = json.load(f)
+
+            # Recalibrer le livre si possible
+            book_root = metadata.get("book_root")
+            if book_root:
+                candidate = (self.project_root / book_root).resolve()
+            else:
+                # Métadonnées trouvées dans .../story/drafting/batches/<id>_metadata.json
+                candidate = metadata_file.parent.parent.parent
+            if candidate.exists():
+                self._set_book(candidate)
         else:
             metadata = {"type": "unknown"}
+            metadata_file = self.batch_dir / f"{batch_id}_metadata.json"
         
         print(f"\n📥 Téléchargement des résultats...")
         results = self.adapter.download_batch_results(batch_id)
@@ -790,7 +846,7 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 if metadata['type'] == 'draft_variants':
                     # Sauvegarder dans drafting
                     project_name = Path(metadata['chapter_file']).parent.name
-                    output_dir = self.project_root / "story" / "drafting" / project_name
+                    output_dir = self.drafting_base / project_name
                     output_dir.mkdir(exist_ok=True, parents=True)
                     
                     # Extraire le style du custom_id
@@ -807,7 +863,7 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
                 elif metadata['type'] == 'draft_chapters':
                     # Sauvegarder dans drafting
                     project_name = metadata['project_name']
-                    output_dir = self.project_root / "story" / "drafting" / project_name
+                    output_dir = self.drafting_base / project_name
                     output_dir.mkdir(exist_ok=True, parents=True)
                     
                     # Extraire le numéro de chapitre du custom_id
@@ -841,9 +897,16 @@ Sois précis, factuel et inspirant pour un écrivain de fiction littéraire."""
         print(f"   ❌ Erreurs : {len(errors)}")
         
         if metadata['type'] == 'draft_variants':
-            print(f"\n📁 Fichiers dans : story/drafting/{Path(metadata['chapter_file']).parent.name}/")
+            target_dir = self.drafting_base / Path(metadata['chapter_file']).parent.name
+            try:
+                print(f"\n📁 Fichiers dans : {target_dir.relative_to(self.project_root)}/")
+            except ValueError:
+                print(f"\n📁 Fichiers dans : {target_dir}/")
         elif metadata['type'] == 'research':
-            print(f"\n📁 Fichiers dans : story/research/")
+            try:
+                print(f"\n📁 Fichiers dans : {self.research_dir.relative_to(self.project_root)}/")
+            except ValueError:
+                print(f"\n📁 Fichiers dans : {self.research_dir}/")
         
         # Mettre à jour metadata
         metadata['status'] = 'completed'

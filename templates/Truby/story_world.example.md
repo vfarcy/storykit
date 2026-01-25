@@ -6,7 +6,7 @@ Comment configurer :
 IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
 -->
 
-# Monde de l’histoire
+## Monde de l’histoire
 
 - Ville portuaire moyenne, projets immobiliers massifs, budget municipal opaque.
 - Lieux : tribunal, hôtel de ville, siège du promoteur, chaîne locale TV, parking désert.

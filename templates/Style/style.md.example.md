@@ -7,17 +7,17 @@ Comment configurer :
 IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
 -->
 
-# Style d’écriture
+## Style d’écriture
 - Ton : réaliste, sombre, tension morale.
 - Voix : focalisation interne limitée (3e personne).
 - Rythme : phrases courtes, alternance narration/dialogue.
 - Atmosphère : polar urbain, détails sensoriels.
 
-# Rythme
+### Rythme
 Ex.: Phrases 12–18 mots ; alternance court/long ; paragraphes 3–5 phrases.
 
-# Ton
+### Ton
 Ex.: Intime, sobre, ironie mesurée ; éviter le pathos, jargon.
 
-# Voix
+#### Voix
 Ex.: Focalisation interne limitée ; vocabulaire concret ; métaphores discrètes.

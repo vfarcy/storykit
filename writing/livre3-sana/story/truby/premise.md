@@ -1,5 +1,3 @@
-# Prémisse (Livre 3 — Polar San-Antonio)
-
 ## Phrase germe
 Un flic gouailleur, jamais à court de vannes ni de gnôle, se retrouve embarqué dans une histoire de meurtre qui va lui chatouiller la conscience et lui retourner les tripes, tout en jonglant avec les magouilles, les suspects hauts en couleur et les coups fourrés à la sauce franchouillarde.
 

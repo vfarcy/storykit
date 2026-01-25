@@ -6,8 +6,6 @@ Comment configurer :
 IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
 -->
 
-# Argument moral
-
 ## Thèse (départ)
 La loyauté envers les proches justifie des zones d’ombre.
 
