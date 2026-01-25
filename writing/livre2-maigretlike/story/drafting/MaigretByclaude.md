@@ -1,960 +1,617 @@
 
----
-
 # Chapitre 1
 
-## Scène 1 — Ghost & Story World
+## Scène 1
 
-Le commissaire Matthieu regarda la pluie frapper les vitres du bureau. Des gouttes qui glissaient lentement, comme si elles hésitaient à tomber. Il était sept heures du matin. Le café refroidissait dans la tasse. Il n'y avait pas touché.
+Le commissaire Matthieu poussa la porte vitrée du commissariat. Une flaque d'eau se forma sous ses chaussures. Il ôta son chapeau. L'eau coula sur le col de son manteau.
 
-Le téléphone avait sonné une demi-heure plus tôt. Une voix de l'inspecteur de garde, jeune, trop énergique pour cette heure. "Commissaire, un corps. 14ème arrondissement. Femme, quarante-deux ans. Pas d'effraction apparente."
+L'inspecteur Morel leva les yeux de son bureau.
 
-Matthieu avait raccroché sans dire grand-chose. Il avait enfilé son pardessus. Il avait pris son briquet dans la poche gauche, son carnet dans la droite. Gestes mécaniques de trente ans de carrière.
+— On a un corps, commissaire. Quatorzième arrondissement. Une femme.
 
-Dehors, la Seine était grise. Les péniches avançaient avec cette lenteur qu'il aimait bien. Personne ne pressait personne sur l'eau. Il marcha jusqu'au quai. Le vent froid lui mordit la nuque. Il remonta son col.
+Matthieu accrocha son chapeau au portemanteau. Il regarda par la fenêtre. La pluie tombait sur les quais. Les péniches passaient lentement.
 
-Un crime. Encore un. Il pensa à tous les dossiers qu'il avait fermés. Combien d'hommes en prison. Combien de femmes pleurant dans des parloirs. Combien de vérités qu'il n'avait jamais vraiment comprises.
+— Quand?
 
-Il alluma sa pipe. Le tabac crépita doucement. Il tira une bouffée, regarda la fumée se dissoudre dans la brume. La ville se réveillait autour de lui. Des pas sur les pavés. Des volets qu'on ouvrait. Des voix qui criaient des journaux.
+— Ce matin. Voisin qui a appelé. Elle ne répondait plus depuis deux jours.
 
-Il pensa qu'il aurait pu rester là. Regarder les bateaux. Laisser quelqu'un d'autre s'occuper du cadavre. Mais il savait qu'il n'allait pas rester. Il ne restait jamais.
+Matthieu sortit sa pipe. Il ne l'alluma pas. Trente ans de carrière. Des corps, il en avait vu. Mais celui-là, il le sentait déjà différent. Pas un vol. Pas une bagarre qui tourne mal. Quelque chose d'intime.
 
-Il marcha vers la voiture. L'inspecteur Morel l'attendait déjà, moteur tournant. Trop zélé. Trop jeune. Il avait cette façon de se tenir droit qui agaçait Matthieu. Comme s'il croyait encore que la justice existait.
+— Le mari?
 
-"Commissaire."
+— Sur place. Il a l'air sonné.
 
-"Morel."
+Matthieu hocha la tête. Il pensa à son verre de la veille. À celui d'avant-hier. À tous les verres qui s'alignaient dans sa mémoire comme des dossiers non résolus.
 
-Ils roulèrent en silence. La radio grésillait des bulletins météo. Pluie toute la journée. Matthieu regarda défiler les façades grises. Paris n'avait jamais été aussi laid qu'à l'aube, quand les rêves s'effacent et que le réel s'impose.
+— On y va.
 
-L'appartement était au troisième étage. Pas d'ascenseur. Les escaliers sentaient la cire et le tabac froid. Une concierge les regarda monter, bouche pincée. Elle ne dit rien. Elles ne disaient jamais rien, les concierges, avant qu'on les interroge.
+Dans la voiture, Morel conduisait vite. Matthieu regardait la ville défiler. Paris sous la pluie ressemblait à un vieux manteau qu'on ne peut plus jeter. Usé, mais familier.
 
-La porte était ouverte. Deux agents en uniforme se tenaient dans l'entrée. L'un d'eux avait le teint verdâtre. Il n'avait pas l'habitude des cadavres.
+Morel parlait trop. Il avait vingt-huit ans. Il croyait encore que chaque affaire se résolvait proprement.
 
-Matthieu entra.
+— C'est sûrement le mari. Ça l'est toujours.
 
-## Scène 2 — Inciting Event
+Matthieu ne répondit pas. Il bourra sa pipe. L'odeur du tabac humide monta dans l'habitacle.
 
-L'appartement était petit. Deux pièces. Une cuisine étroite. Des meubles simples mais soignés. Un vase de fleurs sur la table. Des livres rangés sur une étagère. Une vie ordinaire.
+## Scène 2
 
-Le corps était dans la chambre.
+L'immeuble était gris. Six étages sans ascenseur. Matthieu monta lentement. Ses genoux craquaient. Morel le précédait, deux marches à la fois.
 
-Simone Arnaud. C'était le nom que Morel avait noté sur son carnet. Quarante-deux ans. Employée administrative dans une compagnie d'assurance. Célibataire, selon les premiers renseignements.
+Au quatrième, la porte était ouverte. Un homme d'une cinquantaine d'années se tenait dans l'entrée. Chemise froissée. Yeux vides.
 
-Elle était allongée sur le lit. Nue. Les draps froissés sous elle. Les yeux ouverts, fixes. Le cou marqué de contusions violacées. Strangulation. Matthieu n'avait pas besoin du médecin légiste pour le voir.
+— Monsieur Arnaud?
 
-Il s'approcha lentement. Il regarda le visage. Une femme quelconque. Des traits réguliers. Des cheveux châtains coupés court. Rien de remarquable. Rien qui explique pourquoi quelqu'un avait voulu la tuer.
+L'homme hocha la tête.
 
-"Pas de signe de lutte," dit Morel derrière lui. Il consultait son carnet avec application. "Pas d'effraction. La porte n'était pas forcée. Elle a laissé entrer quelqu'un qu'elle connaissait."
+— Commissaire Matthieu. On peut entrer?
 
-Matthieu ne répondit pas. Il observait les mains de la femme. Ongles propres. Pas de trace de griffures. Elle n'avait pas combattu. Peut-être qu'elle n'avait pas eu le temps. Peut-être qu'elle n'avait pas compris ce qui lui arrivait.
+L'appartement sentait le renfermé. Les rideaux étaient tirés. Une lumière jaune filtrait à peine. Matthieu avança dans le couloir.
 
-Il fit le tour de la pièce. Une armoire ouverte. Des vêtements bien rangés. Une commode. Sur le dessus, une photographie encadrée. Un homme et une femme, souriant. Simone et quelqu'un d'autre. Il prit la photo. L'homme avait une quarantaine d'années. Cheveux gris. Costume sombre. Alliance visible à la main gauche.
+La chambre était au fond. La porte entrouverte.
 
-"Le mari ?" demanda Morel.
+Simone Arnaud était allongée sur le lit. Quarante-deux ans, d'après le rapport. Nue sous un drap blanc. Pas de désordre. Pas de lutte. Les meubles intacts. Le visage tourné vers la fenêtre.
 
-"Elle était célibataire, vous avez dit."
+Matthieu s'approcha. Des marques au cou. Strangulation. Récente. Peut-être deux jours. Peut-être moins.
 
-"Oui, commissaire."
+Il regarda autour de lui. Un verre d'eau sur la table de nuit. Un livre fermé. Une alliance au doigt.
 
-Matthieu reposa la photo. Il ouvrit les tiroirs de la commode. Des sous-vêtements. Des bas. Un carnet relié de cuir rouge. Il le prit, le feuilleta rapidement. Une écriture fine, serrée. Des dates. Des heures. Des initiales. P.M. revient. P.M. dit que bientôt. P.M. a peur.
+Morel entra dans la pièce.
 
-Il referma le carnet. Il le glissa dans la poche de son pardessus.
+— Pas d'effraction. C'est quelqu'un qu'elle connaissait.
 
-Dans le salon, un homme était assis sur le canapé. La tête entre les mains. Il tremblait. Un agent se tenait près de lui, mal à l'aise.
+Matthieu se tourna vers le mari. L'homme était resté dans le couloir. Il fixait le mur.
 
-Matthieu s'approcha. L'homme leva les yeux. Visage défait. Yeux rouges. La cinquantaine. Costume froissé.
+— Monsieur Arnaud, vous pouvez me dire ce qui s'est passé?
 
-"Monsieur ?"
+L'homme leva les yeux.
 
-"Arnaud. Claude Arnaud. Je suis... j'étais son frère."
+— Je ne sais pas. Je rentrais du travail. Elle ne répondait pas. J'ai appelé le voisin. On a forcé la porte.
 
-"C'est vous qui l'avez trouvée ?"
+Sa voix était monocorde. Pas de colère. Pas de larmes. Juste un vide.
 
-L'homme hocha la tête. "Elle ne répondait plus au téléphone depuis deux jours. Je me suis inquiété. J'ai utilisé mon double des clés. Je suis entré et..."
+— Vous étiez où ces deux derniers jours?
 
-Sa voix se brisa. Il ne finit pas sa phrase.
+— Au bureau. Puis chez ma sœur. À Versailles. Je peux vous donner son numéro.
 
-Matthieu s'assit à côté de lui. Il sortit son briquet, le tourna entre ses doigts. Un geste qu'il faisait sans y penser, quand il réfléchissait.
+Matthieu hocha la tête. Il sortit son carnet. Il nota l'adresse, le nom de la sœur, l'heure du départ.
 
-"Vous savez si votre sœur voyait quelqu'un ?"
+— Quelqu'un voulait du mal à votre femme?
 
-"Non. Elle était... elle vivait seule. Depuis toujours."
+L'homme secoua la tête.
 
-"Pas de petit ami ? Pas d'homme dans sa vie ?"
+— Non. Personne. Elle était tranquille. Elle travaillait à la bibliothèque. Elle rentrait tous les soirs.
 
-Claude Arnaud le regarda. Il hésita. Matthieu vit l'hésitation. Il attendit.
+Matthieu regarda de nouveau le corps. Rien ne manquait. Pas de violence gratuite. Juste un geste précis. Intime.
 
-"Je ne sais pas," finit par dire l'homme. "Elle ne parlait pas beaucoup de sa vie privée. On se voyait pour les repas de famille. Noël. Pâques. Elle était discrète."
+Il referma son carnet.
 
-Matthieu hocha la tête. Il se leva. Il fit signe à Morel de le suivre.
+— On va avoir besoin de vous interroger au commissariat, monsieur Arnaud.
 
-Dans le couloir, il alluma sa pipe. Le tabac sentait bon. Une odeur chaude dans ce lieu froid.
+L'homme ne protesta pas. Il enfila son manteau.
 
-"C'est quelqu'un qui la connaissait," dit-il doucement. "Quelqu'un qu'elle a laissé entrer. Quelqu'un qui savait qu'elle vivait seule."
+Dans l'escalier, Morel marchait devant.
 
-"Le frère ?" suggéra Morel.
+— C'est lui, commissaire. Forcément.
 
-"Peut-être. Ou quelqu'un d'autre. Un amant. Un collègue. Un voisin."
+Matthieu ne répondit pas. Il pensait au verre d'eau. Au livre fermé. À l'alliance. À la fenêtre vers laquelle elle regardait.
 
-Il tira sur sa pipe. Il pensa à la photographie. À l'homme avec l'alliance. Aux initiales dans le carnet. P.M.
+Quelqu'un l'avait tuée. Quelqu'un qu'elle connaissait. Quelqu'un qu'elle avait laissé entrer.
 
-Il pensa qu'il allait devoir creuser dans la vie de cette femme. Dans ses secrets. Dans ses mensonges. Il pensa qu'il allait découvrir des choses que sa famille ne voulait pas savoir.
+## Scène 3
 
-Il pensa qu'il était fatigué.
+Le commissariat était silencieux. Matthieu s'assit à son bureau. Il ouvrit le dossier. Une photo de Simone. Cheveux bruns. Sourire discret.
 
-"On interroge les voisins," dit-il. "On cherche des témoins. On établit un emploi du temps. Et on retrouve P.M."
+Morel entra avec deux cafés.
 
-Morel nota dans son carnet. Il avait ce zèle du jeune inspecteur qui croit qu'une enquête se résout avec de la méthode et de l'énergie.
+— Le directeur veut qu'on boucle ça vite. Crime conjugal. Ça se plaide bien.
 
-Matthieu redescendit les escaliers. Dehors, la pluie tombait toujours. Les quais luisaient sous les réverbères. Il regarda la Seine couler. Il pensa à tous les corps qu'on y avait repêchés. Tous les crimes qu'on n'avait jamais résolus. Toutes les vérités qu'on n'avait jamais trouvées.
+Matthieu but son café. Il était froid.
 
-Il remonta son col et rentra dans la voiture.
+— On a l'alibi de Versailles à vérifier. Les voisins à interroger. Les collègues de la bibliothèque. On commence par là.
 
-L'affaire Simone Arnaud venait de commencer.
+Morel fronça les sourcils.
+
+— Vous pensez vraiment que c'est pas lui?
+
+Matthieu alluma sa pipe.
+
+— Je pense qu'on ne sait rien. Alors on cherche.
+
+Il regarda par la fenêtre. La pluie avait cessé. Les quais brillaient sous les réverbères.
+
+Il pensa à tous les dossiers qu'il avait classés. Tous les coupables qu'il avait arrêtés. Et à celui qu'il avait peut-être condamné à tort, il y a trente ans. Un homme exécuté. Une affaire propre. Trop propre.
+
+Depuis, il ne croyait plus aux certitudes.
+
+Il se leva. Il prit son manteau.
+
+— Demain matin, on va voir les voisins. Ensuite la bibliothèque. Ensuite on verra.
+
+Morel hocha la tête.
+
+Matthieu sortit. Les quais étaient déserts. Une péniche passait lentement. Il remonta son col.
+
+Il rentra chez lui. Il but un verre. Il regarda le dossier de Simone Arnaud.
+
+Une femme tranquille. Un mari alibi. Un crime sans témoin.
+
+Quelque part, dans cette vie ordonnée, il y avait une fissure. Un secret. Une raison.
+
+Il ferma le dossier. Il éteignit la lumpe.
+
+Demain, il chercherait. Lentement. Sans certitude. Comme toujours.
 
 # Chapitre 2
 
-## Scène 3 — Desire
+## Scène 4
 
-Le directeur Lefèvre posa le dossier sur son bureau. Il regarda Matthieu par-dessus ses lunettes. Un regard qui ne disait rien de bon.
+Le café sentait le marc et la fumée froide. Matthieu s'assit près de la fenêtre. Il commanda un noir. Morel était déjà au comptoir, parlant avec le patron.
 
-"Le frère," dit-il. "Claude Arnaud. Il a découvert le corps. Il avait les clés. Pas d'alibi solide pour la nuit du meurtre."
+Paul Delmas arriva dix minutes plus tard. Cinquante ans, peut-être. Veste en cuir. Mains qui tremblaient légèrement. Il s'assit sans saluer.
 
-Matthieu ne répondit pas. Il fumait sa pipe, debout près de la fenêtre. Dehors, la pluie tombait toujours. Les toits de Paris luisaient comme du métal mouillé.
+— Vous vouliez me voir?
 
-"On l'interroge et on boucle," continua Lefèvre. "Crime familial. Héritage, peut-être. Ou une dispute qui a mal tourné."
+Matthieu hocha la tête. Il sortit son carnet.
 
-"Il pleurait," dit Matthieu doucement.
+— Vous connaissiez Simone Arnaud.
 
-"Pardon ?"
+Ce n'était pas une question. Delmas regarda par la fenêtre.
 
-"Quand il a vu le corps. Il pleurait. Les mains tremblaient. Ce n'était pas joué."
+— Tout le monde la connaissait. L'immeuble est petit.
 
-Lefèvre soupira. Il retira ses lunettes, les essuya avec un mouchoir. Un geste qu'il faisait toujours quand il s'impatientait.
+— Vous vous entendiez bien?
 
-"Matthieu, on a vingt-trois affaires en cours. Le préfet veut des résultats. Pas des nuances psychologiques."
+Delmas alluma une cigarette. Son briquet claqua deux fois avant de prendre.
 
-"Il y avait un carnet," dit Matthieu. "Dans la chambre. Avec des initiales. P.M. Pas C.A."
+— On se saluait. Elle était discrète.
 
-"P.M. ?"
+Matthieu observa ses mains. Les ongles rongés. La cigarette qui tremblait.
 
-"Un amant, probablement. Quelqu'un qu'elle voyait en secret."
+— Où étiez-vous mardi soir?
 
-Lefèvre remit ses lunettes. Il regarda Matthieu avec cette expression qu'il avait quand il calculait les conséquences politiques d'une enquête qui s'éternise.
+— Chez moi. Seul. J'ai regardé la télévision.
 
-"Combien de temps ?"
+Morel s'approcha. Il posa une photo sur la table. Simone, souriante.
 
-"Une semaine. Peut-être deux."
+— Quelqu'un vous a vu?
 
-"Vous avez trois jours."
+Delmas écrasa sa cigarette. Il en alluma une autre immédiatement.
 
-Matthieu tira sur sa pipe. Le tabac était presque fini. Il pensa qu'il devrait en racheter. Il pensa qu'il devrait rentrer chez lui, dormir, oublier cette affaire. Mais il savait qu'il n'allait pas le faire.
+— Non. Je vis seul. Vous vérifierez avec Madame Vidal si vous voulez. Elle note tout.
 
-"Je vais chercher P.M.," dit-il. "Je vais interroger les voisins, les collègues. Je vais reconstituer sa vie."
+Matthieu referma son carnet.
 
-"Et si vous ne trouvez rien ?"
+— On dit que vous aviez des mots avec elle. Des disputes sur le palier.
 
-"Alors j'arrêterai le frère. Mais pas avant d'être sûr."
+Le visage de Delmas se ferma.
 
-Lefèvre hocha la tête. Il reprit le dossier, le referma d'un geste sec.
+— Une fois. Elle recevait tard. Le bruit me dérangeait. J'ai frappé à sa porte. Elle a baissé la radio. C'est tout.
 
-"Trois jours, Matthieu. Après, je passe l'affaire à Durand. Il ne posera pas de questions."
+— Quel genre de bruit?
 
-Matthieu sortit du bureau. Dans le couloir, Morel l'attendait. Carnet à la main, stylo prêt. Cette énergie qui ne s'épuisait jamais.
+— De la musique. Des voix. Elle avait de la visite.
 
-"Commissaire ?"
+Matthieu nota. Des voix. Pluriel.
 
-"On cherche P.M. On commence par l'employeur. La compagnie d'assurance. On interroge ses collègues. On établit un cercle de relations."
+— Un homme?
 
-"Et le frère ?"
+— Je suppose. Une voix grave. Mais je n'ai pas écouté à la porte.
 
-"On le laisse tranquille. Pour l'instant."
+Morel le fixa.
 
-Morel nota dans son carnet. Il fronça les sourcils, comme s'il voulait dire quelque chose mais n'osait pas.
+— Vous étiez jaloux?
 
-"Un problème, Morel ?"
+Delmas éclata d'un rire sec.
 
-"Non, commissaire. C'est juste que... Le directeur a raison, non ? Le frère avait les clés. Il était sur place. C'est lui le suspect évident."
+— Jaloux? Elle aurait pu être ma fille. Non. Je voulais juste dormir.
 
-Matthieu s'arrêta. Il regarda le jeune inspecteur. Il vit dans ses yeux cette certitude qu'il avait eue, lui aussi, il y a trente ans. Avant que le doute s'installe.
+Matthieu se leva. Il paya les cafés.
 
-"Le suspect évident n'est pas toujours le coupable," dit-il. "Parfois, c'est juste le plus visible. On cherche P.M."
+— On aura peut-être besoin de vous rappeler.
 
-Ils descendirent les escaliers. Le commissariat sentait le tabac froid et le papier humide. Des voix montaient des cellules du sous-sol. Des protestations, des pleurs. Le bruit ordinaire de la machine judiciaire qui broie les hommes.
+Delmas haussa les épaules. Il resta assis, fumant sa cigarette, regardant la rue vide.
 
-Dehors, la voiture les attendait. Matthieu monta à l'arrière. Morel démarra. Ils roulèrent vers le 14ème arrondissement. Vers la compagnie d'assurance où Simone Arnaud avait passé vingt ans de sa vie à classer des dossiers.
+Dehors, Morel marchait vite.
 
-Matthieu regarda par la fenêtre. Il pensa au carnet. Aux initiales. P.M. revient. P.M. dit que bientôt. P.M. a peur.
+— C'est lui, commissaire. Nerveux. Pas d'alibi. Les disputes.
 
-Quelqu'un avait peur. Quelqu'un promettait. Quelqu'un revenait.
+Matthieu alluma sa pipe.
 
-Et maintenant Simone était morte.
+— Peut-être. Ou peut-être qu'il a juste peur qu'on découvre autre chose. Des dettes. Un casier. Quelque chose qui n'a rien à voir avec Simone.
 
-Il sortit le carnet de sa poche. Il le feuilleta lentement. L'écriture était fine, appliquée. Celle d'une femme qui prenait soin des détails. Les dates remontaient à deux ans. Toujours les mêmes initiales. Parfois des heures. 18h30, Café de la Gare. 21h, son appartement. 14h, Luxembourg.
+— Mais l'alibi—
 
-Une liaison. Cachée. Probablement avec un homme marié. Un homme qui promettait de quitter sa femme. Un homme qui ne l'avait jamais fait.
+— Tient. Madame Vidal confirme qu'il était chez lui. Elle l'a entendu descendre les poubelles à vingt-deux heures. Elle entend tout.
 
-Matthieu connaissait cette histoire. Il l'avait vue cent fois. Dans les dossiers. Dans les interrogatoires. Dans les larmes des femmes qui attendaient dans les cafés, seules, abandonnées.
+Morel fronça les sourcils.
 
-La voiture s'arrêta devant un immeuble de bureaux. Façade grise. Fenêtres alignées. L'ordre administratif incarné dans la pierre.
+— Alors pourquoi il ment?
 
-Ils montèrent au troisième étage. Une secrétaire les reçut. Visage fermé. Elle les conduisit dans un bureau.
+Matthieu regarda le ciel. La pluie revenait.
 
-Le directeur s'appelait Monsieur Ferrand. Cinquante ans, costume sombre, cravate impeccable. Il serra la main de Matthieu avec cette poigne ferme des hommes qui veulent montrer qu'ils n'ont rien à cacher.
+— Tout le monde ment. La question, c'est pourquoi.
 
-"Terrible," dit-il en s'asseyant. "Simone était une employée modèle. Vingt ans de service. Jamais un retard. Jamais une absence injustifiée."
+## Scène 5
 
-"Elle avait des amis ici ?" demanda Matthieu.
+L'appartement de Simone était silencieux. Élodie Arnaud, la sœur, avait accepté de les recevoir. Elle ouvrit la porte sans un mot.
 
-"Des collègues, oui. Elle déjeunait avec Mademoiselle Bertrand. Elles travaillaient ensemble au service des sinistres."
+Le salon était rangé. Trop rangé. Comme si quelqu'un avait effacé toute trace de vie.
 
-"Pas d'amis masculins ?"
-
-Ferrand hésita. Matthieu vit l'hésitation. Cette petite pause qui signifie qu'on sait quelque chose mais qu'on ne veut pas le dire.
-
-"Monsieur Ferrand ?"
-
-"Non. Enfin, pas que je sache. Simone était... discrète. Elle ne parlait pas beaucoup de sa vie privée."
-
-"Elle voyait quelqu'un ?"
-
-"Je ne crois pas. Elle était célibataire. Elle vivait seule."
-
-Matthieu sortit le carnet. Il le posa sur le bureau.
-
-"Elle tenait un journal. Avec des initiales. P.M. Vous connaissez quelqu'un avec ces initiales ?"
-
-Ferrand regarda le carnet. Ses doigts se crispèrent légèrement sur l'accoudoir de son fauteuil.
-
-"Non," dit-il trop vite. "Je ne vois pas."
-
-Matthieu le regarda dans les yeux. Il vit la sueur qui perlait sur son front. Il vit les mains qui tremblaient.
-
-"Vous êtes sûr ?"
-
-"Certain."
-
-Matthieu reprit le carnet. Il se leva.
-
-"Nous voudrions parler à Mademoiselle Bertrand."
-
-"Bien sûr. Je vais demander qu'on vous conduise."
-
-Ils sortirent du bureau. Dans le couloir, Morel chuchota :
-
-"Il mentait."
-
-"Oui."
-
-"On le cuisine ?"
-
-"Pas encore. Laissons-le mariner. S'il a peur, il fera une erreur."
-
-Mademoiselle Bertrand les reçut dans une petite salle de réunion. Elle avait la quarantaine, cheveux attachés, lunettes sur le nez. Elle tenait un mouchoir qu'elle tordait entre ses mains.
-
-"Je n'arrive pas à y croire," dit-elle. "Simone... elle était tellement gentille."
-
-"Vous étiez proches ?" demanda Matthieu.
-
-"On déjeunait ensemble. Presque tous les jours. On parlait de tout. Enfin, presque tout."
-
-"Presque ?"
-
-Mademoiselle Bertrand baissa les yeux.
-
-"Simone ne parlait jamais de sa vie privée. Jamais d'hommes. Jamais de rendez-vous. C'était comme si... comme si elle gardait un secret."
-
-"Elle voyait quelqu'un ?"
-
-Un silence. Puis, doucement :
-
-"Je crois, oui. Il y a six mois, elle a changé. Elle souriait plus. Elle partait plus tôt. Elle disait qu'elle avait un rendez-vous. Mais elle ne donnait jamais de détails."
-
-"Elle vous a parlé de quelqu'un ? Un nom ? Des initiales ?"
-
-Mademoiselle Bertrand secoua la tête.
-
-"Non. Mais une fois, je l'ai vue au café. Le Café de la Gare, près d'ici. Elle était avec un homme. Ils parlaient. Ils avaient l'air... intimes."
-
-"Vous l'avez reconnu ?"
-
-"Non. Je ne l'ai vu que de dos. Cheveux gris. Costume sombre. Alliance à la main gauche."
-
-Matthieu nota mentalement. Un homme marié. Comme il le pensait.
-
-"Elle recevait des appels ?" demanda Morel.
-
-"Parfois. Elle sortait pour répondre. Elle ne voulait pas qu'on entende."
-
-"Récemment ?"
-
-"Oui. Il y a deux semaines. Elle est revenue les yeux rouges. Comme si elle avait pleuré. Je lui ai demandé si ça allait. Elle a dit que oui. Mais je voyais bien que non."
-
-Matthieu remercia Mademoiselle Bertrand. Ils sortirent de l'immeuble. Sur le trottoir, Morel consulta ses notes.
-
-"Un homme marié. Cheveux gris. Costume sombre. Ça pourrait être n'importe qui."
-
-"P.M.," dit Matthieu. "Il faut trouver P.M."
-
-Ils remontèrent dans la voiture. Matthieu regarda l'immeuble gris. Il pensa à Simone qui sortait tous les jours de ce bâtiment. Qui marchait jusqu'au café. Qui attendait un homme qui ne viendrait peut-être pas.
-
-Il pensa à tous les secrets qu'on cache. Toutes les vies qu'on mène en parallèle. Toutes les promesses qu'on ne tient jamais.
-
-La pluie tombait toujours. Paris noyé sous l'eau grise. Il alluma sa pipe et ferma les yeux.
-
-L'enquête venait vraiment de commencer.
-
-# Chapitre 3
-
-## Scène 4 — First Revelation & Decision
-
-Le Café du Voisin sentait le tabac froid et le café brûlé. Matthieu poussa la porte. Une cloche tinta au-dessus de sa tête. Quelques habitués levèrent les yeux, puis replongèrent dans leurs journaux.
-
-Le patron essuyait le comptoir avec un torchon gris. Il reconnut Matthieu, fit un signe de tête discret.
-
-"Commissaire."
-
-"Monsieur Lebrun."
-
-"C'est pour l'affaire Arnaud ?"
-
-Matthieu ne répondit pas. Il s'assit au comptoir. Le patron posa une tasse devant lui, versa du café sans demander. Un geste mécanique, répété mille fois.
-
-"Paul Delmas," dit Matthieu. "Il est là ?"
-
-Le patron hésita. Ses yeux glissèrent vers une table au fond. Un homme seul, la quarantaine, cheveux noirs, chemise froissée. Il buvait un verre de vin rouge. Ses mains tremblaient légèrement.
-
-"Il est là tous les jours," dit le patron à voix basse. "Depuis ce matin, il a bu quatre verres. Il parle tout seul."
-
-Matthieu prit sa tasse. Il marcha vers la table du fond. Delmas ne leva pas les yeux. Il fixait son verre comme s'il contenait toutes les réponses du monde.
-
-"Monsieur Delmas ?"
-
-L'homme sursauta. Il regarda Matthieu. Ses yeux étaient rouges, injectés de sang. Pas seulement l'alcool. Aussi la peur.
-
-"Je n'ai rien fait," dit-il immédiatement.
-
-Matthieu s'assit en face de lui. Il sortit son briquet, le posa sur la table. Un geste lent, délibéré.
-
-"Je ne vous accuse de rien."
-
-"Alors pourquoi vous êtes là ?"
-
-"Simone Arnaud. Votre voisine. Elle est morte."
-
-Delmas serra les mains autour de son verre. Ses jointures blanchirent.
-
-"Je sais. Tout l'immeuble sait. La concierge ne parle que de ça."
-
-"Vous la connaissiez ?"
-
-"De vue. On se croisait dans l'escalier."
-
-"Jamais plus que ça ?"
-
-Delmas vida son verre d'un trait. Il fit signe au patron d'en apporter un autre.
-
-"Non. Jamais."
-
-Matthieu attendit. Le silence se prolongea. Le patron apporta le vin, repartit sans un mot. Delmas but une gorgée. Ses mains tremblaient toujours.
-
-"On m'a dit que vous aviez des problèmes avec elle," dit Matthieu doucement.
-
-"Des problèmes ?"
-
-"Le bruit. La musique tard le soir. Vous vous êtes plaints à la concierge."
-
-Delmas ricana. Un rire amer, sans joie.
-
-"La musique. Oui. Elle écoutait de la musique classique. Des opéras. Ça traversait les murs. J'ai frappé chez elle une fois. Je lui ai demandé de baisser le son."
-
-"Elle a refusé ?"
-
-"Non. Elle s'est excusée. Elle a baissé. Mais deux jours après, c'était pareil."
-
-"Ça vous énervait ?"
-
-Delmas regarda Matthieu. Ses yeux se rétrécirent.
-
-"Vous pensez que je l'ai tuée pour ça ? Pour de la musique ?"
-
-"Je ne pense rien. J'écoute."
-
-Delmas secoua la tête. Il rit encore, ce rire sans joie.
-
-"Je ne l'ai pas tuée. Je n'ai pas quitté mon appartement cette nuit-là. J'étais seul. Je buvais. Comme tous les soirs."
-
-"Quelqu'un peut le confirmer ?"
-
-"Non. Personne. Je vis seul. Ma femme est partie il y a trois ans. Mes enfants ne me parlent plus. Je bois. Je dors. Je recommence. C'est ma vie."
-
-Matthieu sortit son carnet. Il nota quelques mots. Delmas le regarda faire, les yeux vides.
-
-"Vous avez vu quelqu'un entrer chez elle ? Le soir du meurtre ?"
-
-"Non."
-
-"Les jours précédents ?"
-
-Delmas hésita. Matthieu vit l'hésitation. Cette petite pause qui signifie qu'on sait quelque chose.
-
-"Monsieur Delmas ?"
-
-"Il y avait un homme," dit-il enfin. "Pas souvent. Une fois par semaine, peut-être. Toujours le soir. Il venait tard. Il repartait tard."
-
-"Vous l'avez vu ?"
-
-"Une fois. Dans l'escalier. Je descendais chercher du vin. Il montait. On s'est croisés."
-
-"Vous pourriez le décrire ?"
-
-"Quarante-cinq ans. Cinquante peut-être. Cheveux gris. Costume sombre. Propre sur lui. Un homme qui a de l'argent."
-
-Matthieu nota. Il pensa à la photographie dans l'appartement de Simone. À l'alliance visible sur la main gauche.
-
-"Une alliance ?" demanda-t-il.
-
-Delmas ferma les yeux, chercha dans sa mémoire.
-
-"Oui. Je crois, oui. Une alliance."
-
-"Vous l'avez vu récemment ?"
-
-"Il y a deux semaines. Peut-être trois. Ils se sont disputés. J'ai entendu des voix. Elle criait. Lui aussi."
-
-"Vous avez entendu ce qu'ils disaient ?"
-
-"Non. Les murs sont épais. Juste des voix. Fortes. Puis le silence. Puis la porte qui claque."
-
-Matthieu referma son carnet. Il regarda Delmas. Un homme brisé. Seul. Qui buvait pour oublier. Qui entendait la musique de sa voisine et pensait peut-être à sa femme partie, à ses enfants perdus.
-
-"Vous n'aimiez pas Simone Arnaud ?"
-
-Delmas haussa les épaules.
-
-"Je ne la connaissais pas. Elle était polie. Discrète. Mais cette musique... Ces opéras où les gens meurent en chantant... Ça me rendait fou."
-
-"Assez pour la tuer ?"
-
-Delmas le regarda dans les yeux.
-
-"Non. Pas assez pour ça. Je ne suis pas un meurtrier. Je suis juste un homme qui boit trop et qui vit seul. Si c'était un crime, commissaire, vous m'auriez déjà arrêté."
-
-Matthieu se leva. Il prit son briquet, le glissa dans sa poche.
-
-"Ne quittez pas Paris. Je reviendrai peut-être."
-
-Delmas hocha la tête. Il fit signe au patron d'apporter un autre verre.
-
-Dehors, Morel attendait près de la voiture. Il avait son carnet à la main. Cette impatience qui ne le quittait jamais.
-
-"Alors ?"
-
-"Un homme," dit Matthieu. "Cheveux gris. Alliance. Il venait tard le soir. Il y a eu une dispute il y a deux semaines."
-
-"C'est lui ?"
-
-"Peut-être. Ou peut-être juste un indice de plus."
-
-"Et Delmas ?"
-
-Matthieu regarda la vitrine du café. Il vit Delmas assis à sa table, seul, qui buvait. Un homme qui se noyait lentement dans le vin et le silence.
-
-"Innocent," dit-il. "Mais utile. Il a vu quelque chose."
-
-"Pas d'alibi," insista Morel. "Il était seul. Il buvait. Il avait un mobile."
-
-"La musique ?" Matthieu secoua la tête. "Non. C'est trop simple. Delmas est un homme brisé. Pas un tueur."
-
-"Comment vous savez ?"
-
-Matthieu alluma sa pipe. Il tira une bouffée, regarda la fumée se dissoudre dans l'air froid.
-
-"Parce que j'ai vu des tueurs. Beaucoup. Ils ont tous quelque chose dans les yeux. Une certitude. Une dureté. Delmas n'a que du vide. Ce n'est pas lui."
-
-Morel nota dans son carnet. Il n'avait pas l'air convaincu. Matthieu le comprenait. À son âge, il aurait pensé la même chose. Un suspect sans alibi, avec un mobile, c'était suffisant. L'évidence était là.
-
-Mais l'évidence mentait souvent.
-
-Ils remontèrent dans la voiture. Morel démarra. Matthieu regarda par la fenêtre. Les rues défilaient. Grises. Mouillées. Paris sous la pluie ressemblait à une ville qui pleurait.
-
-Il pensa à l'homme aux cheveux gris. À l'alliance. Aux disputes. Il pensa au carnet de Simone. P.M. revient. P.M. dit que bientôt. P.M. a peur.
-
-Un homme marié. Qui promettait. Qui ne tenait jamais sa promesse. Qui avait peur.
-
-Peur de quoi ?
-
-Peur de perdre sa femme. Ses enfants. Sa vie respectable. Peur que Simone révèle tout. Peur de l'ultimatum.
-
-Matthieu ferma les yeux. Il sentit la fatigue tomber sur lui comme une couverture lourde. Trente ans de carrière. Trente ans à chercher des hommes qui tuaient. Et toujours la même histoire. La peur. Le mensonge. La panique.
-
-Jamais les monstres qu'on imaginait. Juste des hommes ordinaires qui basculaient.
-
-"On retourne au commissariat ?" demanda Morel.
-
-"Non. On va voir la sœur. Élodie Arnaud. Elle sait peut-être qui est P.M."
-
-"Vous pensez qu'elle parlera ?"
-
-"Si elle veut protéger la mémoire de sa sœur, non. Mais si elle veut la vérité..." Matthieu haussa les épaules. "On verra."
-
-La voiture tourna dans une rue étroite. Des immeubles serrés les uns contre les autres. Des fenêtres éclairées où des vies se déroulaient, invisibles, secrètes.
-
-Matthieu pensa à toutes ces vies. À tous ces secrets. Il pensa qu'on ne connaissait jamais vraiment personne. Même pas soi-même.
-
-Il ralluma sa pipe et regarda la pluie tomber.
-
-L'enquête continuait. Lentement. Méthodiquement. Comme toujours.
-
-# Chapitre 4
-
-## Scène 5 — Opponent/Mystery
-
-L'appartement d'Élodie Arnaud sentait la lavande et le vieux bois. Un parfum qui rappelait à Matthieu les maisons de province. Celles où on rangeait les souvenirs dans des armoires fermées à clé.
-
-Elle les fit entrer dans un salon trop bien rangé. Des bibelots alignés sur une étagère. Des coussins disposés avec soin sur le canapé. Pas un grain de poussière visible. L'ordre comme rempart contre le chaos.
-
-"Merci de nous recevoir," dit Matthieu.
-
-Élodie hocha la tête. Elle portait une robe noire, simple. Ses cheveux tirés en arrière. Pas de maquillage. Le visage pâle, les yeux rougis. Elle avait pleuré. Longtemps.
-
-"Asseyez-vous."
-
-Matthieu s'assit dans le fauteuil qu'elle indiquait. Morel resta debout près de la porte, carnet à la main. Toujours prêt.
-
-Élodie se tenait droite sur le canapé. Les mains croisées sur les genoux. Un maintien rigide qui trahissait la tension.
-
-"Vous avez trouvé qui a fait ça ?" demanda-t-elle.
-
-"Pas encore. C'est pour ça qu'on est là."
-
-Elle baissa les yeux. Ses doigts se crispèrent légèrement.
-
-"Je ne sais rien. Ma sœur et moi... on n'était pas très proches."
-
-"Vous vous voyiez quand même ?"
-
-"Les dimanches. Une fois par mois. Elle venait déjeuner. On parlait de choses sans importance. La météo. Les nouvelles du quartier. Rien de personnel."
-
-Matthieu sortit le carnet de Simone. Il le posa sur la table basse entre eux. Élodie le regarda. Ses yeux s'écarquillèrent légèrement.
-
-"Vous reconnaissez ça ?"
-
-"Non."
-
-"C'est le journal de votre sœur. On l'a trouvé dans son appartement."
-
-Un silence. Élodie fixait le carnet comme s'il contenait un serpent.
-
-"Je ne savais pas qu'elle tenait un journal."
-
-"Elle y parle de quelqu'un. P.M. Des initiales qui reviennent souvent. Vous savez qui c'est ?"
-
-Élodie secoua la tête. Trop vite. Matthieu vit le mensonge. Il attendit.
-
-"Madame Arnaud ?"
-
-"Je vous ai dit que je ne savais rien."
-
-Matthieu se pencha en avant. Ses coudes sur les genoux. Un geste qui réduisait la distance, créait une intimité.
-
-"Votre sœur est morte. Étranglée. Par quelqu'un qu'elle connaissait. Par quelqu'un qui venait chez elle tard le soir. Un homme marié. Un homme qui lui promettait de quitter sa femme."
-
-Élodie ferma les yeux. Une larme coula sur sa joue. Elle l'essuya d'un geste brusque.
-
-"Elle méritait mieux," dit-elle doucement.
-
-"Mieux que quoi ?"
-
-"Mieux que... ça. Que cette vie de mensonges. D'attentes. De promesses non tenues."
-
-Matthieu prit le carnet. Il l'ouvrit à une page au hasard. Il lut à voix haute :
-
-"P.M. dit que c'est la dernière fois. Que demain il annoncera tout. Mais je ne le crois plus."
-
-Il leva les yeux vers Élodie.
-
-"Elle ne le croyait plus. Depuis combien de temps ça durait ?"
-
-Élodie ouvrit les yeux. Elle regarda Matthieu. Il y avait de la colère dans son regard. Une colère ancienne, retenue.
-
-"Deux ans. Peut-être plus. Elle me l'a dit il y a six mois. Un dimanche. Elle ne pouvait plus garder le secret. Elle voulait que quelqu'un sache."
-
-"Elle vous a dit qui c'était ?"
-
-"Non. Juste qu'il était marié. Qu'il avait des enfants. Qu'il travaillait dans l'industrie. Qu'il lui promettait toujours la même chose. Bientôt. Encore un peu de patience. Quand les enfants seront plus grands. Quand sa femme ira mieux."
-
-"Sa femme allait mal ?"
-
-"Je ne sais pas. C'est ce qu'il disait. Simone le croyait. Ou elle faisait semblant de le croire."
-
-Matthieu nota mentalement. Un homme marié. Industrie. Femme malade. Les pièces s'assemblaient lentement.
-
-"Votre sœur l'aimait ?"
-
-Élodie rit. Un rire amer, sans joie.
-
-"L'amour. Qu'est-ce que c'est, l'amour ? Elle vivait pour ses coups de téléphone. Pour ses visites. Elle refusait de sortir le soir au cas où il viendrait. Elle achetait des vêtements qu'elle ne portait que pour lui. Elle l'attendait. Toujours. C'est ça, l'amour ?"
-
-Matthieu pensa à tous les couples qu'il avait vus. Les mariages qui s'effritaient. Les amours qui se fanaient. Les promesses qui se brisaient. Il pensa que l'amour était peut-être juste ça. De l'attente. De l'espoir. Et de la déception.
-
-"Elle voulait qu'il quitte sa femme ?"
-
-"Au début, non. Elle se contentait de ce qu'il lui donnait. Quelques heures par semaine. Des promesses. Des mensonges tendres. Mais après un an, elle a changé. Elle voulait plus. Elle voulait sortir avec lui au grand jour. Aller au restaurant. Au théâtre. Marcher dans la rue sans se cacher."
-
-"Il a refusé ?"
-
-"Toujours. Il disait que c'était trop tôt. Qu'il fallait attendre. Elle attendait. Mais l'attente la tuait."
-
-Matthieu feuilleta le carnet. Il trouva une page datée de trois semaines plus tôt. L'écriture était différente. Plus grande. Plus tremblante.
-
-"Je lui ai dit. Je lui ai dit que c'était fini. Que je ne pouvais plus attendre. Il a pleuré. Il m'a suppliée. Il a promis. Encore. Toujours les mêmes promesses."
-
-Il regarda Élodie.
-
-"Elle lui a donné un ultimatum ?"
+— Vous avez commencé à trier ses affaires?
 
 Élodie hocha la tête.
 
-"Oui. Il y a trois semaines. Elle m'a appelée. Elle était en colère. Elle disait qu'elle en avait assez. Qu'elle allait tout dire à sa femme si il ne le faisait pas."
+— Je ne pouvais pas laisser tout comme ça. Mon beau-frère... il ne supporte pas d'être ici.
 
-"Elle l'a fait ?"
+Elle s'assit sur le canapé. Matthieu resta debout.
 
-"Je ne sais pas. On ne s'est plus parlé après. J'ai essayé de l'appeler plusieurs fois. Elle ne répondait pas. Et puis..."
+— Votre sœur avait des problèmes? Des soucis?
 
-Sa voix se brisa. Elle mit la main devant sa bouche.
+— Non. Elle travaillait. Elle rentrait. Elle lisait. Une vie tranquille.
 
-Matthieu attendit. Il laissa le silence faire son travail. Parfois, le silence disait plus que les mots.
+Matthieu sortit son carnet.
 
-"Elle a menacé de tout révéler," finit par dire Élodie. "C'est pour ça qu'il l'a tuée, n'est-ce pas ?"
+— Des amis?
 
-"Peut-être."
+— Quelques-uns. De la bibliothèque surtout. Mais rien de proche.
 
-"Ce n'est pas peut-être. C'est sûr. Il avait peur. Peur de perdre sa famille. Sa réputation. Son confort. Alors il l'a tuée."
+— Un homme?
 
-Matthieu regarda le visage d'Élodie. La colère qui s'y dessinait. La certitude. Il pensa qu'elle avait peut-être raison. Ou peut-être pas. La vérité était rarement aussi simple.
+Le silence dura trop longtemps. Élodie regarda ses mains.
 
-"Elle vous a donné son nom ?" demanda-t-il.
+— Elle était mariée.
 
-"Non. Jamais. Elle disait que c'était pour le protéger. Pour protéger sa famille."
+— Ce n'est pas ce que je vous ai demandé.
 
-"Des détails ? N'importe quoi qui pourrait nous aider ?"
+Élodie se leva. Elle marcha vers la fenêtre.
 
-Élodie réfléchit. Ses yeux se perdirent dans le vide. Cherchant dans sa mémoire.
+— Il y avait quelqu'un. Je ne sais pas qui. Elle ne me l'a jamais dit. Mais je le savais.
 
-"Elle a dit une fois qu'il travaillait dans une usine. Qu'il dirigeait des hommes. Qu'il portait toujours un costume sombre et une cravate. Qu'il sentait le tabac et l'eau de Cologne."
+— Comment?
 
-Matthieu nota. Directeur. Usine. Costume sombre.
+— Elle changeait. Elle souriait plus. Elle s'habillait différemment. Puis elle a arrêté. Il y a trois semaines, peut-être. Elle est redevenue triste.
 
-"Son âge ?"
+Matthieu s'approcha.
 
-"Plus vieux qu'elle. La quarantaine. Peut-être cinquante ans. Elle disait qu'il avait des cheveux gris. Qu'il était beau pour son âge."
+— Triste ou inquiète?
 
-"Des enfants ?"
+Élodie se retourna. Ses yeux étaient secs.
 
-"Deux. Un garçon et une fille. Elle connaissait leurs prénoms. Leurs âges. Elle savait tout de sa vie. Mais lui ne savait rien de la sienne."
+— Les deux. Elle avait peur de quelque chose. Elle vérifiait les portes deux fois. Elle regardait par la fenêtre avant de sortir.
 
-"Comment ça ?"
+— Elle vous en a parlé?
 
-"Il ne venait jamais quand il faisait jour. Il ne l'appelait jamais de chez lui. Il ne lui présentait personne. Pour lui, elle n'existait que dans l'ombre. Dans le secret. Dans le mensonge."
+— Non. Simone ne parlait jamais. Elle gardait tout pour elle.
 
-Matthieu ferma le carnet. Il le glissa dans sa poche.
+Morel intervint.
 
-"Vous pensez que votre sœur méritait ce qui lui est arrivé ?"
+— Des lettres? Un journal?
 
-Élodie le regarda. Ses yeux s'écarquillèrent.
+Élodie hésita. Puis elle ouvrit un tiroir. Elle sortit un petit carnet bleu.
 
-"Quoi ?"
+— Je l'ai trouvé hier. Dans sa table de nuit. Je n'ai pas osé le lire.
 
-"Vous avez dit qu'elle méritait mieux. Mais est-ce qu'elle méritait ce qui lui est arrivé ? Est-ce que menacer un homme marié, c'est pas jouer avec le feu ?"
+Matthieu prit le carnet. Il l'ouvrit. L'écriture était fine, serrée. Des dates. Des initiales. P.M. Toujours P.M.
 
-Le silence tomba. Lourd. Matthieu vit la colère dans les yeux d'Élodie. Mais aussi autre chose. De la culpabilité. Du doute.
+Il lut la dernière page.
 
-"Elle voulait juste être aimée," dit-elle enfin. "C'est un crime ?"
+*"Il dit que c'est impossible. Qu'il a une famille. Que je dois comprendre. Mais je ne peux plus vivre comme ça. Dans l'ombre. Je lui ai dit que s'il ne choisissait pas, je partirais. Ou pire."*
 
-"Non. Mais menacer de détruire une famille, peut-être que c'en est un."
+Matthieu referma le carnet. Il regarda Élodie.
 
-Élodie se leva brusquement. Elle se dirigea vers la fenêtre. Elle regarda dehors. La pluie tombait toujours. Paris gris et mouillé.
+— Vous savez qui est P.M.?
 
-"Vous ne comprenez pas," dit-elle sans se retourner. "Simone n'était pas une briseuse de ménage. Elle était juste seule. Elle voulait quelqu'un. N'importe qui. Et lui, il lui a donné de l'espoir. Puis il le lui a retiré. Encore et encore. C'est lui le monstre. Pas elle."
+Elle secoua la tête.
 
-Matthieu se leva aussi. Il marcha vers la fenêtre. Il se tint à côté d'Élodie. Ils regardèrent la pluie ensemble.
+— Non. Elle ne m'a jamais parlé de lui.
 
-"Les monstres n'existent pas," dit-il doucement. "Il n'y a que des gens qui font des choses monstrueuses. Et parfois, ils ont leurs raisons."
+Matthieu glissa le carnet dans sa poche.
 
-"Vous le défendez ?"
+— On va le garder. Pour l'enquête.
 
-"Non. Je comprends. C'est différent."
+Élodie ne protesta pas. Elle retourna au canapé. Elle s'assit. Elle ne pleurait pas.
 
-Élodie se tourna vers lui. Des larmes coulaient sur ses joues.
+— Elle n'était pas parfaite, commissaire. Elle faisait des erreurs. Mais elle ne méritait pas ça.
 
-"Trouvez-le. S'il vous plaît. Trouvez-le et enfermez-le. Pour Simone. Pour toutes les femmes qui attendent des hommes qui ne viendront jamais."
+Matthieu hocha la tête.
 
-Matthieu hocha la tête. Il sortit son briquet, le tourna entre ses doigts.
+— Personne ne le mérite.
 
-"On va le trouver. Je vous le promets."
+Dans la voiture, Morel conduisait en silence. Puis il parla.
 
-Ils sortirent de l'appartement. Dans la rue, Morel ouvrit son carnet. Il relut ses notes.
+— P.M. Un homme marié. Elle le menaçait. Mobile clair.
 
-"Un directeur d'usine. Quarante-cinq ans. Cheveux gris. Marié. Deux enfants. P.M."
+Matthieu regardait par la fenêtre. Les quais défilaient. Les péniches passaient lentement.
 
-"Pierre Maurel," dit Matthieu.
+— Oui. Mobile clair. Mais quel P.M.?
 
-Morel leva les yeux.
+— On vérifie les noms. Collègues, voisins, relations de la bibliothèque.
 
-"Quoi ?"
+Matthieu alluma sa pipe.
 
-"C'est juste une intuition. Mais on va vérifier. Cherche dans les annuaires. Les usines du 14ème et des arrondissements voisins. Les directeurs dont le nom commence par P.M."
+— On cherche. Doucement. Sans bruit. Si P.M. existe, il a peur. Et la peur rend les gens dangereux. Ou fragiles.
 
-"Il y en a peut-être des dizaines."
+Il pensa au carnet. À l'écriture serrée. À la dernière phrase. *Ou pire.*
 
-"Alors on les verra tous. Un par un. Jusqu'à ce qu'on trouve le bon."
+Simone avait menacé quelqu'un. Quelqu'un qui avait tout à perdre.
 
-Ils montèrent dans la voiture. Matthieu regarda par la fenêtre. Il pensa à Simone. À son carnet. À ses attentes. À ses mensonges à elle aussi. Parce qu'elle mentait en acceptant d'être l'ombre. En acceptant de vivre dans le secret.
+Et maintenant elle était morte.
 
-Il pensa qu'il n'y avait pas de victimes innocentes. Pas de coupables parfaits. Juste des gens qui se mentaient. À eux-mêmes. Aux autres. Jusqu'à ce que le mensonge devienne insupportable.
+# Chapitre 3
 
-La voiture démarra. Paris défilait. Gris. Mouillé. Indifférent.
+## Scène 6
 
-L'enquête se resserrait. Le cercle se fermait. Bientôt, il faudrait regarder P.M. dans les yeux. Et Matthieu savait déjà qu'il y verrait un homme. Pas un monstre.
+L'adresse menait à un immeuble cossu du seizième. Façade blanche. Balcons en fer forgé. Matthieu monta lentement les escaliers. Morel le suivait, carnet à la main.
 
-Juste un homme qui avait eu peur.
+Au troisième étage, une porte en chêne massif. Une plaque en cuivre : *Pierre Maurel, Directeur*.
 
-# Chapitre 5
+Matthieu sonna. Pas de réponse. Il sonna de nouveau.
 
-## Scène 6 — Midpoint / Empathie dangereuse
+La porte s'ouvrit. Un homme apparut. Quarante-cinq ans environ. Cheveux gris aux tempes. Costume sombre. Cravate desserrée. Il regardait Matthieu sans un mot.
 
-Il fallut deux jours à Morel pour trouver Pierre Maurel. Deux jours de recherches dans les annuaires, les fichiers, les registres du commerce. Directeur d'usine. Quarante-cinq ans. Marié. Deux enfants. Adresse dans le 15ème arrondissement.
+— Monsieur Maurel?
 
-Matthieu regardait le dossier. Une photographie administrative. Un homme au visage ordinaire. Cheveux gris. Cravate sombre. L'air fatigué de ceux qui dirigent des hommes sans vraiment les connaître.
+L'homme hocha la tête.
 
-"On l'interpelle ?" demanda Morel.
+— Police judiciaire. Commissaire Matthieu. On peut entrer?
 
-"Non. On va le voir. Chez lui."
+Pierre Maurel recula. Il les laissa passer. L'appartement était silencieux. Trop silencieux. Aucun bruit d'enfant. Aucune présence.
 
-"Il risque de fuir."
+— Votre famille n'est pas là?
 
-"Il ne fuira pas. Les hommes comme lui ne fuient jamais. Ils attendent. Ils espèrent. Ils se raccrochent à l'illusion que tout va s'arranger."
+— Ma femme est chez sa mère. Avec les enfants. Pour quelques jours.
 
-Morel nota l'adresse. Ils prirent la voiture. La pluie avait cessé mais le ciel restait gris. Paris sous les nuages ressemblait à une ville sans couleur.
+Sa voix était plate. Matthieu le suivit dans le salon. Des photos sur la cheminée. Femme souriante. Deux enfants. Tout était en ordre. Trop en ordre.
 
-L'appartement de Pierre Maurel était au cinquième étage d'un immeuble bourgeois. Ascenseur en bois verni. Tapis épais dans les couloirs. L'odeur de l'encaustique et du confort.
+Pierre s'assit dans un fauteuil. Il ne proposa rien. Matthieu resta debout.
 
-Matthieu sonna. Des pas à l'intérieur. Lents. Hésitants. La porte s'ouvrit.
+— Vous connaissez Simone Arnaud.
 
-Pierre Maurel les regarda. Ses yeux s'écarquillèrent légèrement. Pas de surprise. Juste une reconnaissance. Comme s'il les attendait depuis toujours.
+Ce n'était pas une question. Pierre regarda par la fenêtre.
 
-"Commissaire Matthieu," dit Matthieu en montrant sa carte. "Inspecteur Morel. On peut entrer ?"
+— Oui.
 
-Pierre hocha la tête. Il recula. Il portait un pantalon de costume et une chemise blanche. Pas de cravate. Les manches retroussées. L'alliance visible à sa main gauche.
+— Depuis combien de temps?
 
-Le salon était impeccable. Canapé en cuir. Bibliothèque remplie de livres bien rangés. Des photographies encadrées sur une commode. Une femme souriante. Deux enfants. Une famille parfaite.
+— Deux ans. Peut-être un peu plus.
 
-"Votre femme est là ?" demanda Matthieu.
+Matthieu sortit son carnet. Il attendit. Pierre parlait déjà.
 
-"Elle est chez sa mère. Avec les enfants. Pour le week-end."
+— On s'est rencontrés à une exposition. Au Grand Palais. Elle aimait Monet. Moi aussi. On a parlé. Puis on s'est revus.
 
-"Vous êtes seul, alors."
+— Combien de fois?
 
-"Oui."
+— Je ne sais plus. Une fois par semaine. Parfois deux. Dans son appartement. Jamais ici.
 
-Pierre ne proposa pas de s'asseoir. Il resta debout près de la fenêtre. Ses mains tremblaient légèrement. Il les glissa dans ses poches.
+Morel prenait des notes. Pierre ne le regardait pas. Il fixait ses mains.
 
-"Vous savez pourquoi on est là," dit Matthieu.
+— Elle voulait que vous quittiez votre femme.
 
-Ce n'était pas une question. Pierre ferma les yeux. Il hocha la tête.
+Pierre ferma les yeux.
 
-"Simone," murmura-t-il.
+— Oui. Depuis six mois. Elle ne supportait plus d'être cachée. Elle disait qu'elle méritait mieux que ça.
 
-Le nom flotta dans l'air. Matthieu vit les épaules de Pierre s'affaisser. Comme si prononcer ce nom le vidait de toute force.
+— Et vous?
 
-"Vous la connaissiez," dit Matthieu.
+— Je lui disais que c'était impossible. J'ai une famille. Des responsabilités. Je ne pouvais pas tout abandonner.
 
-"Oui."
+Matthieu s'approcha. Il voyait les mains de Pierre trembler légèrement.
 
-"Depuis combien de temps ?"
+— Elle vous a menacé?
 
-"Deux ans. Peut-être plus."
+— Pas vraiment. Elle disait juste qu'elle ne pouvait pas continuer comme ça. Qu'il fallait choisir. Ou elle partait. Ou pire.
 
-"Vous la voyiez souvent ?"
+— Ou pire?
 
-Pierre ouvrit les yeux. Il regarda par la fenêtre. Paris s'étendait devant lui. Indifférent.
+Pierre ouvrit les yeux. Ils étaient rouges.
 
-"Une fois par semaine. Parfois deux. Le soir. Tard. Quand ma femme dormait. Quand les enfants ne me demandaient plus rien."
+— Elle allait tout dire à ma femme. Elle me l'a dit clairement. La semaine dernière. Elle ne voulait plus attendre.
 
-"Où ?"
+Matthieu nota. La date correspondait. Une semaine avant le meurtre.
 
-"Chez elle. Toujours chez elle. Jamais ailleurs. C'était la règle."
+— Où étiez-vous mardi soir?
 
-Matthieu s'assit dans le fauteuil. Il sortit sa pipe, ne l'alluma pas. Juste le geste familier qui calmait ses pensées.
+— Chez elle.
 
-"Votre femme savait ?"
+Le silence tomba. Morel leva les yeux de son carnet. Matthieu resta immobile.
 
-"Non. Personne ne savait. C'était notre secret. Le seul qu'on avait."
+— Quelle heure?
 
-"Comment vous l'avez rencontrée ?"
+— Je suis arrivé vers vingt heures. Elle m'avait appelé. Elle voulait qu'on parle. J'y suis allé.
 
-Pierre se tourna. Il regarda Matthieu. Ses yeux étaient rouges. Pas de larmes. Juste l'épuisement.
+— Combien de temps vous êtes resté?
 
-"Dans un café. Le Café de la Gare. Je venais de l'usine. Elle sortait de son travail. On s'est croisés. On a parlé. C'était... facile. Elle écoutait. Elle ne jugeait pas. Elle ne demandait rien."
+Pierre se leva. Il marcha vers la fenêtre. Dehors, Paris brillait sous les réverbères. Il parla sans se retourner.
 
-"Mais après, elle a demandé."
+— Une heure. Peut-être moins. On a parlé. Elle a pleuré. Elle m'a dit qu'elle ne pouvait plus vivre comme ça. Que c'était fini si je ne choisissais pas.
 
-Pierre hocha la tête. Il s'assit sur le canapé. Il mit sa tête entre ses mains.
+— Et vous avez choisi?
 
-"Au début, non. Elle acceptait ce que je lui donnais. Quelques heures. Des mots. De la tendresse. Elle disait que c'était suffisant. Mais après un an, elle a changé. Elle voulait plus."
+— J'ai dit que je ne pouvais pas. Que je l'aimais mais que ma famille passait avant. Qu'elle devait comprendre.
 
-"Plus comment ?"
+Matthieu s'approcha de la fenêtre. Il se plaça à côté de Pierre. Deux hommes regardant la ville.
 
-"Sortir ensemble. Être vus. Aller au restaurant. Au théâtre. Elle voulait que je quitte ma femme. Que je divorce. Que je l'épouse."
+— Elle a compris?
 
-"Et vous avez refusé."
+Pierre secoua la tête.
 
-"Oui."
+— Non. Elle a crié. Elle a dit que j'étais un lâche. Que je l'avais utilisée. Qu'elle allait tout dire le lendemain matin. À ma femme. À mon travail. Partout.
 
-"Pourquoi ?"
+— Et ensuite?
 
-Pierre leva les yeux. Il regarda les photographies sur la commode. Sa famille. Son ordre. Sa vie bien rangée.
+Pierre se retourna. Son visage était défait. Les yeux pleins de larmes.
 
-"J'ai deux enfants. Une femme qui m'aime. Une maison. Un travail. Je ne pouvais pas tout détruire. Pas pour..."
+— Je ne sais pas. Je l'ai prise par les épaules. Je voulais la calmer. Elle s'est débattue. On est tombés. Elle criait toujours. Et puis...
 
-Il s'arrêta. Matthieu attendit.
+Il s'arrêta. Les larmes coulaient maintenant. Matthieu attendait.
 
-"Pas pour quoi ?" demanda-t-il doucement.
+— Et puis mes mains étaient autour de son cou. Je ne sais pas comment. Je voulais juste qu'elle arrête de crier. Qu'elle écoute. Mais elle ne respirait plus.
 
-"Pas pour quelque chose que je ne comprenais même pas. J'aimais Simone. Je crois. Mais pas assez pour tout perdre. Jamais assez pour ça."
+Sa voix se brisa. Il tomba à genoux. Matthieu le regardait. Un homme brisé. Pas un monstre. Juste un homme qui avait paniqué.
 
-Morel prenait des notes. Matthieu leva la main. Morel arrêta. Il y avait quelque chose dans le silence qui méritait d'être respecté.
-
-"Elle vous a menacé," dit Matthieu.
-
-Pierre serra les poings.
-
-"Oui. Il y a trois semaines. Elle a dit que si je ne choisissais pas, elle choisirait pour moi. Elle dirait tout à ma femme. Elle viendrait ici. Elle détruirait tout."
-
-"Qu'est-ce que vous avez fait ?"
-
-"J'ai supplié. J'ai promis. J'ai menti. J'ai dit que bientôt, que j'avais besoin de temps, que ma femme était malade, que les enfants étaient fragiles. Tous les mensonges que les hommes comme moi racontent."
-
-"Elle vous a cru ?"
-
-"Non. Plus. Elle me connaissait trop bien. Elle savait que je mentais. Elle savait que je ne quitterais jamais ma famille."
-
-Matthieu se leva. Il marcha vers la fenêtre. Il se tint à côté de Pierre. Ils regardèrent Paris ensemble. Deux hommes qui contemplaient le même vide.
-
-"Qu'est-ce qui s'est passé le soir du meurtre ?" demanda Matthieu.
-
-Pierre ferma les yeux. Ses lèvres tremblèrent.
-
-"Elle m'a appelé. Elle m'a dit de venir. Que c'était la dernière fois. Qu'elle voulait me parler. J'y suis allé. J'avais peur. J'avais peur de ce qu'elle allait dire. Peur de ce qu'elle allait faire."
-
-"Quelle heure ?"
-
-"Vingt-deux heures. Peut-être vingt-deux heures trente. J'ai pris ma voiture. J'ai garé trois rues plus loin. Comme toujours."
-
-"Continuez."
-
-Pierre ouvrit les yeux. Il regarda ses mains. Comme s'il ne les reconnaissait pas.
-
-"Elle m'attendait. Elle portait une robe bleue. Celle que j'aimais. Elle avait mis de la musique. Un opéra. Elle souriait. Mais c'était un sourire triste. Comme si elle savait déjà comment ça allait finir."
-
-"Qu'est-ce qu'elle a dit ?"
-
-"Elle m'a dit qu'elle m'aimait. Que je ne l'aimais pas assez. Que c'était fini. Qu'elle allait voir ma femme le lendemain. Qu'elle lui dirait tout. Qu'elle méritait de savoir."
-
-"Vous avez réagi comment ?"
-
-Pierre se leva brusquement. Il marcha vers le milieu de la pièce. Ses poings serrés. Sa respiration rapide.
-
-"J'ai paniqué. J'ai supplié. Je me suis mis à genoux. J'ai pleuré. J'ai dit que je l'aimais. Que j'allais tout quitter. Que je choisissais. Mais elle savait que je mentais. Elle le voyait dans mes yeux."
-
-"Et alors ?"
-
-Pierre s'arrêta. Il regarda Matthieu. Ses yeux vides.
-
-"Elle a ri. Un rire sans joie. Elle a dit : 'Tu ne changes jamais, Pierre. Tu promets toujours. Tu ne tiens jamais.' Et elle a tourné le dos. Elle a marché vers la chambre. Comme si je n'existais plus. Comme si j'étais déjà parti."
-
-Matthieu sentit son cœur se serrer. Il voyait la scène. Il voyait Simone qui marchait. Pierre qui restait debout. Le silence entre eux. Tout ce qui n'avait jamais été dit.
-
-"Qu'est-ce que vous avez fait ?"
-
-"Je l'ai suivie. Je suis entré dans la chambre. Elle était debout près du lit. Elle regardait par la fenêtre. Je lui ai touché l'épaule. Elle ne s'est pas retournée. J'ai dit son nom. Elle n'a pas répondu."
-
-Pierre s'arrêta. Il tremblait. Matthieu attendit.
-
-"Et alors j'ai... j'ai mis mes mains autour de son cou. Je ne sais pas pourquoi. Je ne réfléchissais pas. C'était comme si quelqu'un d'autre le faisait. Comme si ce n'était pas moi."
-
-"Elle s'est débattue ?"
-
-"Non. Elle est restée immobile. Elle m'a laissé faire. Comme si elle l'attendait. Comme si elle le voulait."
-
-"Combien de temps ?"
-
-"Je ne sais pas. Une minute. Peut-être moins. Peut-être plus. Et puis elle est tombée. Sur le lit. Les yeux ouverts. Et je me suis rendu compte de ce que j'avais fait."
-
-Pierre se laissa tomber sur le canapé. Il mit son visage dans ses mains. Il ne pleurait pas. Il était juste vide.
-
-Matthieu s'assit en face de lui. Il posa sa pipe sur la table. Il regarda cet homme brisé. Cet homme ordinaire qui avait tué par peur. Par faiblesse. Par incapacité à choisir.
-
-"Qu'est-ce que vous avez fait après ?"
-
-"Je suis parti. J'ai fermé la porte. Je suis rentré chez moi. Ma femme dormait. Les enfants dormaient. J'ai pris une douche. Je me suis couché. Et j'ai attendu. J'attendais que vous veniez. Depuis trois jours, j'attends."
-
-Matthieu hocha la tête. Il comprenait. Il comprenait tout. La peur. Le mensonge. La fuite. L'attente.
-
-"Vous l'aimiez vraiment ?" demanda-t-il doucement.
-
-Pierre le regarda. Ses yeux rouges. Son visage défait.
-
-"Je ne sais pas. Je crois que oui. Mais pas assez. Jamais assez pour tout perdre. Et maintenant j'ai tout perdu quand même."
-
-Matthieu se leva. Il fit signe à Morel. Morel sortit son téléphone, appela le commissariat. Dans quelques minutes, une voiture viendrait. Pierre Maurel serait arrêté. Le dossier serait clos.
-
-Mais Matthieu ne ressentait aucune victoire. Juste une tristesse profonde. Une compréhension qui le vidait de toute certitude.
-
-Il regarda Pierre. Il vit un homme comme lui. Un homme qui avait eu peur. Qui avait menti. Qui s'était accroché à son ordre fragile jusqu'à ce qu'il explose.
-
-"Je comprends," dit Matthieu.
+— Vous l'aimiez vraiment?
 
 Pierre leva les yeux.
 
-"Quoi ?"
+— Oui. Je l'aimais. Mais pas assez pour tout perdre. Et maintenant j'ai tout perdu quand même.
 
-"Je comprends pourquoi vous l'avez fait. Ça ne change rien. Mais je comprends."
+Matthieu ferma son carnet. Il pensa à Simone. À son carnet bleu. À ses mots. *Ou pire.* Elle avait forcé le choix. Et le choix l'avait tuée.
 
-Pierre hocha la tête. Il ne dit rien. Il savait que les mots ne servaient plus à rien.
+Il pensa aussi à Pierre. À sa famille qui ne reviendrait jamais. À sa vie qui s'arrêtait ici. Dans ce salon trop silencieux. Avec ces photos qui le regardaient.
 
-La sonnette retentit. Deux agents entrèrent. Morel leur expliqua. Ils sortirent les menottes.
+Morel s'approcha.
 
-Matthieu se détourna. Il ne voulait pas voir. Il marcha vers la fenêtre. Il regarda Paris. La ville continuait. Indifférente. Éternelle.
+— On doit l'emmener, commissaire.
 
-Derrière lui, il entendit Pierre qui se levait. Les menottes qui cliquetaient. Les pas qui s'éloignaient. La porte qui se fermait.
+Matthieu hocha la tête. Mais il ne bougea pas. Il regardait Pierre. Et dans ses yeux, il voyait quelque chose qu'il connaissait. Le désespoir. La solitude. L'impossibilité de choisir entre deux vies.
 
-Et puis le silence.
+— Monsieur Maurel, vous allez devoir nous suivre.
 
-Matthieu resta seul dans le salon. Entouré des photographies d'une famille qui ne serait plus jamais la même. Entouré des livres bien rangés. De l'ordre qui venait de s'effondrer.
+Pierre se releva. Il essuya ses yeux. Il arrangea sa cravate. Un geste automatique. Comme s'il allait au bureau.
 
-Il pensa à Simone. À Pierre. À tous les mensonges qu'ils s'étaient racontés. À tous les choix qu'ils n'avaient pas faits.
+— Je peux prendre mon manteau?
 
-Il pensa que la justice ne servait à rien ici. Qu'enfermer Pierre ne ramènerait pas Simone. Que condamner ne guérirait personne.
+— Oui.
 
-Mais c'était son travail. Maintenir l'ordre. Même quand l'ordre était brutal. Même quand il ne comprenait rien à la vie.
+Pierre disparut dans la chambre. Morel le suivit du regard.
 
-Il sortit de l'appartement. Dans la rue, la voiture de police s'éloignait. Pierre à l'arrière. Les mains menottées. Le regard vide.
+— Il a avoué, commissaire. C'est fini.
 
-Morel attendait près de la voiture.
+Matthieu ne répondit pas. Il pensait à la justice. À l'ordre. À la différence entre les deux. Pierre avait tué. C'était un fait. Mais il n'était pas un tueur. C'était une distinction que la loi ne faisait pas.
 
-"C'est fini ?" demanda-t-il.
+Pierre revint avec son manteau. Il regarda une dernière fois les photos. Sa femme. Ses enfants. Il savait qu'il ne les reverrait peut-être jamais.
 
-"Oui. C'est fini."
+— On peut y aller.
 
-Mais Matthieu savait que rien n'était jamais fini. Que cette affaire resterait en lui. Comme toutes les autres. Une cicatrice de plus dans sa longue collection.
+Dans la voiture, personne ne parlait. Morel conduisait. Pierre regardait par la fenêtre. Matthieu fumait sa pipe.
 
-Ils remontèrent dans la voiture. Morel démarra. Matthieu regarda par la fenêtre. Il pensa qu'il avait besoin de marcher. De respirer. De se perdre aux quais.
+Aux quais, la Seine coulait lentement. Les péniches passaient. La ville dormait. Et quelque part, dans un appartement du seizième, une femme allait recevoir un coup de fil qui briserait sa vie.
 
-Mais d'abord, il fallait rentrer au commissariat. Signer les papiers. Clore le dossier. Faire son travail.
+Matthieu ferma les yeux. Il pensa à Simone. À Pierre. À tous les crimes passionnels qu'il avait vus. Des gens ordinaires qui tuaient parce qu'ils ne savaient plus comment vivre.
 
-Toujours son travail.
+La justice allait suivre son cours. Arrestation. Procès. Condamnation. L'ordre serait maintenu. Mais la vérité resterait ailleurs. Dans cette impossibilité de choisir. Dans ce moment où deux vies s'étaient fracassées l'une contre l'autre.
 
-<<<<Lancer la production à patir du chap 6 : 20260125_172118_draft.md
+Il rouvrit les yeux. Pierre pleurait en silence. Matthieu détourna le regard.
+
+# Chapitre 4
+
+## Scène 7
+
+Le bureau du Directeur Lefèvre sentait le cigare et le papier ancien. Matthieu entra sans frapper. Lefèvre leva les yeux de son dossier.
+
+— Commissaire. Asseyez-vous.
+
+Matthieu resta debout. Il posa le procès-verbal sur le bureau.
+
+— Pierre Maurel a avoué. Crime passionnel. Les papiers sont prêts.
+
+Lefèvre ouvrit le dossier. Il le parcourut rapidement. Ses doigts tapotaient le bureau. Une habitude.
+
+— Parfait. Combien de temps pour la mise en examen?
+
+— Quarante-huit heures. Peut-être moins.
+
+Lefèvre referma le dossier. Il se leva. Il marcha vers la fenêtre. Dehors, Paris brillait sous le soleil d'après-midi.
+
+— Le procureur veut que ce soit bouclé demain. Affaire claire. Pas de complications.
+
+Matthieu ne répondit pas. Il pensait à Pierre. À ses larmes. À sa confession. À l'impossibilité de tout ça.
+
+— Matthieu, vous m'entendez?
+
+— Oui.
+
+Lefèvre se retourna. Il le regardait maintenant. Ses yeux étaient froids.
+
+— Quelque chose ne va pas?
+
+— Non. Tout va bien.
+
+— Parce que le procureur a déjà parlé à la presse. Crime passionnel. Dossier solide. Il ne veut pas de surprise.
+
+Matthieu sortit sa pipe. Il ne l'alluma pas.
+
+— Il n'y aura pas de surprise.
+
+Lefèvre s'approcha. Il prit le dossier. Il le soupesa comme un objet précieux.
+
+— Vous savez ce que j'apprécie chez vous, Matthieu? Vous ne posez pas de questions inutiles. Vous faites votre travail. Proprement.
+
+— C'est mon travail.
+
+— Exactement. Et ce travail, c'est de maintenir l'ordre. Pas de chercher la vérité absolue. L'ordre. Vous comprenez la différence?
+
+Matthieu hocha la tête. Il comprenait. Il avait toujours compris. Mais aujourd'hui, la différence lui pesait plus qu'avant.
+
+Lefèvre retourna à son bureau. Il rangea le dossier dans un tiroir. Il consulta l'horloge murale. Quinze heures trente.
+
+— Le procureur veut vous voir demain matin. Neuf heures. Pour finaliser.
+
+— J'y serai.
+
+— Bien. Et Matthieu?
+
+— Oui?
+
+— Félicitations. C'est du bon travail. Rapide. Efficace. Le genre de travail qu'on attend d'un commissaire.
+
+Matthieu ne répondit pas. Il sortit. Dans le couloir, il croisa Morel.
+
+— Commissaire, le Directeur était content?
+
+— Oui. Très content.
+
+Morel sourit. Il avait vingt-huit ans. Il croyait encore que les félicitations signifiaient quelque chose.
+
+— On a fait du bon boulot, hein?
+
+Matthieu le regarda. Il vit l'enthousiasme dans ses yeux. L'innocence. La certitude que la justice avait été servie.
+
+— Oui. Du bon boulot.
+
+— Pierre Maurel sera condamné. Vingt ans minimum. Peut-être plus.
+
+— Peut-être.
+
+Morel fronça les sourcils.
+
+— Vous n'avez pas l'air satisfait.
+
+Matthieu alluma enfin sa pipe. La fumée monta lentement.
+
+— L'affaire est close. C'est suffisant.
+
+— Mais on a trouvé le coupable. Il a avoué. C'est une victoire.
+
+Matthieu marcha vers la sortie. Morel le suivait.
+
+— Une victoire pour qui?
+
+Morel s'arrêta. Il ne comprenait pas. Matthieu continuait. Il descendait les escaliers. Ses pas résonnaient dans le commissariat vide.
+
+Dehors, la lumière était trop vive. Il remonta son col. Il marcha vers les quais. Il avait besoin de silence. De temps. De comprendre ce qui lui arrivait.
+
+Il pensait à Lefèvre. À son discours sur l'ordre. À sa montre qui tournait. À sa satisfaction de voir le dossier fermé. Pas de vérité. Juste l'ordre. Juste la machine qui continuait.
+
+Il pensait aussi à Morel. À son enthousiasme. À sa certitude. Il avait eu cette certitude, lui aussi. Il y a trente ans. Avant l'affaire qui avait tout changé. Avant l'homme exécuté. Avant le doute.
+
+Aux quais, il s'assit sur un banc. Une péniche passait. Lentement. Comme toujours. Il regarda l'eau couler. Il pensa à Pierre. À sa famille qui ne reviendrait jamais. À sa vie brisée.
+
+Il pensa aussi à Simone. À son carnet bleu. À ses menaces. À sa part de responsabilité dans sa propre mort.
+
+La justice administrative dirait : Pierre a tué. Pierre doit payer. Affaire close.
+
+Mais la vérité était plus complexe. Deux vies qui s'étaient détruites mutuellement. Deux personnes qui avaient choisi l'impossibilité. Et maintenant, une était morte. L'autre en prison.
+
+Matthieu ferma les yeux. Il sentit le poids des trente années. Le poids de tous les dossiers fermés. De toutes les vies brisées au nom de l'ordre.
+
+Il rouvrit les yeux. Le soleil descendait. Les quais se vidaient. Bientôt, il rentrerait chez lui. Il boirait un verre. Peut-être deux. Il regarderait les murs de son appartement vide.
+
+Et demain, il retournerait au commissariat. Il signerait les papiers. Il enverrait Pierre Maurel devant le juge. Il maintiendrait l'ordre.
+
+Parce que c'était son travail. Parce que personne d'autre ne le ferait. Parce que l'ordre, aussi imparfait soit-il, valait mieux que le chaos.
+
+Mais quelque chose avait changé en lui. Une fissure s'était ouverte. Et il savait qu'elle ne se refermerait jamais.
+
+Next => 20260125_181409_draft
+
