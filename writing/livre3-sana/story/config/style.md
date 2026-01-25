@@ -24,5 +24,5 @@ Phrases courtes, ruptures, rebondissements. Digressions soudaines, retours à l�
 
 « L’assassin s’enfuit, poursuivi par la police, dans une scène digne d’un film d’action américain. »
 
-## Show, don't tell
+# Show, don't tell
 Fais vivre la scène : fais sentir les odeurs de bistrot, entendre les vannes, voir les trognes. Ne dis pas « il est triste », fais-lui rater sa blague ou renverser son verre. L’émotion passe par l’action, la gouaille, le détail qui fait mouche.

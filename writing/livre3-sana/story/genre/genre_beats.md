@@ -1,3 +1,5 @@
+# Beat de genre
+
 | id  | name                         | description                                                                                  | status  |
 |-----|------------------------------|----------------------------------------------------------------------------------------------|---------|
 | g01 | Découverte du corps          | Simone Arnaud est trouvée étranglée dans son appartement. Pas de lutte, pas de vol.         | locked  |

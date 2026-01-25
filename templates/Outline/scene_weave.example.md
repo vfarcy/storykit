@@ -7,7 +7,7 @@ Comment configurer :
 IMPORTANT : Supprimez ce bloc d'en-tête explicatif avant d'utiliser le fichier dans votre projet !
 -->
 
-## Scene Weave
+# Scene Weave
 
 | Chapitre | Scène | Fonction Truby                       | Lieu                   | Conflit                                             | Décision                                   | Valeur en jeu              | Beat |
 |----------|---|--------------------------------------|------------------------|-----------------------------------------------------|--------------------------------------------|----------------------------|------|
