@@ -1,8 +1,7 @@
-# Univers San-Antonio)
-
 # Époque et lieu
 **Paris, années 50 ou éternel bistrot.**
 Bistrots qui sentent le vieux pinard, ruelles pavées, commissariats où ça fume plus que ça bosse. Paris, c’est la grande bringue : ça rigole, ça magouille, ça pleure dans les coins.
+Univers San-Antonio
 
 # Géographie interne du récit
 
