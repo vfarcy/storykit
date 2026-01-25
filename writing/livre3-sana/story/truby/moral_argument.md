@@ -1,5 +1,3 @@
-# Argument moral — Justice ou magouille ?
-
 ## Thèse (départ du héros)
 **"La justice, c’est carré, mon pote. Un crime, c’est un crime, et la loi, c’est pas du gruyère."**
 
