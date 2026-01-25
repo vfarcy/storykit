@@ -316,6 +316,7 @@ def assemble_payload(target: str, chapter: int | None = None) -> str:
             chapter = 1
         instructions_lines += [
             f"- Rédiger le brouillon du Chapitre {chapter} en suivant scrupuleusement le scene-weave correspondant.\n",
+            "- Inclure toutes la ou les scènes du Chapitre {chapter} mais uniquement la ou les scènes du Chapitre {chapter} conformément au scene-weave correspondant à ce chapitre.\n",
             "- Respecter la trajectoire morale et les valeurs en jeu.\n",
             "- Respecter le style défini dans Style & Voix.\n",
             "- Sortie : Markdown, sections : scènes, sans méta-commentaires, sans passage à l'action. Simplement ta réponse.\n",
