@@ -1036,3 +1036,4 @@ Mais d'abord, il fallait rentrer au commissariat. Signer les papiers. Clore le d
 
 Toujours son travail.
 
+<<<<Lancer la production du chap 6 : sk assemble --target draft --chapter 6
