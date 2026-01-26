@@ -1,7 +1,7 @@
 
 # Chapitre 1
 
-## Scène 1
+## Scène 1 : Tout commence dans le doute
 
 Le commissaire Matthieu poussa la porte vitrée du commissariat. Une flaque d'eau se forma sous ses chaussures. Il ôta son chapeau. L'eau coula sur le col de son manteau.
 
@@ -33,7 +33,7 @@ Morel parlait trop. Il avait vingt-huit ans. Il croyait encore que chaque affair
 
 Matthieu ne répondit pas. Il bourra sa pipe. L'odeur du tabac humide monta dans l'habitacle.
 
-## Scène 2
+## Scène 2 : Rien n’est jamais simple
 
 L'immeuble était gris. Six étages sans ascenseur. Matthieu monta lentement. Ses genoux craquaient. Morel le précédait, deux marches à la fois.
 
@@ -97,7 +97,7 @@ Matthieu ne répondit pas. Il pensait au verre d'eau. Au livre fermé. À l'alli
 
 Quelqu'un l'avait tuée. Quelqu'un qu'elle connaissait. Quelqu'un qu'elle avait laissé entrer.
 
-## Scène 3
+## Scène 3 : Les secrets pèsent lourd
 
 Le commissariat était silencieux. Matthieu s'assit à son bureau. Il ouvrit le dossier. Une photo de Simone. Cheveux bruns. Sourire discret.
 
@@ -143,7 +143,7 @@ Demain, il chercherait. Lentement. Sans certitude. Comme toujours.
 
 # Chapitre 2
 
-## Scène 4
+## Scène 4 : La vérité se dérobe
 
 Le café sentait le marc et la fumée froide. Matthieu s'assit près de la fenêtre. Il commanda un noir. Morel était déjà au comptoir, parlant avec le patron.
 
@@ -231,7 +231,7 @@ Matthieu regarda le ciel. La pluie revenait.
 
 — Tout le monde ment. La question, c'est pourquoi.
 
-## Scène 5
+## Scène 5 : Chacun porte sa part
 
 L'appartement de Simone était silencieux. Élodie Arnaud, la sœur, avait accepté de les recevoir. Elle ouvrit la porte sans un mot.
 
@@ -339,7 +339,7 @@ Et maintenant elle était morte.
 
 # Chapitre 3
 
-## Scène 6
+## Scène 6 : L’ombre du passé
 
 L'adresse menait à un immeuble cossu du seizième. Façade blanche. Balcons en fer forgé. Matthieu monta lentement les escaliers. Morel le suivait, carnet à la main.
 
@@ -495,7 +495,7 @@ Il rouvrit les yeux. Pierre pleurait en silence. Matthieu détourna le regard.
 
 # Chapitre 4
 
-## Scène 7
+## Scène 7 : Justice ou vengeance
 
 Le bureau du Directeur Lefèvre sentait le cigare et le papier ancien. Matthieu entra sans frapper. Lefèvre leva les yeux de son dossier.
 
@@ -615,7 +615,7 @@ Mais quelque chose avait changé en lui. Une fissure s'était ouverte. Et il sav
 
 # Chapitre 5
 
-## Scène 8 : Confrontation intime
+## Scène 8 : Face à soi-même
 
 Le quai était désert. Une péniche glissait lentement sur la Seine, sa silhouette noire découpée contre les lumières de la rive opposée. Matthieu remonta son col. L'air sentait l'eau froide et le mazout.
 
@@ -953,7 +953,7 @@ De vivre avec ce qu'il savait.
 
 # Chapitre 7
 
-## Scène 10 : Révélation intérieure
+## Scène 10 : Lumière intérieure
 
 L'aube se levait sur la Seine. Le ciel passait du noir au gris, lentement, sans éclat. Matthieu marchait le long du quai. Ses pas résonnaient sur le pavé mouillé. Il avait quitté le commissariat sans dire au revoir à personne.
 
@@ -1130,7 +1130,7 @@ C'était tout ce qu'il pouvait espérer.
 
 # Chapitre 8
 
-## Scène 11 : Nouvel équilibre
+## Scène 11 : Un nouvel équilibre
 
 Le commissariat sentait le café et le tabac froid. Matthieu poussa la porte. Il était neuf heures du matin. Il avait dormi quatre heures. C'était suffisant.
 
