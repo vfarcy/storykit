@@ -613,5 +613,734 @@ Parce que c'était son travail. Parce que personne d'autre ne le ferait. Parce q
 
 Mais quelque chose avait changé en lui. Une fissure s'était ouverte. Et il savait qu'elle ne se refermerait jamais.
 
-Next => 20260125_181409_draft
+# Chapitre 5
+
+## Scène 8 : Confrontation intime
+
+Le quai était désert. Une péniche glissait lentement sur la Seine, sa silhouette noire découpée contre les lumières de la rive opposée. Matthieu remonta son col. L'air sentait l'eau froide et le mazout.
+
+Il attendait depuis vingt minutes.
+
+Pierre Maurel était en retard. Ou peut-être ne viendrait-il pas. Matthieu avait laissé un message au bureau de l'usine. Trois mots : « Je sais tout. » Puis une adresse, ce quai près du Pont de l'Alma. Neutre. Anonyme. Loin du commissariat et de ses lumières crues.
+
+Une silhouette apparut au bout du quai. Démarche hésitante, manteau sombre. Pierre s'arrêta à dix mètres, comme s'il pesait encore la possibilité de fuir.
+
+Matthieu ne bougea pas. Il sortit sa pipe, la bourra lentement. Le briquet claqua dans le silence.
+
+Pierre s'approcha enfin. Son visage était gris, creusé. Les traits d'un homme qui n'avait pas dormi depuis des jours.
+
+— Vous vouliez me voir, dit Matthieu sans le regarder.
+
+— Vous avez dit que vous saviez tout.
+
+— Oui.
+
+Un silence. Le clapotis de l'eau contre les berges. Pierre s'appuya contre le parapet, les mains tremblantes.
+
+— Qu'est-ce que vous voulez ? Que je vous dise ce que vous savez déjà ?
+
+— Non. Je veux que vous me disiez ce que je ne sais pas.
+
+Pierre rit. Un rire sec, cassé.
+
+— Vous croyez qu'il y a quelque chose à comprendre ? C'est simple. J'ai tué Simone. Voilà. C'est fini.
+
+— Pourquoi ?
+
+— Pourquoi quoi ?
+
+— Pourquoi elle ? Pourquoi ce soir-là ? Pourquoi de vos mains ?
+
+Pierre détourna la tête. Ses doigts se crispèrent sur le parapet.
+
+— Parce qu'elle voulait que je quitte ma femme. Que je divorce. Que je choisisse. Elle m'a dit : « Soit moi, soit eux. » Comme si c'était simple. Comme si on pouvait juste... effacer quinze ans de mariage, deux enfants, une vie. Pour quoi ? Pour elle ?
+
+— Vous l'aimiez ?
+
+Pierre le regarda enfin. Ses yeux étaient rouges.
+
+— Oui. Je l'aimais. Mais pas assez pour tout perdre.
+
+Matthieu tira sur sa pipe. La fumée se dispersa dans l'air froid.
+
+— Elle a menacé de tout dire à votre femme.
+
+— Oui.
+
+— Alors vous l'avez tuée.
+
+Pierre ferma les yeux. Ses lèvres tremblaient.
+
+— Je ne voulais pas. Je suis allé chez elle pour parler. Pour lui expliquer. Mais elle ne comprenait pas. Elle criait. Elle disait que j'étais un lâche. Que je ne l'avais jamais aimée. Que j'allais la regretter. Elle a pris le téléphone. Elle a dit qu'elle allait appeler ma femme tout de suite. Devant moi.
+
+Il s'interrompit. Sa voix se brisa.
+
+— Je lui ai pris le téléphone. Elle m'a giflé. Je l'ai attrapée par les bras. Elle s'est débattue. Et puis... et puis mes mains étaient sur son cou. Je ne sais même pas quand j'ai commencé. Je voulais juste qu'elle se taise. Qu'elle arrête de crier. Qu'elle arrête de me regarder comme ça.
+
+Matthieu ne dit rien. Il regardait la Seine. Une bouteille flottait contre le quai, tournant lentement dans le courant.
+
+— Quand j'ai réalisé ce que j'avais fait, elle était par terre. Je l'ai soulevée. Je l'ai mise sur le lit. J'ai essayé de... je ne sais pas. De la ranger. Comme si ça pouvait arranger les choses.
+
+— Vous avez pris son carnet.
+
+— Oui. Il y avait mon nom dedans. Des lettres. Des photos. Je ne pouvais pas les laisser.
+
+— Où sont-elles ?
+
+— Brûlées. Tout est brûlé.
+
+Matthieu hocha la tête. Il avait deviné. Les cendres dans la cheminée de Pierre. L'odeur de papier carbonisé.
+
+Pierre s'affaissa contre le parapet. Il pleurait maintenant, sans bruit, les épaules secouées.
+
+— Je l'aimais, répéta-t-il. Vous comprenez ? Je l'aimais vraiment. Mais je ne pouvais pas choisir. Je ne pouvais pas.
+
+Matthieu posa sa main sur l'épaule de Pierre. Un geste simple. Humain.
+
+— Je comprends.
+
+Pierre leva la tête. Ses yeux cherchaient quelque chose dans ceux du commissaire. Un jugement, peut-être. Ou une absolution.
+
+— Qu'est-ce qui va se passer maintenant ?
+
+Matthieu retira sa main. Il rangea sa pipe dans sa poche. Il se tourna vers le quai, vers les lumières de Paris qui scintillaient dans la nuit.
+
+— Vous allez venir avec moi. Je vais signer les papiers. Vous allez être arrêté. C'est tout.
+
+— C'est tout ?
+
+— Oui.
+
+Pierre essuya ses yeux. Il se redressa lentement. Il avait l'air plus vieux, tout à coup. Comme si les années s'étaient accumulées sur ses épaules en quelques secondes.
+
+— Je peux vous demander quelque chose ?
+
+— Oui.
+
+— Est-ce que vous pensez que je suis un monstre ?
+
+Matthieu le regarda. Il vit un homme ordinaire. Un père de famille. Un directeur d'usine. Un amant. Un meurtrier.
+
+— Non. Je pense que vous êtes un homme qui a fait quelque chose de monstrueux. Ce n'est pas la même chose.
+
+Pierre hocha la tête. Il ne souriait pas. Mais quelque chose dans son regard s'était apaisé.
+
+Ils marchèrent côte à côte le long du quai. Leurs pas résonnaient sur le pavé mouillé. Au loin, une sirène hurlait. Mais ici, il n'y avait que le silence. Le silence et le bruit de l'eau.
+
+Matthieu ne dit rien de plus. Il n'y avait rien à dire. Il avait sa confession. Il avait sa vérité. Il avait son coupable.
+
+Mais en marchant, il sentait le poids de cette vérité. Elle ne le soulageait pas. Elle ne le réjouissait pas. Elle l'écrasait, lentement, comme toutes les autres vérités qu'il avait découvertes dans sa carrière.
+
+Il pensait à Simone. À ses mensonges. À son amour. À sa mort.
+
+Il pensait à Pierre. À sa lâcheté. À sa panique. À ses larmes.
+
+Il pensait à la justice. À l'ordre. À la différence entre les deux.
+
+Et il savait, au fond de lui, qu'il n'y avait pas de réponse. Juste des dossiers qui se fermaient. Des hommes qui allaient en prison. Des vies qui continuaient, brisées.
+
+La péniche avait disparu. La Seine coulait, indifférente. Paris dormait.
+
+Matthieu rentra au commissariat avec Pierre Maurel à ses côtés. Il signerait les papiers. Il fermerait le dossier. Il rentrerait chez lui.
+
+Et demain, il y aurait un autre corps. Un autre crime. Une autre vérité impossible.
+
+C'était son travail. C'était sa vie.
+
+C'était tout.
+
+# Chapitre 6
+
+## Scène 9 : Arrestation sans triomphe
+
+La salle d'interrogatoire sentait le café froid et la cigarette. Matthieu avait ouvert la fenêtre, mais l'air du matin n'entrait pas. Il faisait trop froid dehors. Trop gris.
+
+Pierre Maurel était assis face à lui. Les mains posées à plat sur la table. Il ne tremblait plus. Il avait pleuré toute la nuit. Maintenant, il était vide.
+
+L'Inspecteur Morel se tenait debout contre le mur, carnet ouvert, stylo suspendu. Il attendait. Matthieu voyait son impatience dans la manière dont il tapotait le stylo contre sa paume.
+
+Le magnétophone tournait. Le ruban défilait lentement.
+
+Matthieu alluma sa pipe. Il ne dit rien pendant une longue minute. Il regardait Pierre. Un homme de quarante-cinq ans. Cheveux gris aux tempes. Costume froissé. Alliance au doigt.
+
+— Vous comprenez ce qui va se passer maintenant ? demanda Matthieu.
+
+Pierre hocha la tête.
+
+— Oui.
+
+— Je vais vous lire vos droits. Vous allez signer une déposition. Puis vous serez placé en garde à vue. Ensuite, le procureur décidera.
+
+— Je sais.
+
+Matthieu tira sur sa pipe. La fumée monta vers le plafond. Il pensa à Simone. À son appartement silencieux. À son corps sur le lit.
+
+— Racontez-moi une dernière fois, dit-il. Pour le magnétophone. Depuis le début.
+
+Pierre ferma les yeux. Il prit une longue inspiration.
+
+— Je suis arrivé chez elle vers vingt heures. Elle m'attendait. Elle avait préparé le dîner. On a mangé. Puis elle a commencé à parler. Elle voulait que je quitte ma femme. Je lui ai dit que je ne pouvais pas. Elle s'est mise en colère.
+
+Sa voix était plate. Mécanique. Comme s'il récitait un texte appris.
+
+— Elle m'a dit que si je ne choisissais pas, elle appellerait ma femme. Qu'elle dirait tout. Je lui ai demandé de ne pas faire ça. Elle a dit que j'étais un lâche. Qu'elle m'avait donné deux ans de sa vie. Qu'elle méritait mieux qu'un mensonge.
+
+Matthieu écoutait. Il ne prenait pas de notes. Morel s'en chargeait, le stylo grattant le papier.
+
+— Elle a pris le téléphone. J'ai essayé de le lui prendre. Elle m'a giflé. Alors je l'ai attrapée par les bras. Elle s'est débattue. Et puis... et puis mes mains étaient sur son cou. Je voulais juste qu'elle arrête de crier. Qu'elle arrête de me regarder comme ça.
+
+Il ouvrit les yeux. Ils étaient rouges, secs.
+
+— Je ne sais pas combien de temps ça a duré. Peut-être une minute. Peut-être moins. Quand j'ai lâché prise, elle était par terre. Elle ne bougeait plus.
+
+Matthieu posa sa pipe. Il se pencha légèrement en avant.
+
+— Qu'avez-vous fait ensuite ?
+
+— Je l'ai soulevée. Je l'ai mise sur le lit. J'ai essayé de la ranimer. Mais c'était trop tard. Je le savais.
+
+— Et son carnet ?
+
+— Il était sur la table de nuit. J'ai vu mon nom dedans. Des lettres que j'avais écrites. Des photos de nous deux. Je ne pouvais pas les laisser. Alors je les ai prises.
+
+— Où sont-elles ?
+
+— Brûlées. Dans la cheminée chez moi. Le lendemain matin.
+
+Morel leva la tête. Il ouvrit la bouche, prêt à intervenir. Matthieu leva la main. Silence.
+
+— Quand avez-vous quitté l'appartement de Simone ?
+
+— Vers vingt-deux heures. J'ai tout nettoyé. Les verres. Les assiettes. J'ai fermé la porte derrière moi. Personne ne m'a vu.
+
+— Vous en êtes sûr ?
+
+— Oui.
+
+Matthieu hocha la tête. Il savait que Pierre mentait. Madame Vidal, la concierge, avait vu quelqu'un sortir ce soir-là. Mais elle n'avait pas reconnu Pierre dans le noir. L'alibi était mince. Mais suffisant pour le doute.
+
+Sauf qu'il n'y avait plus de doute maintenant.
+
+— Vous regrettez ?
+
+Pierre le regarda. Ses yeux étaient ceux d'un homme qui avait déjà répondu à cette question mille fois dans sa tête.
+
+— Oui. Je regrette. Mais ça ne changera rien.
+
+— Non, dit Matthieu. Ça ne changera rien.
+
+Il se leva. Il marcha vers la fenêtre. Dehors, Paris s'éveillait. Les voitures klaxonnaient. Les gens couraient vers le métro. La vie continuait.
+
+Morel s'approcha de lui.
+
+— On le met en cellule maintenant ? murmura-t-il.
+
+— Oui.
+
+— Bon travail, patron.
+
+Matthieu ne répondit pas. Il regardait les toits. Les cheminées qui fumaient.
+
+Il pensa à la justice. À l'ordre. À la différence entre les deux.
+
+Pierre Maurel avait tué Simone Arnaud. C'était un fait. La loi était claire. Il devait être puni.
+
+Mais Matthieu savait aussi que Pierre n'était pas un monstre. Qu'il avait aimé Simone. Qu'il avait paniqué. Qu'il avait fait quelque chose d'irréparable dans un moment de rage et de désespoir.
+
+Et il savait que Simone n'était pas une simple victime. Qu'elle avait menti. Qu'elle avait menacé. Qu'elle avait voulu forcer un choix impossible.
+
+La justice voudrait dire réconcilier ces deux vérités. Comprendre que les deux avaient raison et tort à la fois.
+
+Mais l'ordre, lui, ne demandait qu'une chose : le coupable en cellule, le dossier fermé, la société protégée.
+
+Matthieu se retourna. Il regarda Pierre.
+
+— Je comprends, dit-il.
+
+Pierre leva la tête. Ses yeux cherchaient quelque chose dans ceux du commissaire. Une absolution peut-être.
+
+— Mais je dois quand même vous enfermer.
+
+Pierre hocha la tête lentement.
+
+— Je sais.
+
+Matthieu prit les papiers que Morel lui tendait. La déposition. Les formulaires administratifs. Le procès-verbal de garde à vue.
+
+Il signa. Trois fois. L'encre bleue sécha rapidement.
+
+— Inspecteur, dit-il sans se retourner. Emmenez-le.
+
+Morel s'avança. Il posa sa main sur l'épaule de Pierre.
+
+— Levez-vous, monsieur Maurel.
+
+Pierre se leva. Il boutonna sa veste. Il lissa ses cheveux. Comme s'il partait pour une réunion. Comme si rien ne changeait.
+
+Puis il regarda Matthieu une dernière fois.
+
+— Merci, dit-il.
+
+Matthieu ne sut pas quoi répondre. Merci de quoi ? D'avoir compris ? D'avoir écouté ? D'avoir vu l'homme derrière le crime ?
+
+Il hocha simplement la tête.
+
+Morel emmena Pierre hors de la salle. Leurs pas résonnèrent dans le couloir. Une porte claqua au loin.
+
+Matthieu resta seul.
+
+Il éteignit le magnétophone. Le silence se fit, brutal. Il ramassa sa pipe, la rangea dans sa poche. Il ferma la fenêtre.
+
+Puis il s'assit. Il posa ses mains à plat sur la table. Là où Pierre les avait posées quelques minutes plus tôt.
+
+Il pensa à toutes les enquêtes. À tous les criminels. À tous les dossiers fermés.
+
+Il pensa à l'homme qu'on avait peut-être condamné à tort dans sa jeunesse. À cette vérité qu'il ne connaîtrait jamais.
+
+Il pensa à Pierre qui passerait des années en prison. À sa femme qui apprendrait tout. À ses enfants qui porteraient la honte.
+
+Il pensa à Simone qui était morte en criant.
+
+Et il comprit, enfin, ce qu'il avait toujours su sans vouloir l'admettre.
+
+La justice n'existait pas.
+
+Pas comme il l'avait cru. Pas comme on le lui avait enseigné. Pas comme la loi le prétendait.
+
+Il y avait juste l'ordre. L'ordre imparfait, brutal, nécessaire.
+
+On capturait le criminel. On protégeait la société. On fermait le dossier.
+
+Mais on ne guérissait rien. On ne réconciliait rien. On ne réparait rien.
+
+On administrait. C'était tout.
+
+Matthieu se leva. Il sortit de la salle d'interrogatoire. Le couloir était vide. Ses pas résonnaient sur le carrelage.
+
+Il descendit les escaliers. Il passa devant le bureau de Morel. L'inspecteur était au téléphone, excité, racontant l'arrestation à quelqu'un.
+
+Il passa devant le bureau de Lefèvre. Le directeur leva la tête, sourit, fit un signe de pouce levé. Dossier fermé. Beau travail.
+
+Matthieu ne s'arrêta pas.
+
+Il poussa la porte du commissariat. L'air froid le gifla. Il remonta son col.
+
+Il marcha vers les quais.
+
+Le ciel était blanc. La Seine coulait, indifférente. Une péniche passait lentement.
+
+Matthieu s'arrêta au bord de l'eau. Il sortit sa pipe. Il l'alluma.
+
+Il pensa à Pierre. À Simone. À tous les autres.
+
+Il pensa à l'ordre qu'il servait. À la justice qu'il ne pouvait pas rendre.
+
+Il pensa à la solitude qui l'habitait. À ce prix qu'il payait pour voir l'humanité là où d'autres ne voyaient que des criminels.
+
+Il fuma en silence.
+
+Le matin avançait. Paris s'éveillait. Le monde continuait.
+
+Matthieu resta là, immobile, regardant l'eau couler.
+
+Demain, il y aurait un nouveau dossier. Un nouveau crime. Une nouvelle vérité impossible.
+
+Mais aujourd'hui, il avait juste besoin de respirer.
+
+De laisser le silence faire son travail.
+
+De vivre avec ce qu'il savait.
+
+# Chapitre 7
+
+## Scène 10 : Révélation intérieure
+
+L'aube se levait sur la Seine. Le ciel passait du noir au gris, lentement, sans éclat. Matthieu marchait le long du quai. Ses pas résonnaient sur le pavé mouillé. Il avait quitté le commissariat sans dire au revoir à personne.
+
+Il n'avait pas dormi. Il ne dormirait pas.
+
+L'air était froid. Il sentait l'eau et la ville qui s'éveillait. Au loin, une péniche glissait vers l'amont, son moteur ronronnant doucement. Matthieu s'arrêta. Il sortit sa pipe. Ses mains tremblaient légèrement.
+
+Il pensa à Pierre Maurel dans sa cellule. Aux barreaux. Au silence.
+
+Il pensa à Simone Arnaud. À son corps sur le lit. À ses secrets.
+
+Il pensa à tous les dossiers qu'il avait fermés. Aux criminels qu'il avait enfermés. Aux vérités qu'il avait crues découvrir.
+
+Il alluma sa pipe. La fumée monta dans l'air froid.
+
+Un homme passa près de lui, le col relevé, pressé. Il ne le regarda pas. Paris se réveillait. Les boulangeries ouvraient. Les premières voitures roulaient. Le monde continuait, indifférent.
+
+Matthieu regarda l'eau. Elle coulait, toujours, vers la mer. Elle ne s'arrêtait jamais. Elle ne doutait pas. Elle ne jugeait pas. Elle coulait.
+
+Il pensa à l'homme qu'on avait peut-être condamné à tort dans sa jeunesse. Trente ans. Il y pensait encore. Il y penserait toujours.
+
+Peut-être qu'il était innocent. Peut-être qu'il était coupable. Matthieu ne le saurait jamais.
+
+Et c'était là, dans cette incertitude, que tout se tenait.
+
+Il tira sur sa pipe. Il ferma les yeux.
+
+La justice n'existait pas.
+
+Ce n'était pas du cynisme. Ce n'était pas de la lâcheté. C'était simplement la vérité.
+
+La justice serait la réconciliation parfaite entre le crime et la réparation. Entre le mal commis et le bien rétabli. Entre le coupable puni et la victime apaisée.
+
+Mais ça n'existait pas.
+
+Simone était morte. Pierre irait en prison. Sa femme pleurerait. Ses enfants porteraient la honte. L'ordre serait maintenu. La société protégée.
+
+Mais rien ne serait réparé.
+
+Matthieu ouvrit les yeux. Une mouette criait au-dessus de l'eau. Il la suivit du regard jusqu'à ce qu'elle disparaisse derrière un pont.
+
+Il comprit, enfin, ce qu'il avait toujours su sans vouloir l'admettre.
+
+Son travail n'était pas de rendre justice. Son travail était de maintenir l'ordre.
+
+L'ordre n'était pas juste. Il était brutal. Imparfait. Arbitraire parfois.
+
+Mais l'ordre était nécessaire.
+
+Sans ordre, il y avait le chaos. La violence sans limite. La vengeance personnelle. La loi du plus fort.
+
+Avec l'ordre, il y avait des règles. Des procédures. Des limites.
+
+Ce n'était pas la justice. Mais c'était le meilleur que les humains pouvaient faire.
+
+Matthieu tira une dernière fois sur sa pipe. Il la vida contre le parapet. Les cendres tombèrent dans l'eau, disparurent.
+
+Il pensa à Pierre. Il l'avait compris. Il avait vu l'homme derrière le crime. Il avait vu la panique, le désespoir, l'amour brisé.
+
+Mais il l'avait quand même enfermé.
+
+Parce que c'était son travail. Parce que l'ordre l'exigeait.
+
+Et pour la première fois depuis des années, Matthieu ne se sentait pas coupable de ce choix.
+
+Son doute n'était pas une maladie. C'était une vertu.
+
+C'était parce qu'il doutait qu'il restait humain. C'était parce qu'il voyait l'humanité du criminel que la loi restait humaine.
+
+Un commissaire qui ne doutait jamais était un monstre. Un commissaire qui croyait en la justice absolue était un tyran.
+
+Mais un commissaire qui doutait, qui comprenait, qui sympathisait même, tout en appliquant la loi quand même, était un serviteur de l'ordre. Pas de la justice. De l'ordre.
+
+Et l'ordre, même imparfait, valait mieux que le chaos.
+
+Matthieu se redressa. Il remonta son col. Il rangea sa pipe.
+
+Il regarda le ciel. Le gris devenait blanc. Le jour se levait vraiment maintenant.
+
+Il avait vieilli. Cette enquête l'avait vieilli. Il le sentait dans ses os. Dans sa fatigue. Dans le poids de ses pas.
+
+Mais il n'avait pas sombré. Il n'était pas devenu cynique. Il n'avait pas cessé de voir.
+
+Il voyait toujours l'humanité sous le crime. Il continuerait à la voir.
+
+Mais il ne se laisserait plus paralyser par elle.
+
+Il ferait son travail. Il fermerait ses dossiers. Il enfermerait ses coupables.
+
+En sachant qu'il n'était pas en train de rendre justice. Juste de maintenir l'ordre.
+
+Et c'était suffisant.
+
+Un enfant passa en courant, poursuivi par sa mère. Il riait. Matthieu les regarda disparaître au coin de la rue.
+
+La vie continuait. Elle continuait toujours.
+
+Il pensa à Pierre en prison. Il espérait qu'il irait bien. Qu'il survivrait. Qu'il trouverait, peut-être, une forme de paix.
+
+Il ne le visiterait jamais. Ce n'était pas son rôle. Son rôle s'était terminé quand il avait signé les papiers.
+
+Mais il penserait à lui. Parfois. Dans ces moments où il marcherait seul aux quais.
+
+Matthieu se remit en marche. Pas vers le commissariat. Pas vers chez lui. Juste en avant.
+
+Ses pas le portaient. Il ne savait pas où il allait. Ça n'avait pas d'importance.
+
+Il marchait. C'était tout ce qu'il pouvait faire.
+
+Le soleil perçait enfin les nuages. Une lumière pâle tombait sur la Seine. L'eau brillait faiblement.
+
+Matthieu s'arrêta encore. Il sortit une cigarette. Il l'alluma. La première bouffée brûla sa gorge.
+
+Il regarda Paris. Les toits. Les cheminées. Les fenêtres qui s'allumaient une à une.
+
+Des milliers de vies. Des milliers de secrets. Des milliers de crimes potentiels.
+
+Et lui, un seul homme, avec sa pipe, ses doutes, et sa fatigue.
+
+Mais il continuerait.
+
+Parce que c'était son travail. Parce que quelqu'un devait le faire.
+
+Parce que l'ordre, même imparfait, valait mieux que rien.
+
+Il écrasa sa cigarette sous son pied. Il reprit sa marche.
+
+Le quai se perdait au loin. Il le suivrait jusqu'au bout. Puis il rentrerait. Il dormirait peut-être. Ou peut-être pas.
+
+Demain, il y aurait un nouveau dossier. Un nouveau crime. Une nouvelle vérité impossible à démêler.
+
+Et il recommencerait.
+
+Sans illusion. Sans triomphe. Sans joie.
+
+Juste avec la certitude tranquille qu'il faisait ce qu'il devait faire.
+
+Qu'il était un serviteur de l'ordre. Pas de la justice.
+
+Que son doute était sa force. Pas sa faiblesse.
+
+Que sa solitude était le prix qu'il payait pour rester lucide dans un monde qui exigeait de l'administration brutale.
+
+Matthieu marcha longtemps. Les heures passèrent. Le soleil monta dans le ciel.
+
+Quand il rentra enfin chez lui, l'après-midi déclinait déjà.
+
+Il ouvrit la porte de son appartement. Il posa ses clés. Il retira son manteau.
+
+Il ne but pas. Pas aujourd'hui.
+
+Il s'assit près de la fenêtre. Il regarda la rue.
+
+Les gens passaient. Ils vivaient leurs vies. Ils ne savaient rien de Simone. De Pierre. De cette vérité grise qu'il portait maintenant.
+
+Et c'était bien ainsi.
+
+Matthieu ferma les yeux. Il pensa au silence. Au bruit de l'eau. Aux péniches qui glissaient.
+
+Il pensa à l'ordre fragile qu'il maintenait. À la justice impossible qu'il ne servait pas.
+
+Il pensa à l'homme qu'il était devenu. Vieux. Fatigué. Lucide.
+
+Et pour la première fois depuis longtemps, il se sentit en paix.
+
+Pas heureux. Pas soulagé. Juste en paix.
+
+Une paix grise, sans éclat, mais stable.
+
+C'était suffisant.
+
+C'était tout ce qu'il pouvait espérer.
+
+
+# Chapitre 8
+
+## Scène 11 : Nouvel équilibre
+
+Le commissariat sentait le café et le tabac froid. Matthieu poussa la porte. Il était neuf heures du matin. Il avait dormi quatre heures. C'était suffisant.
+
+Morel leva la tête de son bureau. Il sourit.
+
+— Patron. Le directeur veut vous voir.
+
+Matthieu hocha la tête. Il accrocha son manteau. Il monta les escaliers lentement. Ses genoux craquaient.
+
+Le bureau de Lefèvre était au troisième étage. Matthieu frappa. Une voix l'invita à entrer.
+
+Lefèvre était assis derrière son bureau. Costume impeccable. Cravate nouée serrée. Il regarda Matthieu par-dessus ses lunettes.
+
+— Asseyez-vous, Matthieu.
+
+Matthieu s'assit. Il ne dit rien. Il attendait.
+
+Lefèvre prit un dossier. Le dossier Arnaud. Il le feuilleta brièvement, puis le referma.
+
+— Bon travail. Propre. Rapide. Le procureur est satisfait. La presse aussi. Crime passionnel, aveu complet, pas de zone d'ombre. Parfait.
+
+Matthieu ne répondit pas. Il regardait le dossier sur le bureau. Couverture marron. Nom dactylographié : ARNAUD, Simone.
+
+— J'ai reçu plusieurs appels ce matin, continua Lefèvre. Des félicitations. On me demande comment vous avez fait pour résoudre ça si vite.
+
+— J'ai écouté, dit Matthieu.
+
+Lefèvre sourit.
+
+— Oui. Bien sûr. Vous avez toujours su écouter.
+
+Il marqua une pause. Il posa ses mains à plat sur le bureau.
+
+— Il y a un nouveau dossier qui arrive cet après-midi. Un cambriolage qui a mal tourné. Montmartre. Vous prenez ?
+
+Matthieu hocha la tête.
+
+— Oui.
+
+— Bien.
+
+Lefèvre se leva. L'entretien était terminé. Matthieu se leva aussi. Il se dirigea vers la porte.
+
+— Matthieu ?
+
+Il se retourna.
+
+— Oui ?
+
+— Prenez une journée de repos. Vous avez l'air fatigué.
+
+— Je vais bien.
+
+— C'est un ordre.
+
+Matthieu regarda Lefèvre. Il vit l'inquiétude discrète dans ses yeux. Pas beaucoup. Juste un peu. Le directeur n'était pas un mauvais homme. Il faisait juste son travail.
+
+— Demain, alors, dit Matthieu.
+
+— Demain.
+
+Matthieu sortit. Il descendit les escaliers. Morel l'attendait en bas, carnet à la main.
+
+— Patron, j'ai terminé les rapports annexes. Maurel sera transféré au dépôt cet après-midi. Le juge d'instruction veut nous voir jeudi. Et il y a un journaliste qui a appelé trois fois ce matin. Je lui ai dit que vous n'étiez pas disponible.
+
+— Bien.
+
+Morel le regarda. Il fronça les sourcils.
+
+— Ça va, patron ?
+
+— Oui.
+
+— Vous êtes sûr ? Vous avez l'air...
+
+— Fatigué. Je sais. Lefèvre me l'a dit.
+
+Morel hésita. Il semblait vouloir dire quelque chose. Puis il se ravisa.
+
+— Vous voulez un café ?
+
+— Non. Je rentre.
+
+— Vous rentrez ? Il est neuf heures.
+
+— J'ai une journée de repos.
+
+Morel ouvrit de grands yeux.
+
+— Le directeur vous a donné une journée de repos ? Vous ?
+
+Matthieu ne répondit pas. Il prit son manteau. Il sortit.
+
+Dehors, Paris vivait. Les voitures klaxonnaient. Les gens couraient vers le métro. Les cafés se remplissaient. Le monde continuait, exactement comme avant.
+
+Matthieu marcha. Il ne savait pas où il allait. Ses pieds le portaient.
+
+Il passa devant un kiosque à journaux. Il vit les gros titres. "Crime passionnel résolu." "Un directeur d'usine avoue le meurtre de sa maîtresse." Il ne s'arrêta pas.
+
+Il passa devant un café. Il sentit l'odeur du café, des croissants. Il n'entra pas.
+
+Il marcha jusqu'aux quais.
+
+La Seine coulait. Toujours. Indifférente.
+
+Matthieu s'arrêta au même endroit que la veille. Il sortit sa pipe. Il l'alluma.
+
+Il pensa à Pierre Maurel dans sa cellule. Aux barreaux. Au silence. À sa femme qui pleurait. À ses enfants qui ne comprendraient jamais.
+
+Il pensa à Simone Arnaud. À son corps sur le lit. À ses secrets. À son amour interdit. À son ultimatum fatal.
+
+Il pensa à tous les dossiers qu'il avait fermés. À tous les criminels qu'il avait enfermés. À toutes les vies qu'il avait brisées en appliquant la loi.
+
+La pipe s'éteignit. Il ne la ralluma pas.
+
+Un enfant passa en courant. Il poursuivait un chien. Il riait. Matthieu le regarda jusqu'à ce qu'il disparaisse au coin de la rue.
+
+Il pensa à l'ordre qu'il maintenait. À la justice qu'il ne rendait pas. À la différence entre les deux.
+
+Il pensa à son doute. Ce doute qui l'avait rongé pendant trente ans. Ce doute qu'il avait cru être une maladie. Une faiblesse.
+
+Mais ce n'était pas une maladie. C'était une vertu.
+
+Sans ce doute, il serait devenu un monstre. Un administrateur froid qui enferme sans voir. Un serviteur de l'ordre aveugle à l'humanité des coupables.
+
+Son doute le gardait humain. Le gardait lucide. Le gardait honnête.
+
+C'était le prix à payer. La solitude. La fatigue. Le poids de toutes ces vérités impossibles.
+
+Mais c'était un prix qu'il pouvait porter. Qu'il devait porter.
+
+Matthieu se redressa. Il rangea sa pipe. Il remonta son col.
+
+Il regarda Paris. Les toits. Les cheminées. Les fenêtres. Des milliers de vies. Des milliers de secrets. Des milliers de crimes potentiels.
+
+Et lui, un seul homme, avec sa fatigue, ses doutes, et son travail.
+
+Mais il continuerait.
+
+Parce que c'était son travail. Parce que quelqu'un devait le faire.
+
+Parce que l'ordre, même imparfait, valait mieux que le chaos.
+
+Il se remit en marche. Pas vers le commissariat. Pas vers chez lui. Juste en avant.
+
+Il marcha longtemps. Le long des quais. À travers les rues. Sans but précis.
+
+Il observait. Les visages. Les gestes. Les vies qui se croisaient sans se toucher.
+
+Vers midi, il s'arrêta dans un petit café. Il commanda un sandwich. Un café. Il mangea lentement, assis près de la fenêtre.
+
+À la table d'à côté, deux hommes discutaient d'affaires. Contrats. Chiffres. Argent. Ils ne le regardaient pas.
+
+Matthieu les écouta distraitement. Il pensa à combien leurs préoccupations étaient éloignées des siennes. Combien le monde était vaste, et combien chacun vivait dans son propre univers étroit.
+
+Il paya. Il sortit.
+
+L'après-midi avançait. Le soleil perçait les nuages. Une lumière pâle tombait sur les trottoirs.
+
+Matthieu rentra chez lui.
+
+Son appartement était silencieux. Vide. Propre. Il posa ses clés. Il retira son manteau.
+
+Il s'assit près de la fenêtre. Il regarda la rue.
+
+Les gens passaient. Ils rentraient chez eux. Ils sortaient. Ils vivaient.
+
+Matthieu pensa à demain. Au nouveau dossier. Au cambriolage qui avait mal tourné. À la nouvelle enquête qui commencerait.
+
+Il pensa à tous les dossiers qui suivraient. À toutes les vérités impossibles qu'il découvrirait. À tous les doutes qui reviendraient.
+
+Mais maintenant, il savait.
+
+Il savait qu'il n'était pas un juge. Juste un administrateur.
+
+Il savait qu'il ne servait pas la justice. Juste l'ordre.
+
+Il savait que son doute n'était pas une faiblesse. C'était sa force.
+
+Et c'était suffisant.
+
+Matthieu ferma les yeux. Il respira lentement.
+
+Pour la première fois depuis longtemps, il se sentait en paix.
+
+Pas heureux. Pas soulagé. Juste en paix.
+
+Une paix grise, sans éclat, mais stable.
+
+C'était tout ce qu'il pouvait espérer. Tout ce qu'il méritait. Tout ce dont il avait besoin.
+
+La nuit tomba. Les lumières s'allumèrent dans les appartements d'en face. Paris s'endormait lentement.
+
+Matthieu resta assis près de la fenêtre. Il ne bougea pas. Il regardait. Il écoutait. Il existait.
+
+Demain, il retournerait au commissariat. Il ouvrirait le nouveau dossier. Il recommencerait.
+
+Mais ce soir, il était juste là. Un homme de cinquante-sept ans. Fatigué. Lucide. Seul.
+
+Un homme qui avait accepté, enfin, ce qu'il était.
+
+Un serviteur de l'ordre. Pas de la justice.
+
+Un homme qui doutait. Et qui continuerait à douter. Parce que c'était la seule manière de rester humain dans un monde qui exigeait de l'administration brutale.
+
+Matthieu ouvrit les yeux. Il se leva. Il se prépara à manger quelque chose.
+
+La vie continuait. Elle continuait toujours.
+
+Et lui aussi.
+
+
 
